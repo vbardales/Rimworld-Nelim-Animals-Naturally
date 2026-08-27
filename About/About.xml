@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Reequilibrage realiste des animaux</name>
+  <packageId>virginie.animalrebalance</packageId>
+  <author>Virginie</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies />
+  <!-- Hybridation.xml patche les AnimalGroupDef de DogsMate et Rythme.xml
+       s'appuie sur la DefModExtension de Nocturnal Animals : ce mod doit
+       imperativement se charger apres eux, sinon les xpath ne trouvent rien.
+       Reconnu aussi bien par le gestionnaire vanilla que par RimSort. -->
+  <loadAfter>
+    <li>Mlie.DogsMate</li>
+    <li>Mlie.XNDNocturnalAnimals</li>
+    <li>Mlie.SomeLikeItRotten</li>
+  </loadAfter>
+  <description>Reequilibre les animaux entre eux sur une base biologique.
+
+Toutes les valeurs derivent d'une seule ancre physique, la masse reelle de l'espece en kilogrammes :
+
+- Taille : racine cubique de la masse relative a un humain de 70 kg. Cette loi a ete validee contre les masses reelles de 54 especes vanilla, avec une erreur mediane de 7 pour cent.
+- Longevite : lois allometriques calibrees par clade. Un perroquet, une poule et un moineau ne suivent pas la meme courbe : un ara vit 55 ans, une poule 7.
+- Regles strictes : la riposte est toujours au moins aussi probable que l'echec d'apprivoisement ; un animal dressable ne s'echappe plus de son enclos ; la taille maximale de proie tient compte du mode de chasse.
+- Hybridation : groupes derives de la taxonomie reelle, au format DogsMate.
+
+Principe de prudence : une valeur n'est corrigee que si elle s'ecarte de plus de 15 pour cent de la cible. Le reglage manuel de Ludeon, deja tres bon sur le vanilla, n'est pas ecrase. Les creatures volontairement geantes conservent la taille voulue par leur auteur.
+
+Tous les patches sont conditionnels : retirer un mod d'animaux rend simplement les patches correspondants inertes, sans erreur au chargement.
+
+A charger APRES tous les mods d'animaux.</description>
+</ModMetaData>

@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Regles strictes R1, R2 et R4 du guide.
+       Genere par scripts/genere_mod.ps1 - ne pas editer a la main. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.65</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race</xpath>
+        <value><maxPreyBodySize>0.65</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race</xpath>
+        <value><maxPreyBodySize>0.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.2</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race</xpath>
+        <value><manhunterOnDamageChance>0.2</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race</xpath>
+        <value><maxPreyBodySize>1</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_DuskProwler"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_DuskProwler"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_DuskProwler"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_DuskProwler"]/race</xpath>
+        <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_Frostling"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_Frostling"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_Frostling"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_Frostling"]/race</xpath>
+        <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_IronhuskBeetle"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AA_IronhuskBeetle"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_Nightling"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_Nightling"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_Nightling"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_Nightling"]/race</xpath>
+        <value><maxPreyBodySize>1</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.2</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]/race</xpath>
+        <value><maxPreyBodySize>1.2</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_PhoenixOwlcat"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_PhoenixOwlcat"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.2</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_PhoenixOwlcat"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_PhoenixOwlcat"]/race</xpath>
+        <value><maxPreyBodySize>0.2</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race</xpath>
+        <value><maxPreyBodySize>1</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race</xpath>
+        <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_ShadowCharger"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AA_ShadowCharger"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_Skiphound"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AA_Skiphound"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.79</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AA_Skiphound"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AA_Skiphound"]/race</xpath>
+        <value><maxPreyBodySize>0.79</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.89</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]/race</xpath>
+        <value><maxPreyBodySize>0.89</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.29</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race</xpath>
+        <value><maxPreyBodySize>1.29</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.89</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race</xpath>
+        <value><maxPreyBodySize>0.89</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPFishercat"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPFishercat"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.42</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPFishercat"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPFishercat"]/race</xpath>
+        <value><maxPreyBodySize>0.42</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPMajoreraGoat"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPMajoreraGoat"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]/race</xpath>
+        <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.24</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race</xpath>
+        <value><maxPreyBodySize>0.24</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.48</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]/race</xpath>
+        <value><maxPreyBodySize>0.48</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.23</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race</xpath>
+        <value><manhunterOnDamageChance>0.23</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.6</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race</xpath>
+        <value><maxPreyBodySize>1.6</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Lion"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Lion"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Lion"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Lion"]/race</xpath>
+        <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.25</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]/race</xpath>
+        <value><manhunterOnDamageChance>0.25</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.4</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/race</xpath>
+        <value><manhunterOnDamageChance>0.4</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.48</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]/race</xpath>
+        <value><maxPreyBodySize>0.48</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.23</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race</xpath>
+        <value><manhunterOnDamageChance>0.23</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AssafSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AssafSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AwassiSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="AwassiSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.62</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race</xpath>
+        <value><maxPreyBodySize>1.62</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.86</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race</xpath>
+        <value><maxPreyBodySize>1.86</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BerkshirePig"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="BerkshirePig"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BighornSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="BighornSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BogHound"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BogHound"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.85</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BogHound"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BogHound"]/race</xpath>
+        <value><maxPreyBodySize>0.85</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BorderLeicesterSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="BorderLeicesterSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BravaCow"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="BravaCow"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.23</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/race</xpath>
+        <value><maxPreyBodySize>0.23</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CactusMantis"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CactusMantis"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.8</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CactusMantis"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CactusMantis"]/race</xpath>
+        <value><maxPreyBodySize>0.8</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race</xpath>
+        <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Coldwarg"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Coldwarg"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Coldwarg"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Coldwarg"]/race</xpath>
+        <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_BeardedTroll"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_BeardedTroll"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_BeardedTroll"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_BeardedTroll"]/race</xpath>
+        <value><maxPreyBodySize>2</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_BlackScribe"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_BlackScribe"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_BlackScribe"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_BlackScribe"]/race</xpath>
+        <value><maxPreyBodySize>0.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_ImperialRedhound"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_ImperialRedhound"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.15</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_ImperialRedhound"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_ImperialRedhound"]/race</xpath>
+        <value><maxPreyBodySize>2.15</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_Karabal"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_Karabal"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_Karabal"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_Karabal"]/race</xpath>
+        <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_Phrak"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_Phrak"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.3</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_Phrak"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_Phrak"]/race</xpath>
+        <value><maxPreyBodySize>0.3</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_RockTroll"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_RockTroll"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>4.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_RockTroll"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_RockTroll"]/race</xpath>
+        <value><maxPreyBodySize>4.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_Snaptoad"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_Snaptoad"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.3</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_Snaptoad"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_Snaptoad"]/race</xpath>
+        <value><maxPreyBodySize>2.3</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_SnowTaraal"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_SnowTaraal"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_SnowTaraal"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_SnowTaraal"]/race</xpath>
+        <value><maxPreyBodySize>2.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DA_Taraal"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DA_Taraal"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DA_Taraal"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DA_Taraal"]/race</xpath>
+        <value><maxPreyBodySize>2.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DairyPig"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="DairyPig"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DireRat"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DireRat"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.85</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DireRat"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DireRat"]/race</xpath>
+        <value><maxPreyBodySize>0.85</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DurocPig"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="DurocPig"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="emperor_penguin"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="emperor_penguin"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.75</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="emperor_penguin"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="emperor_penguin"]/race</xpath>
+        <value><maxPreyBodySize>0.75</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.24</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race</xpath>
+        <value><maxPreyBodySize>0.24</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_FrostWolf"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_FrostWolf"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.3</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_FrostWolf"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_FrostWolf"]/race</xpath>
+        <value><maxPreyBodySize>1.3</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.03</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/race</xpath>
+        <value><manhunterOnDamageChance>0.03</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race</xpath>
+        <value><maxPreyBodySize>0.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Lox"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Lox"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.26</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race</xpath>
+        <value><maxPreyBodySize>0.26</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.38</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]/race</xpath>
+        <value><maxPreyBodySize>0.38</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race</xpath>
+        <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.38</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race</xpath>
+        <value><maxPreyBodySize>0.38</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.26</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race</xpath>
+        <value><maxPreyBodySize>0.26</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race</xpath>
+        <value><maxPreyBodySize>0.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.44</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race</xpath>
+        <value><maxPreyBodySize>0.44</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Red"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Red"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.44</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Red"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Red"]/race</xpath>
+        <value><maxPreyBodySize>0.44</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.35</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race</xpath>
+        <value><maxPreyBodySize>0.35</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.44</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race</xpath>
+        <value><maxPreyBodySize>0.44</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race</xpath>
+        <value><maxPreyBodySize>0.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GloucestershirePig"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="GloucestershirePig"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Grimstone_Griffar"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Grimstone_Griffar"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Grimstone_Griffar"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Grimstone_Griffar"]/race</xpath>
+        <value><maxPreyBodySize>4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.68</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race</xpath>
+        <value><maxPreyBodySize>0.68</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.75</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race</xpath>
+        <value><maxPreyBodySize>0.75</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Gorgon"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="HC_Gorgon"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Griffin"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Griffin"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.15</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Griffin"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Griffin"]/race</xpath>
+        <value><maxPreyBodySize>2.15</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.05</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/race</xpath>
+        <value><maxPreyBodySize>1.05</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Nightmares"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="HC_Nightmares"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Owlbear"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Owlbear"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.35</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Owlbear"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Owlbear"]/race</xpath>
+        <value><maxPreyBodySize>2.35</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Serval"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Serval"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.55</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Serval"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Serval"]/race</xpath>
+        <value><maxPreyBodySize>0.55</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race</xpath>
+        <value><maxPreyBodySize>0.83</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Unicorn"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="HC_Unicorn"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race/manhunterOnDamageChance</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race/manhunterOnDamageChance</xpath>
+      <value><manhunterOnDamageChance>0.05</manhunterOnDamageChance></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race</xpath>
+        <value><manhunterOnDamageChance>0.05</manhunterOnDamageChance></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.66</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race</xpath>
+        <value><maxPreyBodySize>0.66</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Weasel"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Weasel"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.14</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Weasel"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Weasel"]/race</xpath>
+        <value><maxPreyBodySize>0.14</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Yeti"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Yeti"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.25</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Yeti"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Yeti"]/race</xpath>
+        <value><maxPreyBodySize>2.25</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="JacobsSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="JacobsSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LincolnSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="LincolnSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Lynx"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Lynx"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Lynx"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Lynx"]/race</xpath>
+        <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MerinoSheep"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="MerinoSheep"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MonitorLizard"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MonitorLizard"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="MonitorLizard"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="MonitorLizard"]/race</xpath>
+        <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="pphhyy_SanguineDeer"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="pphhyy_SanguineDeer"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.2</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="pphhyy_SanguineDeer"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="pphhyy_SanguineDeer"]/race</xpath>
+        <value><maxPreyBodySize>1.2</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="pphhyy_Vargulf"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="pphhyy_Vargulf"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>2.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="pphhyy_Vargulf"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="pphhyy_Vargulf"]/race</xpath>
+        <value><maxPreyBodySize>2.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Rat_Large"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Rat_Large"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Rat_Large"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Rat_Large"]/race</xpath>
+        <value><maxPreyBodySize>1</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RedRattler"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RedRattler"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.2</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RedRattler"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RedRattler"]/race</xpath>
+        <value><maxPreyBodySize>0.2</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.37</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/race</xpath>
+        <value><maxPreyBodySize>1.37</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.19</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/race</xpath>
+        <value><maxPreyBodySize>0.19</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/race</xpath>
+        <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.64</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race</xpath>
+        <value><maxPreyBodySize>0.64</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="rtp_RhodesianRidgeback"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="rtp_RhodesianRidgeback"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.82</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="rtp_RhodesianRidgeback"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="rtp_RhodesianRidgeback"]/race</xpath>
+        <value><maxPreyBodySize>0.82</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SaddlebackPig"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SaddlebackPig"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBlackHorse"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCBlackHorse"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCPalomino"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCPalomino"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCQuarterHorse"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCQuarterHorse"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCWhiteHorse"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCWhiteHorse"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Taggerung_ChromaticFlowerWolf"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Taggerung_ChromaticFlowerWolf"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.85</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Taggerung_ChromaticFlowerWolf"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Taggerung_ChromaticFlowerWolf"]/race</xpath>
+        <value><maxPreyBodySize>0.85</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.18</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/race</xpath>
+        <value><maxPreyBodySize>0.18</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.49</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]/race</xpath>
+        <value><maxPreyBodySize>1.49</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAEWaste_Toxafox"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAEWaste_Toxafox"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.55</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="VAEWaste_Toxafox"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VAEWaste_Toxafox"]/race</xpath>
+        <value><maxPreyBodySize>0.55</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAEWaste_Toxlion"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAEWaste_Toxlion"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.65</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="VAEWaste_Toxlion"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VAEWaste_Toxlion"]/race</xpath>
+        <value><maxPreyBodySize>1.65</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Warg"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Warg"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Warg"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Warg"]/race</xpath>
+        <value><maxPreyBodySize>1.4</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Wolf_Great"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Wolf_Great"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Wolf_Great"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Wolf_Great"]/race</xpath>
+        <value><maxPreyBodySize>1.5</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Wolverine"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Wolverine"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Wolverine"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Wolverine"]/race</xpath>
+        <value><maxPreyBodySize>0.6</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WoolyPig"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="WoolyPig"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="YellowViper"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="YellowViper"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.2</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="YellowViper"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="YellowViper"]/race</xpath>
+        <value><maxPreyBodySize>0.2</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>1</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race</xpath>
+        <value><maxPreyBodySize>1</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_Bufflehead"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ZDuck_Bufflehead"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_DesertRazorbill"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_DesertRazorbill"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.75</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZDuck_DesertRazorbill"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZDuck_DesertRazorbill"]/race</xpath>
+        <value><maxPreyBodySize>0.75</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.29</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race</xpath>
+        <value><maxPreyBodySize>0.29</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.28</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race</xpath>
+        <value><maxPreyBodySize>0.28</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.35</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race</xpath>
+        <value><maxPreyBodySize>0.35</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.28</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race</xpath>
+        <value><maxPreyBodySize>0.28</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_RimMart"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_RimMart"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.9</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_RimMart"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_RimMart"]/race</xpath>
+        <value><maxPreyBodySize>0.9</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_Sable"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_Sable"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.26</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_Sable"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_Sable"]/race</xpath>
+        <value><maxPreyBodySize>0.26</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race/maxPreyBodySize</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race/maxPreyBodySize</xpath>
+      <value><maxPreyBodySize>0.35</maxPreyBodySize></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race</xpath>
+        <value><maxPreyBodySize>0.35</maxPreyBodySize></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZPT_RubyMegakeet"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ZPT_RubyMegakeet"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZTT_Steelshell"]/race/roamMtbDays</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ZTT_Steelshell"]/race/roamMtbDays</xpath>
+    </match>
+  </Operation>
+</Patch>
