@@ -32,6 +32,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MonitorLizard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MonitorLizard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="MonitorLizard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="MonitorLizard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Mastodon"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Mastodon"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
@@ -116,6 +130,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Alligator"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Alligator"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Alligator"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Alligator"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -140,6 +168,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Sparrow"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -172,6 +214,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bluebird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bluebird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Bluebird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Bluebird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Quail"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Quail"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -200,6 +256,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Quail"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Quail"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>11</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Quail"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Quail"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>11</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -224,6 +294,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SeaTurtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -368,6 +452,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ACPMajoreraGoat"]/comps/li[@Class="CompProperties_Milkable"]/milkIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ACPMajoreraGoat"]/comps/li[@Class="CompProperties_Milkable"]/milkIntervalDays</xpath>
@@ -420,6 +518,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ACPThornyDevil"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPThornyDevil"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPThornyDevil"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPThornyDevil"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPThornyDevil"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -536,6 +648,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -560,6 +686,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BU_RedwingedBlackbird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -592,6 +732,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -616,6 +770,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_Cockatoo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -648,6 +816,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -672,6 +854,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -704,6 +900,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -728,6 +938,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_Parrot"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -760,6 +984,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_ParrotB"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_ParrotB"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_ParrotB"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_ParrotB"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -784,6 +1022,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_Toucan"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -844,6 +1096,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_Cuckooshrike_BlackWinged"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_Cuckooshrike_BlackWinged"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_Cuckooshrike_BlackWinged"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_Cuckooshrike_BlackWinged"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="TYR_FairyBluebird_Philippine"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="TYR_FairyBluebird_Philippine"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
@@ -900,6 +1166,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_FairyBluebird_Philippine"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_FairyBluebird_Philippine"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_FairyBluebird_Philippine"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_FairyBluebird_Philippine"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -924,6 +1204,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_Hummingbird_BlueTailed"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -956,6 +1250,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -980,6 +1288,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_Parrot_Caica"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -1036,6 +1358,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="TYR_Triller_WhiteBrowed"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_Triller_WhiteBrowed"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_Triller_WhiteBrowed"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_Triller_WhiteBrowed"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_Triller_WhiteBrowed"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -1124,6 +1460,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_EiderPintail"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_EiderPintail"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZDuck_EiderPintail"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZDuck_EiderPintail"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -1148,6 +1498,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -1656,6 +2020,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Copperhead"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Copperhead"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Copperhead"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Copperhead"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -1680,6 +2058,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -1712,6 +2104,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cottonmouth"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cottonmouth"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cottonmouth"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cottonmouth"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -1736,6 +2142,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="GreenSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -1768,6 +2188,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MudSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MudSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="MudSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="MudSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ScarletKingSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ScarletKingSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -1796,6 +2230,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ScarletKingSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ScarletKingSnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ScarletKingSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ScarletKingSnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -1820,6 +2268,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2104,6 +2566,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BlackCappedConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BlackCappedConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BlackCappedConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BlackCappedConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2128,6 +2604,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CrimsonBelliedConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2160,6 +2650,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GoldenConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GoldenConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="GoldenConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="GoldenConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2184,6 +2688,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="NandayConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2216,6 +2734,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PineappleConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="PineappleConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="PineappleConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PineappleConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2240,6 +2772,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SunConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2272,6 +2818,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TurquoiseConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TurquoiseConure"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TurquoiseConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TurquoiseConure"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2296,6 +2856,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>2~2</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CinnamonGroundDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2328,6 +2902,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DiamondDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DiamondDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="DiamondDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="DiamondDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="MourningDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="MourningDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2356,6 +2944,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MourningDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MourningDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="MourningDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="MourningDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2380,6 +2982,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>2~2</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RingneckDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2440,6 +3056,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TurtleDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TurtleDove"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TurtleDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TurtleDove"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>2</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2464,6 +3094,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cormorant"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2496,6 +3140,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Egret"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Egret"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Egret"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Egret"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2520,6 +3178,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Ibis"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2552,6 +3224,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Pelican"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Pelican"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Pelican"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Pelican"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2576,6 +3262,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Plover"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2608,6 +3308,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Sandpiper"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Sandpiper"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Sandpiper"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Sandpiper"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2632,6 +3346,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Seagull"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2664,6 +3392,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Spoonbill"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Spoonbill"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Spoonbill"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Spoonbill"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2688,6 +3430,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BlueJay"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2720,6 +3476,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cardinal"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cardinal"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cardinal"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cardinal"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2744,6 +3514,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Goldfinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2804,6 +3588,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HouseFinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HouseFinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HouseFinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HouseFinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2828,6 +3626,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Oriole"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2860,6 +3672,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZebraFinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZebraFinch"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZebraFinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZebraFinch"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2884,6 +3710,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZPT_Eclectus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2916,6 +3756,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZPT_Hyacinth"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZPT_Hyacinth"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZPT_Hyacinth"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZPT_Hyacinth"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -2940,6 +3794,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>3~3</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>3</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -2972,6 +3840,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="RG_Dodo"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="RG_Dodo"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3000,6 +3882,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Dodo"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Dodo"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_Dodo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_Dodo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3024,6 +3920,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_Thrinaxodon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -3252,6 +4162,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3276,6 +4200,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -3308,6 +4246,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_DesertTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_DesertTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_DesertTortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_DesertTortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3332,6 +4284,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -3644,6 +4610,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
@@ -3700,6 +4680,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3724,6 +4718,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -3784,6 +4792,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_RockhopperPenguin"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_RockhopperPenguin"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>1</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_RockhopperPenguin"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_RockhopperPenguin"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>1</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3808,6 +4830,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -3840,6 +4876,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3864,6 +4914,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -3896,6 +4960,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Galapagostortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Galapagostortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Galapagostortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Galapagostortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3924,6 +5002,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -3948,6 +5040,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4008,6 +5114,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4032,6 +5152,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4116,6 +5250,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="CK_Python"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Python"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Python"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CK_Python"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CK_Python"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4484,6 +5632,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Ostrich"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Ostrich"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Ostrich"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Ostrich"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Emu"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Emu"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4512,6 +5674,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Emu"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Emu"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Emu"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Emu"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4536,6 +5712,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cassowary"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4596,6 +5786,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Goose"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Goose"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Goose"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Goose"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Flamingo"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Flamingo"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
@@ -4652,6 +5856,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Flamingo"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Flamingo"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Flamingo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Flamingo"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4676,6 +5894,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Heron"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4708,6 +5940,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Swan"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Swan"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Swan"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Swan"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4732,6 +5978,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>7~7</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Peacock"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4764,6 +6024,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Vulture"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Vulture"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Vulture"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Vulture"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4788,6 +6062,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>7~7</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4820,6 +6108,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPKiwi"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPKiwi"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ACPKiwi"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ACPKiwi"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4844,6 +6146,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>1~1</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>1</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Penguin"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>1</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -4904,6 +6220,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
@@ -4960,6 +6290,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -4984,6 +6328,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>7~7</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BrushTurkey"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5016,6 +6374,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -5040,6 +6412,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>8~8</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>8</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5072,6 +6458,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreenPeacock"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GreenPeacock"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="GreenPeacock"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="GreenPeacock"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -5096,6 +6496,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>7~7</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>7</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5352,6 +6766,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nem_Mantis"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nem_Mantis"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Nem_Mantis"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Nem_Mantis"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/comps/li[@Class="CompProperties_Milkable"]/milkIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/comps/li[@Class="CompProperties_Milkable"]/milkIntervalDays</xpath>
@@ -5408,6 +6836,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
@@ -5460,6 +6902,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Nem_Spider"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5576,6 +7032,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cobra"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cobra"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cobra"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cobra"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -5600,6 +7070,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Tortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5632,6 +7116,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LeopardTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="LeopardTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="LeopardTortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="LeopardTortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -5660,6 +7158,20 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggLayIntervalDays</xpath>
@@ -5684,6 +7196,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5740,6 +7266,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>5~5</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>5</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
@@ -5992,6 +7532,20 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Iguana"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
         <value><eggCountRange>4~4</eggCountRange></value>
+      </match>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Iguana"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Iguana"]/comps/li[@Class="CompProperties_EggLayer"]/eggFertilizationCountMax</xpath>
+      <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
+    </match>
+    <nomatch Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Iguana"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Iguana"]/comps/li[@Class="CompProperties_EggLayer"]</xpath>
+        <value><eggFertilizationCountMax>4</eggFertilizationCountMax></value>
       </match>
     </nomatch>
   </Operation>
