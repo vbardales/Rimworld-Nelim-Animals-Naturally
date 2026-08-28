@@ -15,6 +15,12 @@
     <li>Mlie.DogsMate</li>
     <li>Mlie.XNDNocturnalAnimals</li>
     <li>Mlie.SomeLikeItRotten</li>
+    <!-- Zoology retravaille vanilla, Alpha Animals et Vanilla Animals
+         Expanded avec son propre pipeline biologique. On se charge apres
+         lui : ses systemes de comportement en C# restent actifs, et nos
+         valeurs s'appliquent partout, y compris sur les 229 animaux qu'il
+         couvre aussi. -->
+    <li>com.abobashark.zoologymod</li>
   </loadAfter>
   <description>Reequilibre les animaux entre eux sur une base biologique.
 
