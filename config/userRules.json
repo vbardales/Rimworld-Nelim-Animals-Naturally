@@ -1,0 +1,29 @@
+{
+    "timestamp": 1787914533,
+    "rules": {
+        "nelim.animalrebalance": {
+            "loadAfter": {
+                "Mlie.DogsMate": {
+                    "name": "Dogs mate (Continued)",
+                    "comment": "Le reequilibrage patche des definitions creees par ce mod."
+                },
+                "Mlie.XNDNocturnalAnimals": {
+                    "name": "[XND] Nocturnal Animals (Continued)",
+                    "comment": "Le reequilibrage patche des definitions creees par ce mod."
+                },
+                "Mlie.SomeLikeItRotten": {
+                    "name": "Some Like It Rotten",
+                    "comment": "Le reequilibrage patche des definitions creees par ce mod."
+                },
+                "com.abobashark.zoologymod": {
+                    "name": "Zoology: Realistic Animal Overhaul",
+                    "comment": "Le reequilibrage patche des definitions creees par ce mod."
+                }
+            },
+            "loadBottom": {
+                "value": true,
+                "comment": "Corrige les animaux de tous les autres mods : doit se charger en dernier."
+            }
+        }
+    }
+}
