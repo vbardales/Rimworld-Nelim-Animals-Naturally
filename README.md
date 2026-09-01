@@ -57,16 +57,21 @@ inertes, sans erreur au chargement.
 
 À charger **après tous les mods d'animaux**.
 
-| Quoi | Où |
-|---|---|
-| ce dossier | `~/.local/share/Steam/steamapps/common/RimWorld/Mods/` |
-| `config/Mod_*.xml` | `~/.config/unity3d/Ludeon Studios/RimWorld by Ludeon Studios/Config/` |
-| `config/userRules.json` | `~/.local/share/RimSort/dbs/` |
+| Quoi | Où | Comment |
+|---|---|---|
+| ce dossier | `~/.local/share/Steam/steamapps/common/RimWorld/Mods/` | copie |
+| `config/Mod_2587157544_CustomizeAnimals.xml` | `…/RimWorld by Ludeon Studios/Config/` | copie |
+| `config/Mod_2503519676_SomeLikeItRottenMod.xml` | — | **import params, en jeu** |
+| `config/Mod_2269731409_NocturnalAnimalsMod.xml` | — | **import params, en jeu** |
+| `config/userRules.json` | `~/.local/share/RimSort/dbs/` | copie |
 
-Les trois fichiers `Mod_*.xml` sont les réglages générés pour les mods compagnons ; ils écrasent
-la configuration existante de ces mods. `userRules.json` porte une règle `loadBottom` qui force ce
-mod en dernière position, ce qu'un `loadAfter` ne sait pas exprimer face à une liste de mods
-inconnue à l'avance.
+**Some Like It Rotten et Nocturnal Animals ne se chargent pas par copie de fichier** : il faut
+passer par la fonction d'import de réglages du mod lui-même, depuis le jeu. Tant que l'import
+n'est pas fait, la configuration active reste celle d'avant, et les valeurs générées n'ont aucun
+effet.
+
+`userRules.json` porte une règle `loadBottom` qui force ce mod en dernière position, ce qu'un
+`loadAfter` ne sait pas exprimer face à une liste de mods inconnue à l'avance.
 
 ## Mods compagnons
 

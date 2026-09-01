@@ -15,6 +15,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]/comps</xpath>
@@ -36,6 +38,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -46,6 +49,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]/comps</xpath>
@@ -67,6 +72,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -77,6 +83,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPErmine"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ACPErmine"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ACPErmine"]/comps</xpath>
@@ -98,6 +106,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -108,6 +117,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPFerret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ACPFerret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ACPFerret"]/comps</xpath>
@@ -129,6 +140,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -139,6 +151,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/comps</xpath>
@@ -160,6 +174,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -170,6 +185,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps</xpath>
@@ -191,6 +208,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -201,6 +219,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/comps</xpath>
@@ -222,6 +242,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -232,6 +253,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/comps</xpath>
@@ -253,6 +276,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -263,6 +287,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Alligator"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Alligator"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Alligator"]/comps</xpath>
@@ -284,6 +310,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -294,6 +321,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AlligatorMan"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="AlligatorMan"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="AlligatorMan"]/comps</xpath>
@@ -315,6 +344,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -325,6 +355,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps</xpath>
@@ -346,6 +378,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -356,6 +389,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/comps</xpath>
@@ -377,6 +412,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -387,6 +423,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Bear_Polar"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Bear_Polar"]/comps</xpath>
@@ -408,6 +446,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -418,6 +457,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BlackBear"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="BlackBear"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="BlackBear"]/comps</xpath>
@@ -439,6 +480,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -449,6 +491,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps</xpath>
@@ -470,6 +514,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -480,6 +525,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_Raven"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="BU_Raven"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="BU_Raven"]/comps</xpath>
@@ -501,6 +548,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -511,6 +559,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_Vulture"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps</xpath>
@@ -532,6 +582,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -542,6 +593,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]/comps</xpath>
@@ -563,6 +616,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -573,6 +627,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/comps</xpath>
@@ -594,6 +650,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -604,6 +661,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_Python"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="CK_Python"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="CK_Python"]/comps</xpath>
@@ -625,6 +684,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -635,6 +695,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]/comps</xpath>
@@ -656,6 +718,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -666,6 +729,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Cobra"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Cobra"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Cobra"]/comps</xpath>
@@ -687,6 +752,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -697,6 +763,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Coldwarg"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Coldwarg"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Coldwarg"]/comps</xpath>
@@ -718,6 +786,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -728,6 +797,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Cormorant"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Cormorant"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Cormorant"]/comps</xpath>
@@ -749,6 +820,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -759,6 +831,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Crow"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Crow"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Crow"]/comps</xpath>
@@ -780,6 +854,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -790,6 +865,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Egret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Egret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Egret"]/comps</xpath>
@@ -811,6 +888,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -821,6 +899,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="emperor_penguin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="emperor_penguin"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="emperor_penguin"]/comps</xpath>
@@ -842,6 +922,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -852,6 +933,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/comps</xpath>
@@ -873,6 +956,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -883,6 +967,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/comps</xpath>
@@ -904,6 +990,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -914,6 +1001,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/comps</xpath>
@@ -935,6 +1024,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -945,6 +1035,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/comps</xpath>
@@ -966,6 +1058,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -976,6 +1069,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Mink"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Mink"]/comps</xpath>
@@ -997,6 +1092,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1007,6 +1103,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Bamboo"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/comps</xpath>
@@ -1028,6 +1126,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1038,6 +1137,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"Fungus") or contains(foodType,"VegetableOrFruit"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/comps</xpath>
@@ -1071,6 +1172,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1081,6 +1183,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/comps</xpath>
@@ -1102,6 +1206,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1112,6 +1217,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/comps</xpath>
@@ -1133,6 +1240,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1143,6 +1251,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/comps</xpath>
@@ -1164,6 +1274,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1174,6 +1285,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Gray"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Gray"]/comps</xpath>
@@ -1195,6 +1308,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1205,6 +1319,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Kit"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Kit"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Kit"]/comps</xpath>
@@ -1226,6 +1342,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1236,6 +1353,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/comps</xpath>
@@ -1257,6 +1376,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1267,6 +1387,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Red"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Red"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Red"]/comps</xpath>
@@ -1288,6 +1410,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1298,6 +1421,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Sand"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Sand"]/comps</xpath>
@@ -1319,6 +1444,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1329,6 +1455,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Silver"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Silver"]/comps</xpath>
@@ -1350,6 +1478,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1360,6 +1489,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/comps</xpath>
@@ -1381,6 +1512,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1391,6 +1523,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]/comps</xpath>
@@ -1412,6 +1546,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1422,6 +1557,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="GoldenJackal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="GoldenJackal"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="GoldenJackal"]/comps</xpath>
@@ -1443,6 +1580,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1453,6 +1591,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Gorilla"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Gorilla"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Gorilla"]/comps</xpath>
@@ -1474,6 +1614,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1484,6 +1625,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/comps</xpath>
@@ -1505,6 +1648,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1515,6 +1659,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps</xpath>
@@ -1536,6 +1682,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1546,6 +1693,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="HC_Baboon"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="HC_Baboon"]/comps</xpath>
@@ -1567,6 +1716,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1577,6 +1727,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/comps</xpath>
@@ -1598,6 +1750,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1608,6 +1761,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Serval"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="HC_Serval"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="HC_Serval"]/comps</xpath>
@@ -1629,6 +1784,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1639,6 +1795,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Weasel"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="HC_Weasel"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="HC_Weasel"]/comps</xpath>
@@ -1660,6 +1818,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1670,6 +1829,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Heron"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Heron"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Heron"]/comps</xpath>
@@ -1691,6 +1852,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1701,6 +1863,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="king_penguin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="king_penguin"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="king_penguin"]/comps</xpath>
@@ -1722,6 +1886,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1732,6 +1897,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Lynx"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Lynx"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Lynx"]/comps</xpath>
@@ -1753,6 +1920,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1763,6 +1931,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Meerkat"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Meerkat"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Meerkat"]/comps</xpath>
@@ -1784,6 +1954,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1794,6 +1965,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Mink"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Mink"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Mink"]/comps</xpath>
@@ -1815,6 +1988,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1825,6 +1999,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Monkey"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Monkey"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Monkey"]/comps</xpath>
@@ -1846,6 +2022,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1856,6 +2033,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Otter"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Otter"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Otter"]/comps</xpath>
@@ -1877,6 +2056,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1887,6 +2067,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Bamboo"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Panda"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Panda"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Panda"]/comps</xpath>
@@ -1908,6 +2090,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1918,6 +2101,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Pelican"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Pelican"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Pelican"]/comps</xpath>
@@ -1939,6 +2124,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1949,6 +2135,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Penguin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Penguin"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Penguin"]/comps</xpath>
@@ -1970,6 +2158,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -1980,6 +2169,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Pig"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"Fungus") or contains(foodType,"VegetableOrFruit"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Pig"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Pig"]/comps</xpath>
@@ -2013,6 +2204,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2023,6 +2215,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Possum"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Possum"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Possum"]/comps</xpath>
@@ -2044,6 +2238,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2054,6 +2249,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]/comps</xpath>
@@ -2075,6 +2272,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2085,6 +2283,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Quail"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Quail"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Quail"]/comps</xpath>
@@ -2106,6 +2306,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2116,6 +2317,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Raccoon"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Raccoon"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Raccoon"]/comps</xpath>
@@ -2137,6 +2340,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2147,6 +2351,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Seal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Seal"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Seal"]/comps</xpath>
@@ -2168,6 +2374,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2178,6 +2385,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="SeaLion"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="SeaLion"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="SeaLion"]/comps</xpath>
@@ -2199,6 +2408,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2209,6 +2419,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="SeaOtter"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="SeaOtter"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="SeaOtter"]/comps</xpath>
@@ -2230,6 +2442,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2240,6 +2453,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turkey"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Turkey"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Turkey"]/comps</xpath>
@@ -2261,6 +2476,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2271,6 +2487,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps</xpath>
@@ -2292,6 +2510,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2302,6 +2521,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps</xpath>
@@ -2323,6 +2544,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2333,6 +2555,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps</xpath>
@@ -2354,6 +2578,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2364,6 +2589,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/comps</xpath>
@@ -2385,6 +2612,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2395,6 +2623,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/comps</xpath>
@@ -2416,6 +2646,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2426,6 +2657,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/comps</xpath>
@@ -2447,6 +2680,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2457,6 +2691,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/comps</xpath>
@@ -2478,6 +2714,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2488,6 +2725,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/comps</xpath>
@@ -2509,6 +2748,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2519,6 +2759,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Walrus"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Walrus"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Walrus"]/comps</xpath>
@@ -2540,6 +2782,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2550,6 +2793,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Weasel"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Weasel"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Weasel"]/comps</xpath>
@@ -2571,6 +2816,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2581,6 +2827,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Whitefox"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Whitefox"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Whitefox"]/comps</xpath>
@@ -2602,6 +2850,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2612,6 +2861,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="WildBoar"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"Fungus") or contains(foodType,"VegetableOrFruit"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="WildBoar"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="WildBoar"]/comps</xpath>
@@ -2645,6 +2896,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2655,6 +2907,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Wolverine"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="Wolverine"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="Wolverine"]/comps</xpath>
@@ -2676,6 +2930,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2686,6 +2941,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/comps</xpath>
@@ -2707,6 +2964,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2717,6 +2975,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/comps</xpath>
@@ -2738,6 +2998,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2748,6 +3009,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/comps</xpath>
@@ -2769,6 +3032,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2779,6 +3043,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/comps</xpath>
@@ -2800,6 +3066,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2810,6 +3077,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/comps</xpath>
@@ -2831,6 +3100,7 @@
                   </comps>
                 </value>
               </nomatch>
+              </nomatch>
             </match>
           </match>
         </li>
@@ -2841,6 +3111,8 @@
           <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
             <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
               <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/comps</xpath>
               <match Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/comps</xpath>
@@ -2861,6 +3133,7 @@
                     </li>
                   </comps>
                 </value>
+              </nomatch>
               </nomatch>
             </match>
           </match>
