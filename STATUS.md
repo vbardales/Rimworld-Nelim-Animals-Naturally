@@ -3,8 +3,8 @@ mod: "Nelim's Animals, Naturally"
 packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: private
-detached: no
-stage: dansMonoRepo
+detached: yes
+stage: horsMonoRepo
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 dependencies: partial
@@ -19,9 +19,7 @@ remaining:
   - unverified: RimWorld load with the required Nocturnal Animals dependency
   - unverified: optional-mod combinations, patch targets, and game logs
   - unverified: new game and existing-save behaviour
-  - pending: publication audit and explicit visibility change for the renamed GitHub repository
-  - unverified: remote reachability and first pushed project commit
-  - pending: standalone repository extraction from the monorepo
+  - pending: publication-history audit and explicit approval to change the GitHub repository to public
   - pending: test plan and automated/XML patch-target tests before preTest
   - pending: non-WIP scenarios for every applicable conditional patch family
   - pending: executed results for every conditional scenario and a completed manual-test checklist before tested
@@ -57,14 +55,16 @@ No game session, log review, save test, or English/French in-game display test h
 
 ## Workflow position
 
-The mod remains at `dansMonoRepo`. This checkout is inside the RimWorld monorepo rather
-than a standalone Git repository; the `reequilibrage` remote observed in the monorepo is
-recorded above, but its reachability and a pushed project commit were not verified. The requested
-public visibility has not been applied: publishing a formerly private repository requires a
-separate audit of its full history for sensitive or private material.
+The mod reached `horsMonoRepo` on 2026-09-26. The standalone repository is
+`vbardales/Rimworld-Nelim-Animals-Naturally`; its remote was verified, and merge commit
+`e5a23d6` was pushed to `main`. The old flattened distribution layout was removed in that
+merge; the published payload is now solely `Mod/`.
 
-Before the `horsMonoRepo` gate, create and push the standalone public repository, then
-verify its remote and initial commit. Before `preTest`, add targeted XML patch-target tests
+The repository remains private. Public visibility is the stated project intent, but changing
+a formerly private repository to public requires an audit of its complete history and a fresh,
+explicit approval for that irreversible disclosure.
+
+Before `preTest`, add targeted XML patch-target tests
 and functional scenarios. In-game validation remains required for `tested`.
 
 ## Testing evidence — 2026-09-26
