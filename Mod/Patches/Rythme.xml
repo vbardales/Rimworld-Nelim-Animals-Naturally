@@ -1,0 +1,2771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Rythme circadien, format Nocturnal Animals.
+       Diurnal etant la valeur par defaut de l'enum, seuls les
+       nocturnes, crepusculaires et cathemeraux sont ecrits.
+       Genere par scripts/genere_rythme.ps1 - ne pas editer a la main.
+
+       Tout est sous PatchOperationFindMod, et ce n'est pas une precaution
+       de confort : la classe de l'extension appartient a Nocturnal Animals.
+       Quand elle est introuvable, le jeu ne se contente pas d'ignorer
+       l'extension, il abandonne la def entiere. Le 2026-09-10, ce mod
+       desactive a fait disparaitre 47 animaux vanilla, Muffalo compris,
+       et le chargement s'est arrete la.
+
+       FindMod compare au <name> du mod, pas a son packageId, d'ou les deux
+       entrees : la reprise de Mlie s'appelle (Continued).
+
+       La sequence est sure malgre son abandon au premier echec : une
+       PatchOperationConditional dont le xpath ne trouve rien rend true,
+       verifie sur Verse.PatchOperationConditional decompile. Les animaux
+       des mods absents laissent donc passer les suivants. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[XND] Nocturnal Animals</li>
+      <li>[XND] Nocturnal Animals (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_ArcticLion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_ArcticLion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_BlackScarab"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_BlackScarab"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_BlackSpider"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_BlackSpider"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_CrepuscularBeetle"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_CrepuscularBeetle"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_DuskRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_DuskRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_FissionMouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_FissionMouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_FissionMouseSecond"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_FissionMouseSecond"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_FissionMouseThird"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_FissionMouseThird"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_GreyCoatedMouflon"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_GreyCoatedMouflon"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_IronhuskBeetle"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_IronhuskBeetle"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_Locusts"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_Locusts"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_SandLion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AA_SandLion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPAcidAnt"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPAcidAnt"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPAngoraRabbit"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPAngoraRabbit"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPBlackbear"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPBlackbear"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPDomesticRabbit"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPDomesticRabbit"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPErmine"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPErmine"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPFerret"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPFerret"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPFishercat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPFishercat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPHaulerAnt"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPHaulerAnt"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPHedgehog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPHedgehog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPHoneyBadger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPHoneyBadger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPKiwi"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPKiwi"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPLion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPLion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPMegabadger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPMegabadger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPMegaFerret"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPMegaFerret"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPMegascorpion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPMegascorpion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPMunchkinCat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPMunchkinCat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPPeccary"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPPeccary"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPSilkspider"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPSilkspider"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPSpiritwolf"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPSpiritwolf"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPXGecko"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ACPXGecko"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Addax"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Addax"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_AfricanWildDog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_AfricanWildDog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_ArcticCoyote"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_ArcticCoyote"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Beaver"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Beaver"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_BlackBear"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_BlackBear"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_BlackRhino"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_BlackRhino"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Boombat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Boombat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatAbyssinian"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatAbyssinian"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatBengal"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatBengal"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatMunchkin"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatMunchkin"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatNorwegianForest"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatNorwegianForest"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatPersian"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatPersian"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatSiamese"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatSiamese"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatSomali"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatSomali"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_CatSphynx"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_CatSphynx"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Coyote"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Coyote"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Hedgehog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Hedgehog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Jaguar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Jaguar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Kangaroo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Kangaroo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Koala"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Koala"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Lion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Lion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Megascorpion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Megascorpion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AgoutiHamster"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="AgoutiHamster"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="aka_Tanuki"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="aka_Tanuki"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_A_Shorthair"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_A_Shorthair"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_J_Bobtail"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_J_Bobtail"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_kijitora"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_kijitora"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_kuroneko"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_kuroneko"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_Maine_Coon"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_Maine_Coon"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_N_Forest_Cat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_N_Forest_Cat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_Persian"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_Persian"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_Russian_Blue"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_Russian_Blue"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold_Long"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold_Long"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_shironeko"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_shironeko"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="akaNEKO_Siamese"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="akaNEKO_Siamese"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Alphabeaver"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Alphabeaver"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Armadillo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Armadillo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Badger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Badger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="BB_BarnOwl"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Bear_Polar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Bear_Polar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BighornSheep"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="BighornSheep"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BlackBear"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="BlackBear"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Bongo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Bongo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Boomrat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Boomrat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Bullfrog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Bullfrog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Capybara"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Capybara"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Caribou"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Caribou"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Cat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Cat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Cat_Scimitar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Cat_Scimitar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CCPChocolateBun"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CCPChocolateBun"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Chinchilla"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Chinchilla"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_ArcticHare"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CK_ArcticHare"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_Jaguar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CK_Jaguar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_Tiger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CK_Tiger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_WhiteTiger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="CK_WhiteTiger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Cloud_Rat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Cloud_Rat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ColossusToad"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ColossusToad"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Cougar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Cougar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Crows_DustBunny"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Crows_DustBunny"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="DA_IroncasketBeetle"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="DA_IroncasketBeetle"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="DA_SilverMole"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="DA_SilverMole"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="DA_Snaptoad"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="DA_Snaptoad"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Deer"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Deer"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Dhole"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Dhole"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Dingo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Dingo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="DireRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="DireRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="dtf_angorarabbit"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="dtf_angorarabbit"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Elk"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Elk"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Argali"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Argali"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Ferret"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Ferret"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_FrostWolf"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_FrostWolf"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Mink"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Mink"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Misthare"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Misthare"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Opossum"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Opossum"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Pika"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Pika"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Valboar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ERN_Valboar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="EuropeanBadger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="EuropeanBadger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="FancyRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="FancyRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="FEB_CryoToad"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="FEB_CryoToad"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fjord_horse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fjord_horse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Flamingo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Flamingo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Cathemeral</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Arctic"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Arctic"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Gray"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Gray"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Kit"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Kit"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Maikong"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Maikong"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Red"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Red"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Sand"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Sand"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Silver"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Silver"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Gazelle"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Gazelle"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Gemsbok"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Gemsbok"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Gerbil"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Gerbil"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="GoldenJackal"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="GoldenJackal"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Hamster"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Hamster"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Hare"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Hare"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Harvest_Mouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Harvest_Mouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Leopardgecko"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Owlbear"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Owlbear"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Pangolin"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Pangolin"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Serval"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Serval"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Weasel"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="HC_Weasel"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Ibex"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Ibex"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Jerbal"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Jerbal"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Jerboa"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Jerboa"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Kangaroo_Rat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Kangaroo_Rat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="KangarooRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="KangarooRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="LeopardTortoise"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="LeopardTortoise"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Ling_Cockroach"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Ling_Cockroach"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Locust"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Locust"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Lynx"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Lynx"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Mamuffalo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Mamuffalo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Maned_Rat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Maned_Rat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Manedwolf"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Manedwolf"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Megascarab"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Megascarab"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Megaspider"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Megaspider"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Megavole"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Megavole"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Mink"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Mink"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Mole_Rat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Mole_Rat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Moose"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Moose"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="MouflonSheep"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="MouflonSheep"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Mouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Mouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Muffalo"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Muffalo"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Muskrat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Muskrat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Nem_Cockroach"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Nem_Cockroach"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Nem_Mantis"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Nem_Mantis"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Nem_Spider"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Nem_Spider"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Nem_Woodlouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Nem_Woodlouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Nutria"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Nutria"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="PackRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="PackRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Panther"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Panther"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="PearlHamster"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="PearlHamster"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Porcupine"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Porcupine"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Possum"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Possum"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="pphhyy_BloodScarab"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="pphhyy_BloodScarab"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="pphhyy_SanguineDeer"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="pphhyy_SanguineDeer"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="PuddingHamster"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="PuddingHamster"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Raccoon"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Raccoon"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Racoon_dog"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Racoon_dog"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Rat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Rat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Rat_Large"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Rat_Large"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="RG_SabertoothTiger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="RG_SabertoothTiger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="RG_WoollyMammoth"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="RG_WoollyMammoth"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Rimmessian_fox"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Rimmessian_fox"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SapphirerHamster"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="SapphirerHamster"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SC_Moleroach"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="SC_Moleroach"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SC_MoleroachBlue"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="SC_MoleroachBlue"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ScourgeRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ScourgeRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SMP_Tortie"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="SMP_Tortie"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Snowhare"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Snowhare"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SnowRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="SnowRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Striped_Mouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Striped_Mouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Taggerung_ChromaticFlowerWolf"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Taggerung_ChromaticFlowerWolf"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ThorntailMouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ThorntailMouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Tiger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Tiger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_HotfootRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="TYR_HotfootRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_KangarooRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="TYR_KangarooRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_Lemming"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="TYR_Lemming"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_Mouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="TYR_Mouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_MousePoison"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="TYR_MousePoison"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAERoy_AngoraRabbit"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAERoy_AngoraRabbit"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAEWaste_Toxafox"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAEWaste_Toxafox"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAEWaste_Toxbear"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAEWaste_Toxbear"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAEWaste_Toxlion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAEWaste_Toxlion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAEWaste_Toxscorpion"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAEWaste_Toxscorpion"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAEWaste_Wasteboar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAEWaste_Wasteboar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAEWaste_Wastedeer"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="VAEWaste_Wastedeer"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="WasteRat"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="WasteRat"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="WaterDeer"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="WaterDeer"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Weasel"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Weasel"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Whitefox"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Whitefox"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="WildBoar"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="WildBoar"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Wolf_Arctic"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Wolf_Arctic"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Wolf_Great"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Wolf_Great"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Wolf_Red"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Wolf_Red"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Wolf_Timber"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Wolf_Timber"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Crepuscular</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Wolverine"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Wolverine"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Woolly_Mouse"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Woolly_Mouse"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_Boommarten"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_Boommarten"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_MegaMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_MegaMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_RimMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_RimMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_Sable"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_Sable"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZPT_Kea"]</xpath>
+          <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="ZPT_Kea"]</xpath>
+            <value>
+              <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                <bodyClock>Nocturnal</bodyClock>
+              </li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

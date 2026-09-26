@@ -1,0 +1,9 @@
+# Generated investigation output
+.firecrawl/
+
+# Test evidence is retained locally for the tested revision only, never versioned.
+Tests/Pickle/Evidence/
+evidence/
+
+# DDS files are generated or source texture artifacts; do not version them here.
+*.dds

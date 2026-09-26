@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Complement d Animals Forage (Continued) : 91 animaux
+     que le mod ne couvrait pas. Genere par scripts/genere_forage.ps1. -->
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Expanded Framework</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- AA_CrystallineCaracal -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- AA_FrostLynx -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AA_FrostLynx"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Hermine -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPErmine"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPErmine"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPErmine"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ACPErmine"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ACPErmine"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Furet -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPFerret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPFerret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPFerret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ACPFerret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ACPFerret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Herisson -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ACPHedgehog"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ACPHedgehog"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Anaconda vert -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Putois a pieds noirs -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Pangolin -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Alligator d'Amerique -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Alligator"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Alligator"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Alligator"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Alligator"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Alligator"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- AlligatorMan -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="AlligatorMan"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AlligatorMan"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="AlligatorMan"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AlligatorMan"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="AlligatorMan"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Faucon crecerelle -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BB_Kestrel"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BB_Kestrel"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BB_Kestrel"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Ours brun -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Ours polaire -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Bear_Polar"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Bear_Polar"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Bear_Polar"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Bear_Polar"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Ours noir -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BlackBear"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BlackBear"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BlackBear"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BlackBear"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BlackBear"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Faucon pelerin -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BU_PeregrineFalcon"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Grand corbeau -> BoneItem -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BU_Raven"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_Raven"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_Raven"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BU_Raven"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BU_Raven"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Vautour fauve -> BoneItem -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="BU_Vulture"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_Vulture"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BU_Vulture"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="BU_Vulture"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Capucin -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_CapuchinMonkey"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Gorille des plaines -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_Gorilla"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_Gorilla"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Python reticule -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_Python"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_Python"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_Python"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_Python"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_Python"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Singe-araignee -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="CK_SpiderMonkey"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Cobra royal -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Cobra"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Cobra"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Cobra"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Cobra"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Cobra"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Coldwarg -> BoneItem -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Coldwarg"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Coldwarg"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Coldwarg"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Coldwarg"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Coldwarg"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Grand cormoran -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Cormorant"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Cormorant"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Cormorant"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Cormorant"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Cormorant"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Corneille noire -> BoneItem -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Crow"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Crow"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Crow"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Crow"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Crow"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Aigrette garzette -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Egret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Egret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Egret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Egret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Egret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Manchot empereur -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="emperor_penguin"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="emperor_penguin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="emperor_penguin"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="emperor_penguin"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="emperor_penguin"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Tatou a neuf bandes -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Couleuvre rayee -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Gartersnake"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard gris -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Herisson -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Vison d'Amerique -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Mink"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Mink"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Mink"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Mink"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Panda roux -> Bamboo -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Bamboo"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Bamboo</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Bamboo</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Sanglier -> RawFungus -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ERN_Valboar"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"Fungus") or contains(foodType,"VegetableOrFruit"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+                      <customThingToDig>
+                        <li>RawFungus</li>
+                      </customThingToDig>
+                      <customAmountToDig>
+                        <li>10</li>
+                      </customAmountToDig>
+                      <ticksToDig>60000</ticksToDig>
+                      <onlyWhenTamed>true</onlyWhenTamed>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ERN_Valboar"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+                      <customThingToDig>
+                        <li>RawFungus</li>
+                      </customThingToDig>
+                      <customAmountToDig>
+                        <li>10</li>
+                      </customAmountToDig>
+                      <ticksToDig>60000</ticksToDig>
+                      <onlyWhenTamed>true</onlyWhenTamed>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Blaireau europeen -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="EuropeanBadger"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="EuropeanBadger"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard polaire -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Arctic"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Arctic"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Fennec -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Fennec"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard gris -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Gray"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Gray"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Gray"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Gray"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard nain -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Kit"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Kit"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Kit"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Kit"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Kit"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard des savanes -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Maikong"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Maikong"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard roux -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Red"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Red"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Red"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Red"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Red"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard pale -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Sand"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Sand"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Sand"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Sand"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard argente -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Silver"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Silver"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Silver"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Silver"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard du Tibet -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Bebe phoque -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Ghostie_BabySeal"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Chacal dore -> BoneItem -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="GoldenJackal"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="GoldenJackal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="GoldenJackal"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="GoldenJackal"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="GoldenJackal"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Gorille des plaines -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Gorilla"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Gorilla"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Gorilla"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Gorilla"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Gorilla"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Lynx boreal -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Tortue alligator -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Alligatorturtle"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Babouin -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Baboon"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Baboon"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Baboon"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Baboon"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Pangolin -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Pangolin"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Pangolin"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Serval -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Serval"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Serval"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Serval"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Serval"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Serval"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Belette -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HC_Weasel"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Weasel"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="HC_Weasel"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Weasel"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HC_Weasel"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Heron cendre -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Heron"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Heron"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Heron"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Heron"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Heron"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Manchot royal -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="king_penguin"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="king_penguin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="king_penguin"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="king_penguin"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="king_penguin"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Lynx boreal -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Lynx"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Lynx"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Lynx"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Lynx"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Lynx"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Suricate -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Meerkat"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Meerkat"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Meerkat"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Meerkat"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Meerkat"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Vison d'Amerique -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Mink"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Mink"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Mink"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Mink"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Mink"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Macaque rhesus -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Monkey"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Monkey"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Monkey"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Monkey"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Monkey"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Loutre d'Europe -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Otter"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Otter"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Otter"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Otter"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Otter"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Panda geant -> Bamboo -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Panda"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Bamboo"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Panda"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Panda"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Panda"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Bamboo</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Panda"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Bamboo</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Pelican blanc -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Pelican"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Pelican"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Pelican"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Pelican"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Pelican"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Manchot papou -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Penguin"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Penguin"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Penguin"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Penguin"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Penguin"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Cochon domestique -> RawFungus -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Pig"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Pig"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"Fungus") or contains(foodType,"VegetableOrFruit"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Pig"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Pig"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+                      <customThingToDig>
+                        <li>RawFungus</li>
+                      </customThingToDig>
+                      <customAmountToDig>
+                        <li>10</li>
+                      </customAmountToDig>
+                      <ticksToDig>60000</ticksToDig>
+                      <onlyWhenTamed>true</onlyWhenTamed>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Pig"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+                      <customThingToDig>
+                        <li>RawFungus</li>
+                      </customThingToDig>
+                      <customAmountToDig>
+                        <li>10</li>
+                      </customAmountToDig>
+                      <ticksToDig>60000</ticksToDig>
+                      <onlyWhenTamed>true</onlyWhenTamed>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Opossum de Virginie -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Possum"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Possum"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Possum"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Possum"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Possum"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- pphhyy_Heronken -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="pphhyy_Heronken"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Caille des bles -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Quail"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Quail"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Quail"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Quail"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Quail"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Raton laveur -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Raccoon"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Raccoon"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Raccoon"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Raccoon"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Raccoon"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Phoque commun -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Seal"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Seal"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Seal"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Seal"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Seal"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Otarie de Californie -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SeaLion"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="SeaLion"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="SeaLion"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="SeaLion"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="SeaLion"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Loutre de mer -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="SeaOtter"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="SeaOtter"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="SeaOtter"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="SeaOtter"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="SeaOtter"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Dindon sauvage -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Turkey"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turkey"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turkey"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Turkey"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Turkey"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Heron garde-boeufs -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_CattleEgret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Grande aigrette -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_GreatEgret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Hibou du Cap -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_Owl_AfricanGrass"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Aigrette roussatre -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Aigrette ardoisee -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Aigrette neigeuse -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Orang-outan -> RawBerries -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"VegetableOrFruit") or contains(foodType,"Dendrovore"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>RawBerries</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Faisan de Colchide -> Meat_Megaspider -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Megaspider"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Megaspider</customThingToDig>
+                      <customAmountToDig>10</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Morse -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Walrus"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Walrus"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Walrus"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Walrus"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Walrus"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Belette -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Weasel"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Weasel"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Weasel"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Weasel"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Weasel"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Renard polaire -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Whitefox"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Whitefox"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Whitefox"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Whitefox"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Whitefox"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Sanglier -> RawFungus -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="WildBoar"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="WildBoar"]/race[foodType and not(contains(foodType,"Vegetarian") or contains(foodType,"Omnivore") or contains(foodType,"Plant") or contains(foodType,"Fungus") or contains(foodType,"VegetableOrFruit"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="WildBoar"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="WildBoar"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+                      <customThingToDig>
+                        <li>RawFungus</li>
+                      </customThingToDig>
+                      <customAmountToDig>
+                        <li>10</li>
+                      </customAmountToDig>
+                      <ticksToDig>60000</ticksToDig>
+                      <onlyWhenTamed>true</onlyWhenTamed>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="WildBoar"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+                      <customThingToDig>
+                        <li>RawFungus</li>
+                      </customThingToDig>
+                      <customAmountToDig>
+                        <li>10</li>
+                      </customAmountToDig>
+                      <ticksToDig>60000</ticksToDig>
+                      <onlyWhenTamed>true</onlyWhenTamed>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Glouton -> BoneItem -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Wolverine"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="BoneItem"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Wolverine"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Wolverine"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Wolverine"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Wolverine"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>BoneItem</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Pingouin torda arctique -> AEXP_RawFish -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="AEXP_RawFish"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>AEXP_RawFish</customThingToDig>
+                      <customAmountToDig>3</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Fouine -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Martre du Japon -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Martre des Nilgiri -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Martre des pins -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+        <!-- Martre a gorge jaune -> Meat_Rat -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="Meat_Rat"]</xpath>
+            <match Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race[foodType and not(contains(foodType,"Carnivore") or contains(foodType,"Omnivore") or contains(foodType,"Meat") or contains(foodType,"Corpse"))]</xpath>
+              <nomatch Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/comps</xpath>
+              <match Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/comps</xpath>
+                <value>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]</xpath>
+                <value>
+                  <comps>
+                    <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
+                      <customThingToDig>Meat_Rat</customThingToDig>
+                      <customAmountToDig>5</customAmountToDig>
+                    </li>
+                  </comps>
+                </value>
+              </nomatch>
+              </nomatch>
+            </match>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

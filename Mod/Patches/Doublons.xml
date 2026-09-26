@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Un seul exemplaire par espece a l etat sauvage.
+     Rien n est supprime : les animaux gardes restent apprivoisables et
+     elevables, seule leur generation sauvage cesse.
+     Genere par scripts/genere_doublons.ps1. -->
+<Patch>
+  <!-- Welsh corgi : SCWelshCorgi cede la place a AEXP_Corgi -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/SCWelshCorgi</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/SCWelshCorgi</xpath>
+    </match>
+  </Operation>
+  <!-- Welsh corgi : WD_Corgi cede la place a AEXP_Corgi -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WD_Corgi"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="WD_Corgi"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/WD_Corgi</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/WD_Corgi</xpath>
+    </match>
+  </Operation>
+  <!-- Welsh corgi : WelshCorgi cede la place a AEXP_Corgi -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WelshCorgi"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="WelshCorgi"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/WelshCorgi</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/WelshCorgi</xpath>
+    </match>
+  </Operation>
+  <!-- Once : CK_SnowLeopard cede la place a ACPSnowLeopard -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_SnowLeopard</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_SnowLeopard</xpath>
+    </match>
+  </Operation>
+  <!-- Once : ERN_SnowLeopard cede la place a ACPSnowLeopard -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_SnowLeopard</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_SnowLeopard</xpath>
+    </match>
+  </Operation>
+  <!-- Once : HC_Snowleopard cede la place a ACPSnowLeopard -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/HC_Snowleopard</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/HC_Snowleopard</xpath>
+    </match>
+  </Operation>
+  <!-- Tapir du Bresil : ACPTapir cede la place a AEXP_Tapir -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPTapir</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPTapir</xpath>
+    </match>
+  </Operation>
+  <!-- Tapir du Bresil : CK_Tapir cede la place a AEXP_Tapir -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Tapir"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_Tapir"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_Tapir</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_Tapir</xpath>
+    </match>
+  </Operation>
+  <!-- Rat-kangourou : KangarooRat cede la place a TYR_KangarooRat -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="KangarooRat"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="KangarooRat"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/KangarooRat</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/KangarooRat</xpath>
+    </match>
+  </Operation>
+  <!-- Rat-kangourou : Kangaroo_Rat cede la place a TYR_KangarooRat -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Kangaroo_Rat"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Kangaroo_Rat"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Kangaroo_Rat</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Kangaroo_Rat</xpath>
+    </match>
+  </Operation>
+  <!-- Panda roux : ACPRedPanda cede la place a AEXP_RedPanda -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPRedPanda"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPRedPanda"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPRedPanda</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPRedPanda</xpath>
+    </match>
+  </Operation>
+  <!-- Panda roux : ERN_Redpanda cede la place a AEXP_RedPanda -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_Redpanda</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_Redpanda</xpath>
+    </match>
+  </Operation>
+  <!-- Ours noir : ACPBlackbear cede la place a AEXP_BlackBear -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPBlackbear</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPBlackbear</xpath>
+    </match>
+  </Operation>
+  <!-- Ours noir : BlackBear cede la place a AEXP_BlackBear -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BlackBear"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="BlackBear"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/BlackBear</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/BlackBear</xpath>
+    </match>
+  </Operation>
+  <!-- Lapin angora : VAERoy_AngoraRabbit cede la place a ACPAngoraRabbit -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_AngoraRabbit"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="VAERoy_AngoraRabbit"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/VAERoy_AngoraRabbit</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/VAERoy_AngoraRabbit</xpath>
+    </match>
+  </Operation>
+  <!-- Lapin angora : dtf_angorarabbit cede la place a ACPAngoraRabbit -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="dtf_angorarabbit"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="dtf_angorarabbit"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/dtf_angorarabbit</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/dtf_angorarabbit</xpath>
+    </match>
+  </Operation>
+  <!-- Herisson : ACPHedgehog cede la place a AEXP_Hedgehog -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPHedgehog"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPHedgehog</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPHedgehog</xpath>
+    </match>
+  </Operation>
+  <!-- Herisson : ERN_Hedgehog cede la place a AEXP_Hedgehog -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Hedgehog"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_Hedgehog</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_Hedgehog</xpath>
+    </match>
+  </Operation>
+  <!-- Carlin : SCPug cede la place a AEXP_Pug -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCPug"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCPug"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/SCPug</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/SCPug</xpath>
+    </match>
+  </Operation>
+  <!-- Carlin : WD_Pug cede la place a AEXP_Pug -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WD_Pug"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="WD_Pug"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/WD_Pug</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/WD_Pug</xpath>
+    </match>
+  </Operation>
+  <!-- Zebre des plaines : Zebra cede la place a AEXP_Zebra -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Zebra"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Zebra"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Zebra</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Zebra</xpath>
+    </match>
+  </Operation>
+  <!-- Vison d'Amerique : ERN_Mink cede la place a Mink -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_Mink</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_Mink</xpath>
+    </match>
+  </Operation>
+  <!-- Vautour fauve : BU_Vulture cede la place a Vulture -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BU_Vulture"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="BU_Vulture"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/BU_Vulture</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/BU_Vulture</xpath>
+    </match>
+  </Operation>
+  <!-- Tatou a neuf bandes : ERN_Armadillo cede la place a Armadillo -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_Armadillo</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_Armadillo</xpath>
+    </match>
+  </Operation>
+  <!-- Souris domestique : Mouse cede la place a TYR_Mouse -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mouse"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Mouse"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Mouse</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Mouse</xpath>
+    </match>
+  </Operation>
+  <!-- Siamois : akaNEKO_Siamese cede la place a AEXP_CatSiamese -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Siamese"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Siamese"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_Siamese</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_Siamese</xpath>
+    </match>
+  </Operation>
+  <!-- Shiba inu : TVP_ShibaInu cede la place a StrayDogs_Shiba -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TVP_ShibaInu"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="TVP_ShibaInu"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/TVP_ShibaInu</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/TVP_ShibaInu</xpath>
+    </match>
+  </Operation>
+  <!-- Sanglier : ERN_Valboar cede la place a WildBoar -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_Valboar</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_Valboar</xpath>
+    </match>
+  </Operation>
+  <!-- Saint-bernard : SaintBernard cede la place a SCSaintbernard -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SaintBernard"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SaintBernard"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/SaintBernard</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/SaintBernard</xpath>
+    </match>
+  </Operation>
+  <!-- Rhinoceros noir : ACPBlackRhinoceros cede la place a AEXP_BlackRhino -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPBlackRhinoceros</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPBlackRhinoceros</xpath>
+    </match>
+  </Operation>
+  <!-- Rhinoceros laineux : RG_WoollyRhinoceros cede la place a ACPWoolyRhino -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_WoollyRhinoceros"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="RG_WoollyRhinoceros"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/RG_WoollyRhinoceros</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/RG_WoollyRhinoceros</xpath>
+    </match>
+  </Operation>
+  <!-- Renard polaire : Whitefox cede la place a Fox_Arctic -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Whitefox"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Whitefox"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Whitefox</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Whitefox</xpath>
+    </match>
+  </Operation>
+  <!-- Renard gris : Fox_Gray cede la place a ERN_Greyfox -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Fox_Gray</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Fox_Gray</xpath>
+    </match>
+  </Operation>
+  <!-- Quarter horse : Quarter_horse cede la place a SCQuarterHorse -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Quarter_horse"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Quarter_horse"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Quarter_horse</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Quarter_horse</xpath>
+    </match>
+  </Operation>
+  <!-- Persan : akaNEKO_Persian cede la place a AEXP_CatPersian -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Persian"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Persian"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_Persian</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_Persian</xpath>
+    </match>
+  </Operation>
+  <!-- Paon bleu : CK_Peafowl cede la place a Peacock -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_Peafowl</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_Peafowl</xpath>
+    </match>
+  </Operation>
+  <!-- Pangolin : HC_Pangolin cede la place a AEXP_Pangolin -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/HC_Pangolin</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/HC_Pangolin</xpath>
+    </match>
+  </Operation>
+  <!-- Panda geant : CK_Panda cede la place a Panda -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Panda"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_Panda"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_Panda</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_Panda</xpath>
+    </match>
+  </Operation>
+  <!-- Ouaouaron : HC_Bullfrog cede la place a Bullfrog -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="HC_Bullfrog"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/HC_Bullfrog</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/HC_Bullfrog</xpath>
+    </match>
+  </Operation>
+  <!-- Ornithorynque : ACPDuckBilledPlatypus cede la place a AEXP_Platypus -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPDuckBilledPlatypus</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPDuckBilledPlatypus</xpath>
+    </match>
+  </Operation>
+  <!-- Opossum de Virginie : Possum cede la place a ERN_Opossum -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Possum"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Possum"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Possum</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Possum</xpath>
+    </match>
+  </Operation>
+  <!-- Norvegien : akaNEKO_N_Forest_Cat cede la place a AEXP_CatNorwegianForest -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_N_Forest_Cat"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_N_Forest_Cat"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_N_Forest_Cat</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_N_Forest_Cat</xpath>
+    </match>
+  </Operation>
+  <!-- Munchkin : ACPMunchkinCat cede la place a AEXP_CatMunchkin -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPMunchkinCat"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPMunchkinCat"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPMunchkinCat</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPMunchkinCat</xpath>
+    </match>
+  </Operation>
+  <!-- Mandrill : Mandrill cede la place a AEXP_Mandrill -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mandrill"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Mandrill"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Mandrill</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Mandrill</xpath>
+    </match>
+  </Operation>
+  <!-- Maine coon : akaNEKO_Maine_Coon cede la place a AEXP_CatMaineCoon -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Maine_Coon"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Maine_Coon"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_Maine_Coon</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/akaNEKO_Maine_Coon</xpath>
+    </match>
+  </Operation>
+  <!-- Lynx boreal : Grimstone_NorthernLynx cede la place a Lynx -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Grimstone_NorthernLynx</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Grimstone_NorthernLynx</xpath>
+    </match>
+  </Operation>
+  <!-- Loutre d'Europe : ACPOtter cede la place a Otter -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPOtter"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPOtter"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPOtter</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPOtter</xpath>
+    </match>
+  </Operation>
+  <!-- Lion : ACPLion cede la place a AEXP_Lion -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPLion"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPLion"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPLion</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPLion</xpath>
+    </match>
+  </Operation>
+  <!-- Lagopede : ERN_ptarmigan cede la place a ACPPtarmigan -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_ptarmigan"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_ptarmigan"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_ptarmigan</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_ptarmigan</xpath>
+    </match>
+  </Operation>
+  <!-- Jaguar : CK_Jaguar cede la place a AEXP_Jaguar -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Jaguar"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_Jaguar"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_Jaguar</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_Jaguar</xpath>
+    </match>
+  </Operation>
+  <!-- Hyene tachetee : SpottedHyena cede la place a AEXP_Hyena -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SpottedHyena"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SpottedHyena"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/SpottedHyena</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/SpottedHyena</xpath>
+    </match>
+  </Operation>
+  <!-- Guepard : ACPCheetah cede la place a AEXP_Cheetah -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPCheetah</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPCheetah</xpath>
+    </match>
+  </Operation>
+  <!-- Gorille des plaines : CK_Gorilla cede la place a Gorilla -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_Gorilla"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_Gorilla</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_Gorilla</xpath>
+    </match>
+  </Operation>
+  <!-- Golden retriever : GoldenRetriever cede la place a SCGoldenRetriever -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GoldenRetriever"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="GoldenRetriever"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/GoldenRetriever</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/GoldenRetriever</xpath>
+    </match>
+  </Operation>
+  <!-- Girafe : ACPGiraffe cede la place a AEXP_Giraffe -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPGiraffe"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ACPGiraffe"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ACPGiraffe</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ACPGiraffe</xpath>
+    </match>
+  </Operation>
+  <!-- Gerbille : Jerbal cede la place a Gerbil -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Jerbal"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Jerbal"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Jerbal</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Jerbal</xpath>
+    </match>
+  </Operation>
+  <!-- Furet : ERN_Ferret cede la place a ACPFerret -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ERN_Ferret</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ERN_Ferret</xpath>
+    </match>
+  </Operation>
+  <!-- Elephant d'Asie : ZEle_AsianElephant cede la place a AEXP_IndianElephant -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZEle_AsianElephant"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="ZEle_AsianElephant"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/ZEle_AsianElephant</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/ZEle_AsianElephant</xpath>
+    </match>
+  </Operation>
+  <!-- Dragon de Komodo : CK_KomodoDragon cede la place a HC_KomodoDragon -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/CK_KomodoDragon</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/CK_KomodoDragon</xpath>
+    </match>
+  </Operation>
+  <!-- Conure soleil : SunConure cede la place a ZPT_SunConure -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SunConure"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SunConure"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/SunConure</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/SunConure</xpath>
+    </match>
+  </Operation>
+  <!-- Chien de berger : Grimstone_Sheepdog cede la place a WD_Sheepdog -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Grimstone_Sheepdog"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Grimstone_Sheepdog"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Grimstone_Sheepdog</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Grimstone_Sheepdog</xpath>
+    </match>
+  </Operation>
+  <!-- Caniche royal : SCStandardPoodle cede la place a AEXP_Poodle -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/SCStandardPoodle</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/SCStandardPoodle</xpath>
+    </match>
+  </Operation>
+  <!-- Bouvier bernois : StrayDogs_BerneseMountainDog cede la place a ERN_MountainDog -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_BerneseMountainDog"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_BerneseMountainDog"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/StrayDogs_BerneseMountainDog</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/StrayDogs_BerneseMountainDog</xpath>
+    </match>
+  </Operation>
+  <!-- Border collie : rtp_BorderCollie cede la place a SCBorderCollie -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/rtp_BorderCollie</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/rtp_BorderCollie</xpath>
+    </match>
+  </Operation>
+  <!-- Blatte : Ling_Cockroach cede la place a Nem_Cockroach -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Ling_Cockroach"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Ling_Cockroach"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Ling_Cockroach</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Ling_Cockroach</xpath>
+    </match>
+  </Operation>
+  <!-- Berger allemand : GermanShepard cede la place a AEXP_GermanShepherd -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GermanShepard"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="GermanShepard"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/GermanShepard</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/GermanShepard</xpath>
+    </match>
+  </Operation>
+  <!-- Belette : Weasel cede la place a HC_Weasel -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Weasel"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Weasel"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Weasel</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Weasel</xpath>
+    </match>
+  </Operation>
+  <!-- Beagle : WD_Beagle cede la place a AEXP_Beagle -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WD_Beagle"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="WD_Beagle"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/WD_Beagle</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/WD_Beagle</xpath>
+    </match>
+  </Operation>
+  <!-- Barzoi : Borzoi cede la place a SCBorzoi -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Borzoi"]/race/wildBiomes</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="Borzoi"]/race/wildBiomes</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef/wildAnimals/Borzoi</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>/Defs/BiomeDef/wildAnimals/Borzoi</xpath>
+    </match>
+  </Operation>
+</Patch>

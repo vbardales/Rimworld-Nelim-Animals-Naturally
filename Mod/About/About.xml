@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Nelim's Animals, Naturally</name>
+  <packageId>nelim.animalrebalance</packageId>
+  <author>Nelim</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <!-- Nocturnal Animals is a real dependency, not a companion.
+       Rythme.xml adds one of its DefModExtensions. A missing class does not make
+       that extension inert: it prevents the entire definition from loading. Without
+       this mod, vanilla animals, including muffalo, disappear during loading. -->
+  <modDependencies>
+    <li>
+      <packageId>Mlie.XNDNocturnalAnimals</packageId>
+      <displayName>[XND] Nocturnal Animals (Continued)</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2269731409</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <!-- Hybridation.xml patches Dogs Mate AnimalGroupDefs and Rythme.xml uses the
+       Nocturnal Animals DefModExtension. Load after both so the XPath targets exist.
+       The order is recognised by the vanilla mod manager and RimSort. -->
+  <loadAfter>
+    <li>Mlie.DogsMate</li>
+    <li>Mlie.XNDNocturnalAnimals</li>
+    <li>Mlie.SomeLikeItRotten</li>
+    <!-- Zoology reworks vanilla, Alpha Animals, and Vanilla Animals Expanded
+         through its own biology pipeline. Load after it so its C# behaviour remains
+         active while these values apply to all affected animals. -->
+    <li>com.abobashark.zoologymod</li>
+  </loadAfter>
+  <description>Rebalances animals against one another using biological reference values.
+
+Every value is derived from a single physical anchor: the species' real mass in kilograms.
+
+- Body size: the cube root of mass relative to a 70 kg human. This rule was checked against the real masses of 54 vanilla species, with a 7 percent median error.
+- Lifespan: allometric laws calibrated by clade. A parrot, chicken, and sparrow do not follow the same curve: a macaw lives for 55 years, while a chicken lives for 7.
+- Hard rules: retaliation is at least as likely as taming failure; trainable animals do not escape their pens; maximum prey size accounts for hunting method.
+- Hybridisation: groups derived from real taxonomy in Dogs Mate format.
+
+Precautionary rule: a value changes only when it differs from its target by more than 15 percent. Ludeon's existing hand-tuning is not overwritten when it is already close, deliberately oversized creatures retain their intended size, and apex predators retain the maxPreyBodySize = 99999 sentinel.
+
+All patches are conditional: removing an animal mod simply makes its corresponding patches inert, without load errors.
+
+Load AFTER all animal mods.
+
+AI-GENERATED: OpenAI Codex assisted with project documentation and audit maintenance.
+
+THANKS: Ludeon Studios and the authors of the animal mods whose definitions are targeted. See ATTRIBUTION.md and the MIT License.
+
+[url=https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally]Source code on GitHub[/url]</description>
+</ModMetaData>

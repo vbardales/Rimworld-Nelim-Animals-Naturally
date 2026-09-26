@@ -1,0 +1,2631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Age de maturite. Cible par POSITION : li[last()] est le stade
+       adulte quel que soit son nom, faute de pouvoir lire les defs.
+       Genere par scripts/genere_croissance.ps1 - ne pas editer a la main. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPAmurLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.146</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPAngoraRabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPAngoraRabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.524</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPBlackbear"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.301</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>7.458</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPCheetah"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.146</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPDomesticRabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPDomesticRabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.474</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPDuckBilledPlatypus"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.57</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPErmine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPErmine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.61</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPFerret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPFerret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.463</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPGiraffe"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPGiraffe"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.102</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.142</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPHoneyBadger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPHoneyBadger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.142</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPKiwi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPKiwi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.712</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPLion"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPLion"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.621</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPMajoreraGoat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPMajoreraGoat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.047</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPOtter"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPOtter"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.096</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPPeccary"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPPeccary"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.899</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPSilkieChicken"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPSilkieChicken"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.418</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPSnowLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.147</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPWildDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPWildDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.498</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPWoolyRhino"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ACPWoolyRhino"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>9.111</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Addax"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Addax"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.486</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_AfricanWildDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_AfricanWildDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.635</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Anaconda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.448</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_ArcticCoyote"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_ArcticCoyote"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Beagle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Beagle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.722</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Beaver"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Beaver"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.498</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_BlackFootedFerret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.463</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_BlackRhino"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_BlackRhino"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>7.458</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Bonobo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Bonobo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Boombat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Boombat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.497</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Camel"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Camel"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatAbyssinian"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatAbyssinian"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatBengal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatBengal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.622</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatBritishShorthair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatBritishShorthair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.608</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatMaineCoon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.667</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatMunchkin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatMunchkin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.524</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatNorwegianForest"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatNorwegianForest"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.634</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatPersian"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatPersian"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatSiamese"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatSiamese"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatSomali"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatSomali"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_CatSphynx"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_CatSphynx"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Cheetah"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Cheetah"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.146</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Chihuahua"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Chihuahua"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.501</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Corgi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Corgi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.737</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Coyote"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Coyote"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.265</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.848</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_DesertTortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_DesertTortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.87</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_FrenchBulldog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_FrenchBulldog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.737</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_GermanShepherd"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_GermanShepherd"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.959</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_GilaMonster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.403</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Giraffe"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Giraffe"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.102</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_GreatDane"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_GreatDane"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.117</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Hyena"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Hyena"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.305</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_IndianElephant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_IndianElephant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>11.346</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Jaguar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Jaguar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.702</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Kangaroo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Kangaroo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.305</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Koala"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Koala"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.226</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Lemur"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Lemur"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.663</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Lion"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Lion"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.621</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Mandrill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Mandrill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.635</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Moa"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.903</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.57</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Poodle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Poodle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Pug"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Pug"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.667</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Quagga"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Quagga"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.319</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.797</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_RedPanda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_RedPanda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.87</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_RockhopperPenguin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_RockhopperPenguin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.683</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Rottweiler"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rottweiler"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.02</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Shih-Tzu"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Shih-Tzu"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.622</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Tapir"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Tapir"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.147</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_TasmanianDevil"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.046</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Thylacine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Thylacine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.635</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_WelshTerrier"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_WelshTerrier"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.687</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.109</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="aka_Tanuki"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="aka_Tanuki"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.622</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_A_Shorthair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_A_Shorthair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.594</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_J_Bobtail"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_J_Bobtail"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_kijitora"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_kijitora"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_kuroneko"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_kuroneko"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Maine_Coon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Maine_Coon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.667</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_N_Forest_Cat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_N_Forest_Cat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.634</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Persian"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Persian"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Russian_Blue"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Russian_Blue"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold_Long"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Scottish_Fold_Long"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_shironeko"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_shironeko"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="akaNEKO_Siamese"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="akaNEKO_Siamese"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AkhalTeke_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AkhalTeke_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.798</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Alligator"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Alligator"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.331</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Alpaca"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Alpaca"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.117</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AngusCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AngusCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.039</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AnkoleWatusiCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AnkoleWatusiCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Appaloosa_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Appaloosa_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.845</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Arabian_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Arabian_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.798</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Armadillo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Armadillo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.797</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AssafSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AssafSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.175</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AwassiSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="AwassiSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.448</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Badger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Badger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.046</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_EagleOwl"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.683</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Hornbill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.543</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Parrot"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Parrot"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.33</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_ParrotB"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_ParrotB"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.33</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BB_Toucan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BB_Toucan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.379</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.331</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>5.077</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Belgian_Malinois"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Belgian_Malinois"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.908</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BerkshirePig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BerkshirePig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.349</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BighornSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BighornSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.486</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bison"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bison"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.321</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BlackBear"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BlackBear"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.301</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bongo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bongo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.382</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BorderLeicesterSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BorderLeicesterSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.21</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Borzoi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Borzoi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.991</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BrahmanCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BrahmanCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.004</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BravaCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BravaCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.845</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BrownLabradorRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BrownLabradorRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BrownSwissCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BrownSwissCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.004</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BrushTurkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BrushTurkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.642</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BU_Vulture"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="BU_Vulture"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.046</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bushdog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Bushdog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.935</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Capybara"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Capybara"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.227</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Caribou"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Caribou"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.716</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cassowary"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cassowary"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.059</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cat_Scimitar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cat_Scimitar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.032</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Chicken"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Chicken"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.501</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Chinchilla"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Chinchilla"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.379</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_ArcticHare"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_ArcticHare"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Jaguar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Jaguar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.702</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Junglefowl"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Junglefowl"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.409</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_KomodoDragon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.58</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Okapi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Okapi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.218</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Panda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Panda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Peafowl"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Python"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Python"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.305</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_SnowLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Tapir"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Tapir"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.147</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_Tiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_Tiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CK_WhiteTiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CK_WhiteTiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cloud_Rat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cloud_Rat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.663</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cobra"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cobra"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.935</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CockerSpaniel"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="CockerSpaniel"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.752</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Connemara_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Connemara_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.725</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cormorant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cormorant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.663</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cougar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cougar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.305</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Cow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.004</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Crow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Crow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.337</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Dhole"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Dhole"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Dingo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Dingo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Donkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Donkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.435</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Dromedary"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Dromedary"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.845</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="dtf_angorarabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="dtf_angorarabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.524</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Duck"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Duck"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.524</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DurocPig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="DurocPig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.372</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Egret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Egret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.366</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Elephant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Elephant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>11.956</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Elk"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Elk"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.443</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Emu"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Emu"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Argali"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Argali"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.663</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Armadillo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.797</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_DachshundLonghair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_DachshundLonghair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.687</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_DachshundShorthair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_DachshundShorthair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.687</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_DachshundWirehair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_DachshundWirehair"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.687</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Ferret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.463</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Greyfox"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Mink"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.497</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_MountainDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_MountainDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.047</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Opossum"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Opossum"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.563</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Palamute"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Palamute"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.927</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_PallasCat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.797</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_ptarmigan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_ptarmigan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.337</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Redpanda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.594</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_SnowLeopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ERN_Valboar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.518</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="EuropeanBadger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.226</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="FancyRat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="FancyRat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.353</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fjord_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fjord_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.746</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Arctic"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.797</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Fennec"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.513</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Gray"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Maikong"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.935</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Red"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Red"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.935</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Sand"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.712</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Silver"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.935</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Fox_Tibetan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Friesian_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Friesian_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gazelle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Gazelle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.899</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gemsbok"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Gemsbok"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.109</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GermanShepard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GermanShepard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.959</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GloucestershirePig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GloucestershirePig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.325</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Goat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Goat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.095</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GoldenConure"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GoldenConure"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.269</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GoldenJackal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GoldenJackal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.142</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GoldenRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GoldenRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Goose"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Goose"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.87</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gorilla"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Gorilla"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.385</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GreenPeacock"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GreenPeacock"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.797</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Grimstone_NorthernLynx"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.555</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Grimstone_Sheepdog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Grimstone_Sheepdog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GuineaPig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="GuineaPig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.463</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gypsy_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Gypsy_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.889</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Hare"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Hare"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.757</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HarianaCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HarianaCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.798</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Baboon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.635</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Galapagostortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Galapagostortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.032</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_KomodoDragon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.58</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Pangolin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Samoyed"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Samoyed"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Serval"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Serval"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.226</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Snowleopard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HC_Watermonitor"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.498</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HerefordCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HerefordCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.071</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Heron"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Heron"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.543</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HighlandCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HighlandCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Hippo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Hippo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>8.743</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HolsteinFriesianCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HolsteinFriesianCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.004</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HomingPigeon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="HomingPigeon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.319</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.91</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Husky"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Husky"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Ibis"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Ibis"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.543</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Iguana"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Iguana"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.87</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IndianGiantSquirrel"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="IndianGiantSquirrel"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.608</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IrishDraught_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="IrishDraught_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IrishHunter_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="IrishHunter_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="JacobsSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="JacobsSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.378</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Jerbal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Jerbal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>5.208</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="JerseyCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="JerseyCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.798</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="KangarooRat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="KangarooRat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.475</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="king_penguin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="king_penguin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.766</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LabradorRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="LabradorRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LeopardTortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="LeopardTortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LimousinCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="LimousinCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.039</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LincolnSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="LincolnSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.271</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LonghornCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="LonghornCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.004</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Lynx"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Lynx"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.498</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mandrill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Mandrill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.635</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Maned_Rat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Maned_Rat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.403</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Manedwolf"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Manedwolf"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.583</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mastiff"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Mastiff"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.138</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mastodon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Mastodon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>12</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MeatCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MeatCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.039</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MerinoSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MerinoSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.138</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MilkCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MilkCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.004</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mink"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Mink"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.497</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MonitorLizard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MonitorLizard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Monkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Monkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.046</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Moose"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Moose"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.793</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MouflonSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="MouflonSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.18</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Muskox"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Muskox"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.382</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Muskrat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Muskrat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.497</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mustang_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Mustang_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.746</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Neanderthal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Neanderthal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.515</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nem_Cockroach"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nem_Cockroach"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.4</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nem_Mosquito"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.4</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nem_Spider"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nem_Spider"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.8</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Nutria"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Nutria"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.993</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Ostrich"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Ostrich"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Otter"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Otter"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.096</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PackRat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="PackRat"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>5.37</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Paint_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Paint_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.845</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Panda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Panda"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Panther"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Panther"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.305</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Peacock"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Peacock"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PearlHamster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="PearlHamster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.251</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Pelican"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Pelican"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.142</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Penguin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Penguin"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.903</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Pig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Pig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.372</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Pigeon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Pigeon"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.309</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Porcupine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Porcupine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.226</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PrairieDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="PrairieDog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.463</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Przewalski_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Przewalski_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.382</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PuddingHamster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="PuddingHamster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.251</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Quarter_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Quarter_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.845</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Racoon_dog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Racoon_dog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.935</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RedFootedTortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.993</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Dodo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Dodo"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Megalenhydris"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Megalenhydris"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.702</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_SabertoothTiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_SabertoothTiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.216</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_TerrorBird"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.545</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_Velociraptor"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_WoollyMammoth"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_WoollyMammoth"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>12</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG_WoollyRhinoceros"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="RG_WoollyRhinoceros"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>9.111</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Rhinoceros"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Rhinoceros"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>9.458</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="rtp_BorderCollie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.814</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="rtp_RhodesianRidgeback"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="rtp_RhodesianRidgeback"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.979</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SaddlebackPig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SaddlebackPig"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.349</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SaintBernard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SaintBernard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.157</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SapphirerHamster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SapphirerHamster"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.251</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBlackHorse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCBlackHorse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.91</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBorderCollie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCBorderCollie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.814</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBorzoi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCBorzoi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.991</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBullmastiff"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCBullmastiff"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.072</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCBullTerrier"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCBullTerrier"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.9</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCCaucasianshepherd"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCCaucasianshepherd"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.117</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCChowchow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCChowchow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCCollie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCCollie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.856</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCGoldenRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCGoldenRetriever"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCGreyhound"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCGreyhound"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCMiniatureDachshund"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCMiniatureDachshund"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.594</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCNewFoundland"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCNewFoundland"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.117</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCOldEnglishSheepdog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCOldEnglishSheepdog"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.923</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCPalomino"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCPalomino"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>5.207</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCPug"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCPug"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.667</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCQuarterHorse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCQuarterHorse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>5.291</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCSaintbernard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCSaintbernard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.157</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCSchnauzer"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCSchnauzer"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.836</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCStandardPoodle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCWelshCorgi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.737</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SCWhiteHorse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SCWhiteHorse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.91</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Seagull"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Seagull"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.481</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Seal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Seal"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.702</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SeaLion"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SeaLion"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>4.032</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SeaOtter"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SeaOtter"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.756</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SeaTurtle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SeaTurtle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.301</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Shetland_pony"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Shetland_pony"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.435</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Shire_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Shire_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.132</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SMP_Tortie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SMP_Tortie"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.579</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Snowhare"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Snowhare"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.712</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Spoonbill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Spoonbill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.543</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SpottedHyena"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SpottedHyena"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.305</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StoneCrab"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StoneCrab"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.323</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_AkitaJapanese"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_AkitaJapanese"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.991</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_Hokkaido"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_Hokkaido"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.883</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_Kai"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_Kai"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.814</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_Kishu"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_Kishu"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.856</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_Shikoku"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_Shikoku"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.836</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StrayDogs_SwedishVallhund"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StrayDogs_SwedishVallhund"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.752</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="StripedHyena"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="StripedHyena"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.866</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SuffolkSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="SuffolkSheep"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.21</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Swan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Swan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.185</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Thoroughbred_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Thoroughbred_horse"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.845</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Tiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Tiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.835</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Tortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Tortoise"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.498</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Turkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Turkey"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.667</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_ReddishEgret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.138</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_SlatyEgret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.138</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="TYR_SnowyEgret"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.138</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_AngoraRabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_AngoraRabbit"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.712</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_Crane"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.903</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_Orangutan"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.515</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_Pheasant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.418</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="VAERoy_RoyalTiger"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>3.903</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Vulture"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Vulture"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.046</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Walrus"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Walrus"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>6.663</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WaterDeer"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="WaterDeer"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.696</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WelshCorgi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="WelshCorgi"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.737</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WildBoar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="WildBoar"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.486</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Wolf_Arctic"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Wolf_Arctic"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.966</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Wolf_Red"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Wolf_Red"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.635</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Wolf_Timber"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Wolf_Timber"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.059</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Wolverine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Wolverine"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.338</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Yak"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Yak"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.93</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="YorkshireTerrier"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="YorkshireTerrier"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.524</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_ArcticRazorbill"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.448</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_Bufflehead"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_Bufflehead"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.965</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_EiderPintail"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_EiderPintail"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>6.52</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_GreaterMallard"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>5.859</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZDuck_RudderDuck"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZDuck_RudderDuck"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.92</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Zebra"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Zebra"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>2.382</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZebuCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZebuCow"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.746</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZEle_AsianElephant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZEle_AsianElephant"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>11.346</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZEle_BorneoPygmy"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZEle_BorneoPygmy"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>9.111</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZEle_Kallana"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZEle_Kallana"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>9.944</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.456</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_JapaneseMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.442</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_NilgiriMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.486</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_PineMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.442</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_Sable"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_Sable"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.427</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZGF_YellowMart"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.524</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZPT_Kea"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>1.746</minAge></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="ZTT_MudTurtle"]/race/lifeStageAges/li[last()]/minAge</xpath>
+      <value><minAge>0.353</minAge></value>
+    </match>
+  </Operation>
+</Patch>
