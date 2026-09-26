@@ -4,11 +4,11 @@ packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: private
 detached: yes
-stage: horsMonoRepo
+stage: Preview générée
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 dependencies: partial
-showcase: complete
+showcase: partial
 settings_audit: not_applicable
 localization: not_applicable
 translation_en: not_applicable
@@ -20,6 +20,7 @@ remaining:
   - unverified: optional-mod combinations, patch targets, and game logs
   - unverified: new game and existing-save behaviour
   - pending: publication-history audit and explicit approval to change the GitHub repository to public
+  - defect: Preview.png still displays the former French title and French copy
   - pending: test plan and automated/XML patch-target tests before preTest
   - pending: non-WIP scenarios for every applicable conditional patch family
   - pending: executed results for every conditional scenario and a completed manual-test checklist before tested
@@ -85,3 +86,15 @@ The GitHub repository `vbardales/Rimworld-Nelim-Animals-Naturally` is not a fork
 search for the former French title returned no repository. The project attribution identifies
 the rebalancing work as Nelim's original work, and no upstream code repository was found to
 use as a PR target. Recheck this only if a concrete original-mod identity or URL is found.
+
+## Artwork review — 2026-09-26
+
+`Mod/About/ModIcon.png` was inspected directly: it is a 128 x 128 PNG (22,876 bytes)
+with a high-contrast animal-and-balance-scale motif. `Mod/About/Preview.png` was inspected
+directly: it is an 896 x 504 PNG (611,797 bytes), below the Workshop limit, with distinct
+dark, cream, and gold accents. Both delivered image files exist.
+
+The preview contains the obsolete French heading “Reequilibrage realiste des animaux” and
+French subtitle text, while the mod is now named “Nelim's Animals, Naturally” and its public
+metadata is English. This is a confirmed visual defect for the `Preview générée → preOptions`
+transition. No image was generated or modified during this audit.
