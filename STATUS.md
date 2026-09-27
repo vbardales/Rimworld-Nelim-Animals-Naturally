@@ -4,7 +4,7 @@ packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-stage: Preview générée
+stage: preOptions
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 dependencies: partial
@@ -19,13 +19,9 @@ remaining:
   - unverified: RimWorld load with the required Nocturnal Animals dependency
   - unverified: optional-mod combinations, patch targets, and game logs
   - unverified: new game and existing-save behaviour
-  - defect: Preview.png still displays the former French title and French copy
   - pending: test plan and automated/XML patch-target tests before preTest
   - pending: non-WIP scenarios for every applicable conditional patch family
   - pending: executed results for every conditional scenario and a completed manual-test checklist before tested
-  - blocker: Preview.png regeneration requires Node "playwright" (Chromium automation), not
-    installed anywhere in this checkout, the monorepo root, or global npm; only "sharp" is
-    globally available. Not fixed by this pass; see "Artwork regeneration attempt" below.
   - pending: decision from Virginie on the 0.1.0/publishIdFile question (no publishIdFile
     exists anywhere in this checkout; see "Publication-ID check" below)
 updated: 2026-09-27
@@ -170,3 +166,46 @@ Searched the whole repository, including `config/`, for any file matching
 this checkout. Per the audit brief, `CHANGELOG.md`'s `Unreleased` section was left untouched
 and no `0.1.0` heading was created — see the report to Virginie for the explicit question
 this raises.
+
+## Artwork regeneration — 2026-09-27
+
+The `playwright`/`sharp` blocker recorded in the 2026-09-27 "Artwork regeneration attempt"
+above is resolved: a local `package.json` (`{"dependencies":{"playwright":"^1.63.0",
+"sharp":"^0.35.4"}}`) was added at the monorepo root and `npm install` succeeded, populating
+`node_modules/` (now git-ignored). Chrome is present at
+`C:/Program Files/Google/Chrome/Application/chrome.exe` and Playwright's browser cache was
+already populated at `~/AppData/Local/ms-playwright`.
+
+Built the preview pipeline for this mod, following the exact pattern of
+`AncientBuildingsRenew/Art/` (`preview.html`, `preview-palette.json`, `render-preview.cjs`):
+a local static file server, `chromium.launch` against the installed Chrome, a 896x504 /
+`deviceScaleFactor: 1` screenshot, Segoe UI font-family assertions via CDP
+(`CSS.getPlatformFontsForNode`), per-element contrast QA sampled from a background-only
+capture, and `sharp` compression to `Mod/About/Preview.png`.
+
+New files: `Art/preview-palette.json` (veil `#241C13`, inkPrimary `#F7EFDD`, inkSecondary
+`#D8A85E`, accent `#B9762E`, badgeInk `#17120E`, sampled/complementary to the cream
+`Preview-source.png` background), `Art/preview.html` (English title "Nelim's Animals," /
+suffix "Naturally", tag "Biology-based animal rebalancing", a one-line description drawn from
+`About.xml`'s body-size/lifespan/taming/hybridisation summary, and a `.version` badge read at
+render time from `About.xml`'s `supportedVersions` — currently `1.6`), and
+`Art/render-preview.cjs`.
+
+Ran `node Art/render-preview.cjs` from the repository root. First pass failed the 4.5:1
+contrast gate on `.tag` and `p` (4.29 and 4.32); fixed by strengthening the veil gradient
+(radius 900x680 at .94/.90 opacity → 980x760 at .97/.95) and darkening `inkSecondary`
+(`#E0B978` → `#D8A85E`). Second pass passed cleanly with no threshold changes:
+
+- `Mod/About/Preview.png`: 896 x 504, **519,847 bytes** (well under the ~900 KB gate and the
+  1 MB Workshop limit; previous file was 611,797 bytes).
+- QA (`Art/preview-qa.json`), `version: "1.6"`, all Segoe UI / Segoe UI Semibold / Segoe UI
+  Bold as expected, minContrast per element: `h1` 12.84, `.suffix` 6.96, `.tag` 6.78, `p`
+  9.89, `.version` 5.04 — every element clears the 4.5:1 gate.
+- `Art/preview-268.png` (61,311 bytes) and `Art/preview-background.png` (500,246 bytes)
+  written alongside.
+
+The former French title/copy defect recorded in the 2026-09-26 "Artwork review" is resolved:
+`Mod/About/Preview.png` now shows the English title, tag, and description. `stage` advances
+from `Preview générée` to `preOptions` per `AUDIT.md`'s stage list
+(`... → Preview générée → preOptions → options → ...`); `settings_audit` was already
+re-verified `not_applicable` on 2026-09-27 and needs no further check before this transition.
