@@ -2,7 +2,7 @@
 mod: "Nelim's Animals, Naturally"
 packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
-visibility: private
+visibility: public
 detached: yes
 stage: Preview générée
 licence: open
@@ -19,7 +19,6 @@ remaining:
   - unverified: RimWorld load with the required Nocturnal Animals dependency
   - unverified: optional-mod combinations, patch targets, and game logs
   - unverified: new game and existing-save behaviour
-  - pending: publication-history audit and explicit approval to change the GitHub repository to public
   - defect: Preview.png still displays the former French title and French copy
   - pending: test plan and automated/XML patch-target tests before preTest
   - pending: non-WIP scenarios for every applicable conditional patch family
@@ -66,9 +65,13 @@ The mod reached `horsMonoRepo` on 2026-09-26. The standalone repository is
 `e5a23d6` was pushed to `main`. The old flattened distribution layout was removed in that
 merge; the published payload is now solely `Mod/`.
 
-The repository remains private. Public visibility is the stated project intent, but changing
-a formerly private repository to public requires an audit of its complete history and a fresh,
-explicit approval for that irreversible disclosure.
+The repository is now public. Virginie gave explicit approval on 2026-09-27, on the basis
+that the mod contains only rebalancing (no redistributed third-party content). Before flipping
+visibility, the full commit history (`git log --all -p`, 15 commits) and all historical
+filenames were scanned for secrets, keys, and credentials: nothing was found beyond
+documentation references to the CI publish procedure. Visibility was then switched via
+`gh repo edit vbardales/Rimworld-Nelim-Animals-Naturally --visibility public` and confirmed
+(`isPrivate: false`).
 
 Before `preTest`, add targeted XML patch-target tests
 and functional scenarios. In-game validation remains required for `tested`.
