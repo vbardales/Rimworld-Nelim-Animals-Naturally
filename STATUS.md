@@ -8,6 +8,13 @@ stage: options
 stage_meaning: "settings_audit not_applicable stands (no settings, no MainButtons entry, XML-only patches); AUDIT.md preOptions→options needs no in-game check when there is nothing to configure"
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
+upstream_mod_remotes:
+  - https://github.com/emipa606/XNDNocturnalAnimals
+  - https://github.com/emipa606/DogsMate
+  - https://github.com/emipa606/SomeLikeItRotten
+  - https://github.com/emipa606/AnimalsForage
+  - https://github.com/Vanilla-Expanded/VanillaExpandedFramework
+  # Zoology has no GitHub link in its About.xml (checked 2026-09-28): N/A
 dependencies: partial
 showcase: partial
 settings_audit: not_applicable
@@ -18,7 +25,8 @@ tested_on:
 workshop:
 remaining:
   - resolved 2026-09-28: RimWorld loads with the required Nocturnal Animals dependency, run f607/sans-facultatifs-r2, 10/10 passed, 0 failed
-  - unverified: optional-mod combinations avec-vef (run 4031 pending, filter fixed) and avec-loadafter (game-start stall under investigation, one mod per pass filed: 574d/1899/6e7f)
+  - unverified: optional-mod combinations avec-vef (run 4031 pending, filter fixed)
+  - defect (not in this mod): Some Like It Rotten alone stalls RimWorld at startup (run 1899, exit 3, 42-line Player.log, no error); Dogs Mate alone is clean (run 574d, 1/1 passed); the mod's own suite cannot exercise 04-rotten.feature or 03-dogsmate/05-zoology's shared avec-loadafter pass until this is resolved or worked around; Zoology alone (run 6e7f) still pending
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
   - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
   - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
