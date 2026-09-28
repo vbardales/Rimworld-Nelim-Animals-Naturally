@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Animals Naturally - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.animalrebalance.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Nelim's Animals, Naturally, run by Pickle. Development only: never published.
+
+The scenarios only read the def database, the patch attribution, the load order and the log, so they change nothing in the game and need no save. A scenario whose optional mod is not in the modlist is skipped by its @requires tag.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.animalrebalance</packageId>
+      <displayName>Nelim's Animals, Naturally</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.animalrebalance</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>

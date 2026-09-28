@@ -1,0 +1,14 @@
+# Pass "avec-vef": the mods the Forage.xml complement acts on. Forage.xml is guarded by
+# PatchOperationFindMod "Vanilla Expanded Framework", so VEF is what switches it on; the other three
+# are the animal mods whose defs its entries target, and Animals Forage (Continued) is the mod it
+# complements. None of them is a dependency of this mod and none may become one.
+#
+# Prerequisites come before their consumers (VEF, then the mods that require it). The staging does not
+# resolve the dependencies of a mod named here: VEF's own hard dependency (Harmony) is already in every
+# pass.
+#
+# packageId                                   workshopId
+OskarPotocki.VanillaFactionsExpanded.Core     2023507013
+sarg.alphaanimals                             1541721856
+VanillaExpanded.VanillaAnimalsExpanded        2871933948
+Mlie.AnimalsForage                            3667046888

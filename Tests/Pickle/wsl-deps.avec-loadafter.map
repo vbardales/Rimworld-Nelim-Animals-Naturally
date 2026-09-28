@@ -1,0 +1,12 @@
+# Pass "avec-loadafter": the three loadAfter integrations that no patch of this mod depends on. Dogs
+# Mate, Some Like It Rotten and Zoology are declared in About.xml <loadAfter> so that this mod loads
+# below them; none of them is targeted by an XPath (Hybridation.xml writes vanilla canCrossBreedWith).
+# What this pass shows is that the mod still loads, and stays silent, beside each of them.
+#
+# Not staged here: Vanilla Expanded Framework and the animal packs (pass "avec-vef"). Zoology carries
+# its own patches for those packs, but it does not need them to load.
+#
+# packageId                     workshopId
+Mlie.DogsMate                   2441132298
+Mlie.SomeLikeItRotten           2503519676
+com.abobashark.zoologymod       3679396881

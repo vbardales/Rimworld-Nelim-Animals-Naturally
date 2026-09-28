@@ -1,0 +1,5 @@
+# Workshop ids that resolve in EVERY pass, the bare one included. Nothing here is activated by itself:
+# only what About.xml declares, plus what a pass map names, is staged.
+#
+# packageId                    workshopId   why
+Mlie.XNDNocturnalAnimals       2269731409   the one hard dependency (About.xml modDependencies); without it Rythme.xml drops whole vanilla defs
