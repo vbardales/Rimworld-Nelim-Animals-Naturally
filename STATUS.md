@@ -22,8 +22,6 @@ remaining:
   - pending: test plan and automated/XML patch-target tests before preTest
   - pending: non-WIP scenarios for every applicable conditional patch family
   - pending: executed results for every conditional scenario and a completed manual-test checklist before tested
-  - pending: decision from Virginie on the 0.1.0/publishIdFile question (no publishIdFile
-    exists anywhere in this checkout; see "Publication-ID check" below)
 updated: 2026-09-27
 ---
 
