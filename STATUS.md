@@ -16,13 +16,15 @@ translation_fr: not_applicable
 tested_on:
 workshop:
 remaining:
-  - unverified: RimWorld load with the required Nocturnal Animals dependency
-  - unverified: optional-mod combinations, patch targets, and game logs
-  - unverified: new game and existing-save behaviour
-  - pending: test plan and automated/XML patch-target tests before preTest
-  - pending: non-WIP scenarios for every applicable conditional patch family
-  - pending: executed results for every conditional scenario and a completed manual-test checklist before tested
-updated: 2026-09-27
+  - unverified: RimWorld load with the required Nocturnal Animals dependency (pass sans-facultatifs requested, no report yet)
+  - unverified: optional-mod combinations (passes avec-vef, avec-loadafter requested, no report yet)
+  - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
+  - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
+  - unverified: suspected defect, Forage.xml guards 42 of 91 entries on generated defs Meat_Rat/Meat_Megaspider
+  - pending: tests of the values the patches write (Pickle cannot read them, see TESTING.md); offline XML patch tests or a local step
+  - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
+  - pending: Doublons.xml and the other animal packs have no scenario that shows a patch firing
+updated: 2026-09-28
 ---
 
 # Nelim's Animals, Naturally — status
@@ -207,3 +209,17 @@ The former French title/copy defect recorded in the 2026-09-26 "Artwork review" 
 from `Preview générée` to `preOptions` per `AUDIT.md`'s stage list
 (`... → Preview générée → preOptions → options → ...`); `settings_audit` was already
 re-verified `not_applicable` on 2026-09-27 and needs no further check before this transition.
+
+
+## Pickle suite written and requested — 2026-09-28
+
+`Tests/Pickle/` created (commit df0bb78): 5 features, 22 scenarios, no @wip, only Pickle-built-in steps. Families: baseline
+with Nocturnal Animals only (01), Forage/VEF (02), loadAfter Dogs Mate (03), Some Like It Rotten (04), Zoology (05). Three passes,
+maps and filters in `Tests/Pickle/README.md`. Values are not readable with Pickle (ambiguous names), so scenarios assert load,
+attribution and silence; gaps and two suspected defects in `TESTING.md`.
+
+Runs: **none played.** Three requests filed with the dispatcher (queue held 48 tickets): 20260928-120658-213-b488 (sans-facultatifs),
+20260928-120658-891-e85c (avec-vef), 20260928-120659-683-72fd (avec-loadafter), owner local_4f4ac5d9-e73c-413b-aa6e-e62db376eaa8, evidence to
+`Tests/Pickle/Evidence/<pass>`. Keep `Mod/` unchanged until RUN_DONE. No report exists, so nothing is passed.
+
+Stage stays `preOptions`: no run evidence, and the vocabulary gap and suspected defects are unresolved.
