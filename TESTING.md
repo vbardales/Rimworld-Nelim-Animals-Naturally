@@ -138,3 +138,9 @@ folder.
 The typed value step exists in PickleTools/docs/steps.md: `def {string} of type {string} field {string} is {string}`. Gap 1 above is closed for ThingDef/PawnKindDef values; 01-baseline now reads Horse race.baseBodySize and race.gestationPeriodDays. The Meat_Rat suspicion is refuted: the guard tests existence at patch time and AA_CrystallineCaracal was patched in run e85c. The failed avec-vef scenario asserted a patch on Meat_Rat, which this mod never makes: a test fault, corrected.
 
 The typed step lives in PickleTools' opt-in companion DefFields (`nelim.pickletools.deffields`, path `PickleTools/DefFieldSteps/Mod`), so it needs a pass of its own: `wsl-deps.valeurs.map` plus `06-valeurs.feature` (tag `@requires:nelim.pickletools.deffields`). The bare pass skips it. The companion has never run in a game yet: a value read that differs from the patch value is reported to PickleTools with def, path and actual.
+
+## Update 2026-09-28 (run 1cf2/avec-vef-r2)
+
+`1cf2` was submitted without `-Filter`, so it played the whole suite (23 scenarios) under the avec-vef modlist instead of only `02-forage-vef.feature` (12 scenarios). The three extra failures ("no optional mod is in this pass", "a patch whose target mod is absent does nothing, quietly", "the forage complement is off without Vanilla Expanded Framework") are 01-baseline scenarios that assert the bare-pass condition; they correctly fail when optional mods are present. Not a mod defect, not a test defect: a submission mistake, corrected by adding `-Filter 02-forage-vef` on resubmission.
+
+The fourth failure was real: the meat-entries scenario named `Herisson` as the ThingDef for the Meat_Megaspider guard. The actual defName in Forage.xml is `ACPHedgehog` ("Herisson" is only the mod's French comment). Corrected in 02-forage-vef.feature.
