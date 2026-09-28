@@ -34,7 +34,11 @@ function contrast(a,b){return (Math.max(a,b)+.05)/(Math.min(a,b)+.05)}
    if(selector==='.version'){e.minContrast=contrast(lum(rgb(palette.badgeInk)),lum(rgb(palette.accent)));continue;}
    const ink=lum(rgb(['.tag','.suffix'].includes(selector)?palette.inkSecondary:palette.inkPrimary));let min=Infinity;
    const b=e.box;
+   // h1's own box also covers its nested .suffix span, which renders in a different ink (see the
+   // ternary above): skip those pixels here, they are already checked correctly under '.suffix'.
+   const skip=selector==='h1'?report.elements['.suffix'].box:null;
    for(let y=Math.floor(b.y);y<Math.ceil(b.y+b.height);y++)for(let x=Math.floor(b.x);x<Math.ceil(b.x+b.width);x++){
+    if(skip&&x>=skip.x&&x<skip.x+skip.width&&y>=skip.y&&y<skip.y+skip.height)continue;
     const i=(y*info.width+x)*info.channels;min=Math.min(min,contrast(ink,lum([...data.subarray(i,i+3)])));
    }
    e.minContrast=min;
