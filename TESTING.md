@@ -136,3 +136,5 @@ folder.
 ## Update 2026-09-28
 
 The typed value step exists in PickleTools/docs/steps.md: `def {string} of type {string} field {string} is {string}`. Gap 1 above is closed for ThingDef/PawnKindDef values; 01-baseline now reads Horse race.baseBodySize and race.gestationPeriodDays. The Meat_Rat suspicion is refuted: the guard tests existence at patch time and AA_CrystallineCaracal was patched in run e85c. The failed avec-vef scenario asserted a patch on Meat_Rat, which this mod never makes: a test fault, corrected.
+
+The typed step lives in PickleTools' opt-in companion DefFields (`nelim.pickletools.deffields`, path `PickleTools/DefFieldSteps/Mod`), so it needs a pass of its own: `wsl-deps.valeurs.map` plus `06-valeurs.feature` (tag `@requires:nelim.pickletools.deffields`). The bare pass skips it. The companion has never run in a game yet: a value read that differs from the patch value is reported to PickleTools with def, path and actual.

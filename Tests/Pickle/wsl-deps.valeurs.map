@@ -1,0 +1,5 @@
+# Pass "valeurs": the DefFields companion of PickleTools, which reads a def field by def type and name.
+# Development tooling only, never a dependency of the mod.
+#
+# packageId                     source
+nelim.pickletools.deffields   path:PickleTools/DefFieldSteps/Mod
