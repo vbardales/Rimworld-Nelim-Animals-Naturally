@@ -4,7 +4,8 @@ packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-stage: preOptions
+stage: options
+stage_meaning: "settings_audit not_applicable stands (no settings, no MainButtons entry, XML-only patches); AUDIT.md preOptions→options needs no in-game check when there is nothing to configure"
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 dependencies: partial
@@ -21,7 +22,7 @@ remaining:
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
   - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
   - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
-  - pending: tests of the values the patches write (Pickle cannot read them, see TESTING.md); offline XML patch tests or a local step
+  - unverified: values the patches write, pass "valeurs" requested with PickleTools' DefFields companion (never run in a game before this pass), no report yet
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
   - pending: Doublons.xml and the other animal packs have no scenario that shows a patch firing
 updated: 2026-09-28
