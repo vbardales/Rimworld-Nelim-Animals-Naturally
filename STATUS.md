@@ -28,7 +28,7 @@ remaining:
   - unverified: optional-mod combinations avec-vef (run 4031 pending, filter fixed)
   - blocked, environment: Some Like It Rotten (run 1899) and Zoology (run 6e7f) both stall RimWorld at the identical startup point alone, exit 3, no report, no error logged; only Dogs Mate loads cleanly (run 574d, 1/1 passed). Download integrity ruled out 2026-09-29: `diff -rq` between the Windows Workshop folder and a fresh steamcmd download is empty for both, byte-identical. 03-dogsmate.feature ran; 04-rotten.feature and 05-zoology.feature cannot run until the real cause is found (untested hypothesis: something specific to the headless/Xvfb Pickle launcher, not a mod-file problem)
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
-  - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
+  - resolved 2026-09-28: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith, refuted by run f607/sans-facultatifs-r2 ("the load logs no error" passed in the bare pass, which carries the absent-mod entries)
   - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
   - resolved 2026-09-28: values the patches write, run fd90/valeurs, 11/11 applicable scenarios passed with PickleTools' DefFields companion (Horse baseBodySize 1.926, gestationPeriodDays 24.17, first game run of this companion)
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
