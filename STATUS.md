@@ -26,11 +26,11 @@ workshop:
 remaining:
   - resolved 2026-09-28: RimWorld loads with the required Nocturnal Animals dependency, run f607/sans-facultatifs-r2, 10/10 passed, 0 failed
   - unverified: optional-mod combinations avec-vef (run 4031 pending, filter fixed)
-  - defect (not in this mod): Some Like It Rotten alone stalls RimWorld at startup (run 1899, exit 3, 42-line Player.log, no error); Dogs Mate alone is clean (run 574d, 1/1 passed); the mod's own suite cannot exercise 04-rotten.feature or 03-dogsmate/05-zoology's shared avec-loadafter pass until this is resolved or worked around; Zoology alone (run 6e7f) still pending
+  - blocked, needs Virginie: Some Like It Rotten (run 1899) and Zoology (run 6e7f) both stall RimWorld at the identical startup point alone, exit 3, no report, no error logged; only Dogs Mate loads cleanly (run 574d, 1/1 passed). 03-dogsmate.feature ran; 04-rotten.feature and 05-zoology.feature cannot run until this is fixed. Possible cause: a corrupted or incomplete Workshop download of these two specific mods on this machine; needs Steam-side verification, not something this session can check or fix
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
   - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
   - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
-  - unverified: values the patches write, pass "valeurs" requested with PickleTools' DefFields companion (never run in a game before this pass), no report yet
+  - resolved 2026-09-28: values the patches write, run fd90/valeurs, 11/11 applicable scenarios passed with PickleTools' DefFields companion (Horse baseBodySize 1.926, gestationPeriodDays 24.17, first game run of this companion)
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
   - pending: Doublons.xml and the other animal packs have no scenario that shows a patch firing
 updated: 2026-09-28
