@@ -4,8 +4,8 @@ packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-stage: options
-stage_meaning: "settings_audit not_applicable stands (no settings, no MainButtons entry, XML-only patches); AUDIT.md preOptions→options needs no in-game check when there is nothing to configure"
+stage: l10n
+stage_meaning: "options→l10n needs FR/EN resources existing and verified, and every displayed text translatable and covered; the mod displays no text at all (XML-only patches), so localization/translation_en/translation_fr stay not_applicable"
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 upstream_mod_remotes:
