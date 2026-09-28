@@ -17,8 +17,8 @@ translation_fr: not_applicable
 tested_on:
 workshop:
 remaining:
-  - unverified: RimWorld load with the required Nocturnal Animals dependency (pass sans-facultatifs requested, no report yet)
-  - unverified: optional-mod combinations (passes avec-vef, avec-loadafter requested, no report yet)
+  - resolved 2026-09-28: RimWorld loads with the required Nocturnal Animals dependency, run f607/sans-facultatifs-r2, 10/10 passed, 0 failed
+  - unverified: optional-mod combinations avec-vef (run 4031 pending, filter fixed) and avec-loadafter (game-start stall under investigation, one mod per pass filed: 574d/1899/6e7f)
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
   - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
   - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
