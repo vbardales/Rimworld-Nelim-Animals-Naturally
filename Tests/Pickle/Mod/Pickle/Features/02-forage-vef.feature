@@ -43,13 +43,15 @@ Feature: Nelim's Animals, Naturally with Vanilla Expanded Framework and the anim
     And def "AA_CrystallineCaracal" was patched by mod "Nelim's Animals, Naturally"
 
   Scenario: the complement's meat entries find their item
-    # 42 of the 91 entries of Forage.xml guard on Meat_Rat or Meat_Megaspider (32 and 10). Those are
-    # meat defs the game GENERATES from the races after the patches have run, so at patch time they
-    # are absent and an entry guarded on them can never fire. If this scenario is red, that is the
-    # suspected defect (unverified when written, 2026-09-28: see TESTING.md), not a test fault.
-    Then def "Meat_Rat" exists
-    And def "Meat_Rat" was patched by mod "Nelim's Animals, Naturally"
-    And def "Meat_Megaspider" was patched by mod "Nelim's Animals, Naturally"
+    # 42 of the 91 entries of Forage.xml guard on Meat_Rat or Meat_Megaspider (32 and 10). The guard
+    # only tests that the meat def exists at patch time; the mod patches the ANIMAL, never the meat
+    # def. So the check is on one animal per guard: AA_CrystallineCaracal (Meat_Rat) and Herisson
+    # (Meat_Megaspider). Run e85c (2026-09-28) showed the earlier "Meat_Rat was patched" assertion
+    # was a test fault: the mod never patches Meat_Rat.
+    Then def "AA_CrystallineCaracal" of type "ThingDef" exists
+    And def "AA_CrystallineCaracal" was patched by mod "Nelim's Animals, Naturally"
+    And def "Herisson" of type "ThingDef" exists
+    And def "Herisson" was patched by mod "Nelim's Animals, Naturally"
 
   Scenario: the animal packs add no warning of this mod
     Then no warnings from mod "Nelim's Animals, Naturally"

@@ -20,7 +20,7 @@ remaining:
   - unverified: optional-mod combinations (passes avec-vef, avec-loadafter requested, no report yet)
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
   - unverified: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith (possible load errors)
-  - unverified: suspected defect, Forage.xml guards 42 of 91 entries on generated defs Meat_Rat/Meat_Megaspider
+  - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
   - pending: tests of the values the patches write (Pickle cannot read them, see TESTING.md); offline XML patch tests or a local step
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
   - pending: Doublons.xml and the other animal packs have no scenario that shows a patch firing

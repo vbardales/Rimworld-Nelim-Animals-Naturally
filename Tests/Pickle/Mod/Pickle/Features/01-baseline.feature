@@ -74,6 +74,12 @@ Feature: Nelim's Animals, Naturally with only its required dependency
     And def "Bear_Grizzly" was patched by mod "Nelim's Animals, Naturally"
     And def "Chicken" was patched by mod "Nelim's Animals, Naturally"
 
+  Scenario: the numeric families write their values on a vanilla animal
+    # Values read from BodySize.xml and Reproduction.xml for Horse. The type is named because Horse is
+    # both a ThingDef and a PawnKindDef.
+    Then def "Horse" of type "ThingDef" field "race.baseBodySize" is "1.926"
+    And def "Horse" of type "ThingDef" field "race.gestationPeriodDays" is "24.17"
+
   Scenario: a patch whose target mod is absent does nothing, quietly
     # Every entry naming an animal of an absent mod is a conditional on that def existing. None of
     # these defs exists in this pass, so nothing may have patched them; the warnings of this mod are

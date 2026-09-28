@@ -132,3 +132,7 @@ folder.
 
 - Delete: nothing. No `Tests/Pickle/Evidence/`, `evidence/` or `.dds` file exists in this checkout, and none is tracked by Git.
 - Keep: nothing. No run has produced a report for this mod yet.
+
+## Update 2026-09-28
+
+The typed value step exists in PickleTools/docs/steps.md: `def {string} of type {string} field {string} is {string}`. Gap 1 above is closed for ThingDef/PawnKindDef values; 01-baseline now reads Horse race.baseBodySize and race.gestationPeriodDays. The Meat_Rat suspicion is refuted: the guard tests existence at patch time and AA_CrystallineCaracal was patched in run e85c. The failed avec-vef scenario asserted a patch on Meat_Rat, which this mod never makes: a test fault, corrected.
