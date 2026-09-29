@@ -1,0 +1,7 @@
+{
+  "title": "Nelim's Animals,",
+  "suffix": "Naturally",
+  "tag": "Biology-based animal rebalancing",
+  "copyLines": ["Body size, lifespan, taming, and hybridisation", "derived from each species' real mass and taxonomy."],
+  "iconBadge": { "file": "ModIcon-badge.png", "corner": "bottom-right", "width": 180 }
+}
