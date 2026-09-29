@@ -130,7 +130,7 @@ foreach ($file in $patchFiles) { [xml](Get-Content -Raw $file.FullName) | Out-Nu
 
 # --- About.xml contract -----------------------------------------------------------------------
 [xml]$about = Get-Content -Raw (Join-Path $root 'Mod/About/About.xml')
-Assert ($about.ModMetaData.packageId -eq 'nelim.animalrebalance') 'packageId changed unexpectedly.'
+Assert ($about.ModMetaData.packageId -eq 'nelim.animalsnaturally') 'packageId changed unexpectedly.'
 $hardDeps = @($about.ModMetaData.modDependencies.li.packageId)
 Assert (($hardDeps.Count -eq 1) -and ($hardDeps[0] -eq 'Mlie.XNDNocturnalAnimals')) 'Nocturnal Animals must stay the one hard dependency.'
 $loadAfter = @($about.ModMetaData.loadAfter.li)

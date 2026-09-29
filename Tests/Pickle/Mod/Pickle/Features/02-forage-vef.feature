@@ -18,8 +18,8 @@ Feature: Nelim's Animals, Naturally with Vanilla Expanded Framework and the anim
     And mod "sarg.alphaanimals" is loaded
     And mod "VanillaExpanded.VanillaAnimalsExpanded" is loaded
     And mod "Mlie.AnimalsForage" is loaded
-    And mod "nelim.animalrebalance" is loaded
-    And mod "nelim.animalrebalance" loads after "OskarPotocki.VanillaFactionsExpanded.Core"
+    And mod "nelim.animalsnaturally" is loaded
+    And mod "nelim.animalsnaturally" loads after "OskarPotocki.VanillaFactionsExpanded.Core"
 
   Scenario: the complement applies to a vanilla animal digging a vanilla item
     # Bear_Grizzly -> RawBerries. RawBerries is a Core item that only Forage.xml targets, and only

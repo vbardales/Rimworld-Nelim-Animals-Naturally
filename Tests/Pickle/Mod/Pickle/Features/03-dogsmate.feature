@@ -10,6 +10,6 @@ Feature: Nelim's Animals, Naturally beside Dogs Mate
 
   Scenario: it loads after Dogs Mate and says nothing
     Then mod "Mlie.DogsMate" is loaded
-    And mod "nelim.animalrebalance" is loaded
-    And mod "nelim.animalrebalance" loads after "Mlie.DogsMate"
+    And mod "nelim.animalsnaturally" is loaded
+    And mod "nelim.animalsnaturally" loads after "Mlie.DogsMate"
     And no warnings from mod "Nelim's Animals, Naturally"

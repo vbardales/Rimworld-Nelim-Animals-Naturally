@@ -7,8 +7,8 @@ Feature: Nelim's Animals, Naturally beside Zoology
 
   Scenario: it loads after Zoology and says nothing
     Then mod "com.abobashark.zoologymod" is loaded
-    And mod "nelim.animalrebalance" is loaded
-    And mod "nelim.animalrebalance" loads after "com.abobashark.zoologymod"
+    And mod "nelim.animalsnaturally" is loaded
+    And mod "nelim.animalsnaturally" loads after "com.abobashark.zoologymod"
     And no warnings from mod "Nelim's Animals, Naturally"
 
   Scenario: the patches still reach the vanilla animals Zoology reworks

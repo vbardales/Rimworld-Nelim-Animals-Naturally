@@ -1,6 +1,6 @@
 ---
 mod: "Nelim's Animals, Naturally"
-packageId: nelim.animalrebalance
+packageId: nelim.animalsnaturally
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
@@ -159,7 +159,7 @@ narrative changes needed since nothing in `Mod/` changed since the last audit.
 
 - `Tests/Pickle/Evidence/`, `evidence/`, and `Tests/Pickle/` still do not exist on disk in
   this checkout; nothing to prune. Checked the monorepo's `pickle-reports-archive/` for an
-  archive referencing this mod (`AnimalsNaturally` or `nelim.animalrebalance`): none found.
+  archive referencing this mod (`AnimalsNaturally` or `nelim.animalsnaturally`): none found.
 - `git ls-files | grep -i dds`: no tracked `.dds` file. `.gitignore` already had `*.dds`
   since 2026-09-26. Nothing to untrack.
 - Upstream check: one quick search pass found no upstream repository for the former French

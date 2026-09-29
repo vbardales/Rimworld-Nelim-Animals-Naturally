@@ -24,9 +24,9 @@
 Feature: Nelim's Animals, Naturally with only its required dependency
 
   Scenario: it loads after Nocturnal Animals, its one hard dependency
-    Then mod "nelim.animalrebalance" is loaded
+    Then mod "nelim.animalsnaturally" is loaded
     And mod "Mlie.XNDNocturnalAnimals" is loaded
-    And mod "nelim.animalrebalance" loads after "Mlie.XNDNocturnalAnimals"
+    And mod "nelim.animalsnaturally" loads after "Mlie.XNDNocturnalAnimals"
 
   Scenario: no optional mod is in this pass
     # Without this, a green "with nothing extra" could be an accident of staging. The Alpha Animals
