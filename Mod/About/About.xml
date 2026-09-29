@@ -17,8 +17,12 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/2269731409</steamWorkshopUrl>
     </li>
   </modDependencies>
-  <!-- Hybridation.xml patches Dogs Mate AnimalGroupDefs and Rythme.xml uses the
-       Nocturnal Animals DefModExtension. Load after both so the XPath targets exist.
+  <!-- Rythme.xml uses the Nocturnal Animals DefModExtension: load after it so the XPath
+       target exists. Dogs Mate, Some Like It Rotten, and Zoology are not targeted by any
+       XPath of this mod (confirmed 2026-09-28, see TESTING.md); Hybridation.xml writes the
+       vanilla canCrossBreedWith field in Dogs Mate's list format, it does not patch Dogs
+       Mate's own defs. They are loadAfter for ordering safety only, so this mod's values
+       are not overwritten by theirs if one of them ever touches the same fields.
        The order is recognised by the vanilla mod manager and RimSort. -->
   <loadAfter>
     <li>Mlie.DogsMate</li>

@@ -4,9 +4,9 @@ packageId: nelim.animalrebalance
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-stage: showcase
-workflow_stage: l10n
-stage_meaning: "stage holds the 6-code field (showcase covers Preview générée through l10n); workflow_stage carries the exact 12-state chain position. options→l10n needs FR/EN resources existing and verified, and every displayed text translatable and covered; the mod displays no text at all (XML-only patches), so localization/translation_en/translation_fr stay not_applicable"
+stage: preTest
+workflow_stage: preTest
+stage_meaning: "stage holds the 6-code field; workflow_stage carries the exact 12-state chain position, same value from preTest on. l10n→preTest is a static gate (AUDIT.md): dependencies really used, verified and correctly declared in About.xml; identifiers/version constraints/load order coherent; required vs optional integrations distinguished; LoadFolders and conditional patches coherent with those declarations. Fixed 2026-09-29: About.xml's internal comment wrongly claimed Hybridation.xml patches Dogs Mate's own defs (it writes the vanilla canCrossBreedWith field; TESTING.md, 2026-09-28, found no XPath targets Dogs Mate/Some Like It Rotten/Zoology). No LoadFolders.xml needed for a single-version (1.6) mod."
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 upstream_mod_remotes:
