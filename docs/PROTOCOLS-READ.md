@@ -1,6 +1,6 @@
 # Protocol reading record
 
-Last reading pass: 2026-09-26 (Europe/Paris)
+Last reading pass: 2026-09-26 (Europe/Paris). Last verification: 2026-09-29.
 
 This record identifies the exact documentation snapshot used for this checkout. The
 shared protocol Git history did not expose commits for the listed working-tree files,
@@ -79,3 +79,53 @@ unless their trigger occurs; do not reread them merely because they change:
 - `../Rimworld-Ticket-Dispatcher/docs/WELCOME.md` and `docs/SUBMIT.md`: submitting or
   interpreting a queued game run.
 - `../scripts/SEARCHING.md`: a corpus-wide source or binary search.
+
+## Verification reading — 2026-09-29
+
+Recomputed SHA-256 for every "Read and applicable" / "Read but not currently useful" doc above
+(`certutil -hashfile <path> SHA256`, so case differs from the 2026-09-26 table but the digest is the
+same when unchanged):
+
+| Document | 2026-09-26 hash still current? | Action |
+| --- | --- | --- |
+| `MOD_SETTINGS.md` | Yes | none |
+| `TRANSLATIONS.md` | Yes | none |
+| `Mod/About/About.xml`, `ATTRIBUTION.md` | Yes | none |
+| `AUDIT.md` | **No** | re-read this pass (stage chain `dansMonoRepo → … → published`, full gates); nothing found that invalidates prior decisions in this repo |
+| `PUBLISHING.md` | **No** | re-skimmed the CI-publishing section again this pass; no publish action taken |
+| `STYLE_RIMWORLD.md` | **No** | this file now covers full 3D "vitrine" showcase scenes (camera/negative-prompt blocks for AI-rendered dioramas); does not apply to this mod's `Art/preview.html` text-overlay card, which has no diorama. Not reread in full. |
+| `scripts/SEARCHING.md` | **No** | reread in full this pass |
+| `WORKSHOP_COMMENTS.md` | **No, and it's the one that matters** | see below |
+
+**Important finding, worth keeping:** commit `90d51374` (2026-09-25, monorepo root) untracked
+`AGENTS.md`, `AUDIT.md`, `PUBLISHING.md`, `TRANSLATIONS.md`, `STYLE_RIMWORLD.md`, `MOD_SETTINGS.md`,
+`EXTERNAL_TOOLS.md`, `scripts/PICKLE-WSL.md`, `scripts/SEARCHING.md` and `scripts/Tests/README.md`
+from this repo's git history — the files stay on disk but a separate "protocols repository" now owns
+and edits them, invisibly to `git log` here. **`git diff <old-commit> -- <path>` on any of them shows
+nothing even when the live content changed**: the SHA-256 re-check above is the only way left to
+detect drift on these files from this repo. `WORKSHOP_COMMENTS.md` is the one exception: it stayed
+tracked (real, git-visible history, `+109/-13` since `90d51374`), so treat it like a normal file.
+
+`WORKSHOP_COMMENTS.md` moved from "not useful this pass" to actually used: on 2026-09-29 this mod was
+added to `Covers` for its already-posted recipients (Nocturnal Animals, Vanilla Expanded Framework,
+Pickle, RimLogging, PickleTools) and three new `drafted` rows were added for the animal packs
+Forage.xml genuinely patches (Animals Forage, Alpha Animals, Vanilla Animals Expanded) — see
+`PUBLICATION.md` in this repo. Its trigger ("drafting or posting a Workshop acknowledgement") has now
+occurred; reread it again before the next posting round, its own method section was refined
+2026-09-26 and may move again.
+
+`Rimworld-Ticket-Dispatcher/docs/WELCOME.md` and `docs/SUBMIT.md`, and `PickleTools/README.md`,
+`PickleTools/Headless/README.md` and `PickleTools/docs/steps.md`: all five triggers also occurred
+this pass (creating `Tests/Pickle/`, submitting real runs, using PickleTools' opt-in `DefFields`
+companion for the typed value step). Their 2026-09-26 recorded state is no longer "not useful" —
+treat them as live working references for this mod from now on rather than re-verifying their hash
+each time; PickleTools especially moves often (a companion, `DefFields`, was added between the two
+reading passes).
+
+`Rimworld-Release-Admin/docs/OPERATIONS.md`, `../WORKSHOP_COMMENTS.md`'s own "Register" table
+entries not touched by this mod: still not useful, no CI/publish action taken this pass either.
+
+The session-local `docs/notes/docs-read.md` file (created 2026-09-27 by an earlier pass of this mod)
+duplicated this record and had already gone stale in the opposite direction (marking things "not
+needed" that this pass then used); it was deleted 2026-09-29. This file is the single source of truth
+for what's been read and why, going forward — do not recreate a second one.
