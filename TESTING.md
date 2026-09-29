@@ -160,3 +160,25 @@ Run 6e7f (pass "zoology" alone): stalls at the exact same startup point as 1899 
 ## Update 2026-09-29: download integrity ruled out
 
 Downloaded Some Like It Rotten (2503519676) and Zoology (3679396881) fresh with `scripts/download-workshop-wsl.sh` into the WSL cache and diffed against the Windows Workshop folder with `diff -rq`: empty output for both, byte-identical trees. The size difference `du -sk` reports (e.g. 328K vs 452K for Rotten) is filesystem block-size accounting between the Windows 9p mount and WSL ext4, not a missing or truncated file. The earlier "corrupted download" hypothesis is retracted. The stall's real cause is still unknown; a headless/Xvfb-specific Pickle launcher issue, not a mod-file problem, is the next hypothesis to check, not yet tested.
+
+## Update 2026-09-29: offline XML patch-target tests
+
+`Tests/Test-Xml.ps1` (PowerShell, run with `pwsh.exe -NoProfile -File Tests/Test-Xml.ps1`, no game,
+no Workshop mods installed) closes the AUDIT.md preTest→done requirement for "Tests XML ecrits,
+executes et au vert", and closes the value gap Pickle's own vocabulary could not (see "What Pickle's
+vocabulary cannot say" above): it reads the exact literal value a patch writes.
+
+It is a minimal interpreter for the 7 PatchOperation classes the 10 patch files use (Add,
+AddModExtension, Conditional, FindMod, Remove, Replace, Sequence — confirmed exhaustive 2026-09-29;
+an eighth class in a future patch throws instead of silently passing). Fixtures: a bare pass (only
+Nocturnal Animals active) asserting Horse baseBodySize=1.926 and gestationPeriodDays=24.17, Warg
+maxPreyBodySize=1.4, Alphabeaver/Boomrat/Megascarab bodyClock=Nocturnal and Muffalo=Crepuscular via
+modExtensions, and Duck's canCrossBreedWith written unconditionally (the suspected load-error defect,
+refuted 2026-09-28 by run f607); a no-Nocturnal-Animals pass showing Rythme.xml stays inert while
+BodySize.xml (no FindMod guard) still applies; a Vanilla Expanded Framework pass showing Forage.xml
+writes Bear_Grizzly->RawBerries x10, AA_CrystallineCaracal->Meat_Rat x5, ACPHedgehog->Meat_Megaspider
+x10; and an absent-everything fixture proving no patch touches an unrelated def. Meat_Rat and
+Meat_Megaspider are included in the fixture as plain ThingDefs: the game generates them from the
+source races before patches run, confirmed in-game (Pickle run e85c).
+
+

@@ -11,3 +11,4 @@ Newest last. Evidence stays in Tests/Pickle/Evidence/ (ignored by git).
 - 2026-09-28 574d (dogsmate): 1 passed, 0 failed. 1899 (rotten): stall, exit 3, no report — reproduces the avec-loadafter stall alone, so it (not Dogs Mate) is implicated; not a defect of this mod. 6e7f (zoology) still pending.
 - 2026-09-29 fd90 (valeurs): 11 passed, 0 failed, 12 skipped, first game run of the DefFields companion, green. 6e7f (zoology): stall, exit 3, identical signature to the rotten stall; only Dogs Mate loads cleanly of the three loadAfter mods.
 - 2026-09-29 steamcmd re-download of Some Like It Rotten and Zoology, diffed against the Windows Workshop folder: byte-identical, corruption ruled out. Stall cause still open.
+- 2026-09-29 Tests/Test-Xml.ps1 created (offline XML patch-target tests, no game): PASS, 10 patch files, About.xml contract, bare/no-dependency/VEF fixtures, absent-mod safety.
