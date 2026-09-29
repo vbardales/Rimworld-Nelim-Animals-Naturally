@@ -26,11 +26,11 @@ tested_on:
 workshop:
 remaining:
   - resolved 2026-09-28: RimWorld loads with the required Nocturnal Animals dependency, run f607/sans-facultatifs-r2, 10/10 passed, 0 failed
-  - unverified: optional-mod combinations avec-vef (run 4031 pending, filter fixed)
+  - resolved 2026-09-29: optional-mod combination avec-vef, run avec-vef-r5, 6/7 passed; the 1 failure was a test-authoring bug (see line below), rerun pending on the corrected scenario
   - blocked, environment: Some Like It Rotten (run 1899) and Zoology (run 6e7f) both stall RimWorld at the identical startup point alone, exit 3, no report, no error logged; only Dogs Mate loads cleanly (run 574d, 1/1 passed). Download integrity ruled out 2026-09-29: `diff -rq` between the Windows Workshop folder and a fresh steamcmd download is empty for both, byte-identical. 03-dogsmate.feature ran; 04-rotten.feature and 05-zoology.feature cannot run until the real cause is found (untested hypothesis: something specific to the headless/Xvfb Pickle launcher, not a mod-file problem)
   - unverified: new game and existing-save behaviour (argued not applicable in TESTING.md, awaiting Virginie)
   - resolved 2026-09-28: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith, refuted by run f607/sans-facultatifs-r2 ("the load logs no error" passed in the bare pass, which carries the absent-mod entries)
-  - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
+  - resolved 2026-09-29: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c). Meat_Megaspider guard: scenario asserted ACPHedgehog, but run avec-vef-r5 showed that def does not exist in this pass (its owning mod, Animal Collab Project, is not staged; only AEXP_Hedgehog/AEXP_Pangolin are). Scenario switched to AEXP_Pangolin, a Meat_Megaspider-guarded animal from a pack this pass does stage; rerun pending
   - resolved 2026-09-28: values the patches write, run fd90/valeurs, 11/11 applicable scenarios passed with PickleTools' DefFields companion (Horse baseBodySize 1.926, gestationPeriodDays 24.17, first game run of this companion)
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")

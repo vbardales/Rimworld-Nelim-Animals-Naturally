@@ -46,12 +46,15 @@ Feature: Nelim's Animals, Naturally with Vanilla Expanded Framework and the anim
     # 42 of the 91 entries of Forage.xml guard on Meat_Rat or Meat_Megaspider (32 and 10). The guard
     # only tests that the meat def exists at patch time; the mod patches the ANIMAL, never the meat
     # def. So the check is on one animal per guard: AA_CrystallineCaracal (Meat_Rat, already proven by
-    # the scenario above) and ACPHedgehog (Meat_Megaspider, defName verified in Forage.xml, not the
-    # mod's French comment "Herisson"). Run e85c (2026-09-28) showed the earlier "Meat_Rat was patched"
-    # assertion was a test fault: the mod never patches Meat_Rat. Run 1cf2 (2026-09-28) showed a wrong
-    # defName "Herisson": corrected here.
-    Then def "ACPHedgehog" of type "ThingDef" exists
-    And def "ACPHedgehog" was patched by mod "Nelim's Animals, Naturally"
+    # the scenario above) and AEXP_Pangolin (Meat_Megaspider, an Alpha Animals Expanded def, the pack
+    # actually staged by this pass). Run e85c (2026-09-28) showed the earlier "Meat_Rat was patched"
+    # assertion was a test fault: the mod never patches Meat_Rat. Run 1cf2 (2026-09-28) corrected the
+    # defName to "ACPHedgehog" (Forage.xml's own xpath target), but run avec-vef-r5 (2026-09-29) showed
+    # ACPHedgehog does not exist in this pass: its owning mod (Animal Collab Project) is not staged
+    # here (closest matches: AEXP_Hedgehog, from the pack this pass DOES stage). Switched to
+    # AEXP_Pangolin, a different Meat_Megaspider-guarded animal from the same loaded pack.
+    Then def "AEXP_Pangolin" of type "ThingDef" exists
+    And def "AEXP_Pangolin" was patched by mod "Nelim's Animals, Naturally"
 
   Scenario: the animal packs add no warning of this mod
     Then no warnings from mod "Nelim's Animals, Naturally"
