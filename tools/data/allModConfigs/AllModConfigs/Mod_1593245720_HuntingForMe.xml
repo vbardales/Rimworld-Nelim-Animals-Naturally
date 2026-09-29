@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="aRandomKiwi.HFM.Settings">
+		<maxHunterMPack>16</maxHunterMPack>
+		<ignoredPreys>
+			<li>Boomrat</li>
+			<li>Boomalope</li>
+			<li>HPLovecraft_MistStalker</li>
+			<li>HPLovecraft_MistStalkerTwo</li>
+		</ignoredPreys>
+		<ignoredRangedAttack>
+			<li>Green_Dragon_Race</li>
+			<li>Black_Dragon_Race</li>
+			<li>Brown_Dragon_Race</li>
+			<li>Gold_Dragon_Race</li>
+			<li>Silver_Dragon_Race</li>
+			<li>Red_Dragon_Race</li>
+			<li>Blue_Dragon_Race</li>
+			<li>White_Dragon_Race</li>
+			<li>Purple_Dragon_Race</li>
+			<li>Cryo_Dragon_Race</li>
+			<li>Flamingo_Dragon_Race</li>
+			<li>Rock_Dragon_Race</li>
+			<li>Yellow_Dragon_Race</li>
+			<li>True_Dragon_Race</li>
+			<li>Royal_Dragon_Race</li>
+		</ignoredRangedAttack>
+		<cats>
+			<li>Cat</li>
+			<li>akaNEKO_shironeko</li>
+			<li>akaNEKO_kuroneko</li>
+			<li>akaNEKO_kijitora</li>
+			<li>akaNEKO_A_Shorthair</li>
+			<li>akaNEKO_Russian_Blue</li>
+			<li>akaNEKO_Siamese</li>
+			<li>akaNEKO_J_Bobtail</li>
+			<li>akaNEKO_Persian</li>
+			<li>akaNEKO_Scottish_Fold</li>
+			<li>akaNEKO_Scottish_Fold_Long</li>
+			<li>akaNEKO_Maine_Coon</li>
+			<li>akaNEKO_N_Forest_Cat</li>
+		</cats>
+		<allowAllToHunt>True</allowAllToHunt>
+	</ModSettings>
+</SettingsBlock>

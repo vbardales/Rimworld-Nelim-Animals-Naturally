@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DArcaneTechnology.ArcaneTechnologySettings">
+		<usePercentResearched>False</usePercentResearched>
+		<useActualTechLevel>True</useActualTechLevel>
+		<minToRestrict>Industrial</minToRestrict>
+		<restrictOnTechLevel>True</restrictOnTechLevel>
+		<howManyTechLevelsAheadOfYours>1</howManyTechLevelsAheadOfYours>
+	</ModSettings>
+</SettingsBlock>

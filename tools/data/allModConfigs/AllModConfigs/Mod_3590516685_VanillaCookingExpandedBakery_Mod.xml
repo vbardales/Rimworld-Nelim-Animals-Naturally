@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VanillaCookingExpandedBakery.VanillaCookingExpandedBakery_Settings">
+		<simpleMealMood>3</simpleMealMood>
+		<fineMealMood>5</fineMealMood>
+		<lavishMealMood>10</lavishMealMood>
+		<gourmetMealMood>15</gourmetMealMood>
+		<ticksForEffect>180000</ticksForEffect>
+	</ModSettings>
+</SettingsBlock>

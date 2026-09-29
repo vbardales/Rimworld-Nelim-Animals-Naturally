@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="GiddyUp.ModSettings_GiddyUp">
+		<invertMountingRules />
+		<invertDrawRules />
+		<mechSelector>
+			<keys>
+				<li>Mech_CentipedeBlaster</li>
+				<li>Mech_CentipedeGunner</li>
+				<li>Mech_CentipedeBurner</li>
+				<li>Mech_Lancer</li>
+				<li>Mech_Scyther</li>
+				<li>Mech_Pikeman</li>
+				<li>Mech_Termite</li>
+				<li>Mech_Tunneler</li>
+				<li>Mech_Militor</li>
+				<li>Mech_Lifter</li>
+				<li>Mech_Constructoid</li>
+				<li>Mech_Fabricor</li>
+				<li>Mech_Agrihand</li>
+				<li>Mech_Cleansweeper</li>
+				<li>Mech_WarUrchin</li>
+				<li>Mech_Paramedic</li>
+				<li>Mech_Legionary</li>
+				<li>Mech_Tesseron</li>
+				<li>Mech_Scorcher</li>
+				<li>Mech_Apocriton</li>
+				<li>Mech_Centurion</li>
+				<li>Mech_Warqueen</li>
+				<li>Mech_Diabolus</li>
+				<li>Mech_Cyclops</li>
+				<li>Ling_Cockroach_Mechanoid</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+			</values>
+		</mechSelector>
+	</ModSettings>
+</SettingsBlock>

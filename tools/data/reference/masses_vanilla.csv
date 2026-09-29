@@ -1,0 +1,55 @@
+defName,espece_reelle,masse_kg
+Alpaca,Alpaga,65
+Alligator,Alligator d'Amerique,300
+Bison,Bison d'Amerique,700
+Capybara,Capybara,55
+Caribou,Caribou,130
+Cassowary,Casoar a casque,45
+Cat,Chat domestique,4.5
+Chicken,Poule domestique,2.5
+Chinchilla,Chinchilla,0.6
+Cobra,Cobra royal,6
+Cougar,Puma,60
+Cow,Vache domestique,700
+Deer,Cerf de Virginie,80
+Donkey,Ane domestique,180
+Dromedary,Dromadaire,500
+Duck,Canard colvert,3
+Elephant,Elephant d'Afrique,4000
+Elk,Wapiti,320
+Emu,Emeu,40
+Gazelle,Gazelle de Thomson,25
+Goat,Chevre domestique,60
+Goose,Oie cendree,5
+Gorilla,Gorille des plaines,160
+GuineaPig,Cochon d'Inde,1
+Hare,Lievre d'Europe,3.5
+Horse,Cheval domestique,500
+Husky,Husky siberien,25
+Ibex,Bouquetin des Alpes,80
+Iguana,Iguane vert,5
+LabradorRetriever,Labrador,30
+Lynx,Lynx boreal,20
+Monkey,Macaque rhesus,8
+Ostrich,Autruche,110
+Panther,Panthere noire,60
+Pig,Cochon domestique,150
+Raccoon,Raton laveur,7
+Rat,Rat brun,0.35
+Rhinoceros,Rhinoceros blanc,2200
+Sheep,Mouton domestique,70
+Snowhare,Lievre variable,3
+Squirrel,Ecureuil roux,0.5
+Tiger,Tigre du Bengale,220
+Tortoise,Tortue d'Hermann,20
+Turkey,Dindon sauvage,8
+WildBoar,Sanglier,90
+Wolverine,Glouton,15
+Yak,Yak domestique,600
+Bear_Grizzly,Ours brun,300
+Bear_Polar,Ours polaire,450
+Wolf_Timber,Loup gris,45
+Wolf_Arctic,Loup arctique,40
+Fox_Red,Renard roux,6
+Fox_Arctic,Renard polaire,4
+Fox_Fennec,Fennec,1.3

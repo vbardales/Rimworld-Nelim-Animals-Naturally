@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AnimalSimpleCommand.ASC_Setting">
+		<ASC_RequireTrainingModeEnable>True</ASC_RequireTrainingModeEnable>
+	</ModSettings>
+</SettingsBlock>

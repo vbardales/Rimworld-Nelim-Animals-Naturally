@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MapPreview.MapPreviewSettings">
+		<AutoOpenPreviewOnWorldMap>True</AutoOpenPreviewOnWorldMap>
+		<TriggerPreviewOnWorldObjects>False</TriggerPreviewOnWorldObjects>
+		<PreviewWindowSize>319.607849</PreviewWindowSize>
+		<PreviewWindowPos>(910, 144)</PreviewWindowPos>
+		<ToolbarWindowPos>(910, 473)</ToolbarWindowPos>
+	</ModSettings>
+</SettingsBlock>

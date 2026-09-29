@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ModernNotifications.StyledWarningsSettings">
+		<anchorPosition>(183, 110)</anchorPosition>
+		<messagesDraggable>True</messagesDraggable>
+		<dockMessagesBottomRight>False</dockMessagesBottomRight>
+		<hiddenAlerts>
+			<keys />
+			<values />
+		</hiddenAlerts>
+		<enableMessages>False</enableMessages>
+		<enableAlerts>False</enableAlerts>
+		<vanillaDate>True</vanillaDate>
+		<sizePlaySettings>0.687878788</sizePlaySettings>
+		<sizeSpeed>0.704545498</sizeSpeed>
+		<hamburgerOpen>False</hamburgerOpen>
+		<opacityMigrated>True</opacityMigrated>
+	</ModSettings>
+</SettingsBlock>

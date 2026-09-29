@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ProstheticNoMissingBodyParts.ProstheticNoMissingBodyPartsSettings">
+		<armsWhitelist>
+			<li>ArchotechArm</li>
+			<li>BionicArm</li>
+			<li>SimpleProstheticArm</li>
+			<li>DrillArm</li>
+		</armsWhitelist>
+		<legsWhitelist>
+			<li>ArchotechLeg</li>
+			<li>BionicLeg</li>
+			<li>PegLeg</li>
+			<li>SimpleProstheticLeg</li>
+			<li>KneeSpike</li>
+			<li>AA_MutantLeg</li>
+			<li>VME_FleshcraftedLegHediff</li>
+			<li>BS_BionicStriderLeg</li>
+		</legsWhitelist>
+		<handsWhitelist>
+			<li>WoodenHand</li>
+			<li>PowerClaw</li>
+			<li>FieldHand</li>
+			<li>HandTalon</li>
+			<li>VME_FleshcraftedHandHediff</li>
+		</handsWhitelist>
+		<feetWhitelist>
+			<li>WoodenFoot</li>
+			<li>VME_FleshcraftedFootHediff</li>
+		</feetWhitelist>
+	</ModSettings>
+</SettingsBlock>

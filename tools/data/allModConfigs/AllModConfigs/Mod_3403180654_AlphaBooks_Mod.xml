@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AlphaBooks.AlphaBooks_Settings">
+		<ABooks_DisableQuests>True</ABooks_DisableQuests>
+		<ABooks_DisableReadRuinedBooks>True</ABooks_DisableReadRuinedBooks>
+	</ModSettings>
+</SettingsBlock>

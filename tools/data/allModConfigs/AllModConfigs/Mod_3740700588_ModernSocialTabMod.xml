@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ModernSocialTab.ModernSocialTabSettings">
+		<statDefNames>
+			<li>SocialImpact</li>
+			<li>NegotiationAbility</li>
+			<li>TradePriceImprovement</li>
+		</statDefNames>
+		<evidenceGroupsOpen>
+			<keys />
+			<values />
+		</evidenceGroupsOpen>
+	</ModSettings>
+</SettingsBlock>

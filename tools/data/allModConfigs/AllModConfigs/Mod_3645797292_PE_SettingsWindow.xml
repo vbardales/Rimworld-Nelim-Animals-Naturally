@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="PartyExpansion.PE_Settings">
+		<songStatusList>
+			<li>
+				<soundDefName>PE_GangstaParadise</soundDefName>
+				<isActive>False</isActive>
+			</li>
+			<li>
+				<soundDefName>PE_NeverGonnaGive</soundDefName>
+				<isActive>False</isActive>
+			</li>
+		</songStatusList>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="LiveWithThePain.LiveWithThePainSettings">
+		<RainAches>True</RainAches>
+		<TempAches>True</TempAches>
+		<MorningAches>True</MorningAches>
+	</ModSettings>
+</SettingsBlock>

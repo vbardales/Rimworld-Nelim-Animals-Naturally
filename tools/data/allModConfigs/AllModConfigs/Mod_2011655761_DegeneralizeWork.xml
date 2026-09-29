@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DegeneralizeWork.DWSettings">
+		<compatibilityMode>
+			<keys />
+			<values />
+		</compatibilityMode>
+	</ModSettings>
+</SettingsBlock>

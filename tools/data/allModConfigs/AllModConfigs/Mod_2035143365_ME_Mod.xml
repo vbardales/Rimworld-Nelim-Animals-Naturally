@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MoreIncidents.Settings.ME_ModSettings">
+		<RescueTraitorBaseChance>0.14662756</RescueTraitorBaseChance>
+	</ModSettings>
+</SettingsBlock>

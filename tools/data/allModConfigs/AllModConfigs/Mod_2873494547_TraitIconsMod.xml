@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TraitIcons.TraitIconsModSettings">
+		<alwaysDisplayModIcon>True</alwaysDisplayModIcon>
+		<doNotDisplayCoreIcon>True</doNotDisplayCoreIcon>
+		<doNotDisplayDLCIcon>True</doNotDisplayDLCIcon>
+		<showModIconEvenIfDefault>True</showModIconEvenIfDefault>
+		<backstoriesModIcon>True</backstoriesModIcon>
+	</ModSettings>
+</SettingsBlock>

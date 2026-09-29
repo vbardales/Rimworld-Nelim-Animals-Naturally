@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CommonSense.Settings">
+		<odd_is_normal>True</odd_is_normal>
+		<add_meal_ingredients>True</add_meal_ingredients>
+		<adv_cleaning_ingest>True</adv_cleaning_ingest>
+		<mood_regen>True</mood_regen>
+		<safe_wander>True</safe_wander>
+		<optimal_patching>True</optimal_patching>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="HuntingRestricted.Hunting_Loader+HR_Settings">
+		<b_MinimumFoodLevel>0.400000006</b_MinimumFoodLevel>
+		<b_MinimumSleepLevel>0.300000012</b_MinimumSleepLevel>
+		<b_IgnoreTemperature>False</b_IgnoreTemperature>
+		<b_ShouldCollectExplodables>True</b_ShouldCollectExplodables>
+		<b_ShouldMeleeHuntSmallGame>True</b_ShouldMeleeHuntSmallGame>
+		<b_ShouldMeleeHuntMediumGame>True</b_ShouldMeleeHuntMediumGame>
+		<b_ShouldMeleeHuntBigGame>True</b_ShouldMeleeHuntBigGame>
+		<b_ShouldHuntPredators>True</b_ShouldHuntPredators>
+		<b_ShouldApprochSleepers>False</b_ShouldApprochSleepers>
+	</ModSettings>
+</SettingsBlock>

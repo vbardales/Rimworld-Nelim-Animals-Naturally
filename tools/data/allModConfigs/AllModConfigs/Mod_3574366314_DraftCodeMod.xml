@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DraftCode.DraftCodeModSettings">
+		<HideRememberedItems>True</HideRememberedItems>
+		<ShootingStats>
+			<li>ShootingAccuracyPawn</li>
+			<li>AimingDelayFactor</li>
+			<li>RangedCooldownFactor</li>
+			<li>MortarMissRadiusFactor</li>
+		</ShootingStats>
+		<MeleeStats>
+			<li>IncomingDamageFactor</li>
+			<li>MeleeDamageFactor</li>
+			<li>MeleeCooldownFactor</li>
+			<li>MeleeHitChance</li>
+			<li>MeleeDodgeChance</li>
+			<li>PainShockThreshold</li>
+		</MeleeStats>
+		<PsychicAbilityStats>
+			<li>PsychicSensitivity</li>
+			<li>PsychicEntropyMax</li>
+			<li>PsychicEntropyRecoveryRate</li>
+		</PsychicAbilityStats>
+		<OtherStats>
+			<li>Flammability</li>
+			<li>VacuumResistance</li>
+			<li>ToxicEnvironmentResistance</li>
+			<li>MentalBreakThreshold</li>
+			<li>CarryingCapacity</li>
+			<li>MoveSpeed</li>
+		</OtherStats>
+		<SpecialStatDefs>
+			<li>AimingDelayFactor</li>
+			<li>RangedCooldownFactor</li>
+			<li>MentalBreakThreshold</li>
+			<li>ComfyTemperatureMin</li>
+			<li>PsychicEntropyGain</li>
+			<li>CertaintyLossFactor</li>
+			<li>CancerRate</li>
+			<li>FlightCooldown</li>
+			<li>MedicalTendSpeed</li>
+			<li>IncomingDamageFactor</li>
+			<li>MortarMissRadiusFactor</li>
+			<li>RestFallRateFactor</li>
+			<li>JoyFallRateFactor</li>
+			<li>SlaveSuppressionFallRate</li>
+			<li>FoodPoisonChanceFixedHuman</li>
+			<li>Flammability</li>
+		</SpecialStatDefs>
+	</ModSettings>
+</SettingsBlock>

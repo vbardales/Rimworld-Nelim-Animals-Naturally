@@ -1,0 +1,3077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VarietyMatters.ModSettings_VarietyMatters">
+		<raceVarietyV2>
+			<keys>
+				<li>Core-Human</li>
+				<li>Anomaly-CreepJoiner</li>
+				<li>Big and Small - Framework-BS_Centaur</li>
+				<li>Big and Small - Framework-BS_HumanFouramed</li>
+				<li>Big and Small - Framework-BS_Naga</li>
+				<li>Big and Small - Framework-BS_Marlith</li>
+				<li>Big and Small - Framework-BS_UrbMech</li>
+				<li>Big and Small - Framework-BS_SixArmedHuman</li>
+				<li>Big and Small - Framework-BS_SpiderPersonRace</li>
+				<li>Big and Small - Framework-BS_HumanoidWithTail</li>
+				<li>Big and Small - Framework-BS_HumanoidWithWings</li>
+				<li>Big and Small - Framework-BS_JustAHead</li>
+				<li>Exosuit Framework-Dummy</li>
+				<li>Big and Small - Framework-G_CentaurFourArm</li>
+				<li>Big and Small - Framework-G_CentaurFourArmWinged</li>
+				<li>Big and Small - Framework-G_CentaurSixArm</li>
+				<li>Big and Small - Framework-G_CentaurSixArmWinged</li>
+				<li>Big and Small - Framework-G_CentaurWinged</li>
+				<li>Big and Small - Framework-G_SnekFourArm</li>
+				<li>Big and Small - Framework-G_SnekFourArmWinged</li>
+				<li>Big and Small - Framework-G_SnekSixArm</li>
+				<li>Big and Small - Framework-G_SnekSixArmWinged</li>
+				<li>Big and Small - Framework-G_SnekWinged</li>
+				<li>Big and Small - Framework-G_SpooderFourArm</li>
+				<li>Big and Small - Framework-G_SpooderFourArmWinged</li>
+				<li>Big and Small - Framework-G_SpooderSixArm</li>
+				<li>Big and Small - Framework-G_SpooderSixArmWinged</li>
+				<li>Big and Small - Framework-G_SpooderWinged</li>
+				<li>Big and Small - Framework-G_FourArmTailed</li>
+				<li>Big and Small - Framework-G_FourArmTailedWinged</li>
+				<li>Big and Small - Framework-G_FourArmWinged</li>
+				<li>Big and Small - Framework-G_SixArmTailed</li>
+				<li>Big and Small - Framework-G_SixArmTailedWinged</li>
+				<li>Big and Small - Framework-G_SixArmWinged</li>
+				<li>Big and Small - Framework-G_TailedWinged</li>
+				<li>Big and Small - Framework-M_MechaCentaurFourArm</li>
+				<li>Big and Small - Framework-M_MechaCentaurFourArmWinged</li>
+				<li>Big and Small - Framework-M_MechaCentaurSixArm</li>
+				<li>Big and Small - Framework-M_MechaCentaurSixArmWinged</li>
+				<li>Big and Small - Framework-M_MechaCentaurWinged</li>
+				<li>Big and Small - Framework-M_MechaSnekFourArm</li>
+				<li>Big and Small - Framework-M_MechaSnekFourArmWinged</li>
+				<li>Big and Small - Framework-M_MechaSnekSixArm</li>
+				<li>Big and Small - Framework-M_MechaSnekSixArmWinged</li>
+				<li>Big and Small - Framework-M_MechaSnekWinged</li>
+				<li>Big and Small - Framework-M_MechaSpooderFourArm</li>
+				<li>Big and Small - Framework-M_MechaSpooderFourArmWinged</li>
+				<li>Big and Small - Framework-M_MechaSpooderSixArm</li>
+				<li>Big and Small - Framework-M_MechaSpooderSixArmWinged</li>
+				<li>Big and Small - Framework-M_MechaSpooderWinged</li>
+				<li>Big and Small - Framework-M_MechaFourArmTailed</li>
+				<li>Big and Small - Framework-M_MechaFourArmTailedWinged</li>
+				<li>Big and Small - Framework-M_MechaFourArmWinged</li>
+				<li>Big and Small - Framework-M_MechaSixArmTailed</li>
+				<li>Big and Small - Framework-M_MechaSixArmTailedWinged</li>
+				<li>Big and Small - Framework-M_MechaSixArmWinged</li>
+				<li>Big and Small - Framework-M_MechaTailedWinged</li>
+				<li>Big and Small - Framework-M_MechaCentaur</li>
+				<li>Big and Small - Framework-M_MechaSnek</li>
+				<li>Big and Small - Framework-M_MechaSpooder</li>
+				<li>Big and Small - Framework-M_MechaFourArm</li>
+				<li>Big and Small - Framework-M_MechaSixArm</li>
+				<li>Big and Small - Framework-M_MechaTailed</li>
+				<li>Big and Small - Framework-M_MechaWinged</li>
+				<li>Core-HL_Bear_Grizzly</li>
+				<li>Core-HL_Bear_Polar</li>
+				<li>Core-HL_Ostrich</li>
+				<li>Core-HL_Emu</li>
+				<li>Core-HL_Cassowary</li>
+				<li>Core-HL_Cougar</li>
+				<li>Core-HL_Panther</li>
+				<li>Core-HL_Lynx</li>
+				<li>Core-HL_Cat</li>
+				<li>Core-HL_YorkshireTerrier</li>
+				<li>Core-HL_GuineaPig</li>
+				<li>Core-HL_LabradorRetriever</li>
+				<li>Core-HL_Husky</li>
+				<li>Core-HL_Monkey</li>
+				<li>Core-HL_Chicken</li>
+				<li>Core-HL_Duck</li>
+				<li>Core-HL_Turkey</li>
+				<li>Core-HL_Goose</li>
+				<li>Core-HL_Cow</li>
+				<li>Core-HL_Boomalope</li>
+				<li>Core-HL_Muffalo</li>
+				<li>Core-HL_Bison</li>
+				<li>Core-HL_Dromedary</li>
+				<li>Core-HL_Goat</li>
+				<li>Core-HL_Elk</li>
+				<li>Core-HL_Yak</li>
+				<li>Core-HL_Caribou</li>
+				<li>Core-HL_Horse</li>
+				<li>Core-HL_Donkey</li>
+				<li>Core-HL_Elephant</li>
+				<li>Core-HL_Rhinoceros</li>
+				<li>Core-HL_Hare</li>
+				<li>Core-HL_Snowhare</li>
+				<li>Core-HL_Megascarab</li>
+				<li>Core-HL_Spelopede</li>
+				<li>Core-HL_Megaspider</li>
+				<li>Core-HL_Thrumbo</li>
+				<li>Core-HL_Cobra</li>
+				<li>Core-HL_Tortoise</li>
+				<li>Core-HL_Alphabeaver</li>
+				<li>Core-HL_Pig</li>
+				<li>Core-HL_WildBoar</li>
+				<li>Core-HL_Ibex</li>
+				<li>Core-HL_Deer</li>
+				<li>Core-HL_Gazelle</li>
+				<li>Core-HL_Chinchilla</li>
+				<li>Core-HL_Sheep</li>
+				<li>Core-HL_Alpaca</li>
+				<li>Core-HL_Megasloth</li>
+				<li>Core-HL_Capybara</li>
+				<li>Core-HL_Squirrel</li>
+				<li>Core-HL_Rat</li>
+				<li>Core-HL_Boomrat</li>
+				<li>Core-HL_Raccoon</li>
+				<li>Core-HL_Iguana</li>
+				<li>Core-HL_Warg</li>
+				<li>Core-HL_Wolf_Timber</li>
+				<li>Core-HL_Wolf_Arctic</li>
+				<li>Core-HL_Fox_Fennec</li>
+				<li>Core-HL_Fox_Red</li>
+				<li>Core-HL_Fox_Arctic</li>
+				<li>Core-HL_Dryad_Basic</li>
+				<li>Core-HL_Dryad_Woodmaker</li>
+				<li>Core-HL_Dryad_Berrymaker</li>
+				<li>Core-HL_Dryad_Medicinemaker</li>
+				<li>Core-HL_Dryad_Gaumaker</li>
+				<li>Core-HL_Dryad_Carrier</li>
+				<li>Core-HL_Dryad_Clawer</li>
+				<li>Core-HL_Dryad_Barkskin</li>
+				<li>Core-HL_WasteRat</li>
+				<li>Core-HL_Toxalope</li>
+				<li>Core-HL_BogHound</li>
+				<li>Core-HL_MonitorLizard</li>
+				<li>Core-HL_PrairieDog</li>
+				<li>Core-HL_Porcupine</li>
+				<li>Core-HL_Mastodon</li>
+				<li>Core-HL_Cat_Scimitar</li>
+				<li>Core-HL_Wolverine</li>
+				<li>Core-HL_Wolf_Great</li>
+				<li>Core-HL_Moose</li>
+				<li>Core-HL_AlphaThrumbo</li>
+				<li>Core-HL_Muskox</li>
+				<li>Core-HL_Tiger</li>
+				<li>Core-HL_Mink</li>
+				<li>Core-HL_Gorilla</li>
+				<li>Core-HL_Badger</li>
+				<li>Core-HL_Panda</li>
+				<li>Core-HL_Hippo</li>
+				<li>Core-HL_Megavole</li>
+				<li>Core-HL_Armadillo</li>
+				<li>Core-HL_Alligator</li>
+				<li>Core-HL_Bullfrog</li>
+				<li>Core-HL_ColossusToad</li>
+				<li>Core-HL_LavaSnail</li>
+				<li>Core-HL_Sparrow</li>
+				<li>Core-HL_Crow</li>
+				<li>Core-HL_Bluebird</li>
+				<li>Core-HL_Quail</li>
+				<li>Core-HL_Macaw</li>
+				<li>Core-HL_Flamingo</li>
+				<li>Core-HL_Heron</li>
+				<li>Core-HL_Swan</li>
+				<li>Core-HL_Peacock</li>
+				<li>Core-HL_Vulture</li>
+				<li>Core-HL_Penguin</li>
+				<li>Core-HL_Walrus</li>
+				<li>Core-HL_SeaLion</li>
+				<li>Core-HL_Seal</li>
+				<li>Core-HL_HermitCrab</li>
+				<li>Core-HL_StoneCrab</li>
+				<li>Core-HL_SeaTurtle</li>
+				<li>Core-HL_Otter</li>
+				<li>Core-HL_Larva</li>
+				<li>Core-HL_HiveQueen</li>
+				<li>Core-HL_Locust</li>
+				<li>Core-HL_BU_Budgerigar</li>
+				<li>Core-HL_BU_Cockatiel</li>
+				<li>Core-HL_BU_MacawBlueYellow</li>
+				<li>Core-HL_BU_MacawMilitary</li>
+				<li>Core-HL_BU_MacawScarlet</li>
+				<li>Core-HL_BU_PeregrineFalcon</li>
+				<li>Core-HL_BU_Raven</li>
+				<li>Core-HL_BU_RedwingedBlackbird</li>
+				<li>Core-HL_BU_Vulture</li>
+				<li>Core-HL_TYR_Cuckooshrike_BlackWinged</li>
+				<li>Core-HL_TYR_FairyBluebird_Philippine</li>
+				<li>Core-HL_TYR_Hummingbird_BlueTailed</li>
+				<li>Core-HL_TYR_Owl_AfricanGrass</li>
+				<li>Core-HL_TYR_Parrot_Caica</li>
+				<li>Core-HL_TYR_Triller_WhiteBrowed</li>
+				<li>Core-HL_Taggerung_Chromabird</li>
+				<li>Core-HL_Taggerung_ChromaticFlowerWolf</li>
+				<li>Core-HL_UV_GoldenCanary</li>
+				<li>Core-HL_EM_FWMoth</li>
+				<li>Core-HL_ERN_SnowLeopard</li>
+				<li>Core-HL_ERN_Pika</li>
+				<li>Core-HL_ERN_PallasCat</li>
+				<li>Core-HL_ERN_Argali</li>
+				<li>Core-HL_ERN_Opossum</li>
+				<li>Core-HL_ERN_Ferret</li>
+				<li>Core-HL_ERN_Redpanda</li>
+				<li>Core-HL_ERN_ptarmigan</li>
+				<li>Core-HL_ERN_Greyfox</li>
+				<li>Core-HL_ERN_Mink</li>
+				<li>Core-HL_ERN_Hedgehog</li>
+				<li>Core-HL_ERN_Gartersnake</li>
+				<li>Core-HL_ERN_Armadillo</li>
+				<li>Core-HL_FoxSquirrel</li>
+				<li>Core-HL_TKKN_crab</li>
+				<li>Core-HL_TKKN_petlavarock</li>
+				<li>Core-HL_TKKN_Tumbleweed</li>
+				<li>Core-HL_TKKN_salamander</li>
+				<li>Core-HL_TKKN_giantsnail</li>
+				<li>Core-HL_RG_Hemolope</li>
+				<li>Core-HL_RG_Rabbit</li>
+				<li>Core-HL_RG_Neutrolope</li>
+				<li>Core-HL_RG_KiwiBird</li>
+				<li>Core-HL_pphhyy_BloodScarab</li>
+				<li>Core-HL_pphhyy_SanguineDeer</li>
+				<li>Core-HL_pphhyy_Vargulf</li>
+				<li>Core-HL_StrayDogs_BerneseMountainDog</li>
+				<li>Core-HL_StrayDogs_Shiba</li>
+				<li>Core-HL_StrayDogs_Kai</li>
+				<li>Core-HL_StrayDogs_Hokkaido</li>
+				<li>Core-HL_StrayDogs_Kishu</li>
+				<li>Core-HL_StrayDogs_Shikoku</li>
+				<li>Core-HL_StrayDogs_AkitaJapanese</li>
+				<li>Core-HL_SCMiniatureDachshund</li>
+				<li>Core-HL_SCSchnauzer</li>
+				<li>Core-HL_SCPug</li>
+				<li>Core-HL_SCWelshCorgi</li>
+				<li>Core-HL_SCAfghanHound</li>
+				<li>Core-HL_SCBorderCollie</li>
+				<li>Core-HL_SCBullTerrier</li>
+				<li>Core-HL_SCChowchow</li>
+				<li>Core-HL_SCCollie</li>
+				<li>Core-HL_SCDoberman</li>
+				<li>Core-HL_SCGoldenRetriever</li>
+				<li>Core-HL_SCGreyhound</li>
+				<li>Core-HL_SCOldEnglishSheepdog</li>
+				<li>Core-HL_SCStandardPoodle</li>
+				<li>Core-HL_SCBorzoi</li>
+				<li>Core-HL_SCBullmastiff</li>
+				<li>Core-HL_SCCaucasianshepherd</li>
+				<li>Core-HL_SCSaintbernard</li>
+				<li>Core-HL_SCNewFoundland</li>
+				<li>Core-HL_StrayDogs_SwedishVallhund</li>
+				<li>Core-Corpse_Human</li>
+				<li>Core-UnnaturalCorpse_Human</li>
+				<li>Big and Small - Framework-Corpse_BS_Centaur</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_Centaur</li>
+				<li>Big and Small - Framework-Corpse_BS_HumanFouramed</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_HumanFouramed</li>
+				<li>Big and Small - Framework-Corpse_BS_Naga</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_Naga</li>
+				<li>Big and Small - Framework-Corpse_BS_Marlith</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_Marlith</li>
+				<li>Big and Small - Framework-Corpse_BS_UrbMech</li>
+				<li>Big and Small - Framework-Corpse_BS_SixArmedHuman</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_SixArmedHuman</li>
+				<li>Big and Small - Framework-Corpse_BS_SpiderPersonRace</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_SpiderPersonRace</li>
+				<li>Big and Small - Framework-Corpse_BS_HumanoidWithTail</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_HumanoidWithTail</li>
+				<li>Big and Small - Framework-Corpse_BS_HumanoidWithWings</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_HumanoidWithWings</li>
+				<li>Big and Small - Framework-Corpse_BS_JustAHead</li>
+				<li>Big and Small - Framework-UnnaturalCorpse_BS_JustAHead</li>
+				<li>Exosuit Framework-Corpse_Dummy</li>
+				<li>Exosuit Framework-UnnaturalCorpse_Dummy</li>
+				<li>Core-Corpse_HL_Bear_Grizzly</li>
+				<li>Core-Corpse_HL_Bear_Polar</li>
+				<li>Core-Corpse_HL_Ostrich</li>
+				<li>Core-Corpse_HL_Emu</li>
+				<li>Core-Corpse_HL_Cassowary</li>
+				<li>Core-Corpse_HL_Cougar</li>
+				<li>Core-Corpse_HL_Panther</li>
+				<li>Core-Corpse_HL_Lynx</li>
+				<li>Core-Corpse_HL_Cat</li>
+				<li>Core-Corpse_HL_YorkshireTerrier</li>
+				<li>Core-Corpse_HL_GuineaPig</li>
+				<li>Core-Corpse_HL_LabradorRetriever</li>
+				<li>Core-Corpse_HL_Husky</li>
+				<li>Core-Corpse_HL_Monkey</li>
+				<li>Core-Corpse_HL_Chicken</li>
+				<li>Core-Corpse_HL_Duck</li>
+				<li>Core-Corpse_HL_Turkey</li>
+				<li>Core-Corpse_HL_Goose</li>
+				<li>Core-Corpse_HL_Cow</li>
+				<li>Core-Corpse_HL_Boomalope</li>
+				<li>Core-Corpse_HL_Muffalo</li>
+				<li>Core-Corpse_HL_Bison</li>
+				<li>Core-Corpse_HL_Dromedary</li>
+				<li>Core-Corpse_HL_Goat</li>
+				<li>Core-Corpse_HL_Elk</li>
+				<li>Core-Corpse_HL_Yak</li>
+				<li>Core-Corpse_HL_Caribou</li>
+				<li>Core-Corpse_HL_Horse</li>
+				<li>Core-Corpse_HL_Donkey</li>
+				<li>Core-Corpse_HL_Elephant</li>
+				<li>Core-Corpse_HL_Rhinoceros</li>
+				<li>Core-Corpse_HL_Hare</li>
+				<li>Core-Corpse_HL_Snowhare</li>
+				<li>Core-Corpse_HL_Megascarab</li>
+				<li>Core-Corpse_HL_Spelopede</li>
+				<li>Core-Corpse_HL_Megaspider</li>
+				<li>Core-Corpse_HL_Thrumbo</li>
+				<li>Core-Corpse_HL_Cobra</li>
+				<li>Core-Corpse_HL_Tortoise</li>
+				<li>Core-Corpse_HL_Alphabeaver</li>
+				<li>Core-Corpse_HL_Pig</li>
+				<li>Core-Corpse_HL_WildBoar</li>
+				<li>Core-Corpse_HL_Ibex</li>
+				<li>Core-Corpse_HL_Deer</li>
+				<li>Core-Corpse_HL_Gazelle</li>
+				<li>Core-Corpse_HL_Chinchilla</li>
+				<li>Core-Corpse_HL_Sheep</li>
+				<li>Core-Corpse_HL_Alpaca</li>
+				<li>Core-Corpse_HL_Megasloth</li>
+				<li>Core-Corpse_HL_Capybara</li>
+				<li>Core-Corpse_HL_Squirrel</li>
+				<li>Core-Corpse_HL_Rat</li>
+				<li>Core-Corpse_HL_Boomrat</li>
+				<li>Core-Corpse_HL_Raccoon</li>
+				<li>Core-Corpse_HL_Iguana</li>
+				<li>Core-Corpse_HL_Warg</li>
+				<li>Core-Corpse_HL_Wolf_Timber</li>
+				<li>Core-Corpse_HL_Wolf_Arctic</li>
+				<li>Core-Corpse_HL_Fox_Fennec</li>
+				<li>Core-Corpse_HL_Fox_Red</li>
+				<li>Core-Corpse_HL_Fox_Arctic</li>
+				<li>Core-Corpse_HL_Dryad_Basic</li>
+				<li>Core-Corpse_HL_Dryad_Woodmaker</li>
+				<li>Core-Corpse_HL_Dryad_Berrymaker</li>
+				<li>Core-Corpse_HL_Dryad_Medicinemaker</li>
+				<li>Core-Corpse_HL_Dryad_Gaumaker</li>
+				<li>Core-Corpse_HL_Dryad_Carrier</li>
+				<li>Core-Corpse_HL_Dryad_Clawer</li>
+				<li>Core-Corpse_HL_Dryad_Barkskin</li>
+				<li>Core-Corpse_HL_WasteRat</li>
+				<li>Core-Corpse_HL_Toxalope</li>
+				<li>Core-Corpse_HL_BogHound</li>
+				<li>Core-Corpse_HL_MonitorLizard</li>
+				<li>Core-Corpse_HL_PrairieDog</li>
+				<li>Core-Corpse_HL_Porcupine</li>
+				<li>Core-Corpse_HL_Mastodon</li>
+				<li>Core-Corpse_HL_Cat_Scimitar</li>
+				<li>Core-Corpse_HL_Wolverine</li>
+				<li>Core-Corpse_HL_Wolf_Great</li>
+				<li>Core-Corpse_HL_Moose</li>
+				<li>Core-Corpse_HL_AlphaThrumbo</li>
+				<li>Core-Corpse_HL_Muskox</li>
+				<li>Core-Corpse_HL_Tiger</li>
+				<li>Core-Corpse_HL_Mink</li>
+				<li>Core-Corpse_HL_Gorilla</li>
+				<li>Core-Corpse_HL_Badger</li>
+				<li>Core-Corpse_HL_Panda</li>
+				<li>Core-Corpse_HL_Hippo</li>
+				<li>Core-Corpse_HL_Megavole</li>
+				<li>Core-Corpse_HL_Armadillo</li>
+				<li>Core-Corpse_HL_Alligator</li>
+				<li>Core-Corpse_HL_Bullfrog</li>
+				<li>Core-Corpse_HL_ColossusToad</li>
+				<li>Core-Corpse_HL_LavaSnail</li>
+				<li>Core-Corpse_HL_Sparrow</li>
+				<li>Core-Corpse_HL_Crow</li>
+				<li>Core-Corpse_HL_Bluebird</li>
+				<li>Core-Corpse_HL_Quail</li>
+				<li>Core-Corpse_HL_Macaw</li>
+				<li>Core-Corpse_HL_Flamingo</li>
+				<li>Core-Corpse_HL_Heron</li>
+				<li>Core-Corpse_HL_Swan</li>
+				<li>Core-Corpse_HL_Peacock</li>
+				<li>Core-Corpse_HL_Vulture</li>
+				<li>Core-Corpse_HL_Penguin</li>
+				<li>Core-Corpse_HL_Walrus</li>
+				<li>Core-Corpse_HL_SeaLion</li>
+				<li>Core-Corpse_HL_Seal</li>
+				<li>Core-Corpse_HL_HermitCrab</li>
+				<li>Core-Corpse_HL_StoneCrab</li>
+				<li>Core-Corpse_HL_SeaTurtle</li>
+				<li>Core-Corpse_HL_Otter</li>
+				<li>Core-Corpse_HL_Larva</li>
+				<li>Core-Corpse_HL_HiveQueen</li>
+				<li>Core-Corpse_HL_Locust</li>
+				<li>Core-Corpse_HL_BU_Budgerigar</li>
+				<li>Core-Corpse_HL_BU_Cockatiel</li>
+				<li>Core-Corpse_HL_BU_MacawBlueYellow</li>
+				<li>Core-Corpse_HL_BU_MacawMilitary</li>
+				<li>Core-Corpse_HL_BU_MacawScarlet</li>
+				<li>Core-Corpse_HL_BU_PeregrineFalcon</li>
+				<li>Core-Corpse_HL_BU_Raven</li>
+				<li>Core-Corpse_HL_BU_RedwingedBlackbird</li>
+				<li>Core-Corpse_HL_BU_Vulture</li>
+				<li>Core-Corpse_HL_TYR_Cuckooshrike_BlackWinged</li>
+				<li>Core-Corpse_HL_TYR_FairyBluebird_Philippine</li>
+				<li>Core-Corpse_HL_TYR_Hummingbird_BlueTailed</li>
+				<li>Core-Corpse_HL_TYR_Owl_AfricanGrass</li>
+				<li>Core-Corpse_HL_TYR_Parrot_Caica</li>
+				<li>Core-Corpse_HL_TYR_Triller_WhiteBrowed</li>
+				<li>Core-Corpse_HL_Taggerung_Chromabird</li>
+				<li>Core-Corpse_HL_Taggerung_ChromaticFlowerWolf</li>
+				<li>Core-Corpse_HL_EM_FWMoth</li>
+				<li>Core-Corpse_HL_ERN_SnowLeopard</li>
+				<li>Core-Corpse_HL_ERN_Pika</li>
+				<li>Core-Corpse_HL_ERN_PallasCat</li>
+				<li>Core-Corpse_HL_ERN_Argali</li>
+				<li>Core-Corpse_HL_ERN_Opossum</li>
+				<li>Core-Corpse_HL_ERN_Ferret</li>
+				<li>Core-Corpse_HL_ERN_Redpanda</li>
+				<li>Core-Corpse_HL_ERN_ptarmigan</li>
+				<li>Core-Corpse_HL_ERN_Greyfox</li>
+				<li>Core-Corpse_HL_ERN_Mink</li>
+				<li>Core-Corpse_HL_ERN_Hedgehog</li>
+				<li>Core-Corpse_HL_ERN_Gartersnake</li>
+				<li>Core-Corpse_HL_ERN_Armadillo</li>
+				<li>Core-Corpse_HL_FoxSquirrel</li>
+				<li>Core-Corpse_HL_TKKN_crab</li>
+				<li>Core-Corpse_HL_TKKN_petlavarock</li>
+				<li>Core-Corpse_HL_TKKN_Tumbleweed</li>
+				<li>Core-Corpse_HL_TKKN_salamander</li>
+				<li>Core-Corpse_HL_TKKN_giantsnail</li>
+				<li>Core-Corpse_HL_RG_Hemolope</li>
+				<li>Core-Corpse_HL_RG_Rabbit</li>
+				<li>Core-Corpse_HL_RG_Neutrolope</li>
+				<li>Core-Corpse_HL_RG_KiwiBird</li>
+				<li>Core-Corpse_HL_pphhyy_BloodScarab</li>
+				<li>Core-Corpse_HL_pphhyy_SanguineDeer</li>
+				<li>Core-Corpse_HL_pphhyy_Vargulf</li>
+				<li>Core-Corpse_HL_StrayDogs_BerneseMountainDog</li>
+				<li>Core-Corpse_HL_StrayDogs_Shiba</li>
+				<li>Core-Corpse_HL_StrayDogs_Kai</li>
+				<li>Core-Corpse_HL_StrayDogs_Hokkaido</li>
+				<li>Core-Corpse_HL_StrayDogs_Kishu</li>
+				<li>Core-Corpse_HL_StrayDogs_Shikoku</li>
+				<li>Core-Corpse_HL_StrayDogs_AkitaJapanese</li>
+				<li>Core-Corpse_HL_SCMiniatureDachshund</li>
+				<li>Core-Corpse_HL_SCSchnauzer</li>
+				<li>Core-Corpse_HL_SCPug</li>
+				<li>Core-Corpse_HL_SCWelshCorgi</li>
+				<li>Core-Corpse_HL_SCAfghanHound</li>
+				<li>Core-Corpse_HL_SCBorderCollie</li>
+				<li>Core-Corpse_HL_SCBullTerrier</li>
+				<li>Core-Corpse_HL_SCChowchow</li>
+				<li>Core-Corpse_HL_SCCollie</li>
+				<li>Core-Corpse_HL_SCDoberman</li>
+				<li>Core-Corpse_HL_SCGoldenRetriever</li>
+				<li>Core-Corpse_HL_SCGreyhound</li>
+				<li>Core-Corpse_HL_SCOldEnglishSheepdog</li>
+				<li>Core-Corpse_HL_SCStandardPoodle</li>
+				<li>Core-Corpse_HL_SCBorzoi</li>
+				<li>Core-Corpse_HL_SCBullmastiff</li>
+				<li>Core-Corpse_HL_SCCaucasianshepherd</li>
+				<li>Core-Corpse_HL_SCSaintbernard</li>
+				<li>Core-Corpse_HL_SCNewFoundland</li>
+				<li>Core-Corpse_HL_StrayDogs_SwedishVallhund</li>
+				<li>Big and Small - Framework-G_CentaurFourArm_Corpse</li>
+				<li>Big and Small - Framework-G_CentaurFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_CentaurSixArm_Corpse</li>
+				<li>Big and Small - Framework-G_CentaurSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_CentaurWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SnekFourArm_Corpse</li>
+				<li>Big and Small - Framework-G_SnekFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SnekSixArm_Corpse</li>
+				<li>Big and Small - Framework-G_SnekSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SnekWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SpooderFourArm_Corpse</li>
+				<li>Big and Small - Framework-G_SpooderFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SpooderSixArm_Corpse</li>
+				<li>Big and Small - Framework-G_SpooderSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SpooderWinged_Corpse</li>
+				<li>Big and Small - Framework-G_FourArmTailed_Corpse</li>
+				<li>Big and Small - Framework-G_FourArmTailedWinged_Corpse</li>
+				<li>Big and Small - Framework-G_FourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SixArmTailed_Corpse</li>
+				<li>Big and Small - Framework-G_SixArmTailedWinged_Corpse</li>
+				<li>Big and Small - Framework-G_SixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-G_TailedWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaCentaurFourArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaCentaurFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaCentaurSixArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaCentaurSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaCentaurWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSnekFourArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSnekFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSnekSixArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSnekSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSnekWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSpooderFourArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSpooderFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSpooderSixArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSpooderSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSpooderWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaFourArmTailed_Corpse</li>
+				<li>Big and Small - Framework-M_MechaFourArmTailedWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaFourArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSixArmTailed_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSixArmTailedWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSixArmWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaTailedWinged_Corpse</li>
+				<li>Big and Small - Framework-M_MechaCentaur_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSnek_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSpooder_Corpse</li>
+				<li>Big and Small - Framework-M_MechaFourArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaSixArm_Corpse</li>
+				<li>Big and Small - Framework-M_MechaTailed_Corpse</li>
+				<li>Big and Small - Framework-M_MechaWinged_Corpse</li>
+			</keys>
+			<values>
+				<li>
+					<name>humain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>humain</name>
+					<modName>Anomaly</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>centauroïde</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>humain à quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>homme-serpent</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>homme-serpent à six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>mecha</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>humain à six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>homme-araignée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>humanoïde à queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>humanoïde ailé</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>tête détachée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>human</name>
+					<modName>Exosuit Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Centauroid avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Centauroid avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Centauroid avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Centauroid avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Centauroid avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Serpent-like avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Serpent-like avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Serpent-like avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Serpent-like avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Serpent-like avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Spider-like avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Spider-like avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Spider-like avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Spider-like avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Spider-like avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde à quatre bras avec une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde à quatre bras avec une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde à quatre bras avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde à six bras avec une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde à six bras avec une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde à six bras avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Humanoïde avec queue avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre pattes et quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre pattes et quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre pattes et six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre pattes et six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre pattes et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec queue de type serpent et quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec queue de type serpent et quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec queue de type serpent et six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec queue de type serpent et six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec queue de type serpent et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec abdomen de type araignée et quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec abdomen de type araignée et quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec abdomen de type araignée et six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec abdomen de type araignée et six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec abdomen de type araignée et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre bras et une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre bras et une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec six bras et une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec six bras et une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre pattes</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec queue de type serpent</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec abdomen de type araignée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Mech avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>grizzly</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>ours polaire</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>autruche</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>émeu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>casoar</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cougar</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>panthère</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>lynx</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chat</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Yorkshire Terrier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cobaye</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>labrador</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>husky</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>singe</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>poulet</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>canard</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dinde</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>oie</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>vache</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>boomalope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>muffalo</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>bison</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dromadaire</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chèvre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>wapiti</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>yak</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>caribou</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cheval</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>âne</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>éléphant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>rhinocéros</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>lièvre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>lièvre des neiges</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>mégascarabée</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>spélopède</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>mégaraignée</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>thrumbo</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cobra</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>tortue</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>alphacastor</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cochon</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>sanglier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>bouquetin</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cerf</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>gazelle</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chinchilla</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>mouton</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>alpaga</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>mégathérium</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>capybara</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>écureuil</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>rat</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>rataboum</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>raton laveur</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>iguane</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>warg</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>loup des bois</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>loup arctique</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>fennec</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>renard roux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>renard arctique</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade immature</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade sylvicultrice</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade maraîchère</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade pharmacienne</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade gaucultrice</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade porteuse</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade griffe</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>dryade peau d'écorce</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>toxirat</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>toxilope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chien des marais</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>varan</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chien de prairie</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>porc-épic</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>mastodonte</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chat-cimeterre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>glouton</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>loup géant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>élan</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>thrumbo alpha</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>bœuf musqué</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>tigre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>vison</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>gorille</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>blaireau</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>panda</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>hippopotame</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>campagnol géant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>tatou</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>alligator</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>ouaouaron</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>crapaud colosse</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>escargot de lave</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>moineau</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>corbeau</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>merlebleu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>caille</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>ara</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>flamant rose</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>héron</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cygne</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>paon</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>vautour</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>manchot</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>morse</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>lion de mer</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>phoque</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>bernard-l'ermite</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>crabe rouge</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>tortue de mer</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>loutre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>larve</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>reine-ruche</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>locuste</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>budgerigar</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cockatiel</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>blue-and-yellow macaw</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>military macaw</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>scarlet macaw</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>peregrine falcon</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>raven</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>red-winged blackbird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>vulture</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>black-winged cuckooshrike</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Philippine fairy-bluebird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>blue-tailed hummingbird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>African grass owl</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>caica parrot</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>white-browed triller</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chromabird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>chromatic flower wolf</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>golden canary</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>papillon de nuit</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>léopard des neiges</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>pika</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Manul</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>argali</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>opossum</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>furet</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>panda roux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>lagopède</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>renard gris</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>vison</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>hérisson</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>couleuvre rayée</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>tatou</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Fox Squirrel</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>crabe géant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>roche de lave pour animaux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>herbe à poux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>salamandre de feu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>escargots géants</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>hémolope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>lapin</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>neutrolope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>kiwi</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>BloodScarab</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Sanguine Deer</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Vargulf</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>bouvier bernois</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Shiba Inu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Kai Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Hokkaido Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Kishu Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Shikoku Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Akita Inu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Teckel nain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Schnauzer nain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Carlin</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Corgi</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Lévrier afghan</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Border collie</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Bull-terrier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Chow-chow</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Colley</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Doberman</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Golden retriever</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Lévrier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Berger anglais ancien</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Caniche royal</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Borzoi</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Bullmastiff</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Berger du Caucase</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Saint-bernard</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>terre-neuve</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>vallhund suédois</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'humain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de centauroïde</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal de centauroïde</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humain à quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'humain à quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'homme-serpent</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'homme-serpent</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'homme-serpent à six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'homme-serpent à six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mecha</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humain à six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'humain à six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'homme-araignée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'homme-araignée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'humanoïde à queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde ailé</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'humanoïde ailé</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de tête détachée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal de tête détachée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'human</name>
+					<modName>Exosuit Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>Cadavre anormal d'human</name>
+					<modName>Exosuit Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de grizzly</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'ours polaire</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'autruche</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'émeu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de casoar</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cougar</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de panthère</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de lynx</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chat</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Yorkshire Terrier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cobaye</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de labrador</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'husky</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de singe</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de poulet</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de canard</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dinde</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'oie</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de vache</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de boomalope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de muffalo</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de bison</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dromadaire</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chèvre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de wapiti</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de yak</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de caribou</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cheval</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'âne</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'éléphant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de rhinocéros</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de lièvre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de lièvre des neiges</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mégascarabée</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de spélopède</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mégaraignée</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de thrumbo</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cobra</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de tortue</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'alphacastor</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cochon</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de sanglier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de bouquetin</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cerf</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de gazelle</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chinchilla</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mouton</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'alpaga</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mégathérium</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de capybara</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'écureuil</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de rat</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de rataboum</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de raton laveur</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'iguane</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de warg</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de loup des bois</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de loup arctique</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de fennec</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de renard roux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de renard arctique</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade immature</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade sylvicultrice</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade maraîchère</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade pharmacienne</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade gaucultrice</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade porteuse</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade griffe</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de dryade peau d'écorce</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de toxirat</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de toxilope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chien des marais</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de varan</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chien de prairie</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de porc-épic</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mastodonte</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chat-cimeterre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de glouton</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de loup géant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'élan</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de thrumbo alpha</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de bœuf musqué</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de tigre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de vison</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de gorille</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de blaireau</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de panda</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'hippopotame</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de campagnol géant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de tatou</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'alligator</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'ouaouaron</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de crapaud colosse</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'escargot de lave</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de moineau</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de corbeau</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de merlebleu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de caille</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'ara</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de flamant rose</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'héron</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cygne</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de paon</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de vautour</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de manchot</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de morse</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de lion de mer</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de phoque</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de bernard-l'ermite</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de crabe rouge</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de tortue de mer</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de loutre</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de larve</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de reine-ruche</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de locuste</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de budgerigar</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de cockatiel</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de blue-and-yellow macaw</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de military macaw</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de scarlet macaw</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de peregrine falcon</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de raven</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de red-winged blackbird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de vulture</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de black-winged cuckooshrike</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Philippine fairy-bluebird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de blue-tailed hummingbird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'African grass owl</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de caica parrot</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de white-browed triller</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chromabird</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de chromatic flower wolf</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de papillon de nuit</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de léopard des neiges</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de pika</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Manul</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'argali</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'opossum</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de furet</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de panda roux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de lagopède</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de renard gris</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de vison</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'hérisson</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de couleuvre rayée</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de tatou</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Fox Squirrel</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de crabe géant</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de roche de lave pour animaux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'herbe à poux</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de salamandre de feu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'escargots géants</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'hémolope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de lapin</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de neutrolope</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de kiwi</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de BloodScarab</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Sanguine Deer</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Vargulf</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de bouvier bernois</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Shiba Inu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Kai Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'Hokkaido Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Kishu Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Shikoku Ken</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'Akita Inu</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Teckel nain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Schnauzer nain</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Carlin</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Corgi</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Lévrier afghan</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Border collie</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Bull-terrier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Chow-chow</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Colley</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Doberman</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Golden retriever</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Lévrier</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Berger anglais ancien</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Caniche royal</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Borzoi</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Bullmastiff</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Berger du Caucase</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de Saint-bernard</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de terre-neuve</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de vallhund suédois</name>
+					<modName>Core</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de centauroid avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de centauroid avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de centauroid avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de centauroid avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de centauroid avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de serpent-like avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de serpent-like avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de serpent-like avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de serpent-like avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de serpent-like avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de spider-like avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de spider-like avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de spider-like avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de spider-like avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de spider-like avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à quatre bras avec une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à quatre bras avec une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à quatre bras avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à six bras avec une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à six bras avec une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde à six bras avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre d'humanoïde avec queue avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre pattes et quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre pattes et quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre pattes et six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre pattes et six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre pattes et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec queue de type serpent et quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec queue de type serpent et quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec queue de type serpent et six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec queue de type serpent et six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec queue de type serpent et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec abdomen de type araignée et quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec abdomen de type araignée et quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec abdomen de type araignée et six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec abdomen de type araignée et six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec abdomen de type araignée et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre bras et une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre bras et une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec six bras et une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec six bras et une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec six bras et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec une queue et wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre pattes</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec queue de type serpent</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec abdomen de type araignée</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec quatre bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec six bras</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec une queue</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+				<li>
+					<name>cadavre de mech avec wings</name>
+					<modName>Big and Small - Framework</modName>
+					<isVarietyEnabled>True</isVarietyEnabled>
+				</li>
+			</values>
+		</raceVarietyV2>
+	</ModSettings>
+</SettingsBlock>

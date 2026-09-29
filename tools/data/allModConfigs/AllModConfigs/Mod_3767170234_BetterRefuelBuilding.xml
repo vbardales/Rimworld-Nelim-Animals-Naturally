@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BetterRefuelBuilding.BRB_Settings">
+		<maximum_loose_refuel_distance>15</maximum_loose_refuel_distance>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ArtisanTouch.ModSettings_ArtisanTouch">
+		<minCraft_T4>0</minCraft_T4>
+		<minCraft_T3>1</minCraft_T3>
+		<minCraft_T2>2</minCraft_T2>
+		<minCraft_T1>3</minCraft_T1>
+		<prefixSpawnEnabled>
+			<keys />
+			<values />
+		</prefixSpawnEnabled>
+	</ModSettings>
+</SettingsBlock>

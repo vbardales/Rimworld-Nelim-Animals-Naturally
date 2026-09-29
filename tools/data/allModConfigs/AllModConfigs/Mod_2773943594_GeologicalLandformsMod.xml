@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="GeologicalLandforms.GeologicalLandformsSettings">
+		<DisabledLandforms />
+		<DisabledTileMutators />
+		<DisabledBiomeVariants />
+		<Odyssey_DisabledLandforms>
+			<li>Archipelago</li>
+			<li>Cove</li>
+			<li>Cliff</li>
+			<li>CliffCorner</li>
+			<li>CoastalIsland</li>
+			<li>DryLake</li>
+			<li>Fjord</li>
+			<li>Lake</li>
+			<li>LakeWithIsland</li>
+			<li>Oasis</li>
+			<li>Peninsula</li>
+			<li>Valley</li>
+			<li>River</li>
+			<li>RiverConfluence</li>
+			<li>RiverDelta</li>
+			<li>RiverIsland</li>
+			<li>RiverSource</li>
+		</Odyssey_DisabledLandforms>
+		<Odyssey_DisabledTileMutators />
+		<Odyssey_DisabledBiomeVariants />
+		<BiomesExcludedFromLandforms />
+		<BiomesExcludedFromTransitions />
+	</ModSettings>
+</SettingsBlock>

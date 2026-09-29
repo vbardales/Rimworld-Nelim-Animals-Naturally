@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="FamilyTies.FamilyTiesSettings">
+		<ageOfCaring>0</ageOfCaring>
+		<childMinEmpathyAge>6</childMinEmpathyAge>
+		<childMaxEmpathyAge>0</childMaxEmpathyAge>
+		<childWorryPainThreshold>0.150000006</childWorryPainThreshold>
+		<childWorrySickThreshold>0.25</childWorrySickThreshold>
+		<opinionThreshold>15</opinionThreshold>
+	</ModSettings>
+</SettingsBlock>

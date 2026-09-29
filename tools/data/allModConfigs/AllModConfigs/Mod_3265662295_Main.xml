@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TalkingIsntEverything.Settings">
+		<allowAnimals>True</allowAnimals>
+		<allowRomance>True</allowRomance>
+		<allowCasual>True</allowCasual>
+		<allowSlavery>False</allowSlavery>
+		<allowRecruit>False</allowRecruit>
+		<allowComms>True</allowComms>
+		<allowConvert>False</allowConvert>
+		<allowTrial>True</allowTrial>
+		<allowSpeech>False</allowSpeech>
+		<allowTeach>True</allowTeach>
+	</ModSettings>
+</SettingsBlock>

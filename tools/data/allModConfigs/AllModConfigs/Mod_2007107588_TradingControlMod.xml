@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TradingControl.Settings.TradingControlSettings">
+		<TradingControl.TradingSpotEnabled>True</TradingControl.TradingSpotEnabled>
+		<TradingControl.TradersGoToTradeSpot>True</TradingControl.TradersGoToTradeSpot>
+		<TradingControl.VisitorsGotoTradeSpot>True</TradingControl.VisitorsGotoTradeSpot>
+		<TradingControl.MaxTradeSpot>1</TradingControl.MaxTradeSpot>
+		<TradingControl.punchThroughEnabled>False</TradingControl.punchThroughEnabled>
+		<TradingControl.RequiresWorkToPlace>True</TradingControl.RequiresWorkToPlace>
+		<TradingControl.RequiresWorkToRemove>True</TradingControl.RequiresWorkToRemove>
+		<TradingControl.UseSocialTradeMoodBuff>True</TradingControl.UseSocialTradeMoodBuff>
+		<TradingControl.UseSocialTradeAuraBuff>True</TradingControl.UseSocialTradeAuraBuff>
+	</ModSettings>
+</SettingsBlock>

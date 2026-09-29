@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Despicable.Settings">
+		<facialPartsExtensionEnabled>False</facialPartsExtensionEnabled>
+		<lovinMutualConsent>False</lovinMutualConsent>
+		<heroModuleEnabled>False</heroModuleEnabled>
+		<headTypeBlacklistDefNames />
+		<allowedDefaultDisabledHeadDefNames />
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BetterBeggars.BetterBeggars_Settings">
+		<flagSilver>True</flagSilver>
+		<flagMedicineHerbal>True</flagMedicineHerbal>
+		<flagMedicineIndustrial>False</flagMedicineIndustrial>
+		<flagPenoxycyline>False</flagPenoxycyline>
+		<flagBeer>False</flagBeer>
+		<flagSteel>False</flagSteel>
+		<flagWood>False</flagWood>
+		<flagComponent>False</flagComponent>
+		<flagCloth>False</flagCloth>
+		<flagYayo>False</flagYayo>
+		<flagFlake>False</flagFlake>
+		<flagLuciferium>False</flagLuciferium>
+		<flagSmokeleafJoint>False</flagSmokeleafJoint>
+		<BeggarRequestValueMultiplier>0.850000024</BeggarRequestValueMultiplier>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="NewHarvestPatches.NewHarvestPatchesModSettings">
+		<ModVersion>1.9.2</ModVersion>
+		<MoveDrinksToVBECategory>True</MoveDrinksToVBECategory>
+		<AddAquaticReedsToBiomes>True</AddAquaticReedsToBiomes>
+		<AddMoreWoodFloors>True</AddMoreWoodFloors>
+		<NewHarvestWoodFloorsToDropdowns>True</NewHarvestWoodFloorsToDropdowns>
+		<NewHarvestNonWoodFloorsToDropdown>True</NewHarvestNonWoodFloorsToDropdown>
+		<AddWoodDryads>True</AddWoodDryads>
+		<HayNeedsCooling>False</HayNeedsCooling>
+		<GrainsProduceVCEFlourSecondary>True</GrainsProduceVCEFlourSecondary>
+		<TruffleSettings />
+		<StuffCommonality>
+			<keys>
+				<li>VV_CedarWood</li>
+				<li>VV_Cork</li>
+				<li>VV_EbonyWood</li>
+				<li>VV_MahoganyWood</li>
+				<li>VV_RamieFibers</li>
+				<li>VV_Rattan</li>
+				<li>VV_RawJute</li>
+				<li>VV_ReedStalks</li>
+				<li>VV_RosewoodWood</li>
+				<li>VV_Rubber</li>
+				<li>VV_Silk</li>
+			</keys>
+			<values>
+				<li>
+					<StructureOffset>0.5</StructureOffset>
+					<WeaponOffset>0.5</WeaponOffset>
+					<ApparelOffset>0.5</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.5</StructureOffset>
+					<WeaponOffset>0.5</WeaponOffset>
+					<ApparelOffset>0.5</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.200000003</StructureOffset>
+					<WeaponOffset>0.200000003</WeaponOffset>
+					<ApparelOffset>0.200000003</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.300000012</StructureOffset>
+					<WeaponOffset>0.300000012</WeaponOffset>
+					<ApparelOffset>0.300000012</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.699999988</StructureOffset>
+					<WeaponOffset>0.699999988</WeaponOffset>
+					<ApparelOffset>0.699999988</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.600000024</StructureOffset>
+					<WeaponOffset>0.600000024</WeaponOffset>
+					<ApparelOffset>0.600000024</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.699999988</StructureOffset>
+					<WeaponOffset>0.699999988</WeaponOffset>
+					<ApparelOffset>0.699999988</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.600000024</StructureOffset>
+					<WeaponOffset>0.600000024</WeaponOffset>
+					<ApparelOffset>0.600000024</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.400000006</StructureOffset>
+					<WeaponOffset>0.400000006</WeaponOffset>
+					<ApparelOffset>0.400000006</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0</StructureOffset>
+					<WeaponOffset>0</WeaponOffset>
+					<ApparelOffset>0</ApparelOffset>
+				</li>
+				<li>
+					<StructureOffset>0.150000006</StructureOffset>
+					<WeaponOffset>0.150000006</WeaponOffset>
+					<ApparelOffset>0.150000006</ApparelOffset>
+				</li>
+			</values>
+		</StuffCommonality>
+		<MaterialColors>
+			<keys>
+				<li>VV_CedarWood</li>
+				<li>VV_Cork</li>
+				<li>VV_EbonyWood</li>
+				<li>VV_MahoganyWood</li>
+				<li>VV_RamieFibers</li>
+				<li>VV_Rattan</li>
+				<li>VV_RawJute</li>
+				<li>VV_ReedStalks</li>
+				<li>VV_RosewoodWood</li>
+				<li>VV_Rubber</li>
+				<li>VV_Silk</li>
+			</keys>
+			<values>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.788, 0.592, 0.439, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.745, 0.549, 0.314, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.157, 0.157, 0.165, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.361, 0.122, 0.122, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.918, 0.878, 0.784, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(0.918, 0.878, 0.784, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.651, 0.486, 0.322, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.761, 0.635, 0.424, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(0.761, 0.635, 0.424, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.761, 0.698, 0.502, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.467, 0.051, 0.235, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.941, 0.941, 0.902, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</NewThingColor>
+				</li>
+				<li>
+					<DefaultStuffColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultStuffColor>
+					<DefaultThingColor>RGBA(1.000, 1.000, 1.000, 1.000)</DefaultThingColor>
+					<NewStuffColor>RGBA(0.902, 0.839, 0.722, 1.000)</NewStuffColor>
+					<NewThingColor>RGBA(0.902, 0.839, 0.722, 1.000)</NewThingColor>
+				</li>
+			</values>
+		</MaterialColors>
+		<FuelTypes>
+			<keys>
+				<li>VV_CedarWood</li>
+				<li>VV_Cork</li>
+				<li>VV_EbonyWood</li>
+				<li>VV_MahoganyWood</li>
+				<li>VV_Rattan</li>
+				<li>VV_ReedStalks</li>
+				<li>VV_RosewoodWood</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>False</li>
+				<li>True</li>
+				<li>True</li>
+				<li>False</li>
+				<li>False</li>
+				<li>True</li>
+			</values>
+		</FuelTypes>
+		<FallColorTrees>
+			<keys>
+				<li>VV_ApricotTree</li>
+				<li>VV_CashewTree</li>
+				<li>VV_ChestnutTree</li>
+				<li>VV_CorkTree</li>
+				<li>VV_DurianTree</li>
+				<li>VV_EbonyTree</li>
+				<li>VV_GinkgoTree</li>
+				<li>VV_GrapefruitTree</li>
+				<li>VV_HawthornTree</li>
+				<li>VV_HazelnutTree</li>
+				<li>VV_JabuticabaTree</li>
+				<li>VV_LimeTree</li>
+				<li>VV_LindenTree</li>
+				<li>VV_MahoganyTree</li>
+				<li>VV_MedlarTree</li>
+				<li>VV_MulberryTree</li>
+				<li>VV_PapayaTree</li>
+				<li>VV_PecanTree</li>
+				<li>VV_PersimmonTree</li>
+				<li>VV_PomegranateTree</li>
+				<li>VV_QuinceTree</li>
+				<li>VV_RosewoodTree</li>
+				<li>VV_RubberTree</li>
+				<li>VV_SourCherryTree</li>
+				<li>VV_SugarMapleTree</li>
+				<li>VV_WalnutTree</li>
+				<li>VV_WhiteMulberryTree</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+			</values>
+		</FallColorTrees>
+		<CategoryData />
+		<CategoryLabelCache>
+			<keys>
+				<li>VV_NHCP_DummyCategory_AnimalFoods</li>
+				<li>VV_NHCP_DummyCategory_Fruit</li>
+				<li>VV_NHCP_DummyCategory_Grains</li>
+				<li>VV_NHCP_DummyCategory_Nuts</li>
+				<li>VV_NHCP_DummyCategory_Vegetables</li>
+				<li>VV_NHCP_DummyCategory_Fungus</li>
+			</keys>
+			<values>
+				<li>
+					<CurrentCategoryLabel>Animal Food</CurrentCategoryLabel>
+				</li>
+				<li>
+					<CurrentCategoryLabel>Fruit</CurrentCategoryLabel>
+				</li>
+				<li>
+					<CurrentCategoryLabel>Grains</CurrentCategoryLabel>
+				</li>
+				<li>
+					<CurrentCategoryLabel>Nuts and Seeds</CurrentCategoryLabel>
+				</li>
+				<li>
+					<CurrentCategoryLabel>Vegetables</CurrentCategoryLabel>
+				</li>
+				<li>
+					<CurrentCategoryLabel>Fungus</CurrentCategoryLabel>
+				</li>
+			</values>
+		</CategoryLabelCache>
+	</ModSettings>
+</SettingsBlock>

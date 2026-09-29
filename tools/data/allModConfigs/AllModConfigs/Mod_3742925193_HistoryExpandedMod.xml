@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="HistoryExpanded.ModernHistoryMenuSettings">
+		<winX>135</winX>
+		<winY>18</winY>
+		<winW>1010</winW>
+		<winH>700</winH>
+	</ModSettings>
+</SettingsBlock>

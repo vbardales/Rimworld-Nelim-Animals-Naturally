@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="NicePlantsMenu.Settings">
+		<AlwaysShowAllInfo>True</AlwaysShowAllInfo>
+		<WindowIsResizeable>True</WindowIsResizeable>
+	</ModSettings>
+</SettingsBlock>

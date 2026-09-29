@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BillCategories.BillCategorySettings">
+		<replaceMedical>False</replaceMedical>
+		<replaceGeneral>False</replaceGeneral>
+		<replaceCooking>False</replaceCooking>
+		<shiftOption>False</shiftOption>
+		<splitByResearch>False</splitByResearch>
+	</ModSettings>
+</SettingsBlock>

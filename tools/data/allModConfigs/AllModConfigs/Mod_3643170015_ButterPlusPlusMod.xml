@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ButterPlusPlus.Settings">
+		<cameraTargetFps>31</cameraTargetFps>
+		<cameraEnableSlowdown>True</cameraEnableSlowdown>
+		<cameraMaxSlowdown>0.300000012</cameraMaxSlowdown>
+		<uiTargetFps>30</uiTargetFps>
+		<uiEnableSlowdown>True</uiEnableSlowdown>
+		<uiMaxSlowdown>0.300000012</uiMaxSlowdown>
+		<idleEnableSlowdown>True</idleEnableSlowdown>
+		<idleMaxSlowdown>0.300000012</idleMaxSlowdown>
+		<compatibilityMode>True</compatibilityMode>
+	</ModSettings>
+</SettingsBlock>

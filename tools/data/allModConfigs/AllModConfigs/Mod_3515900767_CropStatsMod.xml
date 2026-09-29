@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CropStats.CropStatsSettings">
+		<setting_TrueGrowingTime>True</setting_TrueGrowingTime>
+		<setting_DailyHarvestedNutrition>True</setting_DailyHarvestedNutrition>
+		<setting_PawnCapacity>True</setting_PawnCapacity>
+	</ModSettings>
+</SettingsBlock>

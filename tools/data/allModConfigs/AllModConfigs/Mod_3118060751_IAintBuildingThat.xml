@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="IAintBuildingThat.Settings">
+		<hiddenBuildables>
+			<li>ROO_HandFishingSpot</li>
+			<li>UNA_Inuhariko</li>
+			<li>UNA_okimonomini</li>
+			<li>UNA_Genkankazari</li>
+			<li>UNA_Kadomatu</li>
+			<li>Wall_Destr_Shootable</li>
+			<li>Wall_Destr_Climbable</li>
+			<li>VFEArch_FineWall_Destr_Shootable</li>
+			<li>VFEArch_ArmoredWall_Destr_Climbable</li>
+			<li>VFEArch_FineWall_Destr_Climbable</li>
+			<li>OrbitalAncientFortifiedWall</li>
+			<li>ABooks_RuinedWall</li>
+			<li>VFEArch_LogWall_Destr_Shootable</li>
+			<li>VFEArch_LogWall_Destr_Climbable</li>
+			<li>VFEArch_ArmoredWall_Destr_Shootable</li>
+			<li>TableButcher</li>
+			<li>WaterTrough</li>
+		</hiddenBuildables>
+		<revealHiddenCombo>
+			<shift>True</shift>
+		</revealHiddenCombo>
+		<menuCombo />
+	</ModSettings>
+</SettingsBlock>

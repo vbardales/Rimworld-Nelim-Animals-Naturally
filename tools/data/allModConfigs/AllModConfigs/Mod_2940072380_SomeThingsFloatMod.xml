@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SomeThingsFloat.SomeThingsFloatSettings">
+		<HaulUrgently>True</HaulUrgently>
+		<ReservedItemsWillNotMove>True</ReservedItemsWillNotMove>
+		<SpawnInOceanTiles>True</SpawnInOceanTiles>
+		<AllowStranding>True</AllowStranding>
+		<SmoothAnimation>False</SmoothAnimation>
+		<Bobbing>False</Bobbing>
+		<SpawnFertilizedEggs>True</SpawnFertilizedEggs>
+	</ModSettings>
+</SettingsBlock>

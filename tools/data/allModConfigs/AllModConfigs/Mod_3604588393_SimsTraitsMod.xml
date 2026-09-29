@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SimsTraits.SimsTraitsSettings">
+		<VEPatchPerTrait>
+			<keys>
+				<li>VTE_Submissive</li>
+				<li>VTE_DrunkenMaster</li>
+				<li>VTE_Insomniac</li>
+				<li>VTE_AbsentMinded</li>
+				<li>VTE_AnimalLover</li>
+				<li>VTE_BigBoned</li>
+				<li>VTE_Clumsy</li>
+				<li>VTE_Vengeful</li>
+				<li>VTE_Workaholic</li>
+				<li>VTE_WorldWeary</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+			</values>
+		</VEPatchPerTrait>
+	</ModSettings>
+</SettingsBlock>

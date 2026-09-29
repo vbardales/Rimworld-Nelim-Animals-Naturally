@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Quarry.QuarrySettings">
+		<QRY_OreDictionary>
+			<li>
+				<thingDef>Steel</thingDef>
+				<count>112</count>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<count>3</count>
+			</li>
+			<li>
+				<thingDef>Gold</thingDef>
+				<count>3</count>
+			</li>
+			<li>
+				<thingDef>Uranium</thingDef>
+				<count>8</count>
+			</li>
+			<li>
+				<thingDef>Plasteel</thingDef>
+				<count>8</count>
+			</li>
+			<li>
+				<thingDef>Jade</thingDef>
+				<count>4</count>
+			</li>
+			<li>
+				<thingDef>Obsidian</thingDef>
+			</li>
+			<li>
+				<thingDef>TKKN_Amber</thingDef>
+				<count>6</count>
+			</li>
+			<li>
+				<thingDef>TKKN_PetrifiedWood</thingDef>
+				<count>15</count>
+			</li>
+			<li>
+				<thingDef>GLO_GlowstoneCluster</thingDef>
+			</li>
+			<li>
+				<thingDef>ComponentIndustrial</thingDef>
+			</li>
+		</QRY_OreDictionary>
+	</ModSettings>
+</SettingsBlock>

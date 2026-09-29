@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="P42_Allergies.Allergies_Settings">
+		<enabledAllergyTypes>
+			<keys>
+				<li>FoodType</li>
+				<li>Ingredient</li>
+				<li>Drug</li>
+				<li>Medicine</li>
+				<li>TextileType</li>
+				<li>Textile</li>
+				<li>Animal</li>
+				<li>Plant</li>
+				<li>Pollen</li>
+				<li>Sunlight</li>
+				<li>Dust</li>
+				<li>Water</li>
+				<li>Temperature</li>
+				<li>SpecificMiscItem</li>
+				<li>Xenotype</li>
+				<li>Wood</li>
+				<li>Stone</li>
+				<li>Metal</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+				<li>True</li>
+			</values>
+		</enabledAllergyTypes>
+	</ModSettings>
+</SettingsBlock>

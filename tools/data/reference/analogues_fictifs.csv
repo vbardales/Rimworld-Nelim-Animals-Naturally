@@ -1,0 +1,224 @@
+defName,nom,analogue,confiance
+Muffalo,Muffalo,Bison,haute
+Mamuffalo,Mamuffalo,RG_WoollyMammoth,haute
+WYD_MamuffaloWood,Mamuffalo des bois,RG_WoollyMammoth,haute
+WYD_MamuffaloSnow,Mamuffalo des neiges,RG_WoollyMammoth,haute
+WYD_MamuffaloLost,Mamuffalo perdu,RG_WoollyMammoth,haute
+AA_Thunderox,Thunderox,Bison,haute
+AA_SpinedGow,Vache epineuse,Cow,haute
+AA_Radyak,Radyak,Yak,haute
+AA_ChameleonYak,Yak cameleon,Yak,haute
+DA_DwarvenMuffton,Muffton nain,Yak,moyenne
+ERN_Lox,Lox,Yak,moyenne
+AA_ShockGoat,Chevre de choc,Goat,haute
+AA_DevilSheep,Mouton diabolique,Sheep,haute
+AA_NightRam,Belier nocturne,Sheep,haute
+AA_GreyCoatedMouflon,Mouflon gris,MouflonSheep,haute
+AA_NightMule,Mule nocturne,Donkey,haute
+Thrumbo,Thrumbo,Rhinoceros,haute
+AlphaThrumbo,Alpha thrumbo,Rhinoceros,haute
+Gigantelope,Gigantelope,Elk,haute
+AA_Gigantelope,Gigantelope,Elk,haute
+Toxalope,Toxalope,Gemsbok,haute
+Boomalope,Boomalope,Gemsbok,haute
+VAEWaste_Wasteffalo,Wasteffalo,Bison,haute
+VAEWaste_Wastedeer,Cerf des dechets,Deer,haute
+VAEWaste_Wasteboar,Sanglier des dechets,WildBoar,haute
+VAEWaste_Toxbear,Ours toxique,BlackBear,haute
+VAEWaste_Toxlion,Lion toxique,ACPLion,haute
+VAEWaste_Toxafox,Renard toxique,Fox_Red,haute
+VAEWaste_Toxiguana,Iguane toxique,Iguana,haute
+VAEWaste_Toxscorpion,Scorpion toxique,ACPMegascorpion,haute
+VAEWaste_Pestigator,Pestigator,Alligator,haute
+Zarander,Zarander,Deer,moyenne
+Rabbuck,Rabbuck,Hare,moyenne
+pphhyy_SanguineDeer,Cerf sanguin,Deer,haute
+Miraffe,Miraffe,ACPGiraffe,haute
+Giantala,Giantala,AEXP_Koala,haute
+Packaroo,Packaroo,AEXP_Kangaroo,haute
+Bardelot,Bardelot,Tiger,moyenne
+Warg,Warg,Wolf_Timber,haute
+Coldwarg,Coldwarg,Wolf_Arctic,haute
+Wolf_Great,Grand loup,Wolf_Timber,haute
+ERN_FrostWolf,Loup des glaces,Wolf_Arctic,haute
+pphhyy_Vargulf,Vargulf,Wolf_Timber,haute
+Taggerung_ChromaticFlowerWolf,Loup fleuri,Wolf_Timber,moyenne
+ACPSpiritwolf,Loup spirituel,Wolf_Timber,haute
+BogHound,Chien des marais,Wolf_Timber,moyenne
+DW_Garmr,Garmr,Wolf_Timber,moyenne
+DA_ImperialRedhound,Chien rouge imperial,Wolf_Timber,moyenne
+AA_RayHound,Chien-raie,Wolf_Timber,moyenne
+AA_RipperHound,Chien eventreur,Wolf_Timber,moyenne
+AA_Skiphound,Chien sauteur,Wolf_Timber,moyenne
+Rimmessian_fox,Renard rimmessien,Fox_Red,haute
+ERN_lizarddoggo,Chien-lezard,MonitorLizard,moyenne
+AA_ArcticLion,Lion arctique,ACPLion,haute
+AA_SandLion,Lion des sables,ACPLion,haute
+AA_FrostLynx,Lynx des glaces,Lynx,haute
+Grimstone_NorthernLynx,Lynx du nord,Lynx,haute
+AA_CrystallineCaracal,Caracal cristallin,Lynx,haute
+AA_DuskProwler,Rodeur crepusculaire,Cougar,moyenne
+AA_SandProwler,Rodeur des sables,Cougar,moyenne
+AA_PhoenixOwlcat,Owlcat phenix,Lynx,moyenne
+DA_ArcticOwlcat,Owlcat arctique,Lynx,moyenne
+DA_ForestOwlcat,Owlcat des forets,Lynx,moyenne
+HC_Owlbear,Ours-hibou,BlackBear,moyenne
+Megasloth,Megasloth,BlackBear,moyenne
+AA_Behemoth,Behemoth,Elephant,moyenne
+AA_FrostboundBehemoth,Behemoth des glaces,Elephant,moyenne
+AA_Thunderbeast,Bete du tonnerre,Elephant,moyenne
+ZEle_Skelephant,Elephant squelette,Elephant,haute
+DA_Barog,Barog,Elephant,faible
+Toraton,Toraton,HC_Galapagostortoise,haute
+DA_LeviathanCrab,Crabe leviathan,StoneCrab,haute
+AA_SummitCrab,Crabe des sommets,StoneCrab,haute
+Grimstone_Belloceros,Belloceros,Rhinoceros,moyenne
+RG_WoollyStegosaurus,Stegosaure laineux,Rhinoceros,moyenne
+RG_ArcticDrak,Drak arctique,RG_Velociraptor,moyenne
+AA_PedigreedRaptor,Raptor de lignee,RG_Velociraptor,moyenne
+AA_DecayDrake,Drake de decomposition,CK_KomodoDragon,moyenne
+HC_Wyvern,Wyverne,CK_KomodoDragon,moyenne
+HC_Griffin,Griffon,Vulture,faible
+HC_Roc,Roc,Vulture,faible
+Grimstone_Griffar,Griffar,Vulture,faible
+AA_CrescendoAnole,Anole crescendo,Iguana,haute
+AA_RoughPlatedMonitor,Varan cuirasse,MonitorLizard,haute
+HC_Kelpie,Kelpie,Horse,faible
+HC_Unicorn,Licorne,Horse,haute
+ACPUnicorn,Licorne,Horse,haute
+HC_Nightmares,Cauchemar,Horse,haute
+ACPWoolyHorse,Cheval laineux,Horse,haute
+AA_Groundrunner,Coureur des sols,Ostrich,moyenne
+AA_Gallatross,Gallatross,Ostrich,moyenne
+AA_GallatrossMoribund,Gallatross moribond,Ostrich,moyenne
+pphhyy_Kelenken,Kelenken,RG_TerrorBird,haute
+pphhyy_Penglenken,Penglenken,RG_TerrorBird,moyenne
+pphhyy_Sparaken,Sparaken,RG_TerrorBird,moyenne
+pphhyy_DesertSparaken,Sparaken du desert,RG_TerrorBird,moyenne
+pphhyy_Paraken,Paraken,RG_TerrorBird,moyenne
+pphhyy_Heronken,Heronken,Heron,moyenne
+pphhyy_Pileaken,Pileaken,RG_TerrorBird,faible
+pphhyy_Touken,Touken,RG_TerrorBird,faible
+pphhyy_Vulaken,Vulaken,Vulture,moyenne
+AA_FlamingoPhoenix,Phenix flamant,Flamingo,haute
+Taggerung_Chromabird,Chromabird,Macaw,moyenne
+AA_DesertAve,Ave du desert,Crow,faible
+AA_FrostAve,Ave des glaces,Crow,faible
+AA_MeadowAve,Ave des prairies,Crow,faible
+AA_NightAve,Ave nocturne,Crow,faible
+AA_RoyalAve,Ave royale,Crow,faible
+Alphabeaver,Alphacastor,AEXP_Beaver,haute
+AA_DuskRat,Rat crepusculaire,Rat,haute
+AA_FissionMouse,Souris a fission,Mouse,haute
+AA_FissionMouseSecond,Souris a fission II,Mouse,haute
+AA_FissionMouseThird,Souris a fission III,Mouse,haute
+Boomrat,Rat explosif,Rat,haute
+DireRat,Rat sinistre,Rat,haute
+ScourgeRat,Rat du fleau,Rat,haute
+SnowRat,Rat des neiges,Rat,haute
+WasteRat,Rat des dechets,Rat,haute
+Rat_Large,Grand rat,Rat,haute
+TYR_HotfootRat,Rat pieds-chauds,Rat,haute
+GiantRakali,Rakali geant,Muskrat,haute
+Megavole,Campagnol geant,Muskrat,haute
+ThorntailMouse,Souris a queue epineuse,Mouse,haute
+Woolly_Mouse,Souris laineuse,Mouse,haute
+TYR_MousePoison,Souris venimeuse,Mouse,haute
+Yippa,Yippa,PrairieDog,moyenne
+DA_SilverMole,Taupe argentee,Mole_Rat,haute
+SC_Moleroach,Taupe-blatte,Mole_Rat,moyenne
+SC_MoleroachBlue,Taupe-blatte bleue,Mole_Rat,moyenne
+ACPJackalope,Jackalope,ACPDomesticRabbit,haute
+CCPChocolateBun,Lapin chocolat,ACPDomesticRabbit,haute
+Crows_DustBunny,Lapin des poussieres,ACPDomesticRabbit,haute
+ERN_Misthare,Lievre des brumes,Hare,haute
+ACPMegabadger,Blaireau geant,Badger,haute
+ACPMegaFerret,Furet geant,ACPFerret,haute
+AEXP_MegaWolverine,Glouton geant,Wolverine,haute
+ZGF_MegaMart,Martre geante,ZGF_PineMart,haute
+ZGF_RimMart,Martre du rim,ZGF_PineMart,haute
+ZGF_Boommarten,Martre explosive,ZGF_PineMart,haute
+VAERoy_Megachicken,Poule geante,Chicken,haute
+AA_GiantCrownedSilkie,Poule soie geante,ACPSilkieChicken,haute
+ZDuck_Quackodile,Canardile,Duck,moyenne
+ZDuck_Ducky,Caneton,Duck,haute
+ZDuck_DesertRazorbill,Torda du desert,ZDuck_ArcticRazorbill,haute
+ZPT_LilacMegakeet,Megaperruche lilas,Macaw,haute
+ZPT_RubyMegakeet,Megaperruche rubis,Macaw,haute
+RedPeacock,Paon rouge,Peacock,haute
+RG_SabertoothSquirrel,Ecureuil a dents de sabre,Squirrel,haute
+Megaspider,Megaraignee,Nem_Spider,haute
+ACPSilkspider,Araignee a soie,Nem_Spider,haute
+AA_BlackSpider,Araignee noire,Nem_Spider,haute
+AA_Feralisk,Feralisk,Nem_Spider,haute
+AA_Junglelisk,Junglelisk,Nem_Spider,haute
+AA_Dunealisk,Dunealisk,Nem_Spider,haute
+AA_Blizzarisk,Blizzarisk,Nem_Spider,haute
+AA_Cinderlisk,Cinderlisk,Nem_Spider,haute
+AA_FeraliskClutchMother,Mere feralisk,Nem_Spider,haute
+AA_DunealiskClutchMother,Mere dunealisk,Nem_Spider,haute
+AA_BlizzariskClutchMother,Mere blizzarisk,Nem_Spider,haute
+Spelopede,Spelopede,Nem_Spider,moyenne
+AA_BlackSpelopede,Spelopede noir,Nem_Spider,moyenne
+AA_Slurrypede,Slurrypede,Nem_Spider,moyenne
+Megascarab,Megascarabee,Nem_Cockroach,haute
+AA_BlackScarab,Scarabee noir,Nem_Cockroach,haute
+AA_IronhuskBeetle,Scarabee cuirasse,Nem_Cockroach,haute
+AA_CrepuscularBeetle,Scarabee crepusculaire,Nem_Cockroach,haute
+DA_IroncasketBeetle,Scarabee cercueil,Nem_Cockroach,haute
+pphhyy_BloodScarab,Scarabee de sang,Nem_Cockroach,haute
+AA_LuciferBug,Lucifer,Nem_Cockroach,moyenne
+AA_BedBug,Punaise,Nem_Cockroach,haute
+AA_MegaLouse,Megapou,Nem_Woodlouse,haute
+AA_Frostmite,Acarien des glaces,Nem_Woodlouse,haute
+AA_Locusts,Criquets,Locust,haute
+AA_Swarmling,Essaimeur,Locust,moyenne
+AA_FireWasp,Guepe de feu,Nem_Mantis,moyenne
+AA_Bumbledrone,Bourdon-drone,Nem_Mantis,moyenne
+AA_BumbledroneQueen,Reine bourdon-drone,Nem_Mantis,moyenne
+AA_BumbledroneHierophant,Hierophante bourdon,Nem_Mantis,moyenne
+AA_AngelMoth,Papillon ange,EM_FWMoth,moyenne
+AA_SmallButterfly,Petit papillon,Nem_Mantis,moyenne
+AA_EmpressButterfly,Papillon imperatrice,Nem_Mantis,moyenne
+EM_FWMoth,Papillon,Nem_Mantis,moyenne
+HiveQueen,Reine de la ruche,Nem_Mantis,moyenne
+ACPAcidAnt,Fourmi acide,Nem_Cockroach,haute
+ACPHaulerAnt,Fourmi porteuse,Nem_Cockroach,haute
+ACPMegascorpion,Megascorpion,Nem_Spider,haute
+AEXP_Megascorpion,Megascorpion,Nem_Spider,haute
+CactusMantis,Mante cactus,Nem_Mantis,haute
+Ling_Cockroach,Blatte,Nem_Cockroach,haute
+AA_BloodShrimp,Crevette de sang,HermitCrab,moyenne
+AA_RaptorShrimp,Crevette raptor,HermitCrab,moyenne
+AA_SandSquid,Calmar des sables,HermitCrab,faible
+Megasquid,Megacalmar,HermitCrab,faible
+AA_Skyeel,Anguille du ciel,MudSnake,faible
+AA_TetraSlug,Tetralimace,LavaSnail,moyenne
+LavaSnail,Escargot de lave,HermitCrab,faible
+AA_MammothWorm,Ver mammouth,Boneworm,moyenne
+Boneworm,Ver d os,Worm,haute
+Worm,Ver,Nem_Woodlouse,moyenne
+Larva,Larve,Nem_Woodlouse,moyenne
+AA_AngelMothLarva,Larve de papillon ange,Nem_Woodlouse,moyenne
+AA_EmpressButterflyLarva,Larve d imperatrice,Nem_Woodlouse,moyenne
+AA_DrainerLarva,Larve de drainer,Nem_Woodlouse,moyenne
+AA_LarvalAtispec,Atispec larvaire,Nem_Woodlouse,moyenne
+DA_Snaptoad,Crapaud claqueur,Bullfrog,haute
+FEB_CryoToad,Crapaud cryo,Bullfrog,haute
+ColossusToad,Crapaud colosse,Bullfrog,haute
+AA_Cactipine,Cactipine,Porcupine,haute
+FEB_Gutterhog,Cochon des egouts,WildBoar,haute
+FEB_Leadbelly,Ventre-de-plomb,WildBoar,moyenne
+FEB_Ferrohorn,Corne-de-fer,Goat,moyenne
+FEB_Cottonfoot,Pied-de-coton,ACPDomesticRabbit,moyenne
+DA_RockTroll,Troll de pierre,Gorilla,moyenne
+DA_BeardedTroll,Troll barbu,Gorilla,moyenne
+HC_Yeti,Yeti,Gorilla,haute
+AlligatorMan,Homme-alligator,Alligator,haute
+BlackBearMan,Homme-ours,BlackBear,haute
+MandrillMan,Homme-mandrill,Mandrill,haute
+DA_SnowTaraal,Taraal des neiges,DA_Taraal,haute
+BoomooCow,Vache explosive,Cow,haute
+WoolyCow,Vache laineuse,Cow,haute
+WoolyPig,Cochon laineux,Pig,haute
+DairyPig,Cochon laitier,Pig,haute

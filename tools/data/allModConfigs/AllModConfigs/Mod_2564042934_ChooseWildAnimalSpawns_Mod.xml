@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ChooseWildAnimalSpawns.ChooseWildAnimalSpawns_Settings">
+		<ReverseSettingsMode>True</ReverseSettingsMode>
+		<CustomSpawnRates>
+			<keys>
+				<li>AB_GallatrossGraveyard</li>
+				<li>AB_FeraliskInfestedJungle</li>
+				<li>AB_MycoticJungle</li>
+				<li>AB_MiasmicMangrove</li>
+				<li>AB_IdyllicMeadows</li>
+				<li>AB_GelatinousSuperorganism</li>
+			</keys>
+			<values>
+				<li>#ZDuck_Ducky:0</li>
+				<li>#ZDuck_Ducky:0</li>
+				<li>#ZDuck_Ducky:0</li>
+				<li>#ZDuck_Ducky:0</li>
+				<li>#ZDuck_Ducky:0</li>
+				<li>#ZDuck_Ducky:0</li>
+			</values>
+		</CustomSpawnRates>
+		<CustomDensities>
+			<keys />
+			<values />
+		</CustomDensities>
+	</ModSettings>
+</SettingsBlock>

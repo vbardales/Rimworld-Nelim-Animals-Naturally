@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="PeteTimesSix.CategorizedCleaning.CategorizedCleaning_Settings">
+		<sterileRooms>
+			<li>Hospital</li>
+			<li>Laboratory</li>
+			<li>Kitchen</li>
+		</sterileRooms>
+		<outdoorRooms>
+			<li>Barn</li>
+		</outdoorRooms>
+	</ModSettings>
+</SettingsBlock>

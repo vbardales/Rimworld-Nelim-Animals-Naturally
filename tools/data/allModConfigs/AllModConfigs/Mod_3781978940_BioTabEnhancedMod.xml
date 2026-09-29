@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BioTabEnhanced.BioTabSettings">
+		<uiScale>0.800000012</uiScale>
+		<widthScale>1.20000005</widthScale>
+	</ModSettings>
+</SettingsBlock>

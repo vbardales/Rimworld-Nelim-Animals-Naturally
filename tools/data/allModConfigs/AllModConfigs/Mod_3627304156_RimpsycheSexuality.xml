@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Maux36.RimPsyche.RimpsycheSexualitySettings">
+		<KinseyDistributionSetting>
+			<li>62</li>
+			<li>11</li>
+			<li>10</li>
+			<li>6</li>
+			<li>5</li>
+			<li>3</li>
+			<li>3</li>
+		</KinseyDistributionSetting>
+		<usePreferenceSystem>False</usePreferenceSystem>
+		<romanceAttemptGenderDiff>True</romanceAttemptGenderDiff>
+	</ModSettings>
+</SettingsBlock>

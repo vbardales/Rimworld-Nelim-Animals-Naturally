@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DoubleGraphicLayer.SecondLayerSettings">
+		<DoubleGraphicLayer_DefaultToggle>True</DoubleGraphicLayer_DefaultToggle>
+		<DoubleGraphicLayer_ChairsNeedPawn>False</DoubleGraphicLayer_ChairsNeedPawn>
+	</ModSettings>
+</SettingsBlock>

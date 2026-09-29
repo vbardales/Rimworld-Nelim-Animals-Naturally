@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="PassiveResearch.PassiveResearchSettings">
+		<passiveResearchSpeed>0.200000003</passiveResearchSpeed>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Busywork.Settings">
+		<WorkMarkers>
+			<li>
+				<defName>Art</defName>
+				<iconName>Art</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>BasicWorker</defName>
+				<iconName>Tools</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Childcare</defName>
+				<iconName>Social</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Cleaning</defName>
+				<iconName>Clean</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<iconName>Tools</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<iconName>Chef</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<iconName>Craft</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>DarkStudy</defName>
+				<iconName>Science</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Doctor</defName>
+				<iconName>Med</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Firefighter</defName>
+				<iconName>Flame</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Fishing</defName>
+				<iconName>Fish</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Growing</defName>
+				<iconName>Farm</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Handling</defName>
+				<iconName>Repair</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Hauling</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Hunting</defName>
+				<iconName>Danger</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<iconName>Pickaxe</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Patient</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>PatientBedRest</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>PlantCutting</defName>
+				<iconName>Farm</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Research</defName>
+				<iconName>Science</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Smithing</defName>
+				<iconName>Craft</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Tailoring</defName>
+				<iconName>Scissors</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Warden</defName>
+				<iconName>Star</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+		</WorkMarkers>
+		<JobMarkers>
+			<li>
+				<defName>AttackMelee</defName>
+				<iconName>Fight</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>CarryToCryptosleepCasket</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>CarryToCryptosleepCasketDrafted</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>cleanBedpan</defName>
+				<iconName>Clean</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>clearBlockage</defName>
+				<iconName>Clean</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>ControlMech</defName>
+				<iconName>Psy</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>DBHGoSwimming</defName>
+				<iconName>Chill2</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>DBHUseSauna</defName>
+				<iconName>Chill2</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Deathrest</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>DismissTrader</defName>
+				<iconName>Trade</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>DoBill</defName>
+				<iconName>Craft</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>DropEquipment</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>EnterCryptosleepCasket</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Flee</defName>
+				<iconName>Stun</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>FleeAndCower</defName>
+				<iconName>Stun</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Follow</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>FollowClose</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>ForceTargetWear</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>GoForWalk</defName>
+				<iconName>Wait</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>GoSwimming</defName>
+				<iconName>Chill2</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Goto</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>GotoSafeTemperature</defName>
+				<iconName>Cold</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>GotoWander</defName>
+				<iconName>Wait</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Hack</defName>
+				<iconName>Chip</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>HaulCorpseToPublicPlace</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Ingest</defName>
+				<iconName>Dish</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>LayDown</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>LayDownAwake</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>LayDownResting</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>LoadComposter</defName>
+				<iconName>Spade</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>LoadWashing</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Lovin</defName>
+				<iconName>Like</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Meditate</defName>
+				<iconName>Meditation</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Milk</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>ReleaseAnimalToWild</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RemoveApparel</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RemoveSewage</defName>
+				<iconName>Spade</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Repair</defName>
+				<iconName>Repair</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RepairMech</defName>
+				<iconName>Repair</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RevenantSleep</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RopeRoamerToHitchingPost</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RopeRoamerToUnenclosedPen</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>RopeToPen</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Shear</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>ShieldMech</defName>
+				<iconName>Psy</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>SocialFight</defName>
+				<iconName>Fight</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>SocialRelax</defName>
+				<iconName>Chill</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>StandAndStare</defName>
+				<iconName>Wait</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Strip</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>takeBath</defName>
+				<iconName>bath</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>takeShower</defName>
+				<iconName>bath</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Tame</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>TradeWithPawn</defName>
+				<iconName>Trade</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Train</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>TryRomance</defName>
+				<iconName>Like</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>UnloadComposter</defName>
+				<iconName>Spade</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>UnloadInventory</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>UnloadWashing</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>UnloadYourInventory</defName>
+				<iconName>Walk</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Unrope</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>UseHotTub</defName>
+				<iconName>Chill2</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>UseToilet</defName>
+				<iconName>toilet</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait</defName>
+				<iconName>Wait</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait_Asleep</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait_AsleepDormancy</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait_Combat</defName>
+				<iconName>Fight</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait_SafeTemperature</defName>
+				<iconName>Cold</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait_Wander</defName>
+				<iconName>Wait</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wait_WithSleeping</defName>
+				<iconName>Sleep</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>washAtCell</defName>
+				<iconName>bath</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>washHands</defName>
+				<iconName>bath</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>washPatient</defName>
+				<iconName>bath</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Wear</defName>
+				<iconName>apparel</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+		</JobMarkers>
+		<SkillMarkers>
+			<li>
+				<defName>Animals</defName>
+				<iconName>Animal</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<iconName>Art</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<iconName>Tools</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<iconName>Chef</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<iconName>Craft</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<iconName>Science</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<iconName>Med</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<iconName>Fight</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<iconName>Pickaxe</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<iconName>Farm</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<iconName>Machinegun</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<iconName>Social</iconName>
+				<color>RGBA(0.000, 0.000, 0.000, 0.000)</color>
+			</li>
+		</SkillMarkers>
+	</ModSettings>
+</SettingsBlock>

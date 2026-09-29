@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="TrulyInspiredTaming.BoostSettings">
+		<Boost>Percentage</Boost>
+		<BoostPercentage>0.200000003</BoostPercentage>
+		<BoostLevels>4</BoostLevels>
+	</ModSettings>
+</SettingsBlock>

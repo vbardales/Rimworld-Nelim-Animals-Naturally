@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MoreTraitSlots.MoreTraitSlotsSettings">
+		<maxTraits>5</maxTraits>
+		<excludedTraits>
+			<li>Gay</li>
+			<li>Bisexual</li>
+			<li>Asexual</li>
+			<li>TechBackground</li>
+		</excludedTraits>
+	</ModSettings>
+</SettingsBlock>

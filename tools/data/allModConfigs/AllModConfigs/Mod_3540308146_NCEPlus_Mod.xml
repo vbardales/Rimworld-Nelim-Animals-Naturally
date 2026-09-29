@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="NotCreatedEquallyPlus.NCEPlus_Settings">
+		<enableMoveSpeed>True</enableMoveSpeed>
+		<enableCarryCap>True</enableCarryCap>
+		<enableImmunityGain>True</enableImmunityGain>
+		<enableColdResist>True</enableColdResist>
+		<enableHeatResist>True</enableHeatResist>
+		<enableLearning>True</enableLearning>
+		<enableGlobalWorkSpeed>True</enableGlobalWorkSpeed>
+		<enableSocialImpact>True</enableSocialImpact>
+		<enableNegotiationAbility>True</enableNegotiationAbility>
+	</ModSettings>
+</SettingsBlock>

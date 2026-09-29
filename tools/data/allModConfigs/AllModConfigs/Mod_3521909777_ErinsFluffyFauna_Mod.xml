@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ErinsFluffyFauna.ErinsFluffyFauna_Settings">
+		<pawnSpawnStates>
+			<keys>
+				<li>ERN_SnowLeopard</li>
+				<li>ERN_Pika</li>
+				<li>ERN_PallasCat</li>
+				<li>ERN_Argali</li>
+				<li>ERN_Opossum</li>
+				<li>ERN_Ferret</li>
+				<li>ERN_Redpanda</li>
+				<li>ERN_ptarmigan</li>
+				<li>ERN_Greyfox</li>
+				<li>ERN_Mink</li>
+				<li>ERN_Hedgehog</li>
+				<li>ERN_Gartersnake</li>
+				<li>ERN_Armadillo</li>
+			</keys>
+			<values>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+			</values>
+		</pawnSpawnStates>
+		<ErinsFluffyFaunaSpawnMultiplier>1</ErinsFluffyFaunaSpawnMultiplier>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="NonUnoPinata.Settings">
+		<corpse_display_equipment>False</corpse_display_equipment>
+		<strip_despite_autoStripCorpses>True</strip_despite_autoStripCorpses>
+	</ModSettings>
+</SettingsBlock>

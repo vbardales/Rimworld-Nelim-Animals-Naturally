@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VariedBodySizes.VariedBodySizesModSettings">
+		<AffectRealBodySize>True</AffectRealBodySize>
+		<AffectRealHealthScale>True</AffectRealHealthScale>
+		<AffectRealHungerRate>True</AffectRealHungerRate>
+		<AffectMeleeDamage>True</AffectMeleeDamage>
+		<AffectMeleeDodgeChance>True</AffectMeleeDodgeChance>
+		<AffectHarvestYield>True</AffectHarvestYield>
+		<AffectLactating>True</AffectLactating>
+		<VariedBodySizes>
+			<keys />
+			<values />
+		</VariedBodySizes>
+	</ModSettings>
+</SettingsBlock>

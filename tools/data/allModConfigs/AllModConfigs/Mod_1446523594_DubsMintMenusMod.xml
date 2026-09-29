@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DubsMintMenus.Settings">
+		<BuildMenuPosNew>(0, 215)</BuildMenuPosNew>
+		<BuildMenuSizeNew>(1000, 550)</BuildMenuSizeNew>
+		<Pinning>False</Pinning>
+		<HideFinished>True</HideFinished>
+		<BoxSizeX>90</BoxSizeX>
+		<BoxSizeY>75</BoxSizeY>
+		<infocardW>500</infocardW>
+		<MaxHeight>650</MaxHeight>
+		<InfoWidth>358</InfoWidth>
+		<billTabH>300</billTabH>
+		<bBoxSizeY>55</bBoxSizeY>
+		<listWidth>445</listWidth>
+		<ResearchListWidth>350</ResearchListWidth>
+		<OverrideAssign>False</OverrideAssign>
+		<pinnedArchitectTabs />
+		<ResourceReadout />
+		<WheelDefs />
+		<FBenchTemplates />
+	</ModSettings>
+</SettingsBlock>

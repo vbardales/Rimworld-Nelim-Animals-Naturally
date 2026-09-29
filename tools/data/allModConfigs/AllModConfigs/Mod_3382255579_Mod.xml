@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="FollowMe.Settings">
+		<showNotifications>False</showNotifications>
+		<playSounds>False</playSounds>
+		<followMeKey>
+			<label>Basculer sur la sélection suivante</label>
+			<key>Alpha7</key>
+		</followMeKey>
+		<cinematicCameraKey>
+			<label>Basculer la caméra cinématique</label>
+			<key>Alpha8</key>
+		</cinematicCameraKey>
+	</ModSettings>
+</SettingsBlock>

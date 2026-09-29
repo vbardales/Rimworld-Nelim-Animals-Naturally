@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ModernLog.Settings">
+		<Patches>
+			<patches>
+				<keys>
+					<li>ModernLog.Patches+MainMenuDrawer_DoMainMenuControls_Patch</li>
+					<li>ModernLog.Patches+MainMenuDrawer_DoMainMenuControls_Extra_Patch</li>
+					<li>ModernLog.Patches+MainTabWindow_Menu_Patch</li>
+					<li>ModernLog.Patches+Log_Message_Patch</li>
+					<li>ModernLog.Patches+Log_Warning_Patch</li>
+					<li>ModernLog.Patches+Log_Error_Patch</li>
+					<li>ModernLog.Patches+LogFileSink_Patch</li>
+					<li>ModernLog.Patches+Log_SuppressIgnoredInterrupts_Patch</li>
+					<li>ModernLog.Patches+Log_TryOpenLogWindow_Patch</li>
+					<li>ModernLog.Patches+Log_Message_Message_Patch</li>
+					<li>ModernLog.Patches+Log_Warning_Message_Patch</li>
+					<li>ModernLog.Patches+Log_Error_Message_Patch</li>
+					<li>ModernLog.Patches+Log_Notify_MessageReceivedThreadedInternal_Disable_Patch</li>
+					<li>ModernLog.Patches+Log_Notify_MessageReceivedThreadedInternal_Modify_Patch</li>
+					<li>ModernLog.Patches+FileLog_Log_Patch</li>
+					<li>ModernLog.Patches+Dialog_ModSettings_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_DoMessagesListing_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_DoMessageDetails_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_Constructor_Patch</li>
+					<li>ModernLog.Patches+EditWindow_PostOpen_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_PostClose_Patch</li>
+					<li>ModernLog.Patches+WindowStack_ClickedInsideWindow_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_ClearSelectedMessage_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_AttributeOwnDrawFailures_Patch</li>
+					<li>ModernLog.Patches+EditWindow_Log_DoWindowContents_Patch</li>
+					<li>ModernLog.Patches+LogMessage_Color_Patch</li>
+					<li>ModernLog.Patches+Decolorize_Patch</li>
+					<li>ModernLog.Patches+DirectXmlCrossRefLoader_ResolveWorker_Patch</li>
+					<li>ModernLog.Patches+StaticConstructorOnStartupUtility_CallAll_Patch</li>
+					<li>ModernLog.Patches+LoadedModManager_CreateModClasses_Patch</li>
+					<li>ModernLog.Patches+Log_AttributeMod_Patch</li>
+					<li>ModernLog.Patches+LogMessage_SourceMod_Patch</li>
+					<li>ModernLog.Patches+DefOfHelper_BindDefsFor_Patch</li>
+					<li>ModernLog.Patches+PatchOperation_SourceMod_Patch</li>
+					<li>ModernLog.Patches+DirectXmlCrossRefLoader_Resolve_Patch</li>
+					<li>ModernLog.Patches+StaticConstructorOnStartupUtility_Report_Patch</li>
+					<li>ModernLog.Patches+DirectXmlLoader_DefFromNode_Patch</li>
+					<li>ModernLog.Patches+Translator_PseudoTranslate_Patch</li>
+					<li>ModernLog.Patches+UIRoot_CheckOpenLogWindow_TakeoverWatch_Patch</li>
+				</keys>
+				<values>
+					<li Class="ModernLog.Patches+MainMenuDrawer_DoMainMenuControls_Patch" />
+					<li Class="ModernLog.Patches+MainMenuDrawer_DoMainMenuControls_Extra_Patch" />
+					<li Class="ModernLog.Patches+MainTabWindow_Menu_Patch" />
+					<li Class="ModernLog.Patches+Log_Message_Patch" />
+					<li Class="ModernLog.Patches+Log_Warning_Patch" />
+					<li Class="ModernLog.Patches+Log_Error_Patch" />
+					<li Class="ModernLog.Patches+LogFileSink_Patch" />
+					<li Class="ModernLog.Patches+Log_SuppressIgnoredInterrupts_Patch" />
+					<li Class="ModernLog.Patches+Log_TryOpenLogWindow_Patch" />
+					<li Class="ModernLog.Patches+Log_Message_Message_Patch" />
+					<li Class="ModernLog.Patches+Log_Warning_Message_Patch" />
+					<li Class="ModernLog.Patches+Log_Error_Message_Patch">
+						<Log_Error_Message_Patch>False</Log_Error_Message_Patch>
+					</li>
+					<li Class="ModernLog.Patches+Log_Notify_MessageReceivedThreadedInternal_Disable_Patch" />
+					<li Class="ModernLog.Patches+Log_Notify_MessageReceivedThreadedInternal_Modify_Patch" />
+					<li Class="ModernLog.Patches+FileLog_Log_Patch" />
+					<li Class="ModernLog.Patches+Dialog_ModSettings_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_DoMessagesListing_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_DoMessageDetails_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_Constructor_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_PostOpen_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_PostClose_Patch" />
+					<li Class="ModernLog.Patches+WindowStack_ClickedInsideWindow_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_ClearSelectedMessage_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_AttributeOwnDrawFailures_Patch" />
+					<li Class="ModernLog.Patches+EditWindow_Log_DoWindowContents_Patch" />
+					<li Class="ModernLog.Patches+LogMessage_Color_Patch" />
+					<li Class="ModernLog.Patches+Decolorize_Patch" />
+					<li Class="ModernLog.Patches+DirectXmlCrossRefLoader_ResolveWorker_Patch" />
+					<li Class="ModernLog.Patches+StaticConstructorOnStartupUtility_CallAll_Patch" />
+					<li Class="ModernLog.Patches+LoadedModManager_CreateModClasses_Patch" />
+					<li Class="ModernLog.Patches+Log_AttributeMod_Patch" />
+					<li Class="ModernLog.Patches+LogMessage_SourceMod_Patch" />
+					<li Class="ModernLog.Patches+DefOfHelper_BindDefsFor_Patch" />
+					<li Class="ModernLog.Patches+PatchOperation_SourceMod_Patch" />
+					<li Class="ModernLog.Patches+DirectXmlCrossRefLoader_Resolve_Patch" />
+					<li Class="ModernLog.Patches+StaticConstructorOnStartupUtility_Report_Patch" />
+					<li Class="ModernLog.Patches+DirectXmlLoader_DefFromNode_Patch" />
+					<li Class="ModernLog.Patches+Translator_PseudoTranslate_Patch" />
+					<li Class="ModernLog.Patches+UIRoot_CheckOpenLogWindow_TakeoverWatch_Patch" />
+				</values>
+			</patches>
+		</Patches>
+		<logWindowX>537</logWindowX>
+		<logWindowY>219</logWindowY>
+		<logWindowWidth>700</logWindowWidth>
+		<logWindowHeight>413</logWindowHeight>
+		<showMainButton>False</showMainButton>
+		<showLogWarnings>False</showLogWarnings>
+		<noiseDefaultsVersion>7</noiseDefaultsVersion>
+		<whitelistDefaultsVersion>1</whitelistDefaultsVersion>
+		<ignoredModIds />
+	</ModSettings>
+</SettingsBlock>

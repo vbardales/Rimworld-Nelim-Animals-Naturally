@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="FPSStabilizer.Settings">
+		<target_fps>45</target_fps>
+	</ModSettings>
+</SettingsBlock>

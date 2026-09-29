@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Toddlers.Toddlers_Settings">
+		<debugBabySafety>False</debugBabySafety>
+		<careAboutBedtime>True</careAboutBedtime>
+		<careAboutFloorSleep>True</careAboutFloorSleep>
+		<moveMessageSetting>DangerAndUnknown</moveMessageSetting>
+		<feedCapableToddlers>True</feedCapableToddlers>
+		<feedingMakesMess>True</feedingMakesMess>
+		<canDraftToddlers>True</canDraftToddlers>
+		<playFallFactor_Baby>5</playFallFactor_Baby>
+		<playFallFactor_Toddler>3</playFallFactor_Toddler>
+		<lonelinessGainFactor>1</lonelinessGainFactor>
+		<apparelSetting>BabyTribalwear</apparelSetting>
+		<maxComfortableTemperature_Baby>30</maxComfortableTemperature_Baby>
+		<maxComfortableTemperature_Toddler>28</maxComfortableTemperature_Toddler>
+		<minComfortableTemperature_Baby>20</minComfortableTemperature_Baby>
+		<minComfortableTemperature_Toddler>18</minComfortableTemperature_Toddler>
+		<learningFactor_Walk>0.800000012</learningFactor_Walk>
+		<learningFactor_Manipulation>0.800000012</learningFactor_Manipulation>
+		<expectations>20</expectations>
+		<toddlerBabyTalk>True</toddlerBabyTalk>
+	</ModSettings>
+</SettingsBlock>

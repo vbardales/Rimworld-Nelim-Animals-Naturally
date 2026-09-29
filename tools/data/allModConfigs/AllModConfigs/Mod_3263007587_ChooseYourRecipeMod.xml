@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ChooseYourRecipe.ChooseYourRecipeSettings">
+		<disabledRecipes_keys>
+			<li>Campfire</li>
+		</disabledRecipes_keys>
+		<disabledRecipes_values>
+			<li>
+				<li>BurnPerformance</li>
+			</li>
+		</disabledRecipes_values>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="RunAndGun.Settings">
+		<tabsHandler>Forbidden</tabsHandler>
+		<selectedWeapons>
+			<keys>
+				<li>NerveSpiker</li>
+				<li>Bow_Compound</li>
+				<li>Bow_Recurve</li>
+				<li>Bow_Short</li>
+				<li>Flamebow</li>
+				<li>AG_ForsakenBow</li>
+				<li>Bow_Great</li>
+				<li>Bow_Great_Unique</li>
+				<li>MeleeWeapon_PsyfocusStaff</li>
+				<li>VWE_Weapon_FireBomb</li>
+				<li>Gun_DumbfireBarragegun</li>
+				<li>Gun_RSCarbine</li>
+				<li>Gun_ThumpercatCarbine</li>
+				<li>Gun_RSBeamCarbine</li>
+				<li>Gun_RSBeamCarbine_Unique</li>
+				<li>Gun_RSCarbine_Unique</li>
+				<li>Weapon_GrenadeMolotov</li>
+				<li>Gun_BeamGraser</li>
+				<li>MeleeWeapon_Knife</li>
+				<li>Gun_RSBeamShotgun</li>
+				<li>Gun_RSBeamSniper</li>
+				<li>VWE_Throwing_Shards</li>
+				<li>AG_ForsakenBulkSword</li>
+				<li>MeleeWeapon_LongSword</li>
+				<li>MeleeWeapon_MonoSword</li>
+				<li>MeleeWeapon_MonoSwordBladelink</li>
+				<li>MeleeWeapon_PlasmaSword</li>
+				<li>MeleeWeapon_PlasmaSwordBladelink</li>
+				<li>VWE_Sling</li>
+				<li>Gun_ChargeRifle</li>
+				<li>Gun_ChargeRifle_Unique</li>
+				<li>Gun_PumpShotgun</li>
+				<li>Gun_ChainShotgun</li>
+				<li>Gun_ChainShotgun_Unique</li>
+				<li>AG_ForsakenShotgun</li>
+				<li>Gun_Repeater</li>
+				<li>Gun_DumbfireRifle</li>
+				<li>Gun_ThundercatRifle</li>
+				<li>Gun_BoltActionRifle</li>
+				<li>Gun_BoltActionRifle_Unique</li>
+				<li>Gun_MilitiaRifle</li>
+				<li>Gun_RSAMRifle</li>
+				<li>Gun_AutomaticRifle</li>
+				<li>Gun_AssaultRifle</li>
+				<li>AG_ForsakenAssaultRifle</li>
+				<li>Gun_AssaultRifle_Unique</li>
+				<li>Gun_RSBattleRifle</li>
+				<li>Gun_RSBattleRifle_Unique</li>
+				<li>Gun_SniperRifle</li>
+				<li>AG_ForsakenSniper</li>
+				<li>Gun_SniperRifle_Unique</li>
+				<li>Gun_MarksmanRifle</li>
+				<li>Gun_FragcatRifle</li>
+				<li>Gun_FR</li>
+				<li>Gun_EMPRifle</li>
+				<li>Gun_HellcatRifle</li>
+				<li>Gun_HellcatRifle_Unique</li>
+				<li>MeleeWeapon_Gladius</li>
+				<li>Weapon_GrenadeFrag</li>
+				<li>Weapon_GrenadeSmoke</li>
+				<li>Weapon_GrenadeEMP</li>
+				<li>Weapon_GrenadeTox</li>
+				<li>MeleeWeapon_Axe</li>
+				<li>MeleeWeapon_BreachAxe</li>
+				<li>AG_ForsakenBattleAxe</li>
+				<li>Gun_ThrowingAxes</li>
+				<li>VWE_MeleeWeapon_TribalAxe</li>
+				<li>AG_ForsakenHydra</li>
+				<li>MeleeWeapon_Ikwa</li>
+				<li>Gun_BurstCharger</li>
+				<li>Gun_ScatterCharger</li>
+				<li>Gun_AssaultCharger</li>
+				<li>Gun_ChargeDriver</li>
+				<li>Gun_CFR</li>
+				<li>Gun_ChargeSidearm</li>
+				<li>Gun_Incinerator</li>
+				<li>MeleeWeapon_Spear</li>
+				<li>AG_ForsakenSpear</li>
+				<li>Gun_ChargeLance</li>
+				<li>Gun_ChargeLance_Unique</li>
+				<li>Gun_IncendiaryLauncher</li>
+				<li>Gun_DoomsdayRocket</li>
+				<li>Gun_TripleRocket</li>
+				<li>Gun_DumbfireLance</li>
+				<li>Gun_ToxbombLauncher</li>
+				<li>Gun_SmokeLauncher</li>
+				<li>Gun_EmpLauncher</li>
+				<li>AG_ForsakenLongBlade</li>
+				<li>MeleeWeapon_Warhammer</li>
+				<li>MeleeWeapon_Zeushammer</li>
+				<li>MeleeWeapon_ZeusHammerBladelink</li>
+				<li>MeleeWeapon_Mace</li>
+				<li>MeleeWeapon_Club</li>
+				<li>Gun_ThrowingClubs</li>
+				<li>VWE_MeleeWeapon_LightClub</li>
+				<li>VWE_MeleeWeapon_HeavyClub</li>
+				<li>Gun_Minigun</li>
+				<li>Gun_Minigun_Unique</li>
+				<li>Gun_LMG</li>
+				<li>Gun_LMG_Unique</li>
+				<li>Pila</li>
+				<li>Gun_DumbfirePistol</li>
+				<li>Gun_Autopistol</li>
+				<li>Gun_RSBeamPistol</li>
+				<li>Gun_MachinePistol</li>
+				<li>Gun_HeavySMG</li>
+				<li>Gun_HeavySMG_Unique</li>
+				<li>Gun_BeamRepeater</li>
+				<li>Gun_BeamRepeater_Unique</li>
+				<li>Gun_Revolver</li>
+				<li>Gun_PistolHeavyRevolver</li>
+				<li>Gun_PistolHeavyRevolver_Unique</li>
+				<li>Gun_Revolver_Unique</li>
+				<li>Gun_Blowgun</li>
+				<li>EM_BlowgunNumb</li>
+				<li>EM_BlowgunPain</li>
+				<li>EM_BlowgunBreath</li>
+				<li>VWE_MeleeWeapon_Shiv</li>
+				<li>Gun_RSThumper</li>
+				<li>Throwing_Knives_Knife</li>
+			</keys>
+			<values>
+				<li>
+					<label>arbalète neurotoxique</label>
+				</li>
+				<li>
+					<label>arc à poulies</label>
+				</li>
+				<li>
+					<label>arc composite</label>
+				</li>
+				<li>
+					<label>arc court</label>
+				</li>
+				<li>
+					<label>arc de flamme</label>
+				</li>
+				<li>
+					<label>arc Forsaken</label>
+				</li>
+				<li>
+					<label>arc long</label>
+				</li>
+				<li>
+					<label>arc long unique</label>
+				</li>
+				<li>
+					<label>bâton en eltex</label>
+				</li>
+				<li>
+					<label>bombe incendiaire</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>canon barrage à roquette</label>
+				</li>
+				<li>
+					<label>carabine</label>
+				</li>
+				<li>
+					<label>carabine à surpression</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>carabine graser</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>carabine grazer unique</label>
+				</li>
+				<li>
+					<label>carabine unique</label>
+				</li>
+				<li>
+					<label>cocktail Molotov</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>concentrateur laser</label>
+				</li>
+				<li>
+					<label>couteau</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>disperseur graser</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>djezaïl graser</label>
+				</li>
+				<li>
+					<label>éclats à lancer</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>épée large Forsaken</label>
+				</li>
+				<li>
+					<label>épée longue</label>
+				</li>
+				<li>
+					<label>épée mono-moléculaire</label>
+				</li>
+				<li>
+					<label>épée mono-moléculaire consciente</label>
+				</li>
+				<li>
+					<label>épée plasmique</label>
+				</li>
+				<li>
+					<label>épée plasmique consciente</label>
+				</li>
+				<li>
+					<label>fronde</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à impulsion</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à impulsion unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à pompe</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à pompe automatique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à pompe automatique unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à pompe Forsaken</label>
+				</li>
+				<li>
+					<label>fusil à répétition</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à roquette</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à tonnerre</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à verrou</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil à verrou unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil AK</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil anti-blindage</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil automatique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil d'assaut</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil d'assaut Forsaken</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil d'assaut unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil de combat</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil de combat unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil de précision</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil de précision Forsaken</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil de précision unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil de tireur d'élite</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil frag</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil frontière</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil IEM</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil incendiaire</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>fusil incendiaire unique</label>
+				</li>
+				<li>
+					<label>glaive</label>
+				</li>
+				<li>
+					<label>grenade à fragmentation</label>
+				</li>
+				<li>
+					<label>grenade fumigène</label>
+				</li>
+				<li>
+					<label>grenade IEM</label>
+				</li>
+				<li>
+					<label>grenade tox</label>
+				</li>
+				<li>
+					<label>hache</label>
+				</li>
+				<li>
+					<label>hache de brèche</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>hache de guerre Forsaken</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>hache de lancer</label>
+				</li>
+				<li>
+					<label>hache tribale</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>hydre noire Forsaken</label>
+				</li>
+				<li>
+					<label>ikwa</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>impulsion canon</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>impulsion fusil à pompe</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>impulsion fusil d'assaut</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>impulsion fusil de précision</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>impulsion fusil d'infanterie</label>
+				</li>
+				<li>
+					<label>impulsion pistolet</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>incinérateur</label>
+				</li>
+				<li>
+					<label>lance</label>
+				</li>
+				<li>
+					<label>lance Forsaken</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lance-charges</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lance-charges unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lance-flammes</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lance-roquettes apocalyptique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lance-roquettes triple</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lanceur à roquette</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lanceur de bombes tox</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lanceur de fumigène</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>lanceur IEM</label>
+				</li>
+				<li>
+					<label>longue lame Forsaken</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>marteau de guerre</label>
+				</li>
+				<li>
+					<label>marteau de Zeus</label>
+				</li>
+				<li>
+					<label>marteau de Zeus conscient</label>
+				</li>
+				<li>
+					<label>masse</label>
+				</li>
+				<li>
+					<label>massue</label>
+				</li>
+				<li>
+					<label>massue de lancer</label>
+				</li>
+				<li>
+					<label>massue légère</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>massue lourde</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>minigun</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>minigun unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>mitrailleuse</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>mitrailleuse unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>pilum</label>
+				</li>
+				<li>
+					<label>pistolet à roquette</label>
+				</li>
+				<li>
+					<label>pistolet automatique</label>
+				</li>
+				<li>
+					<label>pistolet graser</label>
+				</li>
+				<li>
+					<label>pistolet-mitrailleur</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>pistolet-mitrailleur lourd</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>pistolet-mitrailleur lourd unique</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>répétiteur à faisceau</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>répétiteur de faisceau unique</label>
+				</li>
+				<li>
+					<label>revolver</label>
+				</li>
+				<li>
+					<label>revolver lourd</label>
+				</li>
+				<li>
+					<label>revolver lourd unique</label>
+				</li>
+				<li>
+					<label>revolver unique</label>
+				</li>
+				<li>
+					<label>sarbacane</label>
+				</li>
+				<li>
+					<label>sarbacane anesthésiante</label>
+				</li>
+				<li>
+					<label>sarbacane douloureuse</label>
+				</li>
+				<li>
+					<label>sarbacane mortelle</label>
+				</li>
+				<li>
+					<label>shiv</label>
+				</li>
+				<li>
+					<isSelected>True</isSelected>
+					<label>surpresseur</label>
+				</li>
+				<li>
+					<label>throwing knives</label>
+				</li>
+			</values>
+		</selectedWeapons>
+		<forbiddenWeapons>
+			<keys>
+				<li>FWE_AntiMaterialRifle</li>
+				<li>NerveSpiker</li>
+				<li>Bow_Compound</li>
+				<li>Bow_Recurve</li>
+				<li>Bow_Short</li>
+				<li>Flamebow</li>
+				<li>AG_ForsakenBow</li>
+				<li>Bow_Great</li>
+				<li>Bow_Great_Unique</li>
+				<li>MeleeWeapon_PsyfocusStaff</li>
+				<li>Beer</li>
+				<li>WoodLog</li>
+				<li>VWE_Weapon_FireBomb</li>
+				<li>Gun_DumbfireBarragegun</li>
+				<li>Gun_RSCarbine</li>
+				<li>Gun_ThumpercatCarbine</li>
+				<li>Gun_RSBeamCarbine</li>
+				<li>Gun_RSBeamCarbine_Unique</li>
+				<li>Gun_RSCarbine_Unique</li>
+				<li>FWE_Cattle_Prod</li>
+				<li>FWE_ChainSaw</li>
+				<li>FWE_MechRifle</li>
+				<li>FWE_CircularSaw</li>
+				<li>Weapon_GrenadeMolotov</li>
+				<li>Gun_BeamGraser</li>
+				<li>ThrumboHorn</li>
+				<li>MeleeWeapon_Knife</li>
+				<li>VFEC_MeleeWeapon_Dagger</li>
+				<li>ElephantTusk</li>
+				<li>Gun_RSBeamShotgun</li>
+				<li>Gun_RSBeamSniper</li>
+				<li>VWE_Throwing_Shards</li>
+				<li>AG_ForsakenBulkSword</li>
+				<li>MeleeWeapon_LongSword</li>
+				<li>MeleeWeapon_MonoSword</li>
+				<li>MeleeWeapon_MonoSwordBladelink</li>
+				<li>MeleeWeapon_PlasmaSword</li>
+				<li>MeleeWeapon_PlasmaSwordBladelink</li>
+				<li>VWE_Sling</li>
+				<li>Gun_ChargeRifle</li>
+				<li>Gun_ChargeRifle_Unique</li>
+				<li>Gun_PumpShotgun</li>
+				<li>Gun_ChainShotgun</li>
+				<li>Gun_ChainShotgun_Unique</li>
+				<li>AG_ForsakenShotgun</li>
+				<li>Gun_Repeater</li>
+				<li>Gun_DumbfireRifle</li>
+				<li>Gun_ThundercatRifle</li>
+				<li>Gun_BoltActionRifle</li>
+				<li>Gun_BoltActionRifle_Unique</li>
+				<li>Gun_MilitiaRifle</li>
+				<li>Gun_RSAMRifle</li>
+				<li>Gun_AutomaticRifle</li>
+				<li>Gun_AssaultRifle</li>
+				<li>AG_ForsakenAssaultRifle</li>
+				<li>Gun_AssaultRifle_Unique</li>
+				<li>Gun_RSBattleRifle</li>
+				<li>Gun_RSBattleRifle_Unique</li>
+				<li>Gun_SniperRifle</li>
+				<li>AG_ForsakenSniper</li>
+				<li>Gun_SniperRifle_Unique</li>
+				<li>Gun_MarksmanRifle</li>
+				<li>Gun_FragcatRifle</li>
+				<li>Gun_FR</li>
+				<li>Gun_EMPRifle</li>
+				<li>Gun_HellcatRifle</li>
+				<li>Gun_HellcatRifle_Unique</li>
+				<li>MeleeWeapon_Gladius</li>
+				<li>Weapon_GrenadeFrag</li>
+				<li>Weapon_GrenadeSmoke</li>
+				<li>Weapon_GrenadeEMP</li>
+				<li>Weapon_GrenadeTox</li>
+				<li>MeleeWeapon_Axe</li>
+				<li>MeleeWeapon_BreachAxe</li>
+				<li>AG_ForsakenBattleAxe</li>
+				<li>Gun_ThrowingAxes</li>
+				<li>VWE_MeleeWeapon_TribalAxe</li>
+				<li>AG_ForsakenHydra</li>
+				<li>MeleeWeapon_Ikwa</li>
+				<li>Gun_BurstCharger</li>
+				<li>Gun_ScatterCharger</li>
+				<li>Gun_AssaultCharger</li>
+				<li>Gun_ChargeDriver</li>
+				<li>Gun_CFR</li>
+				<li>Gun_ChargeSidearm</li>
+				<li>Gun_Incinerator</li>
+				<li>VFEC_Javelin</li>
+				<li>MeleeWeapon_Spear</li>
+				<li>AG_ForsakenSpear</li>
+				<li>Gun_ChargeLance</li>
+				<li>Gun_ChargeLance_Unique</li>
+				<li>Gun_IncendiaryLauncher</li>
+				<li>Gun_DoomsdayRocket</li>
+				<li>Gun_TripleRocket</li>
+				<li>Gun_DumbfireLance</li>
+				<li>Gun_ToxbombLauncher</li>
+				<li>Gun_SmokeLauncher</li>
+				<li>Gun_EmpLauncher</li>
+				<li>AG_ForsakenLongBlade</li>
+				<li>MeleeWeapon_Warhammer</li>
+				<li>MeleeWeapon_Zeushammer</li>
+				<li>MeleeWeapon_ZeusHammerBladelink</li>
+				<li>MeleeWeapon_Mace</li>
+				<li>MeleeWeapon_Club</li>
+				<li>Gun_ThrowingClubs</li>
+				<li>VWE_MeleeWeapon_LightClub</li>
+				<li>VWE_MeleeWeapon_HeavyClub</li>
+				<li>Gun_Minigun</li>
+				<li>Gun_Minigun_Unique</li>
+				<li>Gun_LMG</li>
+				<li>Gun_LMG_Unique</li>
+				<li>FWE_Nail_Gun</li>
+				<li>Pila</li>
+				<li>Gun_DumbfirePistol</li>
+				<li>Gun_Autopistol</li>
+				<li>Gun_RSBeamPistol</li>
+				<li>Gun_MachinePistol</li>
+				<li>Gun_HeavySMG</li>
+				<li>Gun_HeavySMG_Unique</li>
+				<li>Gun_BeamRepeater</li>
+				<li>Gun_BeamRepeater_Unique</li>
+				<li>Gun_Revolver</li>
+				<li>Gun_PistolHeavyRevolver</li>
+				<li>Gun_PistolHeavyRevolver_Unique</li>
+				<li>Gun_Revolver_Unique</li>
+				<li>Gun_Blowgun</li>
+				<li>EM_BlowgunNumb</li>
+				<li>EM_BlowgunPain</li>
+				<li>EM_BlowgunBreath</li>
+				<li>VFEC_Weapon_Scorpion</li>
+				<li>FWE_Screwdriver</li>
+				<li>VWE_MeleeWeapon_Shiv</li>
+				<li>VFEC_MeleeWeapon_Spatha</li>
+				<li>FWE_StoneBoer</li>
+				<li>Gun_RSThumper</li>
+				<li>Throwing_Knives_Knife</li>
+			</keys>
+			<values>
+				<li>
+					<label>anti-material rifle</label>
+				</li>
+				<li>
+					<label>arbalète neurotoxique</label>
+				</li>
+				<li>
+					<label>arc à poulies</label>
+				</li>
+				<li>
+					<label>arc composite</label>
+				</li>
+				<li>
+					<label>arc court</label>
+				</li>
+				<li>
+					<label>arc de flamme</label>
+				</li>
+				<li>
+					<label>arc Forsaken</label>
+				</li>
+				<li>
+					<label>arc long</label>
+				</li>
+				<li>
+					<label>arc long unique</label>
+				</li>
+				<li>
+					<label>bâton en eltex</label>
+				</li>
+				<li>
+					<label>bière</label>
+				</li>
+				<li>
+					<label>bois</label>
+				</li>
+				<li>
+					<label>bombe incendiaire</label>
+				</li>
+				<li>
+					<label>canon barrage à roquette</label>
+				</li>
+				<li>
+					<label>carabine</label>
+				</li>
+				<li>
+					<label>carabine à surpression</label>
+				</li>
+				<li>
+					<label>carabine graser</label>
+				</li>
+				<li>
+					<label>carabine grazer unique</label>
+				</li>
+				<li>
+					<label>carabine unique</label>
+				</li>
+				<li>
+					<label>cattle prod</label>
+				</li>
+				<li>
+					<label>chain saw</label>
+				</li>
+				<li>
+					<label>charge mech-based rifle</label>
+				</li>
+				<li>
+					<label>circular saw</label>
+				</li>
+				<li>
+					<label>cocktail Molotov</label>
+				</li>
+				<li>
+					<label>concentrateur laser</label>
+				</li>
+				<li>
+					<label>corne de thrumbo</label>
+				</li>
+				<li>
+					<label>couteau</label>
+				</li>
+				<li>
+					<label>dagger</label>
+				</li>
+				<li>
+					<label>défense d'éléphant</label>
+				</li>
+				<li>
+					<label>disperseur graser</label>
+				</li>
+				<li>
+					<label>djezaïl graser</label>
+				</li>
+				<li>
+					<label>éclats à lancer</label>
+				</li>
+				<li>
+					<label>épée large Forsaken</label>
+				</li>
+				<li>
+					<label>épée longue</label>
+				</li>
+				<li>
+					<label>épée mono-moléculaire</label>
+				</li>
+				<li>
+					<label>épée mono-moléculaire consciente</label>
+				</li>
+				<li>
+					<label>épée plasmique</label>
+				</li>
+				<li>
+					<label>épée plasmique consciente</label>
+				</li>
+				<li>
+					<label>fronde</label>
+				</li>
+				<li>
+					<label>fusil à impulsion</label>
+				</li>
+				<li>
+					<label>fusil à impulsion unique</label>
+				</li>
+				<li>
+					<label>fusil à pompe</label>
+				</li>
+				<li>
+					<label>fusil à pompe automatique</label>
+				</li>
+				<li>
+					<label>fusil à pompe automatique unique</label>
+				</li>
+				<li>
+					<label>fusil à pompe Forsaken</label>
+				</li>
+				<li>
+					<label>fusil à répétition</label>
+				</li>
+				<li>
+					<label>fusil à roquette</label>
+				</li>
+				<li>
+					<label>fusil à tonnerre</label>
+				</li>
+				<li>
+					<label>fusil à verrou</label>
+				</li>
+				<li>
+					<label>fusil à verrou unique</label>
+				</li>
+				<li>
+					<label>fusil AK</label>
+				</li>
+				<li>
+					<label>fusil anti-blindage</label>
+				</li>
+				<li>
+					<label>fusil automatique</label>
+				</li>
+				<li>
+					<label>fusil d'assaut</label>
+				</li>
+				<li>
+					<label>fusil d'assaut Forsaken</label>
+				</li>
+				<li>
+					<label>fusil d'assaut unique</label>
+				</li>
+				<li>
+					<label>fusil de combat</label>
+				</li>
+				<li>
+					<label>fusil de combat unique</label>
+				</li>
+				<li>
+					<label>fusil de précision</label>
+				</li>
+				<li>
+					<label>fusil de précision Forsaken</label>
+				</li>
+				<li>
+					<label>fusil de précision unique</label>
+				</li>
+				<li>
+					<label>fusil de tireur d'élite</label>
+				</li>
+				<li>
+					<label>fusil frag</label>
+				</li>
+				<li>
+					<label>fusil frontière</label>
+				</li>
+				<li>
+					<label>fusil IEM</label>
+				</li>
+				<li>
+					<label>fusil incendiaire</label>
+				</li>
+				<li>
+					<label>fusil incendiaire unique</label>
+				</li>
+				<li>
+					<label>glaive</label>
+				</li>
+				<li>
+					<label>grenade à fragmentation</label>
+				</li>
+				<li>
+					<label>grenade fumigène</label>
+				</li>
+				<li>
+					<label>grenade IEM</label>
+				</li>
+				<li>
+					<label>grenade tox</label>
+				</li>
+				<li>
+					<label>hache</label>
+				</li>
+				<li>
+					<label>hache de brèche</label>
+				</li>
+				<li>
+					<label>hache de guerre Forsaken</label>
+				</li>
+				<li>
+					<label>hache de lancer</label>
+				</li>
+				<li>
+					<label>hache tribale</label>
+				</li>
+				<li>
+					<label>hydre noire Forsaken</label>
+				</li>
+				<li>
+					<label>ikwa</label>
+				</li>
+				<li>
+					<label>impulsion canon</label>
+				</li>
+				<li>
+					<label>impulsion fusil à pompe</label>
+				</li>
+				<li>
+					<label>impulsion fusil d'assaut</label>
+				</li>
+				<li>
+					<label>impulsion fusil de précision</label>
+				</li>
+				<li>
+					<label>impulsion fusil d'infanterie</label>
+				</li>
+				<li>
+					<label>impulsion pistolet</label>
+				</li>
+				<li>
+					<label>incinérateur</label>
+				</li>
+				<li>
+					<label>javelin</label>
+				</li>
+				<li>
+					<label>lance</label>
+				</li>
+				<li>
+					<label>lance Forsaken</label>
+				</li>
+				<li>
+					<label>lance-charges</label>
+				</li>
+				<li>
+					<label>lance-charges unique</label>
+				</li>
+				<li>
+					<label>lance-flammes</label>
+				</li>
+				<li>
+					<label>lance-roquettes apocalyptique</label>
+				</li>
+				<li>
+					<label>lance-roquettes triple</label>
+				</li>
+				<li>
+					<label>lanceur à roquette</label>
+				</li>
+				<li>
+					<label>lanceur de bombes tox</label>
+				</li>
+				<li>
+					<label>lanceur de fumigène</label>
+				</li>
+				<li>
+					<label>lanceur IEM</label>
+				</li>
+				<li>
+					<label>longue lame Forsaken</label>
+				</li>
+				<li>
+					<label>marteau de guerre</label>
+				</li>
+				<li>
+					<label>marteau de Zeus</label>
+				</li>
+				<li>
+					<label>marteau de Zeus conscient</label>
+				</li>
+				<li>
+					<label>masse</label>
+				</li>
+				<li>
+					<label>massue</label>
+				</li>
+				<li>
+					<label>massue de lancer</label>
+				</li>
+				<li>
+					<label>massue légère</label>
+				</li>
+				<li>
+					<label>massue lourde</label>
+				</li>
+				<li>
+					<label>minigun</label>
+				</li>
+				<li>
+					<label>minigun unique</label>
+				</li>
+				<li>
+					<label>mitrailleuse</label>
+				</li>
+				<li>
+					<label>mitrailleuse unique</label>
+				</li>
+				<li>
+					<label>nail gun</label>
+				</li>
+				<li>
+					<label>pilum</label>
+				</li>
+				<li>
+					<label>pistolet à roquette</label>
+				</li>
+				<li>
+					<label>pistolet automatique</label>
+				</li>
+				<li>
+					<label>pistolet graser</label>
+				</li>
+				<li>
+					<label>pistolet-mitrailleur</label>
+				</li>
+				<li>
+					<label>pistolet-mitrailleur lourd</label>
+				</li>
+				<li>
+					<label>pistolet-mitrailleur lourd unique</label>
+				</li>
+				<li>
+					<label>répétiteur à faisceau</label>
+				</li>
+				<li>
+					<label>répétiteur de faisceau unique</label>
+				</li>
+				<li>
+					<label>revolver</label>
+				</li>
+				<li>
+					<label>revolver lourd</label>
+				</li>
+				<li>
+					<label>revolver lourd unique</label>
+				</li>
+				<li>
+					<label>revolver unique</label>
+				</li>
+				<li>
+					<label>sarbacane</label>
+				</li>
+				<li>
+					<label>sarbacane anesthésiante</label>
+				</li>
+				<li>
+					<label>sarbacane douloureuse</label>
+				</li>
+				<li>
+					<label>sarbacane mortelle</label>
+				</li>
+				<li>
+					<label>scorpion</label>
+				</li>
+				<li>
+					<label>screwdriver</label>
+				</li>
+				<li>
+					<label>shiv</label>
+				</li>
+				<li>
+					<label>spatha</label>
+				</li>
+				<li>
+					<label>stone borer</label>
+				</li>
+				<li>
+					<label>surpresseur</label>
+				</li>
+				<li>
+					<label>throwing knives</label>
+				</li>
+			</values>
+		</forbiddenWeapons>
+	</ModSettings>
+</SettingsBlock>

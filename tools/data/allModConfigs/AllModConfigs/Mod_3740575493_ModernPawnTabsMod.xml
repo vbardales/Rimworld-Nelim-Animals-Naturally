@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ModernPawnTabs.TabOrderManager">
+		<tabOrder />
+		<hiddenTabs />
+		<locked>True</locked>
+		<showGroupButton>False</showGroupButton>
+	</ModSettings>
+</SettingsBlock>

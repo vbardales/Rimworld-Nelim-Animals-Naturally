@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="RimScentReworked.RimScentReworkedSettings">
+		<uncappedScents>True</uncappedScents>
+		<friendlyFactionsCanSmell>True</friendlyFactionsCanSmell>
+	</ModSettings>
+</SettingsBlock>

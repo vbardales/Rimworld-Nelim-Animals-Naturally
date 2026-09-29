@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CM_No_Pawn_Left_Behind.RescueModSettings">
+		<rescueChance>1</rescueChance>
+	</ModSettings>
+</SettingsBlock>

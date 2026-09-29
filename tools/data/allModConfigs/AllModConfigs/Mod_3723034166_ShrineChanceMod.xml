@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ConfigurableShrineChance.ShrineModSettings">
+		<StartingMapChance>0.00821596291</StartingMapChance>
+	</ModSettings>
+</SettingsBlock>

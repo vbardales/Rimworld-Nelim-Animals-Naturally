@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="KeyzAllowUtilities.Settings">
+		<DisableStripMine>True</DisableStripMine>
+		<DisableSelection>True</DisableSelection>
+		<DisableFertileZone>True</DisableFertileZone>
+		<DisableAllowShortcuts>True</DisableAllowShortcuts>
+	</ModSettings>
+</SettingsBlock>

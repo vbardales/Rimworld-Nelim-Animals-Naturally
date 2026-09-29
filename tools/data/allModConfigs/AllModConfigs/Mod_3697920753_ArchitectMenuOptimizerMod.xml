@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ArchitectMenuOptimizer.Settings">
+		<cacheVisibility>False</cacheVisibility>
+		<cacheGizmoGrid>False</cacheGizmoGrid>
+		<cacheLabels>False</cacheLabels>
+		<cacheIconColor>False</cacheIconColor>
+		<cacheStuffDef>False</cacheStuffDef>
+		<cacheTextMeasure>False</cacheTextMeasure>
+		<enablePagination>True</enablePagination>
+		<visibilityCacheMaxAgeTicks>30</visibilityCacheMaxAgeTicks>
+		<stuffDefCacheMaxAgeTicks>60</stuffDefCacheMaxAgeTicks>
+	</ModSettings>
+</SettingsBlock>

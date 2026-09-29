@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Better_Work_Tab.BetterWorkTabSettings">
+		<enableAutoAssignFeature>False</enableAutoAssignFeature>
+		<enableWorkloads>False</enableWorkloads>
+		<settingsViewMode>Advanced</settingsViewMode>
+		<showPawnCountAtBottom>False</showPawnCountAtBottom>
+		<showBedCountAtBottom>False</showBedCountAtBottom>
+		<showDragInstructions>False</showDragInstructions>
+		<hiddenWorktypes />
+		<removeHeaderUnderline>True</removeHeaderUnderline>
+		<SavedRulesets>
+			<li>
+				<IsDefault>True</IsDefault>
+				<Name>Vanilla Starting Pawn</Name>
+				<ResetBeforeApplying>True</ResetBeforeApplying>
+				<Rules>
+					<li>
+						<Name>Top 6</Name>
+						<Parameters>
+							<RuleName>Top 6</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<IsTopXSkill>6</IsTopXSkill>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Always Assigns</Name>
+						<Parameters>
+							<RuleName>Always Assigns</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<IsNaturalAlwaysAssign>True</IsNaturalAlwaysAssign>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+				</Rules>
+				<PriorityOrder>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>0</li>
+				</PriorityOrder>
+			</li>
+			<li>
+				<IsDefault>True</IsDefault>
+				<Name>Vanilla New Pawn</Name>
+				<Rules>
+					<li>
+						<Name>Top 6</Name>
+						<Parameters>
+							<RuleName>Top 6</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<IsTopXSkill>6</IsTopXSkill>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Always Assigns</Name>
+						<Parameters>
+							<RuleName>Always Assigns</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<IsNaturalAlwaysAssign>True</IsNaturalAlwaysAssign>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+				</Rules>
+				<PriorityOrder>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>0</li>
+				</PriorityOrder>
+			</li>
+			<li>
+				<IsDefault>True</IsDefault>
+				<Name>BWT Default</Name>
+				<ResetBeforeApplying>True</ResetBeforeApplying>
+				<Rules>
+					<li>
+						<Name>Always Firefight</Name>
+						<Parameters>
+							<RuleName>Always Firefight</RuleName>
+							<WorktypeString>Firefighter</WorktypeString>
+							<XenotypeString />
+							<TraitString />
+							<Priority>1</Priority>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Best Doc</Name>
+						<Parameters>
+							<RuleName>Best Doc</RuleName>
+							<WorktypeString>Doctor</WorktypeString>
+							<XenotypeString />
+							<TraitString />
+							<Priority>1</Priority>
+							<HasHighestSkill>True</HasHighestSkill>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>HaulUrg if able</Name>
+						<Parameters>
+							<RuleName>HaulUrg if able</RuleName>
+							<WorktypeString>HaulUrgently</WorktypeString>
+							<XenotypeString />
+							<TraitString />
+							<Priority>2</Priority>
+							<IgnoreIfWorktypeNonexistent>True</IgnoreIfWorktypeNonexistent>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Childcare</Name>
+						<Parameters>
+							<RuleName>Childcare</RuleName>
+							<WorktypeString>Childcare</WorktypeString>
+							<XenotypeString />
+							<TraitString />
+							<Priority>2</Priority>
+							<HasChildOnMap>True</HasChildOnMap>
+							<IgnoreIfWorktypeNonexistent>True</IgnoreIfWorktypeNonexistent>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Passion 2</Name>
+						<Parameters>
+							<RuleName>Passion 2</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>2</Priority>
+							<PassionLevel>2</PassionLevel>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Always haul</Name>
+						<Parameters>
+							<RuleName>Always haul</RuleName>
+							<WorktypeString>Hauling</WorktypeString>
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Passion 1</Name>
+						<Parameters>
+							<RuleName>Passion 1</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<PassionLevel>1</PassionLevel>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Top 6</Name>
+						<Parameters>
+							<RuleName>Top 6</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<IsTopXSkill>6</IsTopXSkill>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+					<li>
+						<Name>Always Assigns</Name>
+						<Parameters>
+							<RuleName>Always Assigns</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>3</Priority>
+							<IsNaturalAlwaysAssign>True</IsNaturalAlwaysAssign>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+				</Rules>
+				<PriorityOrder>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>0</li>
+				</PriorityOrder>
+			</li>
+			<li>
+				<IsDefault>True</IsDefault>
+				<Name>Best Pawn to 1</Name>
+				<Rules>
+					<li>
+						<Name>Best to 1</Name>
+						<Parameters>
+							<RuleName>Best to 1</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<Priority>1</Priority>
+							<HasHighestSkill>True</HasHighestSkill>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+				</Rules>
+				<PriorityOrder>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>0</li>
+				</PriorityOrder>
+			</li>
+			<li>
+				<IsDefault>True</IsDefault>
+				<Name>Set all to 0</Name>
+				<Rules>
+					<li>
+						<Name>Reset</Name>
+						<Parameters>
+							<RuleName>Reset</RuleName>
+							<WorktypeString />
+							<XenotypeString />
+							<TraitString />
+							<AllowOverwritingHigherPriority>True</AllowOverwritingHigherPriority>
+							<ActiveConditions />
+						</Parameters>
+					</li>
+				</Rules>
+				<PriorityOrder>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>0</li>
+				</PriorityOrder>
+			</li>
+		</SavedRulesets>
+		<workColumnOrderDefNames />
+		<storedColumnWidths>
+			<keys />
+			<values />
+		</storedColumnWidths>
+		<debugFeatureToggles>
+			<keys>
+				<li>General</li>
+				<li>DragDrop</li>
+				<li>Layout</li>
+				<li>SkillOverlay</li>
+				<li>Rules</li>
+				<li>Workloads</li>
+				<li>Performance</li>
+				<li>ModSupport</li>
+				<li>AngledHeaders</li>
+			</keys>
+			<values>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+				<li>False</li>
+			</values>
+		</debugFeatureToggles>
+		<playerDraggedColumns>
+			<li>Tailoring</li>
+			<li>VBE_Writing</li>
+		</playerDraggedColumns>
+	</ModSettings>
+</SettingsBlock>
