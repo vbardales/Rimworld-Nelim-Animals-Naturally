@@ -22,6 +22,10 @@ p { width: 460px; font-size: 20px; font-weight: 400; line-height: 1.45; letter-s
 .version { position: absolute; left: 869px; top: 27px;
   transform: translate(-50%,-50%) rotate(45deg); color: var(--badgeInk);
   font-size: 26px; font-weight: 700; line-height: 1; }
+/* Owner's rule, 2026-09-29 (PUBLISHING.md): ModIcon, cut out, bottom-right corner is -15deg tilt.
+   Top-right already carries the version badge, so bottom-right is the open corner here. */
+.icon { position: absolute; right: -14px; bottom: -14px; width: 150px; height: 150px;
+  transform: rotate(-15deg); filter: drop-shadow(0 4px 10px rgba(0,0,0,.55)); }
 </style>
 <div class="frame">
   <div class="veil"></div>
@@ -32,6 +36,7 @@ p { width: 460px; font-size: 20px; font-weight: 400; line-height: 1.45; letter-s
     <p>Body size, lifespan, taming, and hybridisation derived from each species' real mass and taxonomy.</p>
   </div>
   <div class="badge"></div><div class="version"></div>
+  <img class="icon" src="ModIcon-cutout.png" alt="">
 </div>
 <script>
 window.previewReady = (async () => {

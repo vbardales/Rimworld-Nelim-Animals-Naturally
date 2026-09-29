@@ -47,5 +47,8 @@ function contrast(a,b){return (Math.max(a,b)+.05)/(Math.min(a,b)+.05)}
   fs.writeFileSync(path.join(__dirname,'preview-qa.json'),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));
   if(report.bytes>=900000||Object.values(report.elements).some(e=>e.minContrast<4.5))throw Error('Preview QA failed');
+  // Owner's rule, 2026-09-29 (PUBLISHING.md): the gallery's 00- is always a byte copy of the Preview.
+  fs.mkdirSync(path.join(root,'Art/steam'),{recursive:true});
+  fs.copyFileSync(out,path.join(root,'Art/steam/00-Preview.png'));
  } finally {if(browser)await browser.close();server.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -34,7 +34,8 @@ remaining:
   - resolved 2026-09-28: values the patches write, run fd90/valeurs, 11/11 applicable scenarios passed with PickleTools' DefFields companion (Horse baseBodySize 1.926, gestationPeriodDays 24.17, first game run of this companion)
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
-updated: 2026-09-28
+  - resolved 2026-09-29: Preview.png now carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md); Art/steam/00-Preview.png kept as a byte copy by render-preview.cjs. No Gallery images beyond 00- exist yet: this mod has no @review/@film Pickle scenario to source them from.
+updated: 2026-09-29
 ---
 
 # Nelim's Animals, Naturally — status
