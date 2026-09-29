@@ -52,6 +52,11 @@ function New-Fixture {
   <ThingDef><defName>Meat_Megaspider</defName></ThingDef>
   <ThingDef><defName>AA_CrystallineCaracal</defName><race></race></ThingDef>
   <ThingDef><defName>ACPHedgehog</defName><race></race></ThingDef>
+  <!-- Doublons.xml: a duplicate-species pack def is not staged anywhere in Tests/Pickle/ (dozens of
+       packs, not installed; see TESTING.md "What is not covered"), but the patch's own removal logic
+       needs no real mod to prove: a synthetic ThingDef/BiomeDef pair with the same shapes is enough. -->
+  <ThingDef><defName>SCWelshCorgi</defName><race><wildBiomes><li>TemperateForest</li></wildBiomes></race></ThingDef>
+  <BiomeDef><defName>TemperateForest</defName><wildAnimals><SCWelshCorgi>0.5</SCWelshCorgi></wildAnimals></BiomeDef>
 </Defs>
 '@
 }
@@ -153,6 +158,9 @@ Assert (($null -ne $muffaloClock) -and ($muffaloClock.InnerText -eq 'Crepuscular
 $duckList = @($doc.SelectNodes("Defs/ThingDef[defName='Duck']/race/canCrossBreedWith/li") | ForEach-Object { $_.InnerText })
 $expectedDuckList = @('ZDuck_Bufflehead', 'ZDuck_Cayuga', 'ZDuck_EiderPintail', 'ZDuck_GreaterMallard', 'ZDuck_RudderDuck')
 Assert (($duckList.Count -eq $expectedDuckList.Count) -and (-not (Compare-Object $duckList $expectedDuckList))) 'Hybridation.xml: Duck canCrossBreedWith changed. Written unconditionally on the animal existing, regardless of whether the listed mods are present: expected, see TESTING.md on the suspected load-error defect (refuted by run f607, 2026-09-28).'
+
+Assert ($null -eq $doc.SelectSingleNode("Defs/ThingDef[defName='SCWelshCorgi']/race/wildBiomes")) 'Doublons.xml: SCWelshCorgi should lose its wildBiomes entry.'
+Assert ($null -eq $doc.SelectSingleNode("Defs/BiomeDef[defName='TemperateForest']/wildAnimals/SCWelshCorgi")) 'Doublons.xml: TemperateForest should lose its SCWelshCorgi wildAnimals entry.'
 
 Assert ($null -eq $doc.SelectSingleNode("Defs/ThingDef[defName='Bear_Grizzly']/comps")) 'Forage.xml: Bear_Grizzly must stay untouched without Vanilla Expanded Framework.'
 Assert ($null -eq $doc.SelectSingleNode("Defs/ThingDef[defName='AA_CrystallineCaracal']/comps")) 'Forage.xml: AA_CrystallineCaracal must stay untouched without Vanilla Expanded Framework.'

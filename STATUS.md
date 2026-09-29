@@ -33,7 +33,7 @@ remaining:
   - resolved 2026-09-28: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c); Meat_Megaspider (Herisson) rechecked by a corrected scenario, rerun pending
   - resolved 2026-09-28: values the patches write, run fd90/valeurs, 11/11 applicable scenarios passed with PickleTools' DefFields companion (Horse baseBodySize 1.926, gestationPeriodDays 24.17, first game run of this companion)
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
-  - pending: Doublons.xml and the other animal packs have no scenario that shows a patch firing
+  - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
 updated: 2026-09-28
 ---
 

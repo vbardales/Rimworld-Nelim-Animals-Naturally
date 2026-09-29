@@ -182,3 +182,10 @@ Meat_Megaspider are included in the fixture as plain ThingDefs: the game generat
 source races before patches run, confirmed in-game (Pickle run e85c).
 
 
+
+Doublons.xml also gained coverage in Tests/Test-Xml.ps1: a synthetic SCWelshCorgi ThingDef with a
+wildBiomes entry and a TemperateForest BiomeDef with a matching wildAnimals entry, both removed after
+the patch runs. No real animal-pack mod is needed for this: the patch's own PatchOperationRemove logic
+is what's being proven, not that a specific pack's defs exist. The dozens of other packs Doublons.xml
+targets (SC, WD, CK, ERN, HC, BB, BU, TYR...) remain unstaged in Tests/Pickle/ and untested by name;
+this closes "no scenario shows a patch firing" for the mechanism, not for every pack it applies to.
