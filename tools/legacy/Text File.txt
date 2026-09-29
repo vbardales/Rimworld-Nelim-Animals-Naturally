@@ -1,0 +1,330 @@
+[Meditation scales with Psychic Sensitivity] attaquer une cible
+ - grizzly
+ - ours polaire
+ - cougar
+ - panthère
+ - mégaraignée
+ - warg
+ - loup des bois
+ - loup arctique
+ - chien des marais
+ - chat-cimeterre
+ - loup géant
+ - tigre
+ - corbeau
+ - ara
+ - licorne
+ - coldwarg
+ - fancy rat
+ - dire rat
+ - rat fléau
+ - souris à queue épineuse
+ - snowrat
+ - arctic lion
+ - atispec
+ - nightling
+ - ocular nightling
+ - razorjack
+ - ripper hound
+ - sand lion
+ - spirit wolf
+ - megascorpion
+ - black bear
+ - lion
+ - cheetah
+ - amur leopard
+ - snow leopard
+ - honey badger
+ - megabadger
+ - budgerigar
+ - blue-and-yellow macaw
+ - military macaw
+ - scarlet macaw
+ - peregrine falcon
+ - raven
+ - catalina macaw
+ - shamrock macaw
+ - harlequin macaw
+ - African grass owl
+ - chromatic flower wolf
+ - kit fox
+ - red wolf
+ - Seong Baek-ho
+ - bouvier bernois
+ - Shiba Inu
+ - Kai Ken
+ - Hokkaido Ken
+ - Kishu Ken
+ - Shikoku Ken
+ - Akita Inu
+ - Teckel nain
+ - Schnauzer nain
+ - Carlin
+ - Corgi
+ - Lévrier afghan
+ - Border collie
+ - Bull-terrier
+ - Chow-chow
+ - Colley
+ - Doberman
+ - Golden retriever
+ - Lévrier
+ - Berger anglais ancien
+ - Caniche royal
+ - Borzoi
+ - Bullmastiff
+ - Berger du Caucase
+ - Saint-bernard
+ - terre-neuve
+ - vallhund suédois
+ - shiba inu
+ - dhole
+ - guépard
+ - ours noir
+ - jaguar
+ - bearded troll
+ - black scribe
+ - crestel
+ - giant snaptoad
+ - leviathan
+ - red-horned larpah
+ - imperial redhound
+ - rock troll
+ - taraal
+ - snow taraal
+ - northern lynx
+ - lesser panda
+ - tiger
+ - white tiger
+ - snow leopard
+ - jaguar
+ - Snow leopard
+réconforter
+ - chat
+ - Yorkshire Terrier
+ - labrador
+ - husky
+ - singe
+ - mouton
+ - capybara
+ - écureuil
+ - rat
+ - raton laveur
+ - panda
+ - ara
+ - phoque
+ - fancy rat
+ - animus vox
+ - crystalline caracal
+ - nightling
+ - ocular nightling
+ - phoenix owlcat
+ - ripper hound
+ - skiphound
+ - llama
+ - ferret
+ - river otter
+ - gecko
+ - angora rabbit
+ - domestic rabbit
+ - hedgehog
+ - munchkin cat
+ - red panda
+ - aonyx cinerea
+ - baby seal
+ - budgerigar
+ - cockatiel
+ - blue-and-yellow macaw
+ - military macaw
+ - scarlet macaw
+ - catalina macaw
+ - shamrock macaw
+ - harlequin macaw
+ - black-winged cuckooshrike
+ - Philippine fairy-bluebird
+ - caica parrot
+ - Teckel à poil court
+ - teckel à poil long
+ - teckel à poil dur
+ - boule de poussière
+ - kallana
+ - Fox Squirrel
+ - great pyrenees
+ - pearl hamster
+ - blue sapphirer hamster
+ - pudding hamster
+ - hotfoot rat
+ - kangaroo rat
+ - lemming
+ - mouse
+ - poison mouse
+ - turtle dove
+ - tortie
+ - Shiba Inu
+ - Lévrier afghan
+ - Doberman
+ - shiba inu
+ - chat abyssin
+ - chat-léopard
+ - chat british à poil court
+ - chat maine coon
+ - chat munchkin
+ - chat norvégien
+ - chat persan
+ - chat siamois
+ - chat somali
+ - chat sphynx
+ - beagle
+ - chihuahua
+ - corgi
+ - bouledogue français
+ - berger allemand
+ - dogue allemand
+ - caniche
+ - carlin
+ - rottweiler
+ - shih tzu
+ - welsh terrier
+ - hérisson
+ - forest owlcat
+ - arctic owlcat
+ - pigeon
+ - pallas' cat
+ - Opossum
+ - Ferret
+ - Red panda
+ - hedgehog
+fouiller
+ - cochon
+ - sanglier
+ - écureuil
+ - rat
+ - raton laveur
+ - gorille
+ - locuste
+ - peccary
+ - tapir
+ - megabadger
+ - aonyx cinerea
+ - boule de poussière
+ - Fox Squirrel
+ - pearl hamster
+ - blue sapphirer hamster
+ - pudding hamster
+ - mouse
+ - poison mouse
+ - Seong Baek-ho
+ - gutterhog
+ - Opossum
+creuser
+ - spélopède
+ - mégathérium
+ - campagnol géant
+ - groundrunner
+ - spirit wolf
+ - african wild dog
+ - duck-billed platypus
+ - megaferret
+ - moleroach
+ - moleroach
+ - rock troll
+projection d'œuf
+ - reine-ruche
+projection de boue
+ - larve
+rugissement terrifiant
+ - thrumbo alpha
+ - black rhinoceros
+ - rhinocéros noir
+trompette de guerre
+ - éléphant
+ - mastodonte
+ - woolly mammoth
+rugissement du thrumbo
+ - thrumbo
+regard contrôlé
+ - skiphound
+rupture de cycle
+ - acanthamoeba gigantea, huge
+ - aerofleet
+ - colossal aerofleet
+ - agaripawn
+ - agaripod
+ - green goo
+ - infected aerofleet
+ - mycoid colossus
+ - ocular jelly
+ - red goo
+ - teratogenic originator
+ - wildpawn
+ - wildpod
+détonation contrôlée
+ - aerofleet
+ - colossal aerofleet
+ - infected aerofleet
+invisibilité contrôlée
+ - arctic lion
+maître des bêtes
+ - arctic lion
+décomposition contrôlée des cadavres
+ - helixien
+ - murkling
+discipline de creusage
+ - dark vandal
+ - frostmite
+régulation des fumées
+ - ocular jelly
+ - red spore
+ - sand lion
+hiss
+ - cougar
+ - panthère
+ - lynx
+ - chat
+ - chat-cimeterre
+ - tigre
+ - arctic lion
+ - crystalline caracal
+ - frost lynx
+ - genix
+ - phoenix owlcat
+ - sand lion
+ - hedgehog
+ - guépard
+ - chat abyssin
+ - chat-léopard
+ - chat british à poil court
+ - chat maine coon
+ - chat munchkin
+ - chat norvégien
+ - chat persan
+ - chat siamois
+ - chat somali
+ - chat sphynx
+ - lion
+ - oie sauvage
+ - hérisson
+ - Snow leopard
+ - pallas' cat
+ - hedgehog
+deliver message
+ - white homing pigeon
+boulder throw
+ - rock troll
+crushing slam
+ - rock troll
+ - Tortue-alligator
+stunning screech
+ - crestel
+muckbile spew
+
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Message_Patch3 (string)
+Verse.DebugOutputsPawns:AnimalSpecialTrainables ()
+LudeonTK.DebugActionNode:Enter (LudeonTK.Dialog_Debug)
+LudeonTK.Dialog_Debug:DoButton (LudeonTK.DebugActionNode,single,bool)
+LudeonTK.Dialog_Debug:DrawNode (LudeonTK.DebugActionNode,single,bool)
+LudeonTK.DebugTabMenu:ListOptions (int,single)
+LudeonTK.Dialog_Debug:DoWindowContents (UnityEngine.Rect)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch2 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
