@@ -35,7 +35,7 @@ remaining:
   - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 # Nelim's Animals, Naturally — status
@@ -155,6 +155,30 @@ label/description/gizmo text beyond the mod's own metadata. The 2026-09-22 concl
 unchanged: `settings_audit: not_applicable`, `localization: not_applicable`,
 `translation_en: not_applicable`, `translation_fr: not_applicable`. Re-dated to 2026-09-27; no
 narrative changes needed since nothing in `Mod/` changed since the last audit.
+
+## Settings/translation gate re-verification — 2026-09-30
+
+Re-checked after a French-translation sweep found translations only by folder name and asked to
+recheck this mod for anything missed. `find` for `Languages`/`Keyed`/`DefInjected` anywhere under
+this checkout found one hit: `Tests/Pickle/Mod/Languages/README.md`, a loose file with no language
+subfolder (`LanguageDatabase` only enumerates directories under `Languages/`, so a loose file is
+never parsed) that exists solely to stop RimWorld logging "did not load any content" for the Pickle
+companion mod; it carries no key and is not part of the shipped `Mod/`. No other `Languages/`
+folder exists at any depth (Mod/, version folders, LoadFolders, integrations).
+Every field name across all 10 patch files in `Mod/Patches/` was enumerated (`baseBodySize`,
+`bodyClock`, `canCrossBreedWith`, `comps`, `customAmountToDig`, `customThingToDig`,
+`eggCountRange`, `eggFertilizationCountMax`, `eggLayIntervalDays`, `gestationPeriodDays`,
+`lifeExpectancy`, `litterSizeCurve`, `manhunterOnDamageChance`, `mateMtbHours`, `maxPreyBodySize`,
+`milkAmount`, `milkIntervalDays`, `minAge`, `onlyWhenTamed`, `points`, `shearIntervalDays`,
+`ticksToDig`, `woolAmount`, plus patch-structural tags `li`/`mods`/`name`/`operations`/`Patch`/
+`success`/`value`/`xpath`): none is `label`, `description`, or any other translatable string field.
+No `label`/`description` substring at all appears in any patch file. No C# strings, `Translate()`
+calls, Messages/Letters/Alerts/gizmo labels are possible: `Mod/` has no `Source/`, no `.dll`, no
+`Defs/` folder (only `About/` and `Patches/`), so no `Mod` subclass and no settings UI can exist —
+`settings_audit: not_applicable` is not a choice not to expose one, it is structurally impossible
+in this checkout. `About.xml` re-confirmed English-only metadata, outside the in-game gate.
+Verdict unchanged from 2026-09-22/09-27: `settings_audit`, `localization`, `translation_en`,
+`translation_fr` all stay `not_applicable`. Re-dated to 2026-09-30.
 
 ## Evidence, .dds, and untracked-files pass — 2026-09-27
 
