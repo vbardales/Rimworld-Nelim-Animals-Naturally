@@ -4,9 +4,9 @@ packageId: nelim.animalsnaturally
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-stage: preTest
-workflow_stage: preTest
-stage_meaning: "stage holds the 6-code field; workflow_stage carries the exact 12-state chain position, same value from preTest on. l10n→preTest is a static gate (AUDIT.md): dependencies really used, verified and correctly declared in About.xml; identifiers/version constraints/load order coherent; required vs optional integrations distinguished; LoadFolders and conditional patches coherent with those declarations. Fixed 2026-09-29: About.xml's internal comment wrongly claimed Hybridation.xml patches Dogs Mate's own defs (it writes the vanilla canCrossBreedWith field; TESTING.md, 2026-09-28, found no XPath targets Dogs Mate/Some Like It Rotten/Zoology). No LoadFolders.xml needed for a single-version (1.6) mod."
+stage: done
+workflow_stage: done
+stage_meaning: "stage holds the 6-code field; workflow_stage carries the exact 12-state chain position, same value from preTest on. l10n→preTest crossed 2026-09-29 (see git history for detail). preTest→done is a static gate (AUDIT.md): automated + XML tests rerun (not read from an old report), Pickle suites written or their absence justified in writing. No in-game run is required for this gate (AUDIT.md's explicit 2026-09-21 clarification); that belongs to done→tested. Crossed 2026-09-30: Tests/Test-Xml.ps1 rejoué, vert (10 patch files, About.xml contract, fixtures, absent-mod safety); 5 Pickle feature files exist under Tests/Pickle/, coverage documented in TESTING.md."
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
 upstream_mod_remotes:
