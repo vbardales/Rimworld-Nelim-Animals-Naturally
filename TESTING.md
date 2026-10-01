@@ -7,7 +7,7 @@ Not shipped: it lives beside `Mod/`, never inside it, so Steam never receives it
 - **Written**: Pickle suite `Tests/Pickle/`, six features, none tagged `@wip`; offline `Tests/Test-Xml.ps1` (run with `pwsh`, PASS on 2026-10-01).
 - **Played green** (reports read, `exitReason: passed`): sans-facultatifs-r2 (01-baseline), dogsmate (03), valeurs (06, DefFields companion), zoology-slow2 (05, with `-StallMinutes 20 -RunTimeoutMinutes 25`). avec-vef-r5 failed on a test-authoring bug since corrected.
 - **Outstanding before `tested`**: 02-forage-vef (avec-vef-r6) and 04-rotten (rotten-slow), filed 2026-10-01 on e656137; see `STATUS.md`.
-- **Manual tests**: none recorded. Existing-save and new-game behaviour are argued not applicable below; Virginie has not yet accepted that.
+- **Manual tests**: none recorded. Existing-save and new-game behaviour are argued not applicable below; Virginie accepted that on 2026-10-01.
 
 `@wip` is absent because nothing was set aside.
 
