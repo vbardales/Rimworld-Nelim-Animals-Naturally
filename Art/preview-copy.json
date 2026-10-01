@@ -1,7 +1,44 @@
 {
-  "title": "Nelim's Animals,",
-  "suffix": "Naturally",
-  "tag": "Biology-based animal rebalancing",
-  "copyLines": ["Body size, lifespan, taming, and hybridisation", "derived from each species' real mass and taxonomy."],
-  "iconBadge": { "file": "ModIcon-badge.png", "corner": "bottom-right", "width": 180 }
+  "title": "Nelim's Animals, Naturally",
+  "titleSize": 46,
+  "titleParts": [
+    { "text": "Nelim's ", "scale": 0.65, "font": "ui", "color": "secondary" },
+    { "text": "Animals,", "scale": 1 },
+    { "break": true },
+    { "text": "Naturally", "scale": 1 }
+  ],
+  "suffix": "",
+  "tag": "",
+  "copyLines": [
+    "Body size, lifespan, taming, and hybridisation",
+    "derived from each species' real mass and taxonomy."
+  ],
+  "layout": "panel",
+  "panelAnchor": "top-left",
+  "backgroundFile": "Preview.png",
+  "backgroundPosition": "center",
+  "backgroundSize": "cover",
+  "echo": {
+    "file": "echo.png",
+    "preSized": true,
+    "color": "var(--accent)",
+    "width": 250,
+    "height": 167,
+    "opacity": 1,
+    "veil": false,
+    "panelTop": 5,
+    "panelRight": -2,
+    "panelWidth": 48,
+    "flipX": true
+  },
+  "iconBadge": {
+    "file": "ModIcon-badge.png",
+    "corner": "bottom-right",
+    "width": 180,
+    "outline": false,
+    "veil": "radial",
+    "veilSize": 275,
+    "veilRight": -55,
+    "veilBottom": -61
+  }
 }

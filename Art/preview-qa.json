@@ -6,71 +6,49 @@
   "elements": {
     ".title-main": {
       "bounds": {
-        "x": 50,
-        "y": 48,
-        "width": 344.46875,
-        "height": 62
+        "x": 48,
+        "y": 30,
+        "width": 351.03125,
+        "height": 101.1875
       },
       "fonts": [
         {
           "familyName": "Segoe UI Semibold",
           "postScriptName": "SegoeUI-Semibold",
           "isCustomFont": false,
-          "glyphCount": 16
+          "glyphCount": 8
+        },
+        {
+          "familyName": "RimWordFont",
+          "postScriptName": "RimWordFont",
+          "isCustomFont": true,
+          "glyphCount": 17
         }
-      ],
-      "minimumContrast": 10.232
+      ]
     },
     ".suffix": {
-      "bounds": {
-        "x": 50,
-        "y": 116.59375,
-        "width": 124.296875,
-        "height": 40
-      },
-      "fonts": [
-        {
-          "familyName": "Segoe UI Semibold",
-          "postScriptName": "SegoeUI-Semibold",
-          "isCustomFont": false,
-          "glyphCount": 9
-        }
-      ],
-      "minimumContrast": 5.989
+      "bounds": null,
+      "fonts": []
     },
     ".tag": {
-      "bounds": {
-        "x": 50,
-        "y": 163.1875,
-        "width": 430,
-        "height": 26.390625
-      },
-      "fonts": [
-        {
-          "familyName": "Segoe UI",
-          "postScriptName": "SegoeUI",
-          "isCustomFont": false,
-          "glyphCount": 32
-        }
-      ],
-      "minimumContrast": 4.881
+      "bounds": null,
+      "fonts": []
     },
     "p": {
       "bounds": {
-        "x": 50,
-        "y": 228.578125,
-        "width": 430,
-        "height": 91.3125
+        "x": 48,
+        "y": 167.78125,
+        "width": 362.25,
+        "height": 121.75
       },
       "fonts": [
         {
           "familyName": "Segoe UI",
           "postScriptName": "SegoeUI",
           "isCustomFont": false,
-          "glyphCount": 95
+          "glyphCount": 94
         }
-      ],
-      "minimumContrast": 4.589
+      ]
     },
     ".version": {
       "bounds": {
@@ -86,13 +64,25 @@
           "isCustomFont": false,
           "glyphCount": 3
         }
-      ],
-      "minimumContrast": 5.042
+      ]
     }
   },
-  "size": [
-    896,
-    504
-  ],
-  "bytes": 535632
+  "layout": {
+    "panel": {
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 519.671875,
+        "height": 310.53125
+      }
+    },
+    "copy": {
+      "bounds": {
+        "x": 48,
+        "y": 30,
+        "width": 430,
+        "height": 259.53125
+      }
+    }
+  }
 }
