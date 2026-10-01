@@ -2,16 +2,14 @@
 
 Not shipped: it lives beside `Mod/`, never inside it, so Steam never receives it.
 
-## Current status (2026-09-28)
+## Current status (2026-10-01)
 
-- **Written**: a Pickle suite, `Tests/Pickle/`, of five features and 22 scenarios. None is tagged `@wip`. It uses only steps
-  that exist in Pickle's own vocabulary; nothing is compiled.
-- **Run**: nothing has been played on any revision. The three passes below were filed as requests on 2026-09-28
-  (`STATUS.md` gives their ids and state); until a report exists for each, every scenario is unverified, not passed.
-- **Not written**: offline XML patch-application tests (see "What is not covered"), so no value the mod writes is checked anywhere yet.
-- **Manual tests**: none recorded, none pending. Each behaviour is either a scenario below or listed as not covered.
+- **Written**: Pickle suite `Tests/Pickle/`, six features, none tagged `@wip`; offline `Tests/Test-Xml.ps1` (run with `pwsh`, PASS on 2026-10-01).
+- **Played green** (reports read, `exitReason: passed`): sans-facultatifs-r2 (01-baseline), dogsmate (03), valeurs (06, DefFields companion), zoology-slow2 (05, with `-StallMinutes 20 -RunTimeoutMinutes 25`). avec-vef-r5 failed on a test-authoring bug since corrected.
+- **Outstanding before `tested`**: 02-forage-vef (avec-vef-r6) and 04-rotten (rotten-slow), filed 2026-10-01 on e656137; see `STATUS.md`.
+- **Manual tests**: none recorded. Existing-save and new-game behaviour are argued not applicable below; Virginie has not yet accepted that.
 
-`@wip` is absent because nothing was set aside, not because everything passed.
+`@wip` is absent because nothing was set aside.
 
 ## What the mod is, and what that leaves to test
 
@@ -128,10 +126,9 @@ shared report folder and are not trimmed by it: after a run, select what this mo
 and leave the others alone (`keep.txt` marks one held for review). Summarise every run as one text line in `docs/runs/history.md`, never as a
 folder.
 
-## 2026-09-28 retention decision
+## 2026-10-01 retention decision
 
-- Delete: nothing. No `Tests/Pickle/Evidence/`, `evidence/` or `.dds` file exists in this checkout, and none is tracked by Git.
-- Keep: nothing. No run has produced a report for this mod yet.
+Kept per scenario pass: newest terminal `summary.json`, `junit.xml`, `summary.md`, `evidence-complete.txt`. Deleted: `report.html`, `messages.ndjson`, `Player.log`, screenshots (this suite has no `@review` or `@film` scenario), no-report folders superseded by a later run, and this mod's `pickle-reports-archive/stalled-AnimalsNaturally-*` archives. `Evidence/rotten/` stays until rotten-slow reports.
 
 ## Update 2026-09-28
 

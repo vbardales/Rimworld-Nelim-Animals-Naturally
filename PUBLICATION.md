@@ -1,7 +1,6 @@
 # Publication notes — Nelim's Animals, Naturally
 
-No Workshop item exists yet (`workshop:` is empty in `STATUS.md`, no `PublishedFileId.txt` anywhere in
-this checkout). Publishing goes through GitHub Actions per `AGENTS.md`/`Rimworld-Release-Admin/docs/OPERATIONS.md`;
+The Workshop item exists since the 0.1.0 prepublication (2026-10-01): id `3811381865`, private, `About/PublishedFileId.txt` committed in e656137. Replace `<THIS_MOD_ID>` below with it only once the item is public. Publishing goes through GitHub Actions per `AGENTS.md`/`Rimworld-Release-Admin/docs/OPERATIONS.md`;
 this file only prepares what needs the item's own ID, filled in once it exists.
 
 ## Thanks to post, after the item is public

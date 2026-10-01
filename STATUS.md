@@ -23,7 +23,7 @@ localization: not_applicable
 translation_en: not_applicable
 translation_fr: not_applicable
 tested_on:
-workshop:
+workshop: 3811381865 (private prepublication 0.1.0, 2026-10-01; item not public)
 remaining:
   - resolved 2026-09-28: RimWorld loads with the required Nocturnal Animals dependency, run f607/sans-facultatifs-r2, 10/10 passed, 0 failed
   - resolved 2026-09-29: optional-mod combination avec-vef, run avec-vef-r5, 6/7 passed; the 1 failure was a test-authoring bug (see line below), rerun pending on the corrected scenario
@@ -32,10 +32,12 @@ remaining:
   - resolved 2026-09-28: suspected defect, Hybridation.xml lists defs of absent mods in canCrossBreedWith, refuted by run f607/sans-facultatifs-r2 ("the load logs no error" passed in the bare pass, which carries the absent-mod entries)
   - resolved 2026-09-29: Forage.xml Meat_Rat guard works (AA_CrystallineCaracal patched in run e85c). Meat_Megaspider guard: scenario asserted ACPHedgehog, but run avec-vef-r5 showed that def does not exist in this pass (its owning mod, Animal Collab Project, is not staged; only AEXP_Hedgehog/AEXP_Pangolin are). Scenario switched to AEXP_Pangolin, a Meat_Megaspider-guarded animal from a pack this pass does stage; rerun pending
   - resolved 2026-09-28: values the patches write, run fd90/valeurs, 11/11 applicable scenarios passed with PickleTools' DefFields companion (Horse baseBodySize 1.926, gestationPeriodDays 24.17, first game run of this companion)
-  - pending: executed results for every conditional scenario (3 passes requested 2026-09-28), then read reports, before tested
+  - pending: executed results for the two conditional scenarios still unplayed on a green run, before tested: 02-forage-vef (avec-vef-r6, ticket 1277) and 04-rotten (rotten-slow, ticket 5bde), both filed 2026-10-01 on e656137 after the 2026-09-29 tickets c884 (exit 1, 6 passed, 1 failed, 6 skipped) and 9177 (exit 0, 1 passed, 12 skipped) ran 2026-09-30 without -EvidenceDir: only counts survive in the dispatcher logs, no report to read, so neither counts as proof (c884 shows one scenario still red, unidentified)
+  - defect: the working-tree Mod/About/Preview.png (uncommitted, 643024 bytes, veil lowered to .20 and icon outline added in Art/Preview-layout.html) has near-illegible "Naturally" and tag text on the cream background; committed Preview.png (535632 bytes, contrast QA 4.59-10.23) is fine. Not mine to revert: owner decides whether to finish or drop the uncommitted regeneration, then rerun the contrast check
+  - unverified: 0.1.0 prepublication content: whether the uploaded Preview.png was the committed or the uncommitted one is not recorded
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
-updated: 2026-09-30
+updated: 2026-10-01
 ---
 
 # Nelim's Animals, Naturally — status
@@ -258,3 +260,15 @@ Runs: **none played.** Three requests filed with the dispatcher (queue held 48 t
 `Tests/Pickle/Evidence/<pass>`. Keep `Mod/` unchanged until RUN_DONE. No report exists, so nothing is passed.
 
 Stage stays `preOptions`: no run evidence, and the vocabulary gap and suspected defects are unresolved.
+
+## Audit — 2026-10-01 (revision 269a408 + e656137, Art/Preview files modified in the working tree)
+
+Result: `stage: done`, `workflow_stage: done`, unchanged. Session title `animalsnaturally / done`.
+
+- Prepublication: `Mod/About/PublishedFileId.txt` appeared (id 3811381865), committed as `e656137` ("Add published Workshop file ID for 0.1.0"); `CHANGELOG.md` opens with `## [0.1.0]` above `Unreleased`. This is the act of prepublication, not the `prepublished` state.
+- `preTest -> done` rechecked: `pwsh.exe -File Tests/Test-Xml.ps1` PASS (10 patch files, About.xml contract, fixtures, absent-mod safety). Under Windows PowerShell 5.1 the script fails 14 assertions: it needs `pwsh` (7+), as TESTING.md already says.
+- Git: no `.dds` tracked (`*.dds` ignored since 2026-09-26); no evidence tracked; `Tests/Pickle/Evidence/` ignored.
+- Evidence trimmed on disk: kept `summary.json`, `junit.xml`, `summary.md`, `evidence-complete.txt` of sans-facultatifs-r2, avec-vef-r5, dogsmate, valeurs, zoology-slow2; kept `rotten/` (stall log) until rotten-slow reports; deleted `report.html`, `messages.ndjson`, `Player.log`, screenshots, the no-report folders avec-loadafter and zoology, and the three `pickle-reports-archive/stalled-AnimalsNaturally-*` archives. Nothing `STATUS.md` cites was removed.
+- Upstream: `upstream_mod_remotes` already lists the source repos (emipa606/*, Vanilla Expanded Framework). This mod is original rebalancing work, not a fork, so there is no code to base PRs on; PRs would go to those repos only if a concrete fix to one of them is found.
+- Not done by this audit: no new test run played. Two requests filed (see `remaining`). `tested` also needs: no `@wip` (none exist), every conditional scenario run (02 and 04 outstanding), no manual test left to validate (existing-save / new-game argued not applicable in TESTING.md, awaiting Virginie's acceptance).
+- Reserve for `prepublished`, not a blocker now: the About.xml description lacks `IF I GO QUIET`, a specific `THANKS` and the `AI-GENERATED` line names OpenAI Codex only; `PUBLICATION.md` needs the capture order and adult-content answers; Gallery has only `0-preview.png`.

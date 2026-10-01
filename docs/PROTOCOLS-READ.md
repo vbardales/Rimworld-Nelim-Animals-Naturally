@@ -129,3 +129,11 @@ The session-local `docs/notes/docs-read.md` file (created 2026-09-27 by an earli
 duplicated this record and had already gone stale in the opposite direction (marking things "not
 needed" that this pass then used); it was deleted 2026-09-29. This file is the single source of truth
 for what's been read and why, going forward — do not recreate a second one.
+
+## Reading pass — 2026-10-01
+
+Read in full: `../AUDIT.md` (275 lines; new since 2026-09-29: prepublication `0.1.0` rules, `tested` criteria no `@wip` / every conditional scenario run / no manual test left, evidence on disk only, one `docs/runs/` line per run, `Submit-PickleRun.ps1` with a new `-EvidenceDir` every time, session title `<packageId sans nelim.> / <workflow_stage>`), `../Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` (options table, exit codes). Hashes recomputed (first 16 hex digits; the 2026-09-29 table above used full digests): AUDIT `0fb60fdf8c87c920`, MOD_SETTINGS `404916bc99a7f1c6` (unchanged), PUBLISHING `0bcad17895950`, TRANSLATIONS `e5197820fda1bfb2`, STYLE_RIMWORLD `e5326fd6cf754614`, WORKSHOP_COMMENTS `3fb37586f04b8edc`, SEARCHING `013075b06b89fe59`. Monorepo siblings now at: PickleTools `b7620cb` (2026-09-29), Rimworld-Release-Admin `d5282af` (2026-10-01), Rimworld-Ticket-Dispatcher `ae69394` (2026-10-01). `AGENTS.md` now exists on disk (`../AGENTS.md`).
+
+Not reread this pass, no trigger: `PUBLISHING.md`, `TRANSLATIONS.md`, `STYLE_RIMWORLD.md`, `MOD_SETTINGS.md` (this mod: no settings, no text, no new art made), `WORKSHOP_COMMENTS.md`, `Release-Admin/docs/OPERATIONS.md`, `scripts/SEARCHING.md`, `PickleTools/*`, `Ticket-Dispatcher/docs/WELCOME.md`. Reread `PUBLISHING.md` + `OPERATIONS.md` before the first CI publish, `WORKSHOP_COMMENTS.md` before posting.
+
+Absent in this checkout (checked 2026-10-01): `BACKLOG.md`, `NOTES.md`, `BUGS.md`. Present: `STATUS.md`, `README.md`, `CHANGELOG.md`, `ATTRIBUTION.md`, `LICENSE`, `PUBLICATION.md`, `TESTING.md`, `docs/runs/`, `Tests/Pickle/`, `Mod/About/About.xml`.
