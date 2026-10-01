@@ -19,4 +19,4 @@ unless declared as such in `Mod/About/About.xml`.
 
 ## Tooling
 
-OpenAI Codex assisted with the 2026-09-22 English documentation and audit update.
+Claude (Anthropic) and OpenAI Codex assisted with the XML patches, tests, documentation and audit maintenance. The values and rules are the author's.

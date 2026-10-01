@@ -48,9 +48,13 @@ All patches are conditional: removing an animal mod simply makes its correspondi
 
 Load AFTER all animal mods.
 
-AI-GENERATED: OpenAI Codex assisted with project documentation and audit maintenance.
+IF I GO QUIET: If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-THANKS: Ludeon Studios and the authors of the animal mods whose definitions are targeted. See ATTRIBUTION.md and the MIT License.
+AI-GENERATED: Claude (Anthropic) and Codex (OpenAI) assisted with the XML patches, tests, documentation and audit maintenance. The values and rules are mine.
+
+THANKS: Ludeon Studios and the authors of the animal mods whose definitions are targeted. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409][XND] Nocturnal Animals (Continued)[/url] by Mlie, whose bodyClock extension this mod uses. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3667046888]Animals Forage (Continued)[/url] by Mlie, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856]Alpha Animals[/url] by Sarg Bjornson and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948]Vanilla Animals Expanded[/url] by Oskar Potocki, whose animals the forage patches extend. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] provides the forage components. Development only, never a dependency: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678]Pickle[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696]RimLogging[/url] and PickleTools.
+
+See ATTRIBUTION.md and the MIT License in the GitHub repository.
 
 [url=https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally]Source code on GitHub[/url]</description>
 </ModMetaData>

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Completed the Workshop description: adoption clause, AI-generated notice naming Claude and Codex, linked THANKS credits.
 - Renamed the mod to **Nelim's Animals, Naturally**.
 - Rewrote the public-facing metadata and repository documentation in English.
 - Recorded the 2026-09-22 static audit and its remaining game-validation work.
