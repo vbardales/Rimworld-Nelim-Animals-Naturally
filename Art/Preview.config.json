@@ -2,10 +2,23 @@
   "title": "Nelim's Animals, Naturally",
   "titleSize": 46,
   "titleParts": [
-    { "text": "Nelim's ", "scale": 0.65, "font": "ui", "color": "secondary" },
-    { "text": "Animals,", "scale": 1 },
-    { "break": true },
-    { "text": "Naturally", "scale": 1 }
+    {
+      "text": "Nelim's ",
+      "scale": 0.65,
+      "font": "ui",
+      "color": "secondary"
+    },
+    {
+      "text": "Animals,",
+      "scale": 1
+    },
+    {
+      "break": true
+    },
+    {
+      "text": "Naturally",
+      "scale": 1
+    }
   ],
   "suffix": "",
   "tag": "",
@@ -15,7 +28,7 @@
   ],
   "layout": "panel",
   "panelAnchor": "top-left",
-  "backgroundFile": "Preview.png",
+  "backgroundFile": "Preview-source.png",
   "backgroundPosition": "center",
   "backgroundSize": "cover",
   "echo": {
@@ -32,7 +45,7 @@
     "flipX": true
   },
   "iconBadge": {
-    "file": "ModIcon-badge.png",
+    "file": "ModIcon-source.png",
     "corner": "bottom-right",
     "width": 180,
     "outline": false,
@@ -40,5 +53,12 @@
     "veilSize": 275,
     "veilRight": -55,
     "veilBottom": -61
+  },
+  "palette": {
+    "veil": "#241C13",
+    "inkPrimary": "#FBF6EC",
+    "inkSecondary": "#E0B97E",
+    "accent": "#B9762E",
+    "badgeInk": "#17120E"
   }
 }

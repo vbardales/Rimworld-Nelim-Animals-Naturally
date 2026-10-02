@@ -17,3 +17,6 @@ evidence/
 node_modules/
 package.json
 package-lock.json
+
+# Reproducible Preview diagnostics generated locally by the shared renderer.
+Art/.render/

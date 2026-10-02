@@ -32,6 +32,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (170, 100)
     And Nelim's Pickle Tools: I place the decor "ShelfSmall" at (172, 97)
     When Nelim's Pickle Tools: I frame the cells (143, 95) to (171, 101) filling 60 percent of the screen
+    Then Nelim's Pickle Tools: the framed cells fill at least 50 percent of the screen
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I take a screenshot "gallery 1 plate"
     And Nelim's Pickle Tools: the decor is removed
@@ -53,7 +54,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I place the decor "StandingLamp" at (147, 100)
     When I wait 900 ticks
     And Nelim's Pickle Tools: I frame the cells (148, 96) to (160, 101) filling 60 percent of the screen
-    And Nelim's Pickle Tools: studio presentation mode is enabled
+    Then Nelim's Pickle Tools: the framed cells fill at least 50 percent of the screen
+    When Nelim's Pickle Tools: studio presentation mode is enabled
     And I take a screenshot "gallery 3 grizzly forage"
     And Nelim's Pickle Tools: the decor is removed
     Then no errors were logged

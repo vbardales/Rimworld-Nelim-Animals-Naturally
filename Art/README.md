@@ -1,21 +1,14 @@
 # Artwork
 
-- `Preview-source.png` is the preserved original illustration. `Preview.png` is a byte-for-byte copy of
-  it under the name `../scripts/Render-Preview.cjs` reads.
-- `Mod/About/Preview.png` (896 x 504) is `Preview.png` composited with the title, tag, summary, version
-  badge and, since 2026-09-29, the cut-out ModIcon, by `../scripts/Render-Preview.cjs` reading
-  `preview-copy.json` and `preview-palette.json`.
-- `ModIcon-badge.png` is `Mod/About/ModIcon.png`'s background flood-filled out and alpha-trimmed, made
-  once by `../scripts/Make-PreviewBadge.ps1 -SaveTrimmedIconTo Art/ModIcon-badge.png` (re-run only if
-  ModIcon.png changes). It sits bottom-right (`preview-copy.json`'s `iconBadge.corner`), -15deg: the
-  top-right corner already carries the "1.6" version triangle.
-- `Art/gallery/0-preview.png` is a byte-for-byte copy of `Mod/About/Preview.png`, recopied by hand after
-  each render (the shared script does not do this itself): every Workshop gallery starts with it
-  (owner's rule, PUBLISHING.md, naming settled 2026-09-29: a single digit, lowercase). No further
-  gallery images exist yet.
+Since 2026-10-02 copy, typography, layout and palette live in `Preview.config.json`; the canonical inputs are
+`Preview-source.png` (the preserved illustration), `echo.png` (the line art) and `ModIcon-source.png`.
+
+- `Mod/About/Preview.png` (896 x 504) is rendered from them by the shared renderer in `../scripts/` (its
+  README gives the command). Diagnostics it writes go to `Art/.render/`, ignored by git.
+- `Art/gallery/0-preview.png` is a byte-for-byte copy of `Mod/About/Preview.png`, recopied after each render:
+  every Workshop gallery starts with it (owner's rule, PUBLISHING.md). The gallery pictures that follow (`1-`,
+  `2-`, `3-`) come from `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature`; see `PUBLICATION.md`.
 - `Preview.ico`/`ModIcon.ico` are the local folder icons, outside `Mod/`.
 
-Run `node ../scripts/Render-Preview.cjs bottom-right` from this repo's root after any change to the
-illustration, the palette, the copy text or the icon badge, then `uv run --with pillow python
-Art/verify-preview.py` (contrast ratios against the real rendered background, size under 900 KB,
-writes `Preview-thumbnail-qa.png`), then recopy `Mod/About/Preview.png` to `Art/gallery/0-preview.png`.
+Check the rendered Preview: contrast of every text against the real background, size under 1 MB, at 32 px for
+the icon (`STYLE_RIMWORLD.md`).
