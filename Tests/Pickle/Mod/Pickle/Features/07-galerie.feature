@@ -18,6 +18,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
   Background:
     Given the save "nelim-zen-meadow-studio" is loaded
     And game speed is paused
+    And I set the hour to 10
+    And I set the weather to "Clear"
 
   Scenario: image 1, the plate: six animals by size on the meadow
     Given Nelim's Pickle Tools: 1 adult animals of kind "Rat" are spawned around (146, 98)
