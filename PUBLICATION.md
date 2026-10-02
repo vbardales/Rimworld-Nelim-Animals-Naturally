@@ -66,3 +66,9 @@ Folder `Art/gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`
 | 1 | size range | mouse to elephant side by side | scenario written, not played |
 | 2 | horse health tab | the Health tab of a rebalanced horse (an animal has no Bio tab: Health, Log, Needs, Social, Training) | scenario written; no animal tab shows lifespan or body size, so the picture may not sell the mod: judge it, or drop it |
 | 3 | forage | a grizzly digging berries | not written: needs a way to make the animal hungry (no step does it) or a long film |
+
+### Staging of the gallery (owner's rule, 2026-10-02)
+
+Every gallery image is a staged photograph, except menus (the Health tab, image 2, is a screenshot of what it is). Story for the series: **the naturalist's plate**. A field station in the meadow of the shared studio (`nelim-zen-meadow-studio`): same backdrop for the whole series, a standing lamp, plants and a shelf where they tell something. Image 1: the animals lined up by size, mouse to elephant, as on a field-guide plate. Image 3: a grizzly digging berries beside berry bushes. Decor is placed, photographed, removed, then the next image.
+
+Steps this needs and the catalogue does not have (asked of Pickle Tools on 2026-10-02): an animal spawned on an exact cell or in a row, decor placed by defName and removed, an animal's food set, framing of a cell rectangle to a share of the screen. Until they exist, `07-galerie.feature` uses `close together` and the test colony, and its pictures are tests of the trip, not gallery material.
