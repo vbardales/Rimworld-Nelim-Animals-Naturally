@@ -64,8 +64,8 @@ Folder `Art/gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`
 |---|---|---|---|
 | 0 | `0-preview.png` | the Preview | done |
 | 1 | size range | mouse to elephant side by side | scenario written, not played |
-| 2 | horse health tab | the Health tab of a rebalanced horse (an animal has no Bio tab: Health, Log, Needs, Social, Training) | scenario written; no animal tab shows lifespan or body size, so the picture may not sell the mod: judge it, or drop it |
-| 3 | forage | a grizzly digging berries | not written: needs a way to make the animal hungry (no step does it) or a long film |
+| 2 | horse health tab | menu capture, not staged (an animal has no Bio tab) | scenario written, not played |
+| 3 | forage | a hungry grizzly beside berry bushes | scenario written, not played; digging is not asserted, read it on the picture |
 
 ### Staging of the gallery (owner's rule, 2026-10-02)
 
