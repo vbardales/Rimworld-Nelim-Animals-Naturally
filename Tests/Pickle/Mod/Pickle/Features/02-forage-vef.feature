@@ -3,7 +3,7 @@
 # on the name "Vanilla Expanded Framework"; its entries add VEF's CompProperties_DigWhenHungry and
 # CompProperties_DigPeriodically to animals that Animals Forage (Continued) does not cover.
 #
-# Run it with `-DepMap wsl-deps.avec-vef.map -Filter 'Animals Naturally - Pickle tests,!01-baseline'`.
+# Run it with `-DepMap wsl-deps.avec-vef.map -Filter 'Animals Naturally - Pickle tests,!01-baseline,!07-galerie'`.
 # In the bare pass the @requires tag skips this whole file and the report counts it as skipped: that is
 # not a pass, see TESTING.md.
 #

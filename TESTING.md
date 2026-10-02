@@ -39,8 +39,8 @@ of them** (checked 2026-09-28 across the ten files): `About.xml` says Hybridatio
 | Pass | Request | Stages | What it proves |
 |---|---|---|---|
 | **sans-facultatifs** | `-Filter '01-baseline'`, no `-DepMap` | Core, the DLCs, Harmony, RimLogging, Pickle, Nocturnal Animals (`wsl-ids.map`), the mod, the companion | The mod stands with its one hard dependency: the vanilla animals survive, Rythme, Regles and Hybridation reach vanilla defs, the patches of absent mods stay silent, the forage complement is off |
-| **avec-vef** | `-DepMap wsl-deps.avec-vef.map -Filter 'Animals Naturally - Pickle tests,!01-baseline'` | the above plus VEF, Alpha Animals, Vanilla Animals Expanded, Animals Forage (Continued) | The forage complement is on, reaches vanilla and pack defs, and the mod is silent beside the packs |
-| **avec-loadafter** | `-DepMap wsl-deps.avec-loadafter.map -Filter 'Animals Naturally - Pickle tests,!01-baseline'` | the first plus Dogs Mate, Some Like It Rotten, Zoology | The mod loads below the three `loadAfter` mods, silent, and still reaches vanilla defs beside Zoology |
+| **avec-vef** | `-DepMap wsl-deps.avec-vef.map -Filter 'Animals Naturally - Pickle tests,!01-baseline,!07-galerie'` | the above plus VEF, Alpha Animals, Vanilla Animals Expanded, Animals Forage (Continued) | The forage complement is on, reaches vanilla and pack defs, and the mod is silent beside the packs |
+| **avec-loadafter** | `-DepMap wsl-deps.avec-loadafter.map -Filter 'Animals Naturally - Pickle tests,!01-baseline,!07-galerie'` | the first plus Dogs Mate, Some Like It Rotten, Zoology | The mod loads below the three `loadAfter` mods, silent, and still reaches vanilla defs beside Zoology |
 
 The two optional passes are separate so that a red is attributable: VEF and the animal packs on one side, three mods that do not
 touch this mod's XPaths on the other. The mods were not proven to coexist in a single list, and nothing here claims they do.

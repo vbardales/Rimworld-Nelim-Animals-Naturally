@@ -20,8 +20,9 @@ incompatibility pass, no DLC-absent pass and no language pass (justification in 
 | Pass | Map | Filter | Features |
 |---|---|---|---|
 | `sans-facultatifs` | none | `01-baseline` | `01-baseline` (the others are skipped by `@requires`, and must be seen skipped) |
-| `avec-vef` | `wsl-deps.avec-vef.map` | `Animals Naturally - Pickle tests,!01-baseline` | `02-forage-vef` |
-| `avec-loadafter` | `wsl-deps.avec-loadafter.map` | `Animals Naturally - Pickle tests,!01-baseline` | `03-dogsmate`, `04-rotten`, `05-zoology` |
+| `avec-vef` | `wsl-deps.avec-vef.map` | `Animals Naturally - Pickle tests,!01-baseline,!07-galerie` | `02-forage-vef` |
+| `avec-loadafter` | `wsl-deps.avec-loadafter.map` | `Animals Naturally - Pickle tests,!01-baseline,!07-galerie` | `03-dogsmate`, `04-rotten`, `05-zoology` |
+| `galerie` | `wsl-deps.galerie.map` | `07-galerie` | `07-galerie`: Workshop gallery captures (`@review`), never part of the other passes |
 
 `01-baseline` asserts that the optional mods are absent, so it must not run in the other two passes; the features of the other two
 are tagged `@requires:<packageId>`, so they are skipped (and counted as skipped, which is not a pass) in the bare pass.
@@ -37,11 +38,11 @@ powershell.exe -ExecutionPolicy Bypass -File Rimworld-Ticket-Dispatcher\scripts\
 
 powershell.exe -ExecutionPolicy Bypass -File Rimworld-Ticket-Dispatcher\scripts\Submit-PickleRun.ps1 `
   -Mod AnimalsNaturally -Owner local_<session id> -Label "avec-vef <sha>" -DepMap wsl-deps.avec-vef.map `
-  -Filter 'Animals Naturally - Pickle tests,!01-baseline' -EvidenceDir AnimalsNaturally/Tests/Pickle/Evidence/avec-vef
+  -Filter 'Animals Naturally - Pickle tests,!01-baseline,!07-galerie' -EvidenceDir AnimalsNaturally/Tests/Pickle/Evidence/avec-vef
 
 powershell.exe -ExecutionPolicy Bypass -File Rimworld-Ticket-Dispatcher\scripts\Submit-PickleRun.ps1 `
   -Mod AnimalsNaturally -Owner local_<session id> -Label "avec-loadafter <sha>" -DepMap wsl-deps.avec-loadafter.map `
-  -Filter 'Animals Naturally - Pickle tests,!01-baseline' -EvidenceDir AnimalsNaturally/Tests/Pickle/Evidence/avec-loadafter
+  -Filter 'Animals Naturally - Pickle tests,!01-baseline,!07-galerie' -EvidenceDir AnimalsNaturally/Tests/Pickle/Evidence/avec-loadafter
 ```
 
 A request carries no SHA: the mod is staged when its ticket is played, from the working tree of that moment. Keep `Mod/` on the

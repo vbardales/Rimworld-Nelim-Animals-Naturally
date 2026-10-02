@@ -53,3 +53,16 @@ on purpose, do not post with it still in place. Read the page's last comments ag
 > animals it hadn't reached — no overlap, just filling the gaps your own spreadsheet already mapped
 > out. Appreciate the sheer scale of it :)
 > [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
+
+## Gallery captures (2026-10-02)
+
+Folder `Art/gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`; `0-preview.png` is a byte copy of `Mod/About/Preview.png`. Captures come from `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` (pass `galerie`), raw pictures stay in the ignored `Tests/Pickle/Evidence/` and are cropped before they go to `Art/gallery/`.
+
+**Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width.** Not stated in the shared `PUBLISHING.md`, so it is written here and in the feature header. The numbers of the framing steps (`I frame` sets zoom 9, then `I zoom in`) are only a starting point: judge the picture, not the number.
+
+| Order | Image | Shows | State |
+|---|---|---|---|
+| 0 | `0-preview.png` | the Preview | done |
+| 1 | size range | mouse to elephant side by side | scenario written, not played |
+| 2 | horse bio tab | what a pawn's Bio tab shows for a rebalanced animal | scenario written, not played; the tab may not show lifespan, to check on the picture |
+| 3 | forage | a grizzly digging berries | not written: needs a way to make the animal hungry (no step does it) or a long film |

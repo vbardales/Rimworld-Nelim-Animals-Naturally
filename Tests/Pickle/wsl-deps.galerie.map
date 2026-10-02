@@ -1,0 +1,11 @@
+# Pass "galerie": the Workshop gallery captures (07-galerie.feature). Same mods as the pass "avec-vef"
+# (they are the scene of the forage capture), plus two PickleTools companions: CoatSteps spawns and frames
+# animals, InspectTabs opens a pawn's tab. Development tooling only, never a dependency of the mod.
+#
+# packageId                                   workshopId
+OskarPotocki.VanillaFactionsExpanded.Core     2023507013
+sarg.alphaanimals                             1541721856
+VanillaExpanded.VanillaAnimalsExpanded        2871933948
+Mlie.AnimalsForage                            3667046888
+nelim.pickletools.coatsteps                 path:PickleTools/CoatSteps/Mod
+nelim.pickletools.inspecttabs               path:PickleTools/InspectTabs/Mod
