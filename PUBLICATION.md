@@ -64,5 +64,5 @@ Folder `Art/gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`
 |---|---|---|---|
 | 0 | `0-preview.png` | the Preview | done |
 | 1 | size range | mouse to elephant side by side | scenario written, not played |
-| 2 | horse bio tab | what a pawn's Bio tab shows for a rebalanced animal | scenario written, not played; the tab may not show lifespan, to check on the picture |
+| 2 | horse health tab | the Health tab of a rebalanced horse (an animal has no Bio tab: Health, Log, Needs, Social, Training) | scenario written; no animal tab shows lifespan or body size, so the picture may not sell the mod: judge it, or drop it |
 | 3 | forage | a grizzly digging berries | not written: needs a way to make the animal hungry (no step does it) or a long film |
