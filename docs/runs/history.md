@@ -32,3 +32,4 @@ Newest last. Evidence stays in Tests/Pickle/Evidence/ (ignored by git).
 - 2026-10-10 ed39936 filed: valeurs-r2 (8ee7, 06-valeurs, 2 tests), avec-vef-r7 (3b7a, 02-forage-vef, 12 tests). Pending.
 - 2026-10-10 ed39936 played green: valeurs-r2 (8ee7) 2/2, avec-vef-r7 (3b7a) 7/7, both exitReason passed; evidence minified. Code review recorded at 88b3028.
 - 2026-10-10 045b5ad filed: galerie-1 (c9ed, 07-galerie, 3 pictures at Nelim's Sanctuary). Pending.
+- 2026-10-10 2a77732 galerie-1 (c9ed): exit 1 in 15 s, no report; stderr: rm Directory not empty under Mods/2816938779 (VTE FacialAnims), 'declares no packageId', WSL then answered WSAETIMEOUT. Staging infrastructure, no scenario played. Refiled as galerie-2 (e7d3).
