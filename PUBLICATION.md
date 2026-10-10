@@ -33,7 +33,7 @@ Requires [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/shared
 
 **AI-GENERATED**: Claude (Anthropic) and Codex (OpenAI) assisted with the XML patches, tests, documentation and audit maintenance. The values and rules are mine.
 
-**THANKS**: Ludeon Studios and the authors of the animal mods whose definitions are targeted. [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409) by Mlie, from the original [[XND] Nocturnal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2004368312) by XeoNovaDan, whose bodyClock extension this mod uses. [Animals Forage (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3667046888) by Mlie, [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856) by Sarg Bjornson and [Vanilla Animals Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948) by Oskar Potocki, whose animals the forage patches extend. [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) provides the forage components. Development only, never a dependency: [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools.
+**THANKS**: Ludeon Studios and the authors of the animal mods whose definitions are targeted. [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409) by Mlie, from the original [[XND] Nocturnal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2004368312) by XeoNovaDan, whose bodyClock extension this mod uses. [Animals Forage (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3667046888) by Mlie, [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856) by Sarg Bjornson and [Vanilla Animals Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948) by Oskar Potocki, whose animals the forage patches extend. [Vanilla Animals Expanded - Royal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2858079457) by Oskar Potocki, Erin and Sarg Bjornson, whose pheasants the forage patches extend too. Load-order integrations, tested but never patched: [Dogs Mate (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2441132298) by Mlie, from the original by Revoluss, whose list format Hybridation.xml writes; [Some Like It Rotten](https://steamcommunity.com/sharedfiles/filedetails/?id=2503519676) by Mlie; [Zoology: Realistic Animal Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3679396881) by AbobaShark. [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) provides the forage components. Development only, never a dependency: [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools.
 
 See ATTRIBUTION.md and the MIT License in the GitHub repository.
 
@@ -42,8 +42,6 @@ See ATTRIBUTION.md and the MIT License in the GitHub repository.
 
 Open points for this block, none decided here:
 
-- Dogs Mate, Some Like It Rotten and Zoology are `loadAfter` only (no XPath targets them), so they are not thanked here; `PUBLISHING.md` asks every named, claimed or really exercised integration to be thanked, and a dedicated pass does stage all three. Whether they belong in `THANKS` is Virginie's call.
-- Vanilla Animals Expanded - Royal Animals (2858079457) is now staged by the `avec-vef` pass (VAERoy); it is not in `THANKS` yet.
 - The "54 vanilla species, 7 percent median error" sentence of the old description is dropped: it comes from the generator, which is not in this repository, and cannot be checked from `Mod/`.
 
 ## Thanks to post, after the item is public
@@ -62,14 +60,12 @@ own history for the exact diff):
 | Animals Forage (Continued), Mlie | `3667046888` | `drafted` | post the first draft below once this mod's own item is public |
 | Alpha Animals, Sarg Bjornson | `1541721856` | `drafted` | second draft |
 | Vanilla Animals Expanded, Oskar Potocki | `2871933948` | `drafted` | third draft |
+| Vanilla Animals Expanded - Royal Animals, Erin / Oskar Potocki / Sarg Bjornson | `2858079457` | `drafted` | fourth draft, after `02-forage-vef` is green |
+| Some Like It Rotten, Mlie | `2503519676` | `drafted` | fifth draft |
+| Zoology: Realistic Animal Overhaul, AbobaShark | `3679396881` | `drafted` | sixth draft |
+| Dogs Mate (Continued), Mlie | `2441132298` | `drafted` (Moa Renew's row) | covered by the message drafted in `MoaRenew/PUBLICATION.md`; nothing to post from here |
 
-**Deliberately not drafted:** Dogs Mate (`2441132298`), Some Like It Rotten (`2503519676`), Zoology
-(`3679396881`). All three are `<loadAfter>` only — `TESTING.md` confirmed on 2026-09-28 that no XPath of
-this mod targets any of them (Hybridation.xml writes the *vanilla* `canCrossBreedWith` field, not their
-defs). Per the register's own rule, "post only where the mod is really used or covered" — a load-order
-declaration with zero patches doesn't clear that bar. Dogs Mate already has a `drafted` row from Moa
-Renew for a genuinely shared mechanism (the vanilla crossbreeding lists); nothing is added here to it.
-Revisit only if a future patch actually targets one of the three.
+**Integrations with no patch on their defs** (Virginie, 2026-10-10: thank every integration, `PUBLISHING.md`, "Remerciements"; the register `../WORKSHOP_COMMENTS.md` decides what is posted). Dogs Mate (`2441132298`) already has a `drafted` row from Moa Renew: this mod is added to its `Covers`, no separate comment here (Hybridation.xml writes the same list format on the vanilla `canCrossBreedWith` field, tested by pass `03-dogsmate`). Some Like It Rotten (`2503519676`) and Zoology (`3679396881`) are `<loadAfter>` only and have a pass of their own (`04-rotten`, `05-zoology`): new `drafted` rows and a draft each below. Vanilla Animals Expanded - Royal Animals (`2858079457`), staged by the `avec-vef` pass, has its own row and draft too.
 
 Each draft below needs `[url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]`
 with `<THIS_MOD_ID>` filled in once the Workshop item exists — the placeholder is left as `<THIS_MOD_ID>`
@@ -95,6 +91,24 @@ on purpose, do not post with it still in place. Read the page's last comments ag
 > Extended the same forage-when-hungry behaviour Animals Forage gives vanilla critters to the VAE
 > animals it hadn't reached — no overlap, just filling the gaps your own spreadsheet already mapped
 > out. Appreciate the sheer scale of it :)
+
+**Mlie, on Some Like It Rotten** (217 characters):
+
+> Ran my animal rebalance with Some Like It Rotten loaded above it and it comes up clean, my patches never touch your defs. Rotting corpses at half nutrition is the kind of small rule that makes a rat farm make sense :)
+
+> [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
+
+**AbobaShark, on Zoology** (238 characters):
+
+> Zoology and my rebalance came at the same itch from two sides: stats worked out from real body mass. I load mine below Zoology in my test list and it starts clean. Pack hunting that stops always picking the weakest prey is a clever fix :)
+
+> [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
+
+**Erin, Oskar Potocki and Sarg Bjornson, on Vanilla Animals Expanded - Royal Animals** (226 characters). Post only after ticket 3b7a (`02-forage-vef`, VAERoy_Pheasant) has run green:
+
+> The royal pheasants got a small gift from my forage patch: they now dig for a snack when hungry, the same trick Animals Forage gives vanilla critters. Thanks Erin, Oskar and Sarg for nine animals that keep vanilla balancing xD
+
+> [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
 > [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
 
 ## Gallery captures (2026-10-02)
