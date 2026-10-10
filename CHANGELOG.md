@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [Unreleased]
 
 - Completed the Workshop description: adoption clause, AI-generated notice naming Claude and Codex, linked THANKS credits.
 - Renamed the mod to **Nelim's Animals, Naturally**.
