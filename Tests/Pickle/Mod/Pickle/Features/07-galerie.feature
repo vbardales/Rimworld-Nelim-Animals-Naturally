@@ -15,8 +15,8 @@
 #     rectangle that fills the width. The hen stands at the elephant's foot, the horse and the cow stand off-centre to the
 #     right. Says: a body size follows the cube root of the mass, a hen is small beside an elephant and the horse sits
 #     where its mass puts it. Lamp-free, plain daylight; two pots of daylilies grown at the left edge for a field-station feel.
-#   2 flower-garden, 10:05. A horse and its Health tab (a menu, taken as it is, in the place of the story, no staging of
-#     the tab). Says: the numbers behind the picture are on the animal's own sheet, its life expectancy among them.
+#   2 window-backdrop-for-height, 10:05 (withdrawn, @wip, until PickleTools has the step): the information card of a horse
+#     (body size, life expectancy, gestation), a menu taken as it is, cropped sideways. Says: the numbers behind the picture.
 #   3 plant-garden, 10:10. One royal pheasant (Vanilla Animals Expanded - Royal Animals), hungry, on the plant garden
 #     lawn, a standing lamp and daylilies around it, framed close and slightly off-centre. Says: this mod hands the
 #     forage-when-hungry behaviour to animals Animals Forage does not cover; whether the pheasant digs is read on the picture
@@ -45,16 +45,20 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (141, 211)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 212) fully grown
-    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (147, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (144, 215)
-    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (154, 213)
-    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (158, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (146, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (143, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (151, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (156, 214)
     When Nelim's Pickle Tools: I frame the rectangle from (139, 209) to (162, 219)
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I take a screenshot "workshop-1-scale"
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
 
+  # WITHDRAWN until PickleTools has a step that opens the information card ("i" button) of the selected animal: the Health tab
+  # of galerie-2 showed 100 percent bars, no life expectancy, a Dev tool button and the resource list. The picture to take is the
+  # card (body size, life expectancy, gestation) on window-backdrop-for-height, cropped sideways around the window.
+  @wip
   Scenario: workshop 2 - the Health tab of a horse, five minutes later
     Given Nelim's Sanctuary: I am at the sanctuary "flower-garden"
     And Nelim's Pickle Tools: I let 268 ticks pass
@@ -70,13 +74,13 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Nelim's Pickle Tools: I let 477 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: 1 adult animals of kind "VAERoy_Pheasant" are spawned around (190, 85)
+    And Nelim's Pickle Tools: 1 adult animals of kind "VAERoy_Pheasant" are spawned around (190, 86)
     And Nelim's Pickle Tools: the animals of kind "VAERoy_Pheasant" have food at 0 percent
     And Nelim's Pickle Tools: I place the decor "StandingLamp" at (186, 86)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (193, 87) fully grown
-    And Nelim's Pickle Tools: I let 300 ticks pass
+    And Nelim's Pickle Tools: I let 600 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the rectangle from (184, 82) to (196, 89)
+    When Nelim's Pickle Tools: the camera is centered on "coat-1" at root size 4
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I take a screenshot "workshop-3-pheasant"
     Then Nelim's Pickle Tools: the decor is removed
