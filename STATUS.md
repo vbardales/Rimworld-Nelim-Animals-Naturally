@@ -46,7 +46,7 @@ remaining:
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
 updated: 2026-10-10
-protocols_read_sha: 1405c22e11d72011390df2af5013f748f6ed374b
+protocols_read_sha: a959f76528043543b1ac9025b40dc8efcefd9e56
 ---
 
 # Nelim's Animals, Naturally — status
