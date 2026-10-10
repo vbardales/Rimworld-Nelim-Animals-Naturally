@@ -3,6 +3,49 @@
 The Workshop item exists since the 0.1.0 prepublication (2026-10-01): id `3811381865`, private, `About/PublishedFileId.txt` committed in e656137. Replace `<THIS_MOD_ID>` below with it only once the item is public. Publishing goes through GitHub Actions per `AGENTS.md`/`Rimworld-Release-Admin/docs/OPERATIONS.md`;
 this file only prepares what needs the item's own ID, filled in once it exists.
 
+## Steam description
+
+Single source (PUBLISHING.md, "Description : UN SEUL COUP"): English Markdown, no code fence inside the block. The `<description>` of
+`Mod/About/About.xml` is generated from it by `sync-about-description.mjs` at `writeDocs`; it is **not** synced yet, so the two differ
+until then (the About.xml text still says "a macaw lives for 55 years", which `Lifespan.xml` does not write: fixed below).
+Figures checked against the patches on 2026-10-10 (`TEST_SCENARIOS.md`, "Figures checked").
+
+```markdown
+Rebalances animals against one another using biological reference values.
+
+Every value is derived from a single physical anchor: the species' real mass in kilograms.
+
+- **Body size**: the cube root of mass relative to a 70 kg human.
+- **Lifespan**: allometric laws calibrated by clade. A chicken lives for 7 years, a cockatoo from an animal pack for 52: birds do not follow one curve.
+- **Growth, reproduction, productivity**: maturity age, gestation, litter size, milk, wool and eggs follow the same mass.
+- **Circadian rhythm**: nocturnal, crepuscular and cathemeral animals get their real body clock, through the Nocturnal Animals extension.
+- **Hard rules**: retaliation is at least as likely as taming failure; trainable animals do not escape their pens; maximum prey size accounts for the hunting method.
+- **Hybridisation**: groups derived from real taxonomy, in Dogs Mate format.
+- **Forage** (only with Vanilla Expanded Framework): animals that Animals Forage (Continued) does not cover dig for food when hungry.
+
+Precautionary rule: a value changes only when it differs from its target by more than 15 percent. Ludeon's existing hand-tuning is not overwritten when it is already close, deliberately oversized creatures keep their intended size, and apex predators keep the maxPreyBodySize = 99999 sentinel.
+
+All patches are conditional: removing an animal mod simply makes its corresponding patches inert, without load errors.
+
+Requires [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409). Load AFTER all animal mods.
+
+**IF I GO QUIET**: If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+**AI-GENERATED**: Claude (Anthropic) and Codex (OpenAI) assisted with the XML patches, tests, documentation and audit maintenance. The values and rules are mine.
+
+**THANKS**: Ludeon Studios and the authors of the animal mods whose definitions are targeted. [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409) by Mlie, from the original [[XND] Nocturnal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2004368312) by XeoNovaDan, whose bodyClock extension this mod uses. [Animals Forage (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3667046888) by Mlie, [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856) by Sarg Bjornson and [Vanilla Animals Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948) by Oskar Potocki, whose animals the forage patches extend. [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) provides the forage components. Development only, never a dependency: [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools.
+
+See ATTRIBUTION.md and the MIT License in the GitHub repository.
+
+[Source code on GitHub](https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally)
+```
+
+Open points for this block, none decided here:
+
+- Dogs Mate, Some Like It Rotten and Zoology are `loadAfter` only (no XPath targets them), so they are not thanked here; `PUBLISHING.md` asks every named, claimed or really exercised integration to be thanked, and a dedicated pass does stage all three. Whether they belong in `THANKS` is Virginie's call.
+- Vanilla Animals Expanded - Royal Animals (2858079457) is now staged by the `avec-vef` pass (VAERoy); it is not in `THANKS` yet.
+- The "54 vanilla species, 7 percent median error" sentence of the old description is dropped: it comes from the generator, which is not in this repository, and cannot be checked from `Mod/`.
+
 ## Thanks to post, after the item is public
 
 `../WORKSHOP_COMMENTS.md` is the shared register: read it first, one main comment per recipient page
