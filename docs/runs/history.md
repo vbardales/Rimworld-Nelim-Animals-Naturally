@@ -30,3 +30,4 @@ Newest last. Evidence stays in Tests/Pickle/Evidence/ (ignored by git).
 - 2026-10-02 About.xml THANKS credits XeoNovaDan with Mlie; Art/README.md rewritten for Preview.config.json; 07-galerie asserts the framed cells fill at least 50 percent (new CameraZoom step, not played).
 - 2026-10-10 7b3f83a + tree: Tests/Test-Xml.ps1 gains assertions for Chicken/Cow lifespan, Cow gestation, AA_BoulderMit manhunter, AA_IronhuskBeetle roam removal, no 99999 in patches: PASS, negative check 4 failures. 06-valeurs second scenario written, not played.
 - 2026-10-10 ed39936 filed: valeurs-r2 (8ee7, 06-valeurs, 2 tests), avec-vef-r7 (3b7a, 02-forage-vef, 12 tests). Pending.
+- 2026-10-10 ed39936 played green: valeurs-r2 (8ee7) 2/2, avec-vef-r7 (3b7a) 7/7, both exitReason passed; evidence minified. Code review recorded at 88b3028.
