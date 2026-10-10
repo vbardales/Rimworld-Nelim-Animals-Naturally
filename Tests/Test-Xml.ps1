@@ -40,6 +40,11 @@ function New-Fixture {
   <ThingDef><defName>Bear_Grizzly</defName><race></race></ThingDef>
   <ThingDef><defName>Chicken</defName><race></race></ThingDef>
   <ThingDef><defName>Warg</defName><race></race></ThingDef>
+  <!-- Regles.xml writes manhunterOnDamageChance and removes roamMtbDays on pack animals only: no
+       vanilla def carries either patch (checked 2026-10-10), so the fixture borrows two Alpha Animals
+       defs. IronhuskBeetle starts with a roamMtbDays so that its removal is observable. -->
+  <ThingDef><defName>AA_BoulderMit</defName><race></race></ThingDef>
+  <ThingDef><defName>AA_IronhuskBeetle</defName><race><roamMtbDays>12</roamMtbDays></race></ThingDef>
   <ThingDef><defName>Duck</defName><race></race></ThingDef>
   <ThingDef><defName>Alphabeaver</defName></ThingDef>
   <ThingDef><defName>Boomrat</defName></ThingDef>
@@ -147,6 +152,16 @@ foreach ($file in $patchFiles) { Apply-Patch $file.Name $doc $bareMods }
 Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='Horse']/race/baseBodySize").InnerText -eq '1.926') 'BodySize.xml: Horse baseBodySize changed.'
 Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='Horse']/race/gestationPeriodDays").InnerText -eq '24.17') 'Reproduction.xml: Horse gestationPeriodDays changed.'
 Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='Warg']/race/maxPreyBodySize").InnerText -eq '1.4') 'Regles.xml: Warg maxPreyBodySize changed.'
+
+# TEST_SCENARIOS.md S2: lifespan by clade, S3: retaliation, S4: pens, S5: sentinel kept.
+Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='Chicken']/race/lifeExpectancy").InnerText -eq '7.2') 'Lifespan.xml: Chicken lifeExpectancy changed.'
+Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='Cow']/race/lifeExpectancy").InnerText -eq '30.6') 'Lifespan.xml: Cow lifeExpectancy changed.'
+Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='Cow']/race/gestationPeriodDays").InnerText -eq '25.35') 'Reproduction.xml: Cow gestationPeriodDays changed.'
+Assert ($doc.SelectSingleNode("Defs/ThingDef[defName='AA_BoulderMit']/race/manhunterOnDamageChance").InnerText -eq '0.2') 'Regles.xml: AA_BoulderMit manhunterOnDamageChance changed.'
+Assert ($null -eq $doc.SelectSingleNode("Defs/ThingDef[defName='AA_IronhuskBeetle']/race/roamMtbDays")) 'Regles.xml: AA_IronhuskBeetle must lose its roamMtbDays (trainable animals do not roam out of their pens).'
+foreach ($file in $patchFiles) {
+    Assert (-not (Get-Content -Raw $file.FullName).Contains('99999')) "$($file.Name) writes or mentions 99999: apex predators must keep the maxPreyBodySize sentinel by being left unpatched."
+}
 
 foreach ($name in @('Alphabeaver', 'Boomrat', 'Megascarab')) {
     $clock = $doc.SelectSingleNode("Defs/ThingDef[defName='$name']/modExtensions/li[@Class='NocturnalAnimals.ExtendedRaceProperties']/bodyClock")
