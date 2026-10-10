@@ -20,3 +20,11 @@ package-lock.json
 
 # Reproducible Preview diagnostics generated locally by the shared renderer.
 Art/.render/
+
+# Build intermediates and IDE files (PUBLISHING.md, "Dépôt").
+build/
+Source/obj/
+Source/bin/
+.vs/
+.idea/
+*.user
