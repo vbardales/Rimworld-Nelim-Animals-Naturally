@@ -1,18 +1,52 @@
-# Pass "galerie": the Workshop gallery captures (07-galerie.feature). Same mods as the pass "avec-vef"
-# (the forage capture needs them), plus PickleTools companions: CoatSteps spawns animals and sets their food,
-# CameraZoom frames a rectangle to a share of the screen, StageDecor places and removes the set,
-# ScreenshotStudio supplies the shared meadow studio, ClearScreen keeps other mods' windows off the picture,
-# InspectTabs opens a pawn's tab. Development tooling only, never a dependency of the mod.
-#
-# packageId                                   workshopId
+# Pass "galerie": the Workshop gallery captures (07-galerie.feature), shot at Nelim's Sanctuary (SanctuaryBacklot, GALLERY.md).
+# Run it with:
+#   Submit-PickleRun.ps1 -Mod AnimalsNaturally -DepMap wsl-deps.galerie.map -Filter '07-galerie' -EvidenceDir Tests/Pickle/Evidence/galerie-N
+# The first block is the Backlot's minimum list (the save Nelims-tribe needs its bodies, faces and eyes to load as it was saved,
+# copied from SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map on 2026-10-10); the second is what this gallery stages:
+# Vanilla Expanded Framework, Alpha Animals, Vanilla Animals Expanded and its Royal module (VAERoy: the pheasant that digs
+# when hungry), Animals Forage. Development tooling only, never a dependency of the mod.
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod
+nelim.pickletools.clearscreen path:PickleTools/ClearScreen/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.clickdiagnostics path:PickleTools/ClickDiagnostics/Mod
+# Minimum list, 2026-10-07/08 (owner). The staging activates in file order, then sorts by loadAfter/dependencies.
+# Bodies and trousers, as proven by Venus Touch Waistlines' gallery pass WITHOUT TailorMade (VenusTouchWaistlines/docs/runs/2026-10-08_gallery-no-tailormade-1):
+# Female Body Variants and Female Apparel Variants load BEFORE WDI (else their Naked_*_Female textures shadow WDI's); AB's Visible Pants is indispensable (without it Venus does nothing).
+# Seeds: Tests/Pickle/config/sanctuary/ (AB's settings; Venus's, whose name must be Mod_local-<packageId>_<Class>.xml because it is staged by path:).
+# Not staged: TailorMade (not needed), Apparel Paper Pattern (not required: AB lists it in loadAfter only), THIGAPPE (does the same fitting as Venus, dropped), Reel's textures (owner: not added), Kas.GeneralCollection (optional, Workshop id 3789119336).
+tiagocc0.FemaleBodyVariants 3798082132
+tiagocc0.FemaleApparelVariants 3799726535
+wdi.realistic.bodies 3527486510
+ab.vplrf 2986402536
+nelim.venustouch.waistlines path:VenusTouchWaistlines/Mod
+# Facial animation: base (blinks included: its `blink` animation), experimentals, Vanilla Textures Expanded, Akeron Extras (needs VTE), EyeGenes3, the performance patch. Moving Vanilla Eyes (VEFA) is listed further down.
+Nals.FacialAnimation 1635901197
+nals.facialanimationexperimentals 2581693737
+VanillaExpanded.VTEXE.FacialAnims 2816938779
+Newton.AKNExtras.FacialAnimations 2889716301
+lucius.eyegenes3 3745223213
+astryl.FacialAnimationPerformancePatch 3790129900
+# Facial animation fixes (owner, 2026-10-08): Init Fix animates newly spawned pawns at once, Load Fix refreshes pawn graphics after a save loads (both after Nals.FacialAnimation). Cuter Kids (3807706870, children only) is added on the owner's word.
+# [VK] closed eyes: new eyelids for the Experimentals, 1.6. FAE (2890697696) is NOT used and Dynamic Eyebrows (3813572847) is NOT used (owner, 2026-10-08).
+vk.addeyes.EX 3694711465
+# VEFA = Vanilla Experimentals for Facial Animation (SunshineyDays, sd.fa.movingvanillaeyes): moving eyes, half-lidded tiredness, tears, hot and cold overlays, smiles; reads the VTE lids and mouths. Back 2026-10-08 on the owner's word, after its HasNegativeBlushThought exception (run d445) was a reason to remove it. Its seed (config/sanctuary) sets enableBlushLimiting to False to avoid that exception.
+sd.fa.movingvanillaeyes 3753978140
+SleepyFrieren.beautygenefa 3685072616
+ria.cuterkidsforfacialanimation 3807706870
+Moshii.NLFA.InitFix 3609895011
+ccj.nlfaloadfix 3721489042
+# Show Hair Under Stuff (Raccoon Cuddler): hair stays visible under hats and helmets; only hard dependency is Harmony (owner, 2026-10-08).
+RaccoonCuddler.ShowHair 3255379190
+# The Sanctuary's own steps (Nelim's Sanctuary:), presentation mode and inspect tabs.
+nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
+nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
+nelim.pickletools.inspecttabs path:PickleTools/InspectTabs/Mod
+# What this gallery stages (same animal mods as pass avec-vef).
 OskarPotocki.VanillaFactionsExpanded.Core     2023507013
 sarg.alphaanimals                             1541721856
 VanillaExpanded.VanillaAnimalsExpanded        2871933948
 Mlie.AnimalsForage                            3667046888
-VanillaExpanded.VAERoy                      2858079457
-nelim.pickletools.coatsteps              path:PickleTools/CoatSteps/Mod
-nelim.pickletools.inspecttabs            path:PickleTools/InspectTabs/Mod
-nelim.pickletools.camerazoom             path:PickleTools/CameraZoom/Mod
-nelim.pickletools.stagedecor             path:PickleTools/StageDecor/Mod
-nelim.pickletools.screenshotstudio       path:PickleTools/ScreenshotStudio/Mod
-nelim.pickletools.clearscreen            path:PickleTools/ClearScreen/Mod
+VanillaExpanded.VAERoy                        2858079457

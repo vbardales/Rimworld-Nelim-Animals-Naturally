@@ -22,7 +22,7 @@ incompatibility pass, no DLC-absent pass and no language pass (justification in 
 | `sans-facultatifs` | none | `01-baseline` | `01-baseline` (the others are skipped by `@requires`, and must be seen skipped) |
 | `avec-vef` | `wsl-deps.avec-vef.map` | `Animals Naturally - Pickle tests,!01-baseline,!07-galerie` | `02-forage-vef` |
 | `avec-loadafter` | `wsl-deps.avec-loadafter.map` | `Animals Naturally - Pickle tests,!01-baseline,!07-galerie` | `03-dogsmate`, `04-rotten`, `05-zoology` |
-| `galerie` | `wsl-deps.galerie.map` | `07-galerie` | `07-galerie`: Workshop gallery captures (`@review`), never part of the other passes |
+| `galerie` | `wsl-deps.galerie.map` | `07-galerie` | `07-galerie`: Workshop gallery captures at Nelim's Sanctuary (`@review`), never part of the other passes |
 
 `01-baseline` asserts that the optional mods are absent, so it must not run in the other two passes; the features of the other two
 are tagged `@requires:<packageId>`, so they are skipped (and counted as skipped, which is not a pass) in the bare pass.
