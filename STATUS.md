@@ -315,3 +315,7 @@ Scope: `git diff e656137 HEAD -- Mod Tests`. `Mod/Patches/` is byte-identical to
 ### 2026-10-10: playTests -> shootGallery[1.0.0]
 
 8.a to 8.n checked: sha frozen, conditional passes 02 to 06 played green, no @wip, no @review scenario, no manual test left, evidence minified (`summary.json`, `junit.xml`, `summary.md`, `evidence-complete.txt` only), `tested_on` filled, code review done. Settings and translations `not_applicable`, so no FR/EN replay.
+
+### shootGallery, 2026-10-10: series rebuilt for Nelim's Sanctuary
+
+`Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` rewritten (045b5ad) after GALLERY.md and the Backlot docs: three pictures, one morning (10:00, 10:05, 10:10, cumulative waits 60, 268, 477 ticks), shot plan in the feature header. 1 enclosure-south: elephant, horse, cow and hen at real scale; 2 flower-garden: Health tab of a horse (menu); 3 plant-garden: a hungry royal pheasant (VAERoy). `wsl-deps.galerie.map` rebuilt from the Backlot minimum list. Ticket `20261010-201056-267-c9ed` (galerie-1, 3 tests) filed on 045b5ad, evidence `Tests/Pickle/Evidence/galerie-1`. Candidates go to `Art/gallery/<n>-candidate-<name>.png` once the images are opened and read; Virginie accepts or refuses. Not played yet. Gallery table (PUBLICATION.md, STATUS.md) stays "scenario written, not played" until then.
