@@ -4,7 +4,7 @@ packageId: nelim.animalsnaturally
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 stage_meaning: "stage holds the 6-code field; workflow_stage carries the exact 12-state chain position, same value from preTest on. l10n→preTest crossed 2026-09-29 (see git history for detail). preTest→done is a static gate (AUDIT.md): automated + XML tests rerun (not read from an old report), Pickle suites written or their absence justified in writing. No in-game run is required for this gate (AUDIT.md's explicit 2026-09-21 clarification); that belongs to done→tested. Crossed 2026-09-30: Tests/Test-Xml.ps1 rejoué, vert (10 patch files, About.xml contract, fixtures, absent-mod safety); 5 Pickle feature files exist under Tests/Pickle/, coverage documented in TESTING.md."
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
@@ -302,3 +302,7 @@ Result: `done` (old vocabulary, `playTests`) -> `makeSources`. Version targeted:
 ### Audit 2026-10-10, update after the icon replacement (revision 7b3f83a + working tree)
 
 `makeSources -> code` now established: source 1219 x 1290 with alpha (2.a), derivatives regenerated (2.b), icon legible at 32 px by my reading and awaiting Virginie (2.c), no `PROMPT_*.md` (2.d), Preview-source unchanged and previously accepted (2.e: 1 hue family, Vmean 0.920 measured on the source). `Art/.render/` is git-ignored (2.f). Retained state is now `writeTests[1.0.0]`: the first failing transition is `writeTests -> playTests` (no `TEST_SCENARIOS.md`, tested sha not recorded). Session title `animalsnaturally / writeTests[1.0.0]`.
+
+### 2026-10-10: writeTests -> playTests[1.0.0]
+
+Criteria 7.a to 7.i checked: TEST_SCENARIOS.md written, Test-Xml.ps1 rerun green with the new assertions, Pickle suites written, not-applicable cases justified in TESTING.md, tested sha recorded in TEST_SCENARIOS.md, translations `not_applicable`. Protocols marked read (protocols_read_sha, see front matter). Tickets filed for what has not run green on the current suite: `06-valeurs` (second scenario) and `02-forage-vef`. `07-galerie` is shootGallery work and is not filed at this state.
