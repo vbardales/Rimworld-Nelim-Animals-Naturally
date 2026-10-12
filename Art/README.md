@@ -1,7 +1,7 @@
 # Artwork
 
 Since 2026-10-02 copy, typography, layout and palette live in `Preview.config.json`; the canonical inputs are
-`Preview-source.png` (the preserved illustration), `echo.png` (the line art) and `ModIcon-source.png`.
+`Preview-source.png` (the preserved illustration), `echo-concept.png` (the line art, a conceptual drawing: no capture shows the subject) and `ModIcon-source.png`.
 
 - `Mod/About/Preview.png` (896 x 504) is rendered from them by the shared renderer in `../scripts/` (its
   README gives the command). Diagnostics it writes go to `Art/.render/`, ignored by git.

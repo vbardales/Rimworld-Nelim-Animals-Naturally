@@ -286,7 +286,7 @@ Result: `stage: done`, `workflow_stage: done`, unchanged. Session title `animals
 
 ## Preview source migration — 2026-10-02
 
-Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
+Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo-concept.png` (renamed from `echo.png` on 2026-10-12) and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
 
 ## Audit — 2026-10-10 (revision 7b3f83a; working tree: Art/ModIcon.ico and Art/Preview.ico modified, Art/ModIcon-signature-candidate.png untracked, none mine)
 
