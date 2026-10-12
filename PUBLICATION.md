@@ -124,7 +124,7 @@ on purpose, do not post with it still in place. Read the page's last comments ag
 
 ## Gallery captures (2026-10-02)
 
-Folder `Art/gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`; `0-preview.png` is a byte copy of `Mod/About/Preview.png`. Captures come from `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` (pass `galerie`), raw pictures stay in the ignored `Tests/Pickle/Evidence/` and are cropped before they go to `Art/gallery/`.
+Folder `Art/Gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`; `0-preview.png` is a byte copy of `Mod/About/Preview.png`. Captures come from `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` (pass `galerie`), raw pictures stay in the ignored `Tests/Pickle/Evidence/` and are cropped before they go to `Art/gallery/`. Preview inputs: `Art/Preview-source.png`, `Art/echo-concept.png`, `Art/ModIcon-source.png`, `Art/Preview.config.json`, rendered by `node ../scripts/Render-Preview.cjs`; the two `.ico` files in `Art/` are the local folder icons, outside `Mod/`.
 
 **Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width.** Not stated in the shared `PUBLISHING.md`, so it is written here and in the feature header. The numbers of the framing steps (`I frame` sets zoom 9, then `I zoom in`) are only a starting point: judge the picture, not the number.
 
