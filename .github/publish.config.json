@@ -1,0 +1,20 @@
+{
+  "templateStamp": "ba64b0c1b25d",
+  "workshopId": "3811381865",
+  "packageId": "nelim.animalsnaturally",
+  "releaseTitle": "Nelim's Animals, Naturally {version}",
+  "requirePaths": [
+    "Patches"
+  ],
+  "forbidPaths": [
+    "Assemblies"
+  ],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/gallery",
+  "aboutFromDescription": true,
+  "description": {
+    "file": "PUBLICATION.md",
+    "format": "markdown",
+    "heading": "^## Steam description$"
+  }
+}
