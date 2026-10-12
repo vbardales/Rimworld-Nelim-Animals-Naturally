@@ -44,6 +44,17 @@ Open points for this block, none decided here:
 
 - The "54 vanilla species, 7 percent median error" sentence of the old description is dropped: it comes from the generator, which is not in this repository, and cannot be checked from `Mod/`.
 
+## Steam change notes
+
+### 1.0.0
+
+[h3]1.0.0[/h3]
+[list]
+[*] First public release of Nelim's Animals, Naturally: lifespans, body sizes, growth, gestation, productivity, foraging and roaming patched for modded animals, using only XML patches.
+[*] Optional integrations with Dogs Mate, Some Like It Rotten and Zoology, loaded after them when present.
+[*] New Workshop description, icon and preview.
+[/list]
+
 ## Thanks to post, after the item is public
 
 `../WORKSHOP_COMMENTS.md` is the shared register: read it first, one main comment per recipient page
