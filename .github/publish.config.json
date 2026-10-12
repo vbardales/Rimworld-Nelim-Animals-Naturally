@@ -10,7 +10,7 @@
     "Assemblies"
   ],
   "previewFile": "About/Preview.png",
-  "galleryDir": "Art/gallery",
+  "galleryDir": "Art/Gallery",
   "aboutFromDescription": true,
   "description": {
     "file": "PUBLICATION.md",
