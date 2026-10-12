@@ -27,7 +27,7 @@
 #
 # Steps: the places and their cleaning are Nelim's Sanctuary: steps (SanctuaryBacklot); the generic tools (presentation mode,
 # decor, framing, animals, ticks) are Nelim's Pickle Tools: steps (PickleTools). Odyssey is on in the save.
-@requires:OskarPotocki.VanillaFactionsExpanded.Core @requires:nelim.pickletools.stagedecor @review @en-only
+@requires:OskarPotocki.VanillaFactionsExpanded.Core @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.inspecttabs @review @en-only
 Feature: Gallery pictures of Nelim's Animals, Naturally
 
   Background:
@@ -55,19 +55,18 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
 
-  # WITHDRAWN until PickleTools has a step that opens the information card ("i" button) of the selected animal: the Health tab
-  # of galerie-2 showed 100 percent bars, no life expectancy, a Dev tool button and the resource list. The picture to take is the
-  # card (body size, life expectancy, gestation) on window-backdrop-for-height, cropped sideways around the window.
-  @wip
-  Scenario: workshop 2 - the Health tab of a horse, five minutes later
+  # The inspect pane of galerie-2 showed 100 percent bars, no life expectancy, a Dev tool button and the resource list. The
+  # picture to take is the information card ("i" button): PickleTools 91a7c2d adds the steps (InspectTabs, built, not played
+  # when written). To be read on the picture: card on the Health tab, then the window-backdrop-for-height crop sideways.
+  Scenario: workshop 2 - the information card of a horse, five minutes later
     Given Nelim's Sanctuary: I am at the sanctuary "flower-garden"
     And Nelim's Pickle Tools: I let 268 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: 1 adult animals of kind "Horse" are spawned around (154, 105)
     When I select "coat-1"
-    And Nelim's Pickle Tools: I open the "Health" inspect tab
-    Then Nelim's Pickle Tools: the "Health" inspect tab is open
-    When I take a screenshot "workshop-2-horse-health"
+    And Nelim's Pickle Tools: I open the info card of the selected thing on the "Health" tab
+    And I take a screenshot "workshop-2-horse-card"
+    And Nelim's Pickle Tools: I close the info card
     Then no errors were logged
 
   Scenario: workshop 3 - a royal pheasant forages, ten minutes in
