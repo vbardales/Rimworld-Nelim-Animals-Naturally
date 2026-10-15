@@ -29,7 +29,7 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: bare pass.
 - **Actions**: read `race.lifeExpectancy` of Chicken and Cow; read the last `lifeStageAges` `minAge` of Chicken.
 - **Expected**: Chicken `7.2`, Cow `30.6`. Chicken adult `minAge` `0.501`. A chicken lives far shorter than a parrot of an animal pack (BB_Cockatoo `52.1`).
-- **Run by**: `Test-Xml` (Chicken 7.2, Cow 30.6, Cow gestation 25.35); `Pickle 06-valeurs` second scenario (same values, not played yet); `Pickle 01-baseline` "the numeric families reach vanilla animals" (attribution only).
+- **Run by**: `Test-Xml` (Chicken 7.2, Cow 30.6, Cow gestation 25.35); `Pickle 06-valeurs` second scenario (same values, played green 2026-10-10, ticket 8ee7); `Pickle 01-baseline` "the numeric families reach vanilla animals" (attribution only).
 
 ### S3. Retaliation: manhunter chance on damage
 
@@ -52,7 +52,7 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: bare pass.
 - **Actions**: read Warg `race.maxPreyBodySize`. Count writes of `99999` in `Mod/Patches`.
 - **Expected**: Warg `1.4` (186 `maxPreyBodySize` writes in all). **No patch writes `99999`** (0 occurrences on 2026-10-10): the sentinel is retained by *not* patching those defs, so a def that carries it in Core or in a pack keeps it.
-- **Run by**: `Test-Xml` (Warg `1.4`; no patch file contains `99999`); `Pickle 06-valeurs` second scenario (Warg `1.4`, not played yet).
+- **Run by**: `Test-Xml` (Warg `1.4`; no patch file contains `99999`); `Pickle 06-valeurs` second scenario (Warg `1.4`, played green 2026-10-10, ticket 8ee7).
 
 ### S6. Hybridisation groups from real taxonomy
 
@@ -110,12 +110,12 @@ cannot be checked from this repository.
 
 ## Gaps (pending work, not defects)
 
-- Added 2026-10-10: the assertions above for S2 to S5. The second scenario of `06-valeurs` has never run; it needs a ticket on the `valeurs` pass.
+- Added 2026-10-10: the assertions above for S2 to S5. The second scenario of `06-valeurs` played green 2026-10-10 (valeurs-r2, 2/2).
 - S3 and S4 are proven on synthetic pack defs only: no vanilla def carries either patch, so no pass of this suite can read them on a real def without staging Alpha Animals with the DefFields companion.
-- `02-forage-vef` (last fix: stage Vanilla Animals Expanded - Royal Animals, assert `VAERoy_Pheasant`) has never run green on the corrected scenario; `07-galerie` has never run.
+- `02-forage-vef` played green on the corrected scenario 2026-10-10 (avec-vef-r7, 7/7, `VAERoy_Pheasant` patched). `07-galerie` (gallery, `@review`) played 3/3 on 2026-10-13 (galerie-5); its pictures are judged by reading, not by the run.
 
 ## Results on the delivered revision
 
 - 2026-10-10, `7b3f83a` + working tree: `pwsh -NoProfile -File Tests/Test-Xml.ps1` PASS (10 patch files, About.xml contract, bare / no-dependency / VEF fixtures, absent-mod safety, plus the S2 to S5 assertions). Negative check: with expected values altered (Chicken 7.3, AA_BoulderMit 0.3, `99999` swapped for a string present in the files) the script reported 4 failures.
-- Pickle: see `docs/runs/history.md`. Played green on a `Mod/` identical to the current one except the 2026-10-02 `About.xml` THANKS edit: `01-baseline` (sans-facultatifs-r2), `03-dogsmate`, `05-zoology` (zoology-slow2), `06-valeurs` (valeurs), `04-rotten` (rotten-slow2). Not green yet: `02-forage-vef`, `07-galerie`.
+- Pickle: see `docs/runs/history.md`. Played green on a `Mod/` identical to the current one except the 2026-10-02 `About.xml` THANKS edit: `01-baseline` (sans-facultatifs-r2), `03-dogsmate`, `05-zoology` (zoology-slow2), `06-valeurs` (valeurs), `04-rotten` (rotten-slow2). Also green: `02-forage-vef` (avec-vef-r7, 7/7), `06-valeurs` second scenario (valeurs-r2, 2/2). `07-galerie` is gallery work (`@review`), see `STATUS.md`.
 - No manual test remains: new-game and existing-save behaviour are accepted as not applicable (Virginie, 2026-10-01, `TESTING.md`).

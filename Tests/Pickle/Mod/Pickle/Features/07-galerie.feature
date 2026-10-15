@@ -15,8 +15,8 @@
 #     rectangle that fills the width. The hen stands at the elephant's foot, the horse and the cow stand off-centre to the
 #     right. Says: a body size follows the cube root of the mass, a hen is small beside an elephant and the horse sits
 #     where its mass puts it. Lamp-free, plain daylight; two pots of daylilies grown at the left edge for a field-station feel.
-#   2 window-backdrop-for-height, 10:05 (withdrawn, @wip, until PickleTools has the step): the information card of a horse
-#     (body size, life expectancy, gestation), a menu taken as it is, cropped sideways. Says: the numbers behind the picture.
+#   2 flower-garden, 10:05. The information card of a horse on the Stats tab (body size 1.93, life expectancy 30)
+#     as the game shows it, cropped to the window by hand. Says: the numbers behind the picture.
 #   3 plant-garden, 10:10. One royal pheasant (Vanilla Animals Expanded - Royal Animals), hungry, on the plant garden
 #     lawn, a standing lamp and daylilies around it, framed close and slightly off-centre. Says: this mod hands the
 #     forage-when-hungry behaviour to animals Animals Forage does not cover; whether the pheasant digs is read on the picture
@@ -55,16 +55,15 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
 
-  # The inspect pane of galerie-2 showed 100 percent bars, no life expectancy, a Dev tool button and the resource list. The
-  # picture to take is the information card ("i" button): PickleTools 91a7c2d adds the steps (InspectTabs, built, not played
-  # when written). To be read on the picture: card on the Health tab, then the window-backdrop-for-height crop sideways.
+  # galerie-5: the Health tab showed a Dev tool button, 100 percent bars and the resource list (refused). galerie-6: the Stats tab
+  # carries the numbers and no dev button; read and kept (card opened with PickleTools InspectTabs, crop to the window by hand).
   Scenario: workshop 2 - the information card of a horse, five minutes later
     Given Nelim's Sanctuary: I am at the sanctuary "flower-garden"
     And Nelim's Pickle Tools: I let 268 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: 1 adult animals of kind "Horse" are spawned around (154, 105)
     When I select "coat-1"
-    And Nelim's Pickle Tools: I open the info card of the selected thing on the "Health" tab
+    And Nelim's Pickle Tools: I open the info card of the selected thing on the "Stats" tab
     And I take a screenshot "workshop-2-horse-card"
     And Nelim's Pickle Tools: I close the info card
     Then no errors were logged

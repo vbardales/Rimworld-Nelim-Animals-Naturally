@@ -33,3 +33,7 @@ Newest last. Evidence stays in Tests/Pickle/Evidence/ (ignored by git).
 - 2026-10-10 ed39936 played green: valeurs-r2 (8ee7) 2/2, avec-vef-r7 (3b7a) 7/7, both exitReason passed; evidence minified. Code review recorded at 88b3028.
 - 2026-10-10 045b5ad filed: galerie-1 (c9ed, 07-galerie, 3 pictures at Nelim's Sanctuary). Pending.
 - 2026-10-10 2a77732 galerie-1 (c9ed): exit 1 in 15 s, no report; stderr: rm Directory not empty under Mods/2816938779 (VTE FacialAnims), 'declares no packageId', WSL then answered WSAETIMEOUT. Staging infrastructure, no scenario played. Refiled as galerie-2 (e7d3).
+- 2026-10-10 galerie-2 (e7d3): 3/3 passed, exitReason passed, but screenshots were not kept in Evidence (minified to summary files), so no image could be judged. galerie-4 (2026-10-12): staging failure, no report (Player.log only).
+- 2026-10-13 f2117d2 filed: galerie-5 (4b5e, 07-galerie, 3 pictures). Screenshots must be read before minifying. Pending.
+- 2026-10-13 galerie-5 (4b5e) 3/3 passed exitReason passed. Read: 1 scale kept (candidate), 3 pheasant kept (candidate), 2 refused (Health tab: Dev tool button, resource list, 100% bars). 07-galerie scenario 2 switched to the Stats tab, filed galerie-6 (workshop 2 only). Pending.
+- 2026-10-14 galerie-6 (9b64) 1/1 passed, exitReason passed. Stats tab card read: body size 1.93, life expectancy 30, no Dev tool button; cropped to the window, kept as candidate 2. Series 1 to 3 now candidates, awaiting Virginie.
