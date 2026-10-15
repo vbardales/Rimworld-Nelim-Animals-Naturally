@@ -67,8 +67,8 @@ function Find($msg) { if (-not $findings.Contains($msg)) { $findings.Add($msg) }
 function Warn($msg) { if (-not $warnings.Contains($msg)) { $warnings.Add($msg) } }
 
 $cjk = '[\p{IsCJKUnifiedIdeographs}]'
-$topFields = @('label', 'description', 'jobString', 'labelNoun', 'labelMale', 'labelFemale', 'labelPlural', 'pawnLabel', 'gerundLabel', 'ingestible/ingestCommandString', 'ingestible/ingestReportString') + $ExtraFields
-$known = @('label', 'description', 'jobString', 'labelShort', 'reportString', 'customLabel', 'ingestCommandString', 'ingestReportString') + $ExtraFields
+$topFields = @('label', 'description', 'jobString', 'labelNoun', 'labelMale', 'labelFemale', 'labelPlural', 'pawnLabel', 'gerundLabel', 'verb', 'gerund', 'ingestible/ingestCommandString', 'ingestible/ingestReportString') + $ExtraFields
+$known = @('label', 'description', 'jobString', 'verb', 'gerund', 'labelShort', 'reportString', 'customLabel', 'ingestCommandString', 'ingestReportString') + $ExtraFields
 
 # --- inventory --------------------------------------------------------------
 $inventory = @{}
