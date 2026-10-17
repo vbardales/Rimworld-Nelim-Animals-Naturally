@@ -81,7 +81,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     When I select "coat-1"
     And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I open the info card of the selected thing on the "Stats" tab
+    And Nelim's Pickle Tools: screenshot mode is enabled around the open windows
     And I take a screenshot "workshop-2-horse-card"
+    And Nelim's Pickle Tools: the interface is shown again
     And Nelim's Pickle Tools: I close the info card
     Then no errors were logged
 

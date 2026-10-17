@@ -132,7 +132,7 @@ Folder `Art/Gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`
 |---|---|---|---|
 | 0 | `0-preview.png` | the Preview | done |
 | 1 | scale | Nelim among elephant, horse, cow, hen at real scale | galerie-7 played; tint over the left ground, redo |
-| 2 | horse info card | Stats tab, window only, no subtitle | galerie-7 played; cropped to `Art/Gallery/2-candidate-card.png`, awaiting Virginie |
+| 2 | horse info card | Stats tab, window only, no subtitle | galerie-7 card refused (whole HUD around it, cropped to the window only); scenario now hides the HUD around the window, crop sideways only |
 | 3 | forage | Nelim watching a hungry royal pheasant | galerie-7 played; lamp hides the tail, "no power" icon, redo |
 
 ## Gallery subtitles
