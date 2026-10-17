@@ -131,9 +131,19 @@ Folder `Art/Gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`
 | Order | Image | Shows | State |
 |---|---|---|---|
 | 0 | `0-preview.png` | the Preview | done |
-| 1 | size range | mouse to elephant side by side | scenario written, not played |
-| 2 | horse health tab | menu capture, not staged (an animal has no Bio tab) | scenario written, not played |
-| 3 | forage | a hungry grizzly beside berry bushes | scenario written, not played; digging is not asserted, read it on the picture |
+| 1 | scale | Nelim among elephant, horse, cow, hen at real scale | galerie-7 played; tint over the left ground, redo |
+| 2 | horse info card | Stats tab, window only, no subtitle | galerie-7 played; cropped to `Art/Gallery/2-candidate-card.png`, awaiting Virginie |
+| 3 | forage | Nelim watching a hungry royal pheasant | galerie-7 played; lamp hides the tail, "no power" icon, redo |
+
+## Gallery subtitles
+
+Scenes without an interface window carry one English line at the bottom (`GALLERY.md`, "Sous-titres"). Image 2 is a window capture: no line. Lines are provisional until the captures are accepted; clean originals go to `Art/Gallery-clean/`.
+
+| Index | File | Line |
+|---|---|---|
+| 1 | 1-scale.png | Nelim is the yardstick: elephant, horse, cow and hen at their real scale. |
+| 3 | 3-pheasant.png | Hungry, the royal pheasant looks for its own meal. |
+
 
 ### Staging of the gallery (owner's rule, 2026-10-02)
 
