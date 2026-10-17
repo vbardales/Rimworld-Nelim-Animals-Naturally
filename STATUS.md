@@ -49,270 +49,262 @@ remaining:
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
 code_review_sha: f2117d21df72d64a9614d7e3c89ba0dadfedca22
 updated: 2026-10-10
-protocols_read_sha: 1c29185197559138361bf6c58c9f41594c3f1a47
+protocols_read_sha: 233f007e69f3660973329f2202d9115562d5ed8a
 ---
-
 # Nelim's Animals, Naturally — status
 
 ## Audit summary — 2026-09-22
 
-This audit inspected the delivered `Mod/` tree without launching RimWorld.
+Audit inspected delivered `Mod/` tree. RimWorld not launched.
 
-- All 14 XML files in `Mod/` and `config/` parse successfully.
-- The ten delivered patch files are XML-only. There is no assembly, source directory,
-  `Languages/` directory, `Keyed` resource, `DefInjected` resource, `MainButtonDef`, or
-  settings implementation in this checkout.
-- The absence of a settings page and MainButtons shortcut is therefore justified:
-  `settings_audit: not_applicable`. This mod has no useful user-facing setting to expose.
-- The patches do not add player-facing labels, descriptions, gizmos, messages, or other
-  localisable text. `localization`, `translation_en`, and `translation_fr` are therefore
-  `not_applicable`. The About metadata and repository documentation are English, but are
-  outside the in-game localization gate.
-- `About/ModIcon.png` is 128 x 128 pixels and 22,876 bytes. `About/Preview.png` is
-  896 x 504 pixels and 611,797 bytes, below the one-megabyte Workshop limit.
-- `Rythme.xml` uses the Nocturnal Animals `DefModExtension`; the required dependency is
-  declared in `About.xml`. Dogs Mate, Some Like It Rotten, and Zoology are load-after
-  integrations. `Forage.xml` is guarded by `PatchOperationFindMod` for Vanilla Expanded
+- All 14 XML files in `Mod/` and `config/` parse OK.
+- Ten delivered patch files XML-only. No assembly, source dir, `Languages/` dir, `Keyed` resource, `DefInjected` resource, `MainButtonDef`, or settings implementation in checkout.
+- No settings page, no MainButtons shortcut = justified:
+  `settings_audit: not_applicable`. Mod has no useful user-facing setting to expose.
+- Patches add no player-facing labels, descriptions, gizmos, messages, or other localisable text. `localization`, `translation_en`, `translation_fr` therefore
+  `not_applicable`. About metadata and repo docs English, but outside in-game localization gate.
+- `About/ModIcon.png` 128 x 128 px, 22,876 bytes. `About/Preview.png`
+  896 x 504 px, 611,797 bytes, below one-megabyte Workshop limit.
+- `Rythme.xml` uses Nocturnal Animals `DefModExtension`; required dependency declared in `About.xml`. Dogs Mate, Some Like It Rotten, Zoology = load-after
+  integrations. `Forage.xml` guarded by `PatchOperationFindMod` for Vanilla Expanded
   Framework.
 
-The static evidence does not establish that every XPath finds its target, that each
-optional integration loads cleanly, or that the rebalanced animals behave correctly in game.
-No game session, log review, save test, or English/French in-game display test has been run.
+Static evidence does not prove every XPath finds target, each
+optional integration loads clean, or rebalanced animals behave right in game.
+No game session, log review, save test, or English/French in-game display test run.
 
 ## Workflow position
 
-The mod reached `horsMonoRepo` on 2026-09-26. The standalone repository is
-`vbardales/Rimworld-Nelim-Animals-Naturally`; its remote was verified, and merge commit
-`e5a23d6` was pushed to `main`. The old flattened distribution layout was removed in that
-merge; the published payload is now solely `Mod/`.
+Mod reached `horsMonoRepo` 2026-09-26. Standalone repo
+`vbardales/Rimworld-Nelim-Animals-Naturally`; remote verified, merge commit
+`e5a23d6` pushed to `main`. Old flattened distribution layout removed in that
+merge; published payload now solely `Mod/`.
 
-The repository is now public. Virginie gave explicit approval on 2026-09-27, on the basis
-that the mod contains only rebalancing (no redistributed third-party content). Before flipping
-visibility, the full commit history (`git log --all -p`, 15 commits) and all historical
-filenames were scanned for secrets, keys, and credentials: nothing was found beyond
-documentation references to the CI publish procedure. Visibility was then switched via
+Repo now public. Virginie gave explicit approval 2026-09-27, because
+mod contains only rebalancing (no redistributed third-party content). Before flipping
+visibility, full commit history (`git log --all -p`, 15 commits) and all historical
+filenames scanned for secrets, keys, credentials: nothing found beyond
+documentation references to CI publish procedure. Visibility switched via
 `gh repo edit vbardales/Rimworld-Nelim-Animals-Naturally --visibility public` and confirmed
 (`isPrivate: false`).
 
 Before `preTest`, add targeted XML patch-target tests
-and functional scenarios. In-game validation remains required for `tested`.
+and functional scenarios. In-game validation still required for `tested`.
 
 ## Testing evidence — 2026-09-26
 
-No `Tests/Pickle/`, `evidence/`, `Tests/Pickle/Evidence/`, or `.dds` file exists in this
-checkout, and none is tracked by Git. `.gitignore` now excludes generated evidence and DDS
-files. `TESTING.md` records the only evidence to retain for a tested revision: the newest
-terminal `summary.json` and `junit.xml` for each scenario, plus review screenshots that
-actually establish a visual claim. No deletion was necessary.
+No `Tests/Pickle/`, `evidence/`, `Tests/Pickle/Evidence/`, or `.dds` file in this
+checkout, none tracked by Git. `.gitignore` now excludes generated evidence and DDS
+files. `TESTING.md` records only evidence to keep for tested revision: newest
+terminal `summary.json` and `junit.xml` per scenario, plus review screenshots that
+actually establish a visual claim. No deletion needed.
 
-The absence of Pickle feature files means no `@wip` tag was found, but it does not satisfy
-the test gate: the required conditional scenarios and manual-test checklist do not exist,
-and no results are green. These are pending work, not observed defects.
+No Pickle feature files = no `@wip` tag found, but test gate not satisfied:
+required conditional scenarios and manual-test checklist do not exist,
+no results green. Pending work, not observed defects.
 
 ## Upstream source review — 2026-09-26
 
-The GitHub repository `vbardales/Rimworld-Nelim-Animals-Naturally` is not a fork. A GitHub
-search for the former French title returned no repository. The project attribution identifies
-the rebalancing work as Nelim's original work, and no upstream code repository was found to
-use as a PR target. Recheck this only if a concrete original-mod identity or URL is found.
+GitHub repo `vbardales/Rimworld-Nelim-Animals-Naturally` not a fork. GitHub
+search for former French title returned no repo. Project attribution identifies
+rebalancing as Nelim's original work, no upstream code repo found
+as PR target. Recheck only if concrete original-mod identity or URL found.
 
 ## Artwork review — 2026-09-26
 
-`Mod/About/ModIcon.png` was inspected directly: it is a 128 x 128 PNG (22,876 bytes)
-with a high-contrast animal-and-balance-scale motif. `Mod/About/Preview.png` was inspected
-directly: it is an 896 x 504 PNG (611,797 bytes), below the Workshop limit, with distinct
-dark, cream, and gold accents. Both delivered image files exist.
+`Mod/About/ModIcon.png` inspected directly: 128 x 128 PNG (22,876 bytes)
+with high-contrast animal-and-balance-scale motif. `Mod/About/Preview.png` inspected
+directly: 896 x 504 PNG (611,797 bytes), below Workshop limit, with distinct
+dark, cream, gold accents. Both image files exist.
 
-The preview contains the obsolete French heading “Reequilibrage realiste des animaux” and
-French subtitle text, while the mod is now named “Nelim's Animals, Naturally” and its public
-metadata is English. This is a confirmed visual defect for the `Preview générée → preOptions`
-transition. No image was generated or modified during this audit.
+Preview contains obsolete French heading “Reequilibrage realiste des animaux” and
+French subtitle text, while mod now named “Nelim's Animals, Naturally” and public
+metadata English. Confirmed visual defect for `Preview générée → preOptions`
+transition. No image generated or modified in this audit.
 
 ## Artwork regeneration attempt — 2026-09-27 (blocked)
 
-`Art/Preview-source.png`, `Art/Preview.ico`, and `Art/ModIcon.ico` already exist, but no
+`Art/Preview-source.png`, `Art/Preview.ico`, `Art/ModIcon.ico` already exist, but no
 `Art/render-preview.cjs`, `preview-palette.json`, `preview-qa.json`, or `preview.html`
-existed yet. Two sibling scripts were inspected
-(`AncientBuildingsRenew/Art/render-preview.cjs`, `AlphaMythologyRenew/Art/`) to learn the
-expected shape: a headless-Chromium (`playwright` + `sharp`) render of an HTML overlay onto
-the source image, with a palette JSON for accent/ink colours and a QA JSON recording
+existed yet. Two sibling scripts inspected
+(`AncientBuildingsRenew/Art/render-preview.cjs`, `AlphaMythologyRenew/Art/`) to learn expected shape: headless-Chromium (`playwright` + `sharp`) render of HTML overlay onto
+source image, with palette JSON for accent/ink colours and QA JSON recording
 contrast ratios and output size, gated at <900 KB and >=4.5:1 contrast.
 
-Before adapting this pipeline for AnimalsNaturally, dependency availability was checked:
+Before adapting pipeline for AnimalsNaturally, dependency availability checked:
 
 - `node --version`: v24.13.0, available.
-- `sharp`: resolvable only from the global npm root (`npm root -g`), not from this repo or
-  the monorepo root — would need `NODE_PATH` or a local install to use directly.
-- `playwright`: **not found** anywhere reachable from this repo or the monorepo root. It
-  exists only inside two unrelated sibling mods' own `node_modules`
+- `sharp`: resolvable only from global npm root (`npm root -g`), not from this repo or
+  monorepo root — needs `NODE_PATH` or local install to use directly.
+- `playwright`: **not found** anywhere reachable from this repo or monorepo root. Exists
+  only inside two unrelated sibling mods' own `node_modules`
   (`AdaptiveStorageNeolithicRenew/node_modules/playwright`,
   `AncientChineseBeastAndGeneExpandedRenew/node_modules/playwright`), and
-  `AncientBuildingsRenew` itself — whose script was used as the template — currently has
-  **no** `node_modules` of its own either, so its own render script is not runnable as-is
-  right now.
-- Chrome executable is present (`C:\Program Files\Google\Chrome\Application\chrome.exe`),
-  which the sibling script needs (`CHROME_PATH`), but that alone does not satisfy the
-  `playwright` Node dependency the script requires to drive it.
+  `AncientBuildingsRenew` itself — whose script was template — currently has
+  **no** `node_modules` of its own either, so its render script not runnable as-is
+  now.
+- Chrome executable present (`C:\Program Files\Google\Chrome\Application\chrome.exe`),
+  which sibling script needs (`CHROME_PATH`), but that alone does not satisfy
+  `playwright` Node dependency script requires to drive it.
 
-Per the audit brief's explicit instruction not to hand-roll a substitute image pipeline when
-canvas/render dependencies are unavailable, **no image was regenerated**. `Mod/About/Preview.png`
-is unchanged and still carries the stale French title. This remains a `defect`/`blocker` in
-`remaining`, not a pass. Unblocking requires either installing `playwright` (and its browser
-binaries) somewhere reachable from this repo, or a decision from Virginie on an alternative
+Per audit brief's explicit instruction not to hand-roll substitute image pipeline when
+canvas/render dependencies unavailable, **no image regenerated**. `Mod/About/Preview.png`
+unchanged, still carries stale French title. Remains `defect`/`blocker` in
+`remaining`, not a pass. Unblocking needs either installing `playwright` (and browser
+binaries) somewhere reachable from this repo, or decision from Virginie on alternative
 tool.
 
 ## Settings/translation gate re-verification — 2026-09-27
 
-Re-scanned `Mod/` for any settings implementation: no `.dll`, no `Languages/` directory, no
-`MainButtonDef`, no settings XML. `Mod/About/About.xml` reconfirmed to carry no player-facing
-label/description/gizmo text beyond the mod's own metadata. The 2026-09-22 conclusion stands
-unchanged: `settings_audit: not_applicable`, `localization: not_applicable`,
-`translation_en: not_applicable`, `translation_fr: not_applicable`. Re-dated to 2026-09-27; no
-narrative changes needed since nothing in `Mod/` changed since the last audit.
+Re-scanned `Mod/` for settings implementation: no `.dll`, no `Languages/` directory, no
+`MainButtonDef`, no settings XML. `Mod/About/About.xml` reconfirmed no player-facing
+label/description/gizmo text beyond mod's own metadata. 2026-09-22 conclusion stands:
+`settings_audit: not_applicable`, `localization: not_applicable`,
+`translation_en: not_applicable`, `translation_fr: not_applicable`. Re-dated 2026-09-27; no
+narrative changes needed, nothing in `Mod/` changed since last audit.
 
 ## Settings/translation gate re-verification — 2026-09-30
 
-Re-checked after a French-translation sweep found translations only by folder name and asked to
+Rechecked after French-translation sweep found translations only by folder name and asked to
 recheck this mod for anything missed. `find` for `Languages`/`Keyed`/`DefInjected` anywhere under
-this checkout found one hit: `Tests/Pickle/Mod/Languages/README.md`, a loose file with no language
-subfolder (`LanguageDatabase` only enumerates directories under `Languages/`, so a loose file is
-never parsed) that exists solely to stop RimWorld logging "did not load any content" for the Pickle
-companion mod; it carries no key and is not part of the shipped `Mod/`. No other `Languages/`
-folder exists at any depth (Mod/, version folders, LoadFolders, integrations).
-Every field name across all 10 patch files in `Mod/Patches/` was enumerated (`baseBodySize`,
+checkout found one hit: `Tests/Pickle/Mod/Languages/README.md`, loose file with no language
+subfolder (`LanguageDatabase` only enumerates directories under `Languages/`, so loose file
+never parsed) that exists solely to stop RimWorld logging "did not load any content" for Pickle
+companion mod; carries no key, not part of shipped `Mod/`. No other `Languages/`
+folder at any depth (Mod/, version folders, LoadFolders, integrations).
+Every field name across all 10 patch files in `Mod/Patches/` enumerated (`baseBodySize`,
 `bodyClock`, `canCrossBreedWith`, `comps`, `customAmountToDig`, `customThingToDig`,
 `eggCountRange`, `eggFertilizationCountMax`, `eggLayIntervalDays`, `gestationPeriodDays`,
 `lifeExpectancy`, `litterSizeCurve`, `manhunterOnDamageChance`, `mateMtbHours`, `maxPreyBodySize`,
 `milkAmount`, `milkIntervalDays`, `minAge`, `onlyWhenTamed`, `points`, `shearIntervalDays`,
 `ticksToDig`, `woolAmount`, plus patch-structural tags `li`/`mods`/`name`/`operations`/`Patch`/
-`success`/`value`/`xpath`): none is `label`, `description`, or any other translatable string field.
-No `label`/`description` substring at all appears in any patch file. No C# strings, `Translate()`
-calls, Messages/Letters/Alerts/gizmo labels are possible: `Mod/` has no `Source/`, no `.dll`, no
+`success`/`value`/`xpath`): none is `label`, `description`, or other translatable string field.
+No `label`/`description` substring in any patch file. No C# strings, `Translate()`
+calls, Messages/Letters/Alerts/gizmo labels possible: `Mod/` has no `Source/`, no `.dll`, no
 `Defs/` folder (only `About/` and `Patches/`), so no `Mod` subclass and no settings UI can exist —
-`settings_audit: not_applicable` is not a choice not to expose one, it is structurally impossible
-in this checkout. `About.xml` re-confirmed English-only metadata, outside the in-game gate.
+`settings_audit: not_applicable` not a choice not to expose one, structurally impossible
+in this checkout. `About.xml` reconfirmed English-only metadata, outside in-game gate.
 Verdict unchanged from 2026-09-22/09-27: `settings_audit`, `localization`, `translation_en`,
-`translation_fr` all stay `not_applicable`. Re-dated to 2026-09-30.
+`translation_fr` all stay `not_applicable`. Re-dated 2026-09-30.
 
 ## Evidence, .dds, and untracked-files pass — 2026-09-27
 
-- `Tests/Pickle/Evidence/`, `evidence/`, and `Tests/Pickle/` still do not exist on disk in
-  this checkout; nothing to prune. Checked the monorepo's `pickle-reports-archive/` for an
-  archive referencing this mod (`AnimalsNaturally` or `nelim.animalsnaturally`): none found.
+- `Tests/Pickle/Evidence/`, `evidence/`, `Tests/Pickle/` still absent on disk in
+  checkout; nothing to prune. Checked monorepo's `pickle-reports-archive/` for archive referencing this mod (`AnimalsNaturally` or `nelim.animalsnaturally`): none found.
 - `git ls-files | grep -i dds`: no tracked `.dds` file. `.gitignore` already had `*.dds`
   since 2026-09-26. Nothing to untrack.
-- Upstream check: one quick search pass found no upstream repository for the former French
-  title or the mod's identity; the 2026-09-26 conclusion (original work, not a fork) stands.
+- Upstream check: one quick search pass found no upstream repo for former French
+  title or mod's identity; 2026-09-26 conclusion (original work, not a fork) stands.
 - Untracked files resolved: `desktop.ini` (repo root and `Mod/`) added to `.gitignore`
-  (files themselves left untouched on disk, per the local-icon convention in AGENTS.md).
-  `Art/ModIcon.ico` and `Art/Preview.ico` are tracked in both `AncientBuildingsRenew` and
-  `AlphaMythologyRenew`; the same convention was applied here and both files were `git add`ed.
+  (files left untouched on disk, per local-icon convention in AGENTS.md).
+  `Art/ModIcon.ico` and `Art/Preview.ico` tracked in both `AncientBuildingsRenew` and
+  `AlphaMythologyRenew`; same convention applied here, both files `git add`ed.
 
 ## Publication-ID check — 2026-09-27
 
-Searched the whole repository, including `config/`, for any file matching
-`*publishid*`/`*publishedfileid*`: **none found**. No `About/PublishedFileId.txt` exists in
-this checkout. Per the audit brief, `CHANGELOG.md`'s `Unreleased` section was left untouched
-and no `0.1.0` heading was created — see the report to Virginie for the explicit question
+Searched whole repo, including `config/`, for file matching
+`*publishid*`/`*publishedfileid*`: **none found**. No `About/PublishedFileId.txt` in
+checkout. Per audit brief, `CHANGELOG.md`'s `Unreleased` section left untouched
+and no `0.1.0` heading created — see report to Virginie for explicit question
 this raises.
 
 ## Artwork regeneration — 2026-09-27
 
-The `playwright`/`sharp` blocker recorded in the 2026-09-27 "Artwork regeneration attempt"
-above is resolved: a local `package.json` (`{"dependencies":{"playwright":"^1.63.0",
-"sharp":"^0.35.4"}}`) was added at the monorepo root and `npm install` succeeded, populating
-`node_modules/` (now git-ignored). Chrome is present at
-`C:/Program Files/Google/Chrome/Application/chrome.exe` and Playwright's browser cache was
+`playwright`/`sharp` blocker from 2026-09-27 "Artwork regeneration attempt"
+above resolved: local `package.json` (`{"dependencies":{"playwright":"^1.63.0",
+"sharp":"^0.35.4"}}`) added at monorepo root, `npm install` succeeded, populating
+`node_modules/` (now git-ignored). Chrome present at
+`C:/Program Files/Google/Chrome/Application/chrome.exe`, Playwright's browser cache
 already populated at `~/AppData/Local/ms-playwright`.
 
-Built the preview pipeline for this mod, following the exact pattern of
+Built preview pipeline for this mod, following exact pattern of
 `AncientBuildingsRenew/Art/` (`preview.html`, `preview-palette.json`, `render-preview.cjs`):
-a local static file server, `chromium.launch` against the installed Chrome, a 896x504 /
+local static file server, `chromium.launch` against installed Chrome, 896x504 /
 `deviceScaleFactor: 1` screenshot, Segoe UI font-family assertions via CDP
-(`CSS.getPlatformFontsForNode`), per-element contrast QA sampled from a background-only
-capture, and `sharp` compression to `Mod/About/Preview.png`.
+(`CSS.getPlatformFontsForNode`), per-element contrast QA sampled from background-only
+capture, `sharp` compression to `Mod/About/Preview.png`.
 
 New files: `Art/preview-palette.json` (veil `#241C13`, inkPrimary `#F7EFDD`, inkSecondary
-`#D8A85E`, accent `#B9762E`, badgeInk `#17120E`, sampled/complementary to the cream
+`#D8A85E`, accent `#B9762E`, badgeInk `#17120E`, sampled/complementary to cream
 `Preview-source.png` background), `Art/preview.html` (English title "Nelim's Animals," /
-suffix "Naturally", tag "Biology-based animal rebalancing", a one-line description drawn from
-`About.xml`'s body-size/lifespan/taming/hybridisation summary, and a `.version` badge read at
+suffix "Naturally", tag "Biology-based animal rebalancing", one-line description drawn from
+`About.xml`'s body-size/lifespan/taming/hybridisation summary, and `.version` badge read at
 render time from `About.xml`'s `supportedVersions` — currently `1.6`), and
 `Art/render-preview.cjs`.
 
-Ran `node Art/render-preview.cjs` from the repository root. First pass failed the 4.5:1
-contrast gate on `.tag` and `p` (4.29 and 4.32); fixed by strengthening the veil gradient
+Ran `node Art/render-preview.cjs` from repo root. First pass failed 4.5:1
+contrast gate on `.tag` and `p` (4.29 and 4.32); fixed by strengthening veil gradient
 (radius 900x680 at .94/.90 opacity → 980x760 at .97/.95) and darkening `inkSecondary`
-(`#E0B978` → `#D8A85E`). Second pass passed cleanly with no threshold changes:
+(`#E0B978` → `#D8A85E`). Second pass passed clean, no threshold changes:
 
-- `Mod/About/Preview.png`: 896 x 504, **519,847 bytes** (well under the ~900 KB gate and the
-  1 MB Workshop limit; previous file was 611,797 bytes).
+- `Mod/About/Preview.png`: 896 x 504, **519,847 bytes** (well under ~900 KB gate and
+  1 MB Workshop limit; previous file 611,797 bytes).
 - QA (`Art/preview-qa.json`), `version: "1.6"`, all Segoe UI / Segoe UI Semibold / Segoe UI
   Bold as expected, minContrast per element: `h1` 12.84, `.suffix` 6.96, `.tag` 6.78, `p`
-  9.89, `.version` 5.04 — every element clears the 4.5:1 gate.
+  9.89, `.version` 5.04 — every element clears 4.5:1 gate.
 - `Art/preview-268.png` (61,311 bytes) and `Art/preview-background.png` (500,246 bytes)
   written alongside.
 
-The former French title/copy defect recorded in the 2026-09-26 "Artwork review" is resolved:
-`Mod/About/Preview.png` now shows the English title, tag, and description. `stage` advances
+Former French title/copy defect from 2026-09-26 "Artwork review" resolved:
+`Mod/About/Preview.png` now shows English title, tag, description. `stage` advances
 from `Preview générée` to `preOptions` per `AUDIT.md`'s stage list
-(`... → Preview générée → preOptions → options → ...`); `settings_audit` was already
-re-verified `not_applicable` on 2026-09-27 and needs no further check before this transition.
+(`... → Preview générée → preOptions → options → ...`); `settings_audit` already
+re-verified `not_applicable` 2026-09-27, needs no further check before transition.
 
 
 ## Pickle suite written and requested — 2026-09-28
 
 `Tests/Pickle/` created (commit df0bb78): 5 features, 22 scenarios, no @wip, only Pickle-built-in steps. Families: baseline
 with Nocturnal Animals only (01), Forage/VEF (02), loadAfter Dogs Mate (03), Some Like It Rotten (04), Zoology (05). Three passes,
-maps and filters in `Tests/Pickle/README.md`. Values are not readable with Pickle (ambiguous names), so scenarios assert load,
-attribution and silence; gaps and two suspected defects in `TESTING.md`.
+maps and filters in `Tests/Pickle/README.md`. Values not readable with Pickle (ambiguous names), so scenarios assert load,
+attribution, silence; gaps and two suspected defects in `TESTING.md`.
 
-Runs: **none played.** Three requests filed with the dispatcher (queue held 48 tickets): 20260928-120658-213-b488 (sans-facultatifs),
+Runs: **none played.** Three requests filed with dispatcher (queue held 48 tickets): 20260928-120658-213-b488 (sans-facultatifs),
 20260928-120658-891-e85c (avec-vef), 20260928-120659-683-72fd (avec-loadafter), owner local_4f4ac5d9-e73c-413b-aa6e-e62db376eaa8, evidence to
-`Tests/Pickle/Evidence/<pass>`. Keep `Mod/` unchanged until RUN_DONE. No report exists, so nothing is passed.
+`Tests/Pickle/Evidence/<pass>`. Keep `Mod/` unchanged until RUN_DONE. No report exists, so nothing passed.
 
-Stage stays `preOptions`: no run evidence, and the vocabulary gap and suspected defects are unresolved.
+Stage stays `preOptions`: no run evidence, vocabulary gap and suspected defects unresolved.
 
 ## Audit — 2026-10-01 (revision 269a408 + e656137, Art/Preview files modified in the working tree)
 
 Result: `stage: done`, `workflow_stage: done`, unchanged. Session title `animalsnaturally / done`.
 
-- Prepublication: `Mod/About/PublishedFileId.txt` appeared (id 3811381865), committed as `e656137` ("Add published Workshop file ID for 0.1.0"); `CHANGELOG.md` opens with `## [0.1.0]` above `Unreleased`. This is the act of prepublication, not the `prepublished` state.
-- `preTest -> done` rechecked: `pwsh.exe -File Tests/Test-Xml.ps1` PASS (10 patch files, About.xml contract, fixtures, absent-mod safety). Under Windows PowerShell 5.1 the script fails 14 assertions: it needs `pwsh` (7+), as TESTING.md already says.
+- Prepublication: `Mod/About/PublishedFileId.txt` appeared (id 3811381865), committed as `e656137` ("Add published Workshop file ID for 0.1.0"); `CHANGELOG.md` opens with `## [0.1.0]` above `Unreleased`. This = act of prepublication, not `prepublished` state.
+- `preTest -> done` rechecked: `pwsh.exe -File Tests/Test-Xml.ps1` PASS (10 patch files, About.xml contract, fixtures, absent-mod safety). Under Windows PowerShell 5.1 script fails 14 assertions: needs `pwsh` (7+), as TESTING.md already says.
 - Git: no `.dds` tracked (`*.dds` ignored since 2026-09-26); no evidence tracked; `Tests/Pickle/Evidence/` ignored.
-- Evidence trimmed on disk: kept `summary.json`, `junit.xml`, `summary.md`, `evidence-complete.txt` of sans-facultatifs-r2, avec-vef-r5, dogsmate, valeurs, zoology-slow2; kept `rotten/` (stall log) until rotten-slow reports; deleted `report.html`, `messages.ndjson`, `Player.log`, screenshots, the no-report folders avec-loadafter and zoology, and the three `pickle-reports-archive/stalled-AnimalsNaturally-*` archives. Nothing `STATUS.md` cites was removed.
-- Upstream: `upstream_mod_remotes` already lists the source repos (emipa606/*, Vanilla Expanded Framework). This mod is original rebalancing work, not a fork, so there is no code to base PRs on; PRs would go to those repos only if a concrete fix to one of them is found.
-- Not done by this audit: no new test run played. Two requests filed (see `remaining`). `tested` also needs: no `@wip` (none exist), every conditional scenario run (02 and 04 outstanding), no manual test left to validate (existing-save / new-game argued not applicable in TESTING.md, awaiting Virginie's acceptance).
-- Reserve for `prepublished`, not a blocker now: the About.xml description lacks `IF I GO QUIET`, a specific `THANKS` and the `AI-GENERATED` line names OpenAI Codex only; `PUBLICATION.md` needs the capture order and adult-content answers; Gallery has only `0-preview.png`.
+- Evidence trimmed on disk: kept `summary.json`, `junit.xml`, `summary.md`, `evidence-complete.txt` of sans-facultatifs-r2, avec-vef-r5, dogsmate, valeurs, zoology-slow2; kept `rotten/` (stall log) until rotten-slow reports; deleted `report.html`, `messages.ndjson`, `Player.log`, screenshots, no-report folders avec-loadafter and zoology, three `pickle-reports-archive/stalled-AnimalsNaturally-*` archives. Nothing `STATUS.md` cites removed.
+- Upstream: `upstream_mod_remotes` already lists source repos (emipa606/*, Vanilla Expanded Framework). Mod = original rebalancing work, not fork, so no code to base PRs on; PRs go to those repos only if concrete fix to one found.
+- Not done by audit: no new test run played. Two requests filed (see `remaining`). `tested` also needs: no `@wip` (none exist), every conditional scenario run (02 and 04 outstanding), no manual test left to validate (existing-save / new-game argued not applicable in TESTING.md, awaiting Virginie's acceptance).
+- Reserve for `prepublished`, not blocker now: About.xml description lacks `IF I GO QUIET`, specific `THANKS`; `AI-GENERATED` line names OpenAI Codex only; `PUBLICATION.md` needs capture order and adult-content answers; Gallery has only `0-preview.png`.
 
 
 ## Preview source migration — 2026-10-02
 
-Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo-concept.png` (renamed from `echo.png` on 2026-10-12) and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
+Copy, typography, layout, palette consolidated in `Art/Preview.config.json`. Canonical inputs: `Art/Preview-source.png`, `Art/echo-concept.png` (renamed from `echo.png` 2026-10-12) and `Art/ModIcon-source.png`; shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery, ICO outputs preserved because present and coherent; no render run for migration. Superseded JSON files and generated QA intermediates removed. Nothing published.
 
 ## Audit — 2026-10-10 (revision 7b3f83a; working tree: Art/ModIcon.ico and Art/Preview.ico modified, Art/ModIcon-signature-candidate.png untracked, none mine)
 
 Result: `done` (old vocabulary, `playTests`) -> `makeSources`. Version targeted: 1.0.0. Session title `animalsnaturally / makeSources`. `stage` field removed (retired 2026-10-09).
 
-- First failing transition, `makeSources -> code` (2.b, 2.c): the shipped icon is stale and has no alpha channel, and the source is 102 x 108 (see `remaining`). The audit does not touch the source, the candidate or the ICO files. Not a generation task for a session: Virginie decides.
+- First failing transition, `makeSources -> code` (2.b, 2.c): shipped icon stale, no alpha channel, source 102 x 108 (see `remaining`). Audit does not touch source, candidate, or ICO files. Not a generation task for a session: Virginie decides.
 - Later transitions, retained independently of that block:
-  - `declareDependencies` (4), verified 2026-10-10 at 7b3f83a: hard dependency Nocturnal Animals (`Mlie.XNDNocturnalAnimals`, Workshop 2269731409, declared with steamWorkshopUrl; Rythme.xml guarded by PatchOperationFindMod). `loadAfter`: Dogs Mate, Nocturnal Animals, Some Like It Rotten, Zoology (ordering only, no XPath targets the three optional ones). Forage.xml guarded by PatchOperationFindMod on Vanilla Expanded Framework. No `MayRequire` on any Operation, no `incompatibleWith`, no DLC branch, no LoadFolders, `supportedVersions` 1.6. ANIMALS.md does not apply (the mod adds no animal).
+  - `declareDependencies` (4), verified 2026-10-10 at 7b3f83a: hard dependency Nocturnal Animals (`Mlie.XNDNocturnalAnimals`, Workshop 2269731409, declared with steamWorkshopUrl; Rythme.xml guarded by PatchOperationFindMod). `loadAfter`: Dogs Mate, Nocturnal Animals, Some Like It Rotten, Zoology (ordering only, no XPath targets the three optional ones). Forage.xml guarded by PatchOperationFindMod on Vanilla Expanded Framework. No `MayRequire` on any Operation, no `incompatibleWith`, no DLC branch, no LoadFolders, `supportedVersions` 1.6. ANIMALS.md does not apply (mod adds no animal).
   - `auditSettings` and `localize`: unchanged, `not_applicable` (no Source/, no DLL, no Languages/, no text field patched).
   - `writeTests` (7): `pwsh Tests/Test-Xml.ps1` rerun today, PASS. Pickle suite written (6 features, no @wip), passes declared in TESTING.md. Missing: `TEST_SCENARIOS.md` (7.a), tested sha (7.f).
   - `playTests` (8): not reached. 02-forage-vef and 07-galerie never played green, no code review (`code_review_sha` absent, 8.m).
-- Not done: no game run, no Pickle ticket in the queue for this mod, no file under `Mod/` changed.
+- Not done: no game run, no Pickle ticket in queue for this mod, no file under `Mod/` changed.
 
 ### Audit 2026-10-10, update after the icon replacement (revision 7b3f83a + working tree)
 
-`makeSources -> code` now established: source 1219 x 1290 with alpha (2.a), derivatives regenerated (2.b), icon legible at 32 px by my reading and awaiting Virginie (2.c), no `PROMPT_*.md` (2.d), Preview-source unchanged and previously accepted (2.e: 1 hue family, Vmean 0.920 measured on the source). `Art/.render/` is git-ignored (2.f). Retained state is now `writeTests[1.0.0]`: the first failing transition is `writeTests -> playTests` (no `TEST_SCENARIOS.md`, tested sha not recorded). Session title `animalsnaturally / writeTests[1.0.0]`.
+`makeSources -> code` now established: source 1219 x 1290 with alpha (2.a), derivatives regenerated (2.b), icon legible at 32 px by my reading, awaiting Virginie (2.c), no `PROMPT_*.md` (2.d), Preview-source unchanged and previously accepted (2.e: 1 hue family, Vmean 0.920 measured on source). `Art/.render/` git-ignored (2.f). Retained state now `writeTests[1.0.0]`: first failing transition `writeTests -> playTests` (no `TEST_SCENARIOS.md`, tested sha not recorded). Session title `animalsnaturally / writeTests[1.0.0]`.
 
 ### 2026-10-10: writeTests -> playTests[1.0.0]
 
-Criteria 7.a to 7.i checked: TEST_SCENARIOS.md written, Test-Xml.ps1 rerun green with the new assertions, Pickle suites written, not-applicable cases justified in TESTING.md, tested sha recorded in TEST_SCENARIOS.md, translations `not_applicable`. Protocols marked read (protocols_read_sha, see front matter). Tickets filed for what has not run green on the current suite: `06-valeurs` (second scenario) and `02-forage-vef`. `07-galerie` is shootGallery work and is not filed at this state.
+Criteria 7.a to 7.i checked: TEST_SCENARIOS.md written, Test-Xml.ps1 rerun green with new assertions, Pickle suites written, not-applicable cases justified in TESTING.md, tested sha recorded in TEST_SCENARIOS.md, translations `not_applicable`. Protocols marked read (protocols_read_sha, see front matter). Tickets filed for what has not run green on current suite: `06-valeurs` (second scenario) and `02-forage-vef`. `07-galerie` = shootGallery work, not filed at this state.
 
 ### Code review (AUDIT 8.m), 2026-10-10, e656137..88b3028
 
-Scope: `git diff e656137 HEAD -- Mod Tests`. `Mod/Patches/` is byte-identical to the 0.1.0 upload (nothing to review in the ten patch files beyond what the offline and Pickle runs exercise). `Mod/About/About.xml`: description text only (adoption clause, AI notice, linked THANKS), no metadata change. `ModIcon.png` and `Preview.png` are derived outputs. Tests: `Test-Xml.ps1` assertions verified by a negative run; features 02, 06 and the new 07 read. Findings, none blocking: (1) About.xml still says "a macaw lives for 55 years" (Lifespan.xml has no Macaw entry), to fix with the description sync at writeDocs; (2) `Test-Xml.ps1` asserts the BBCode `[url=...]Source code on GitHub[/url]` form in the description, which the generated About.xml description (plain text, "Source code on GitHub (URL)") will not have: update that assertion in the same commit as the sync; (3) 02-forage-vef counts 7 scenarios, not the 12 I declared with -Tests (the 12 included other files of the pass). A later commit of `Mod/` (the About.xml sync) reopens this criterion for that diff only.
+Scope: `git diff e656137 HEAD -- Mod Tests`. `Mod/Patches/` byte-identical to 0.1.0 upload (nothing to review in ten patch files beyond what offline and Pickle runs exercise). `Mod/About/About.xml`: description text only (adoption clause, AI notice, linked THANKS), no metadata change. `ModIcon.png` and `Preview.png` derived outputs. Tests: `Test-Xml.ps1` assertions verified by negative run; features 02, 06, new 07 read. Findings, none blocking: (1) About.xml still says "a macaw lives for 55 years" (Lifespan.xml has no Macaw entry), fix with description sync at writeDocs; (2) `Test-Xml.ps1` asserts BBCode `[url=...]Source code on GitHub[/url]` form in description, which generated About.xml description (plain text, "Source code on GitHub (URL)") will not have: update assertion in same commit as sync; (3) 02-forage-vef counts 7 scenarios, not 12 I declared with -Tests (12 included other files of pass). Later commit of `Mod/` (About.xml sync) reopens criterion for that diff only.
 
 ### 2026-10-10: playTests -> shootGallery[1.0.0]
 
@@ -320,4 +312,4 @@ Scope: `git diff e656137 HEAD -- Mod Tests`. `Mod/Patches/` is byte-identical to
 
 ### shootGallery, 2026-10-10: series rebuilt for Nelim's Sanctuary
 
-`Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` rewritten (045b5ad) after GALLERY.md and the Backlot docs: three pictures, one morning (10:00, 10:05, 10:10, cumulative waits 60, 268, 477 ticks), shot plan in the feature header. 1 enclosure-south: elephant, horse, cow and hen at real scale; 2 flower-garden: Health tab of a horse (menu); 3 plant-garden: a hungry royal pheasant (VAERoy). `wsl-deps.galerie.map` rebuilt from the Backlot minimum list. Ticket c9ed (galerie-1) failed at staging (infrastructure, nothing played: see docs/runs/history.md), refiled as `20261010-213323-044-e7d3` (galerie-2, 3 tests), evidence `Tests/Pickle/Evidence/galerie-2`. Candidates go to `Art/gallery/<n>-candidate-<name>.png` once the images are opened and read; Virginie accepts or refuses. Not played yet. Gallery table (PUBLICATION.md, STATUS.md) stays "scenario written, not played" until then.
+`Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` rewritten (045b5ad) after GALLERY.md and Backlot docs: three pictures, one morning (10:00, 10:05, 10:10, cumulative waits 60, 268, 477 ticks), shot plan in feature header. 1 enclosure-south: elephant, horse, cow, hen at real scale; 2 flower-garden: Health tab of horse (menu); 3 plant-garden: hungry royal pheasant (VAERoy). `wsl-deps.galerie.map` rebuilt from Backlot minimum list. Ticket c9ed (galerie-1) failed at staging (infrastructure, nothing played: see docs/runs/history.md), refiled as `20261010-213323-044-e7d3` (galerie-2, 3 tests), evidence `Tests/Pickle/Evidence/galerie-2`. Candidates go to `Art/gallery/<n>-candidate-<name>.png` once images opened and read; Virginie accepts or refuses. Not played yet. Gallery table (PUBLICATION.md, STATUS.md) stays "scenario written, not played" until then.
