@@ -88,6 +88,31 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I close the info card
     Then no errors were logged
 
+  # PROBE (2026-10-17, to be deleted once picture 3 is designed): what a hungry grizzly (Bear_Grizzly, RawBerries x10 by Forage.xml)
+  # looks like over time, three frames. Read the three pictures: is there a visible dig, a pile of berries, and when.
+  Scenario: probe - a hungry grizzly digs for berries, three frames
+    Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
+    And Nelim's Pickle Tools: I let 477 ticks pass
+    And game speed is paused
+    And Nelim's Pickle Tools: 1 adult animals of kind "Bear_Grizzly" are spawned around (191, 88)
+    And Nelim's Pickle Tools: the animals of kind "Bear_Grizzly" have food at 0 percent
+    And Nelim's Pickle Tools: "Nelim" stands at (186, 88) facing East
+    When Nelim's Pickle Tools: I frame the rectangle from (184, 84) to (197, 92)
+    And Nelim's Pickle Tools: the map is shown alone for a capture
+    And I take a screenshot "probe-0"
+    And Nelim's Pickle Tools: the interface is shown again
+    And Nelim's Pickle Tools: I let 300 ticks pass
+    And game speed is paused
+    And Nelim's Pickle Tools: the map is shown alone for a capture
+    And I take a screenshot "probe-300"
+    And Nelim's Pickle Tools: the interface is shown again
+    And Nelim's Pickle Tools: I let 900 ticks pass
+    And game speed is paused
+    And Nelim's Pickle Tools: the map is shown alone for a capture
+    And I take a screenshot "probe-1200"
+    And Nelim's Pickle Tools: the interface is shown again
+    Then no errors were logged
+
   Scenario: workshop 3 - Nelim watches a hungry royal pheasant forage, ten minutes in
     Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Nelim's Pickle Tools: I let 477 ticks pass
