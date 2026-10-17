@@ -46,6 +46,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Given Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
+    And Nelim's Pickle Tools: the floor of the area from (140, 210) to (162, 218) is bared like the cell (158, 216)
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (141, 211)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 212) fully grown
     And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (145, 214)
@@ -91,19 +92,19 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Nelim's Pickle Tools: I let 477 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: 1 adult animals of kind "VAERoy_Pheasant" are spawned around (190, 86)
+    And Nelim's Pickle Tools: 1 adult animals of kind "VAERoy_Pheasant" are spawned around (191, 88)
     And Nelim's Pickle Tools: the animals of kind "VAERoy_Pheasant" have food at 0 percent
-    And Nelim's Pickle Tools: the animal "coat-1" stands at (190, 86) facing South
-    And Nelim's Pickle Tools: I place the decor "StandingLamp" at (186, 86)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (193, 87) fully grown
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (191, 88) facing South
+    And Nelim's Pickle Tools: I place the decor "StandingLamp" at (187, 89)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (194, 89) fully grown
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (58, 70, 92)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (214, 168, 52)
-    And Nelim's Pickle Tools: "Nelim" stands at (188, 86) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (189, 88) facing East
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" brows are "BrowRaised"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
-    When Nelim's Pickle Tools: I frame the rectangle from (184, 83) to (195, 90)
+    When Nelim's Pickle Tools: I frame the rectangle from (186, 85) to (195, 90)
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-3-pheasant"
     And Nelim's Pickle Tools: the interface is shown again
