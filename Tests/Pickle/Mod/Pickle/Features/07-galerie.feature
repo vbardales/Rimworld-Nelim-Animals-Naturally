@@ -60,30 +60,32 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Sanctuary: the vanometric cell of the sanctuary is hidden
     And Nelim's Pickle Tools: all animals are removed
 
-  Scenario: workshop 1 - Nelim among an elephant, a horse, a cow and a hen at their real scale
+  Scenario: workshop 1 - the feed round, Nelim among an elephant, a horse, a cow and a hen at 08:00
     Given Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And I set the hour to 8
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: the floor of the area from (140, 210) to (162, 218) is bared like the cell (158, 216)
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (141, 211)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 212) fully grown
-    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (145, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (150, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (154, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (158, 214)
+    And Nelim's Pickle Tools: I place the decor "EggBox" at (148, 212)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 212) fully grown
+    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (145, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (155, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (159, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (150, 211)
     And Nelim's Pickle Tools: "elephant" faces South
-    And Nelim's Pickle Tools: "hen" faces South
     And Nelim's Pickle Tools: "horse" faces South
-    And Nelim's Pickle Tools: "cow" faces South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (58, 70, 92)
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (214, 168, 52)
-    And Nelim's Pickle Tools: "Nelim" stands at (150, 214) facing South
+    And Nelim's Pickle Tools: "cow" faces West
+    And Nelim's Pickle Tools: "hen" faces South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Ponytails"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
+    And Nelim's Pickle Tools: "Nelim" carries 10 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" stands at (152, 213) facing East
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
-    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
-    When Nelim's Pickle Tools: I frame the rectangle from (140, 210) to (162, 218)
+    And Nelim's Pickle Tools: "Nelim" face kit is "calm"
+    When Nelim's Pickle Tools: I frame the rectangle from (140, 209) to (162, 219)
     And Nelim's Pickle Tools: the map is shown alone for a capture
-    And I take a screenshot "workshop-1-scale"
+    And I take a screenshot "workshop-1-feed-round"
     And Nelim's Pickle Tools: the interface is shown again
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
@@ -91,8 +93,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
   # galerie-5: the Health tab showed a Dev tool button, 100 percent bars and the resource list (refused). galerie-6: the Stats tab
   # carries the numbers; read and kept. This card is a menu, so it is taken as it is on window-backdrop-for-height with the dev
   # button and the learning helper off, and cropped sideways around the window by hand (GALLERY.md).
-  Scenario: workshop 2 - the information card of a horse, five minutes later
+  Scenario: workshop 2 - the information card of a horse at 11:00
     Given Nelim's Sanctuary: I am at the sanctuary "window-backdrop-for-height"
+    And I set the hour to 11
     And Nelim's Pickle Tools: I let 268 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: the learning helper is hidden
