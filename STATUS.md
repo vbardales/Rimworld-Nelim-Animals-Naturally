@@ -313,3 +313,14 @@ Scope: `git diff e656137 HEAD -- Mod Tests`. `Mod/Patches/` byte-identical to 0.
 ### shootGallery, 2026-10-10: series rebuilt for Nelim's Sanctuary
 
 `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` rewritten (045b5ad) after GALLERY.md and Backlot docs: three pictures, one morning (10:00, 10:05, 10:10, cumulative waits 60, 268, 477 ticks), shot plan in feature header. 1 enclosure-south: elephant, horse, cow, hen at real scale; 2 flower-garden: Health tab of horse (menu); 3 plant-garden: hungry royal pheasant (VAERoy). `wsl-deps.galerie.map` rebuilt from Backlot minimum list. Ticket c9ed (galerie-1) failed at staging (infrastructure, nothing played: see docs/runs/history.md), refiled as `20261010-213323-044-e7d3` (galerie-2, 3 tests), evidence `Tests/Pickle/Evidence/galerie-2`. Candidates go to `Art/gallery/<n>-candidate-<name>.png` once images opened and read; Virginie accepts or refuses. Not played yet. Gallery table (PUBLICATION.md, STATUS.md) stays "scenario written, not played" until then.
+## Shotlist (AUDIT 9.0), 2026-10-18, self-grade per scene
+
+Story: one morning at Nelim's Sanctuary, Nelim is the yardstick (70 kg = 1.0) of an animal naturalist; 10:00 scale line, 10:05 field-note card, 10:10 a hungry animal forages. Full plan: header of `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature`. Rule (owner, relayed by TM 2026-10-18): every scene 4/5 or more before it is played; 3 or less is reworked (recompose, other place or prop, step asked of NPT); captured and under 4 is redone or dropped.
+
+| # | Scene | Place, hour | Score | Main risk | Work to reach 4 |
+|---|---|---|---|---|---|
+| 1 | Nelim among elephant, horse, cow, hen at real scale | enclosure-south, 10:00 | 3 | green tint on left ground (floor bared), catalogue-plate feel (animals in a row) | fix the tint on reading galerie-9; stagger animals in depth, add a reason for the pots (a field-station table with notebook) |
+| 2 | Horse Stats card (body size 1.93, life 30) | window-backdrop-for-height, 10:05 | 3 | story weak, HUD left around window | crop by hand; Steam text links it to image 1; consider a scene frame (Nelim reading the card beside the horse) |
+| 3 | Hungry animal forages, Nelim watches | plant-garden, 10:10 | 2 | pheasant dropped (torch hides tail, no-power icon, small); grizzly dig unproven | read probe-0/300/1200 of galerie-9 (620b), then rewrite scenario 3 and delete `probe`; fallback RawBerries placed with StageDecor |
+
+Lowest 2, no scene at 4 yet: none may be shot until reworked. Nothing captured is kept (all refused). Stage `shootGallery`, so redo applies.
