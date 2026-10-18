@@ -323,4 +323,4 @@ Story and every field per scene: header of `Tests/Pickle/Mod/Pickle/Features/07-
 | 2 | Horse Stats card | window-backdrop-for-height, 11:00 | n/a (interface, set aside) | HUD left around the window | crop sideways by hand, no subtitle |
 | 3 | Hungry grizzly digs, Nelim (ochre duster, bun, raised brows) watches with a field kit | plant-garden, 15:00 | 4 | the dig is not visible (unproven); grizzly turns on Nelim | probe frames decide the tick; fallback RawBerries via StageDecor; player faction, 5 cells apart |
 
-Lowest scored scene: 4. Series is thin (two story scenes plus the card): one more scene (calf beside a cow for gestation, or hybrid) possible after these two play green; not written, no extra risk taken. Nothing is played yet under the new plan.
+k (story): header tells one story (who Nelim, where the Sanctuary, one clear day, hours 08:00, 11:00, 15:00 by 2,500 ticks per game hour), each scene an episode: met. Lowest scored scene: 4. Series is thin (two story scenes plus the card): one more scene (calf beside a cow for gestation, or hybrid) possible after these two play green; not written, no extra risk taken. Nothing is played yet under the new plan.
