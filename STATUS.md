@@ -313,14 +313,14 @@ Scope: `git diff e656137 HEAD -- Mod Tests`. `Mod/Patches/` byte-identical to 0.
 ### shootGallery, 2026-10-10: series rebuilt for Nelim's Sanctuary
 
 `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` rewritten (045b5ad) after GALLERY.md and Backlot docs: three pictures, one morning (10:00, 10:05, 10:10, cumulative waits 60, 268, 477 ticks), shot plan in feature header. 1 enclosure-south: elephant, horse, cow, hen at real scale; 2 flower-garden: Health tab of horse (menu); 3 plant-garden: hungry royal pheasant (VAERoy). `wsl-deps.galerie.map` rebuilt from Backlot minimum list. Ticket c9ed (galerie-1) failed at staging (infrastructure, nothing played: see docs/runs/history.md), refiled as `20261010-213323-044-e7d3` (galerie-2, 3 tests), evidence `Tests/Pickle/Evidence/galerie-2`. Candidates go to `Art/gallery/<n>-candidate-<name>.png` once images opened and read; Virginie accepts or refuses. Not played yet. Gallery table (PUBLICATION.md, STATUS.md) stays "scenario written, not played" until then.
-## Shotlist (AUDIT 9.0), 2026-10-18, self-grade per scene
+## Shotlist (AUDIT 9.0), reworked 2026-10-18 against GALLERY.md a to j (Audit relay)
 
-Story: one morning at Nelim's Sanctuary, Nelim is the yardstick (70 kg = 1.0) of an animal naturalist; 10:00 scale line, 10:05 field-note card, 10:10 a hungry animal forages. Full plan: header of `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature`. Rule (owner, relayed by TM 2026-10-18): every scene 4/5 or more before it is played; 3 or less is reworked (recompose, other place or prop, step asked of NPT); captured and under 4 is redone or dropped.
+Story and every field per scene: header of `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature`. One day at the Sanctuary: 08:00 feed round (scale), 11:00 field-notes card (interface, set aside), 15:00 hungry grizzly. Outfit, hair, face, decor differ per scene; decor removed after each shot. The scenarios of 07-galerie still follow the OLD plan (pheasant, old outfit): rewrite them to the header before any ticket (after reading probe-0/300/1200 of galerie-9, 620b), then delete `probe`.
 
-| # | Scene | Place, hour | Score | Main risk | Work to reach 4 |
+| # | Scene | Place, hour | Score | Risk | Plan |
 |---|---|---|---|---|---|
-| 1 | Nelim among elephant, horse, cow, hen at real scale | enclosure-south, 10:00 | 3 | green tint on left ground (floor bared), catalogue-plate feel (animals in a row) | fix the tint on reading galerie-9; stagger animals in depth, add a reason for the pots (a field-station table with notebook) |
-| 2 | Horse Stats card (body size 1.93, life 30) | window-backdrop-for-height, 10:05 | 3 | story weak, HUD left around window | crop by hand; Steam text links it to image 1; consider a scene frame (Nelim reading the card beside the horse) |
-| 3 | Hungry animal forages, Nelim watches | plant-garden, 10:10 | 2 | pheasant dropped (torch hides tail, no-power icon, small); grizzly dig unproven | read probe-0/300/1200 of galerie-9 (620b), then rewrite scenario 3 and delete `probe`; fallback RawBerries placed with StageDecor |
+| 1 | Feed round: Nelim (sage shirt, khaki trousers, ponytail, calm) carries Hay among elephant, hen, horse, cow | enclosure-south, 08:00 | 4 | green tint on left ground, animals overlapping | no bared floor unless the tint is gone; ask NPT via TM; stagger animals 3+ cells in depth |
+| 2 | Horse Stats card | window-backdrop-for-height, 11:00 | n/a (interface, set aside) | HUD left around the window | crop sideways by hand, no subtitle |
+| 3 | Hungry grizzly digs, Nelim (ochre duster, bun, raised brows) watches with a field kit | plant-garden, 15:00 | 4 | the dig is not visible (unproven); grizzly turns on Nelim | probe frames decide the tick; fallback RawBerries via StageDecor; player faction, 5 cells apart |
 
-Lowest 2, no scene at 4 yet: none may be shot until reworked. Nothing captured is kept (all refused). Stage `shootGallery`, so redo applies.
+Lowest scored scene: 4. Series is thin (two story scenes plus the card): one more scene (calf beside a cow for gestation, or hybrid) possible after these two play green; not written, no extra risk taken. Nothing is played yet under the new plan.
