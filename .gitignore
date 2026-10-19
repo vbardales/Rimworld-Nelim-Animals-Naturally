@@ -28,3 +28,7 @@ Source/bin/
 .vs/
 .idea/
 *.user
+
+# Pickle reception and parking (owner rule 2026-10-19), disk only.
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/
