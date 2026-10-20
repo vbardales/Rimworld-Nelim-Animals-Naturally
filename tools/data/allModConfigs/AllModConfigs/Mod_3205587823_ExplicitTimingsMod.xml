@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="Leoltron.ExplicitTimings.Settings">
-		<OnOffCycleViewMode>Off</OnOffCycleViewMode>
-		<MentalBreakSorting>Intensity</MentalBreakSorting>
-		<MentalBreakColoring>MentalStateLetterColor</MentalBreakColoring>
-	</ModSettings>
-</SettingsBlock>
