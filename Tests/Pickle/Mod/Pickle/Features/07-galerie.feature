@@ -4,45 +4,20 @@
 # They assert almost nothing about the mod (01, 02 and 06 do): a green run says the trip happened, not that a picture shows
 # anything. Open every picture before keeping it.
 #
-# THE STORY (one day at Nelim's Sanctuary, Nelim the field naturalist, the only colonist of the save): this mod sizes every
-# animal from its real mass relative to a 70 kg human, so Nelim herself is the unit of measure. 08:00 she feeds and measures the
-# animals against herself (scene 1); 11:00 she reads the numbers in her field notes (interface card, scene 2, set aside from
-# the scoring, no subtitle); 15:00 a hungry grizzly digs for berries, the foraging this mod hands to animals Animals Forage does
-# not cover (scene 3). Each scene reloads the save, sets its own hour, waits its own game time (2,500 ticks = 1 game hour).
-# Outfit, hair, face and decor differ on purpose in every scene; every decor piece is removed after its shot.
 #
-# SHOT PLAN (scored against GALLERY.md a to j, 2026-10-18; below 4 nothing is played):
-#   1 workshop-1-feed-round. [4/5]
-#     a. enclosure-south, 08:00, Clear, setup 60 ticks then paused.
-#     b. EggBox at (148,213) and Plant_YellowTallGrass at (152,213) (a straw nest at the hen's foot), removed after the shot.
-#     c. elephant (back left, faces South: front view), horse (background, faces South), cow (right, faces West toward Nelim),
-#        hen (foreground at her feet, faces South).
-#     d. Nelim: Apparel_CollarShirt dyed sage green rgb(96,128,84), Apparel_Pants dyed khaki rgb(176,150,100), Ponytails,
-#        hair rgb(70,48,34), face kit calm (MouthLipsTinySmile, LidSimple, BrowNormal), no hat.
-#     e. she carries 10 Hay (the feed round), faces East toward the cow, stood next to the hen.
-#     f. frame of about 18 by 9 cells, Nelim off centre right of the middle, hen big in the foreground, elephant largest at the
-#        back, morning side light; subject fills at least 60 percent of the height.
-#     g. One subject: Nelim against the animals' real size. Says: "Nelim is the yardstick: the hen to her knee, the elephant over her."
-#     h. Risk: green tint on the left ground (floor bared) and animals overlapping. Plan: no bared floor unless the tint is gone,
-#        read the picture, ask NPT through the TM for a fix; stagger the animals in depth, at least 3 cells between two.
-#     i. staggered in depth (three rows of z), turned differently, never a lined row.
-#     j. every animal has the body size this mod computes (elephant, horse, cow, hen).
-#   2 workshop-2-horse-card. Interface scene, window-backdrop-for-height, 11:00, Stats tab of a horse (body size 1.93, life
-#     expectancy 30), cropped sideways by hand, no subtitle, not scored. Linked to scene 1 by the horse and the same Steam text.
-#   3 workshop-3-hungry-grizzly. [4/5, conditional on the probe frames]
-#     a. plant-garden, 15:00, Clear, setup 477 ticks then paused (the pheasant is dropped).
-#     b. PlantPot with Plant_Daylily at (194,89) fully grown, Plant_TreeOak at (196,86) fully grown (shade), removed after.
-#     c. grizzly (Bear_Grizzly, food 0 percent, faces South toward the camera), grown plants.
-#     d. Nelim: Apparel_Duster dyed ochre rgb(176,104,48) over Apparel_BasicShirt dyed cream rgb(236,226,200), Apparel_Pants dyed
-#        dark brown rgb(70,52,40), FancyBun, hair rgb(120,70,40), BrowRaised, MouthSmile, LidCheerful.
-#     e. she watches from five cells, faces East, carrying 1 MedicineHerbal (her field kit).
-#     f. frame of about 13 by 8 cells, grizzly off centre left and large, Nelim small right, lawn behind, flat afternoon light.
-#     g. One subject: a hungry grizzly foraging. Says: "A hungry grizzly digs for berries: the mod gives it the forage of its neighbours."
-#     h. Risk: the dig is not visible (unproven). Plan: the `probe` scenario (frames 0, 300, 1200 ticks) of galerie-9 decides the
-#        capture tick; fallback RawBerries placed with StageDecor under the bear. Risk 2: the grizzly turns on Nelim. Plan: spawned in
-#        the player faction, five cells apart, no drafting.
-#     i. one animal, one pawn, plants behind: no row.
-#     j. Forage.xml gives the grizzly RawBerries x10 (Pickle 02-forage-vef asserts the guard).
+# THE STORY (rewritten 2026-10-23, one day at Nelim's Sanctuary; Nelim the field naturalist, the only colonist of the save): this
+# mod sizes every animal from its real mass relative to a 70 kg human, lengthens or shortens its life, times its pregnancy, and
+# hands foraging and a day/night rhythm to animals that lacked them. Nelim herself is the yardstick. 07:00 the feed round among
+# the animals, read against her (1); 11:00 her field notes, the Stats card of the elephant (2, interface, set aside); 13:00 a cat
+# sleeps in broad day, the night rhythm (3); 15:00 taming and a hybrid (4, conditional); 18:30 at dusk a hungry grizzly digs for
+# berries (5). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
+# ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb(96,128,84), Apparel_Pants khaki rgb(176,150,100),
+# hair Roo_HD_Hair_Highpony (canon high ponytail, never a bun; to verify it is in the DepMap, else Ponytails), hair rgb(70,48,34),
+# calm face, no hat. Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 5 (dusk).
+# GAME PAUSED MID-PLAY (GALLERY.md e): each scene gives a job and pauses a few ticks in; the shot plan lives in STATUS.md
+# ("Shotlist 2026-10-23"). THE SCENARIOS BELOW STILL FOLLOW THE OLD PLAN (3 = pheasant, probe, old outfits): rewrite them to
+# STATUS.md before any ticket; only 1 and 2 are near ready (scene 1: add `the painted zones are hidden` before the frame step,
+# NPT 2026-10-23).
 # Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width. Each frame step
 # asks for 60 percent of the rectangle that holds the subject; whether it did is read on the picture.
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
