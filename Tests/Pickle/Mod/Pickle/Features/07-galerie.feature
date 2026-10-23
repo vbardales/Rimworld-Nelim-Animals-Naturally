@@ -9,11 +9,11 @@
 # mod sizes every animal from its real mass relative to a 70 kg human, lengthens or shortens its life, times its pregnancy, and
 # hands foraging and a day/night rhythm to animals that lacked them. Nelim herself is the yardstick. 07:00 the feed round among
 # the animals, read against her (1); 11:00 her field notes, the Stats card of the elephant (2, interface, set aside); 13:00 a cat
-# sleeps in broad day, the night rhythm (3); 18:00 at dusk a hungry grizzly has just dug for berries (5). The taming and hybrid scene
+# sleeps in broad day, the night rhythm (3); 18:00 at dusk a hungry grizzly has just dug for berries (4). The taming and hybrid scene
 # was dropped 2026-10-23 (no steps). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb(96,128,84), Apparel_Pants khaki rgb(176,150,100),
 # hair Ponytails (the canon Roo_HD_Hair_Highpony is not in wsl-deps.galerie.map), hair rgb(70,48,34),
-# calm face, no hat. Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 5 (dusk).
+# calm face, no hat. Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 4 (dusk).
 # Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width. Each frame step
 # asks for 60 percent of the rectangle that holds the subject; whether it did is read on the picture.
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
@@ -113,10 +113,10 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the interface is shown again
     Then no errors were logged
 
-  # 5 GRIZZLY AT DUSK (closer). plant-garden, 18:00 Clear, torch lit. Instant: just after the dig, the berries under the bear, Nelim walks
+  # 4 GRIZZLY AT DUSK (closer). plant-garden, 18:00 Clear, torch lit. Instant: just after the dig, the berries under the bear, Nelim walks
   # home. The probe (galerie-11) showed the stack under the grizzly at tick 300. The stack cell is a guess from that frame (about (193, 85)):
   # the first screenshot is taken before the unforbid step, so a wrong cell still leaves a picture and the failure names what the cell holds.
-  Scenario: workshop 5 - a hungry grizzly has just dug for berries at dusk
+  Scenario: workshop 4 - a hungry grizzly has just dug for berries at dusk
     Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And I set the hour to 18
     And Nelim's Pickle Tools: I let 60 ticks pass
@@ -141,9 +141,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     When Nelim's Pickle Tools: I frame the rectangle from (183, 83) to (197, 91)
     And Nelim's Pickle Tools: the map is shown alone for a capture
-    And I take a screenshot "workshop-5-before-unforbid"
+    And I take a screenshot "workshop-4-before-unforbid"
     And Nelim's Pickle Tools: the thing "RawBerries" at (193, 85) is not forbidden
-    And I take a screenshot "workshop-5-grizzly-dusk"
+    And I take a screenshot "workshop-4-grizzly-dusk"
     And Nelim's Pickle Tools: the interface is shown again
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
