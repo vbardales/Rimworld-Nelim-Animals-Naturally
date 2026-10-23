@@ -78,9 +78,10 @@ own history for the exact diff):
 
 **Integrations with no patch on their defs** (Virginie, 2026-10-10: thank every integration, `PUBLISHING.md`, "Remerciements"; the register `../WORKSHOP_COMMENTS.md` decides what is posted). Dogs Mate (`2441132298`) already has a `drafted` row from Moa Renew: this mod is added to its `Covers`, no separate comment here (Hybridation.xml writes the same list format on the vanilla `canCrossBreedWith` field, tested by pass `03-dogsmate`). Some Like It Rotten (`2503519676`) and Zoology (`3679396881`) are `<loadAfter>` only and have a pass of their own (`04-rotten`, `05-zoology`): new `drafted` rows and a draft each below. Vanilla Animals Expanded - Royal Animals (`2858079457`), staged by the `avec-vef` pass, has its own row and draft too.
 
-Each draft below needs `[url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]`
-with `<THIS_MOD_ID>` filled in once the Workshop item exists — the placeholder is left as `<THIS_MOD_ID>`
-on purpose, do not post with it still in place. Read the page's last comments again before posting
+Each draft below needs `[url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]`.
+`<THIS_MOD_ID>` is `3811381865` (the private prepublication item, id known since 2026-10-01); the placeholder stays
+in the drafts on purpose, and the id goes in only when the item is public, since nobody can open the link before.
+Do not post with the placeholder still in place. Read the page's last comments again before posting
 (WORKSHOP_COMMENTS.md's method), in case the tone has moved since 2026-09-29.
 
 **Mlie, on Animals Forage (Continued)** (289 characters):
@@ -102,6 +103,7 @@ on purpose, do not post with it still in place. Read the page's last comments ag
 > Extended the same forage-when-hungry behaviour Animals Forage gives vanilla critters to the VAE
 > animals it hadn't reached — no overlap, just filling the gaps your own spreadsheet already mapped
 > out. Appreciate the sheer scale of it :)
+> [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
 
 **Mlie, on Some Like It Rotten** (217 characters):
 
@@ -120,33 +122,32 @@ on purpose, do not post with it still in place. Read the page's last comments ag
 > The royal pheasants got a small gift from my forage patch: they now dig for a snack when hungry, the same trick Animals Forage gives vanilla critters. Thanks Erin, Oskar and Sarg for nine animals that keep vanilla balancing xD
 
 > [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
-> [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
 
 ## Gallery captures (2026-10-02)
 
-Folder `Art/Gallery/` holds only the images to upload, numbered `0-`, `1-`, `2-`; `0-preview.png` is a byte copy of `Mod/About/Preview.png`. Captures come from `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` (pass `galerie`), raw pictures stay in the ignored `Tests/Pickle/Evidence/` and are cropped before they go to `Art/Gallery/`. Preview inputs: `Art/Preview-source.png`, `Art/echo-concept.png`, `Art/ModIcon-source.png`, `Art/Preview.config.json`, rendered by `node ../scripts/Render-Preview.cjs`; the two `.ico` files in `Art/` are the local folder icons, outside `Mod/`.
+Folder `Art/Gallery/` holds only the images to upload, numbered `0-` to `4-`; `0-preview.png` is a byte copy of `Mod/About/Preview.png`. Captures come from `Tests/Pickle/Mod/Pickle/Features/07-galerie.feature` (pass `galerie`), raw pictures stay in the ignored `Tests/Pickle/Evidence/` and are cropped before they go to `Art/Gallery/`. Preview inputs: `Art/Preview-source.png`, `Art/echo-concept.png`, `Art/ModIcon-source.png`, `Art/Preview.config.json`, rendered by `node ../scripts/Render-Preview.cjs`; the two `.ico` files in `Art/` are the local folder icons, outside `Mod/`.
 
 **Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width.** Not stated in the shared `PUBLISHING.md`, so it is written here and in the feature header. The numbers of the framing steps (`I frame` sets zoom 9, then `I zoom in`) are only a starting point: judge the picture, not the number.
 
 | Order | Image | Shows | State |
 |---|---|---|---|
 | 0 | `0-preview.png` | the Preview | done |
-| 1 | scale | Nelim among elephant, horse, cow, hen at real scale | galerie-7 played; tint over the left ground, redo |
-| 2 | horse info card | Stats tab, window only, no subtitle | galerie-7 card refused (whole HUD around it, cropped to the window only); scenario now hides the HUD around the window, crop sideways only |
-| 3 | forage | Nelim watching a hungry royal pheasant | galerie-7 played; lamp hides the tail, "no power" icon, redo |
+| 1 | feed round, 07:00 | Nelim walks past elephant, horse, cow and hen at real scale | galerie-11 played, tint over the left ground; scenario rewritten, filed in galerie-12 |
+| 2 | elephant info card, 11:00 | Stats tab, window only, no subtitle | galerie-11 failed at the animal spawn; scenario rewritten, filed in galerie-12 |
+| 3 | cat asleep, 13:00 | a vanilla cat asleep in broad day (night rhythm), Nelim tiptoes past | scenario written, filed in galerie-12 |
+| 4 | grizzly at dusk, 18:00 | a hungry grizzly has just dug for berries (forage) | scenario written, filed in galerie-12; the royal pheasant is dropped |
 
 ## Gallery subtitles
 
-Scenes without an interface window carry one English line at the bottom (`GALLERY.md`, "Sous-titres"). Image 2 is a window capture: no line. Lines are provisional until the captures are accepted; clean originals go to `Art/Gallery-clean/`.
+Scenes without an interface window carry one English line at the bottom (`GALLERY.md`, "Sous-titres"). Image 2 is a window capture: no line. Lines and file names are provisional until the captures are accepted; clean originals go to `Art/Gallery-clean/`.
 
 | Index | File | Line |
 |---|---|---|
-| 1 | 1-scale.png | Nelim is the yardstick: elephant, horse, cow and hen at their real scale. |
-| 3 | 3-pheasant.png | Hungry, the royal pheasant looks for its own meal. |
+| 1 | 1-feed-round.png | At seven, Nelim walks the feed round: the hen to her knee, the elephant over her. |
+| 3 | 3-cat-asleep.png | The cat keeps the night: asleep at noon, while Nelim tiptoes past. |
+| 4 | 4-grizzly-dusk.png | At dusk, a hungry grizzly digs for berries of its own. |
 
 
 ### Staging of the gallery (owner's rule, 2026-10-02)
 
-Every gallery image is a staged photograph, except menus (the Health tab, image 2, is a screenshot of what it is). Story for the series: **the naturalist's plate**. A field station in the meadow of the shared studio (`nelim-zen-meadow-studio`): same backdrop for the whole series, a standing lamp, plants and a shelf where they tell something. Image 1: the animals lined up by size, mouse to elephant, as on a field-guide plate. Image 3: a grizzly digging berries beside berry bushes. Decor is placed, photographed, removed, then the next image.
-
-Steps this needs and the catalogue does not have (asked of Pickle Tools on 2026-10-02): an animal spawned on an exact cell or in a row, decor placed by defName and removed, an animal's food set, framing of a cell rectangle to a share of the screen. Until they exist, `07-galerie.feature` uses `close together` and the test colony, and its pictures are tests of the trip, not gallery material.
+Every gallery image is a staged photograph, except menus (the Health tab, image 2, is a screenshot of what it is). Story for the series (rewritten 2026-10-23, replaces "the naturalist's plate"): **one day at Nelim's Sanctuary**, Nelim the field naturalist measuring the animals against herself, one outfit all day. 07:00 the feed round among elephant, horse, cow and hen (image 1, wide); 11:00 her field notes, the Stats card of the elephant (image 2, interface); 13:00 a cat asleep in broad day, the night rhythm (image 3, close); 18:00 at dusk a hungry grizzly has just dug for berries (image 4, medium). Places, props, outfit and instants: the header of `07-galerie.feature` and "Shotlist 2026-10-23" in `STATUS.md`. Decor is placed, photographed, removed, then the next image. The steps asked of Pickle Tools on 2026-10-02 now exist; only the scenes' jobs (walk, lie down, unforbid) are new in the 2026-10-23 run.
