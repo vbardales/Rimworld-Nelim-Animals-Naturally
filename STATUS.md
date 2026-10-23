@@ -362,3 +362,5 @@ One story, one outfit (Pants khaki rgb(176,150,100), CollarShirt sage rgb(96,128
 k (series): unchanged, wide 1, close 3, medium 4, 07:00 to 18:00. Ticket galerie-12 (7545) still pending, picks this tree.
 
 State 2026-10-23 (watch-out): galerie-12 (7545, 07-galerie workshop 1, 2, 3, 4) pending in the queue behind about 20 tickets, evidence Tests/Pickle/Inbox/galerie-12. Plan rated with rate-gallery after the owner removed the anomaly cap (asked of Audit to remove it at the source): shots 1 = 4.5, 3 = 5, 4 = 5, mean 4.8. On RUN_DONE: summary.json, then each capture against the shotlist (tint, red X, cat lying, bear distance), then reindex, Art/Gallery-clean, Add-Subtitle, echo review. Open: PUBLICATION.md thanks and gallery fixed 2026-10-23, FRENCH_REVIEW.md committed (no player-facing strings).
+
+Before clear 2026-10-23: nothing owed by the owner. Pending from others: galerie-12 (7545) RUN_DONE via TM; Audit answer on any remaining score cap in other skills (rate-gallery caps already removed at the source); NPT only if the tint or the red X persists on a galerie-12 capture. Mod repo pushed (master to origin/main).
