@@ -9,8 +9,8 @@
 # mod sizes every animal from its real mass relative to a 70 kg human, lengthens or shortens its life, times its pregnancy, and
 # hands foraging and a day/night rhythm to animals that lacked them. Nelim herself is the yardstick. 07:00 the feed round among
 # the animals, read against her (1); 11:00 her field notes, the Stats card of the elephant (2, interface, set aside); 13:00 a cat
-# sleeps in broad day, the night rhythm (3); 15:00 taming and a hybrid (4, conditional); 18:30 at dusk a hungry grizzly digs for
-# berries (5). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
+# sleeps in broad day, the night rhythm (3); 18:30 at dusk a hungry grizzly has just dug (4); scene 4, taming and hybrid, dropped 2026-10-23 (no steps), it lives in the card and the subtitles. Berries,
+# a grizzly (5). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb(96,128,84), Apparel_Pants khaki rgb(176,150,100),
 # hair Roo_HD_Hair_Highpony (canon high ponytail, never a bun; to verify it is in the DepMap, else Ponytails), hair rgb(70,48,34),
 # calm face, no hat. Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 5 (dusk).
