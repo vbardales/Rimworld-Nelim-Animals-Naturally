@@ -32,7 +32,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: all animals are removed
 
   # 1 FEED ROUND (opener, wide). enclosure-south, 07:00 Clear, 60 ticks of setup then 30 ticks of walk. Hay at the cow's feet, EggBox and
-  # a straw nest at the hen. Instant: just after the hay drop, Nelim walks toward the EggBox, mid-stride. Risk: the tint (painted zones).
+  # a straw nest at the hen. Instant: just after the hay drop, the cow steps toward it, the hen heads for her nest, Nelim crosses to the EggBox,
+  # all three mid-stride (forced to walk, 30 ticks, paused). Frame 19 x 10 cells: at 268 px the elephant is about 42 px, the cow 28, Nelim and the
+  # hen 14: silhouettes read, the scale is the elephant against the hen. Foreground hen and Nelim, elephant back left, horse back centre. Risk: the tint.
   Scenario: workshop 1 - the feed round at 07:00, Nelim walks past an elephant, a horse, a cow and a hen
     Given Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And I set the hour to 7
@@ -44,7 +46,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I place the decor "Hay" at (158, 213)
     And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (145, 217)
     And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (155, 217)
-    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (159, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (161, 213)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (150, 211)
     And Nelim's Pickle Tools: "elephant" faces South
     And Nelim's Pickle Tools: "horse" faces South
@@ -57,10 +59,12 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" stands at (156, 213) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
+    And Nelim's Pickle Tools: "cow" is forced to walk to (158, 213)
+    And Nelim's Pickle Tools: "hen" is forced to walk to (152, 212)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (149, 213)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the rectangle from (140, 209) to (162, 219)
+    When Nelim's Pickle Tools: I frame the rectangle from (143, 209) to (162, 219)
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-1-feed-round"
     And Nelim's Pickle Tools: the interface is shown again
@@ -86,7 +90,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Then no errors were logged
 
   # 3 CAT ASLEEP AT NOON (close). sofa-corner, 13:00. Vanilla Cat is Nocturnal in Rythme.xml: asleep in broad day. Instant: Nelim tiptoes
-  # past toward the door. Free cells (SANCTUAIRE-CASES.md): row 124 x 183-189, row 126 x 183-194.
+  # past toward the door. Props already there (SANCTUAIRE-CASES.md): Couch (185,123) and (187,122), TorchLamp (187,121), BookcaseSmall (182,124), PlantPot
+  # (191,122). Instant: the cat settled minutes ago, Nelim is leaving without waking it (forced to walk, 30 ticks). Frame 7 x 5 cells, about 30 px a cell
+  # at 268 px: the curled cat with its Zzz mote in the foreground low left, Nelim small behind on row 126, the couches and the lamp light behind.
   Scenario: workshop 3 - a cat sleeps at 13:00, Nelim tiptoes past
     Given Nelim's Sanctuary: I am at the sanctuary "sofa-corner"
     And I set the hour to 13
@@ -107,22 +113,24 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (184, 126)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the rectangle from (183, 122) to (192, 127)
+    When Nelim's Pickle Tools: I frame the rectangle from (184, 122) to (191, 127)
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-3-cat-asleep"
     And Nelim's Pickle Tools: the interface is shown again
     Then no errors were logged
 
   # 4 GRIZZLY AT DUSK (closer). plant-garden, 18:00 Clear, torch lit. Instant: just after the dig, the berries under the bear, Nelim walks
-  # home. The probe (galerie-11) showed the stack under the grizzly at tick 300. The stack cell is a guess from that frame (about (193, 85)):
+  # home. Instant: the dig has just finished (tick 300 in the probe), the grizzly stands over the pile facing South, Nelim slows by it (3 cells, forced to
+  # walk 30 ticks). Frame 10 x 6 cells, about 25 px a cell at 268 px: bear 50 px, pile 25 px, lamp pool behind. Foreground bear and pile off-centre right,
+  # Nelim mid-left. The probe (galerie-11) showed the stack under the grizzly at tick 300. The stack cell is a guess from that frame (about (193, 85)):
   # the first screenshot is taken before the unforbid step, so a wrong cell still leaves a picture and the failure names what the cell holds.
   Scenario: workshop 4 - a hungry grizzly has just dug for berries at dusk
     Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And I set the hour to 18
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (189, 90)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (189, 90) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (189, 89)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (189, 89) is lit
     And Nelim's Pickle Tools: an adult animal of kind "Bear_Grizzly" named "bear" is spawned at (193, 86)
     And Nelim's Pickle Tools: the animals of kind "Bear_Grizzly" have food at 0 percent
     And Nelim's Pickle Tools: "bear" faces South
@@ -132,14 +140,14 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Ponytails"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
-    And Nelim's Pickle Tools: "Nelim" stands at (188, 87) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (190, 87) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "bear" faces South
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (183, 87)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (187, 87)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the rectangle from (183, 83) to (197, 91)
+    When Nelim's Pickle Tools: I frame the rectangle from (186, 83) to (196, 89)
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-4-before-unforbid"
     And Nelim's Pickle Tools: the thing "RawBerries" at (193, 85) is not forbidden

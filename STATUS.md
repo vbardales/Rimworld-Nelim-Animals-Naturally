@@ -348,3 +348,15 @@ Revision 2026-10-23b (NPT answer, steps that exist, all unplayed): walk = `"X" i
 Filed 2026-10-23 (c7492f8): galerie-12, ticket 20261023-190305-408-0600, scenes 1, 2, 3, 5 of 07-galerie, evidence Tests/Pickle/Inbox/galerie-12, waiting. On RUN_DONE read summary.json, then each capture against the shotlist; scene 5 first screenshot is before the unforbid step (stack cell (193, 85) is a guess). Inbox/galerie-11 still kept for its probe frames.
 
 Reindexed 2026-10-23 (owner): scenes are now 1 feed round, 2 elephant card, 3 cat asleep, 4 grizzly at dusk (was 5); the taming/hybrid scene is dropped, no gap. Scenario "workshop 4", captures workshop-4-before-unforbid and workshop-4-grizzly-dusk. Ticket 0600 cancelled while pending (filter named workshop 5) and refiled.
+
+## Shotlist 2026-10-23c, shots 1, 3, 4 reworked (write-shotlist 1, 3, 4)
+
+One story, one outfit (Pants khaki rgb(176,150,100), CollarShirt sage rgb(96,128,84), Ponytails, hair rgb(70,48,34), face kit calm). Every shot now writes what each living thing does, the instant, how it is obtained (forced to walk, ticks, pause), the pixel size at 268 px. Shot 2 (elephant Stats card, 11:00) is an interface window, listed apart.
+
+| # | a | b | c | d | e | f | g | j | Est | Risk | Plan |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | enclosure-south, 07:00 Clear, 60+30 ticks | EggBox, Plant_YellowTallGrass, Hay, removed | elephant S, horse S, hen S, cow W | outfit above, calm | cow, hen and Nelim forced to walk, just after the hay drop | 19 x 10 cells, hen and Nelim foreground, elephant back left | Nelim is the yardstick | elephant 42 px, cow 28, Nelim and hen 14 at 268 px | 4 | green tint | painted zones hidden; NPT writes a step if it stays |
+| 3 | sofa-corner, 13:00 Clear, 60+40+30 ticks | Couch x2, TorchLamp, BookcaseSmall, PlantPot (already there) | Cat S, Zzz mote | outfit above, calm | cat lies down, Nelim leaves without waking it (forced to walk) | 7 x 5 cells, cat foreground low left, Nelim behind row 126 | cats keep the night | cat 30 px at 268 px, subtitle carries the rhythm | 4 | LayDown on its own cell, no sofa; Zzz not proven | read the capture, move the cat to a free cell if it stands |
+| 4 | plant-garden, 18:00 Clear, 60+270+30 ticks | TorchLamp lit (189,89), removed | Bear_Grizzly S, garden plants | outfit above, calm | dig just finished, bear over the pile; Nelim slows by it (forced to walk) | 10 x 6 cells, bear and pile off-centre right, Nelim mid-left, lamp pool | a hungry grizzly digs | bear 50 px, pile 25 px, subtitle carries the forage | 4 | red X on berries; pile cell (193, 85) is a guess; bear 3 cells from Nelim | first screenshot before the unforbid step names the cell; player-faction bear |
+
+k (series): unchanged, wide 1, close 3, medium 4, 07:00 to 18:00. Ticket galerie-12 (7545) still pending, picks this tree.
