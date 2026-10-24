@@ -44,6 +44,8 @@ RaccoonCuddler.ShowHair 3255379190
 nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
 nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
 nelim.pickletools.inspecttabs path:PickleTools/InspectTabs/Mod
+# Let's Have a Cat! Continued (akairo.LetsHaveaCat): Tama (akaNEKO_N_Forest_Cat) and Kuru (akaNEKO_kuroneko), the Sanctuary cats; both carry the night rhythm of Rythme.xml (owner, 2026-10-25).
+akairo.LetsHaveaCat 3682940618
 # What this gallery stages (same animal mods as pass avec-vef).
 OskarPotocki.VanillaFactionsExpanded.Core     2023507013
 sarg.alphaanimals                             1541721856

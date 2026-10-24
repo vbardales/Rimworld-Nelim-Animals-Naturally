@@ -1,4 +1,4 @@
-# Workshop gallery of Nelim's Animals, Naturally, in upload order (0- is the copy of the Preview, then three pictures).
+# Workshop gallery of Nelim's Animals, Naturally, in upload order (0- is the copy of the Preview, then four pictures).
 # Played at Nelim's Sanctuary (SanctuaryBacklot, GALLERY.md), under wsl-deps.galerie.map:
 #   Submit-PickleRun.ps1 -Mod AnimalsNaturally -DepMap wsl-deps.galerie.map -Filter '07-galerie' -EvidenceDir Tests/Pickle/Evidence/galerie-N
 # They assert almost nothing about the mod (01, 02 and 06 do): a green run says the trip happened, not that a picture shows
@@ -13,7 +13,7 @@
 # was dropped 2026-10-23 (no steps). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb(96,128,84), Apparel_Pants khaki rgb(176,150,100),
 # hair Ponytails (the canon Roo_HD_Hair_Highpony is not in wsl-deps.galerie.map), hair rgb(70,48,34),
-# calm face, no hat. Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 4 (dusk).
+# a smile (MouthSmile, LidCheerful) in 1 and 3, a closed mouth (MouthLipsTinySmile) beside the grizzly in 4, no hat. The cat of 3 is Tama (akaNEKO_N_Forest_Cat). Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 4 (dusk).
 # Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width. Each frame step
 # asks for 60 percent of the rectangle that holds the subject; whether it did is read on the picture.
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
@@ -60,6 +60,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" stands at (156, 213) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "cow" is forced to walk to (158, 213)
     And Nelim's Pickle Tools: "hen" is forced to walk to (152, 212)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (149, 213)
@@ -99,7 +101,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And I set the hour to 13
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "cat" is spawned at (186, 124)
+    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (186, 124)
     And Nelim's Pickle Tools: "cat" faces South
     And Nelim's Pickle Tools: "cat" lies down
     And Nelim's Pickle Tools: I let 40 ticks pass
@@ -111,6 +113,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" stands at (190, 126) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (184, 126)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
@@ -144,6 +148,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" stands at (190, 87) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsTinySmile"
     And Nelim's Pickle Tools: "bear" faces South
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (187, 87)
     And Nelim's Pickle Tools: I let 30 ticks pass
