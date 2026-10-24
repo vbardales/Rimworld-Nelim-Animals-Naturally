@@ -41,6 +41,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: the painted zones are hidden
+    And Nelim's Pickle Tools: the pollution is cleared from the area from (138, 204) to (167, 224)
     And Nelim's Pickle Tools: I place the decor "EggBox" at (148, 212)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Hay" at (158, 213)
@@ -132,7 +133,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (189, 89)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (189, 89) is lit
     And Nelim's Pickle Tools: an adult animal of kind "Bear_Grizzly" named "bear" is spawned at (193, 86)
-    And Nelim's Pickle Tools: the animals of kind "Bear_Grizzly" have food at 0 percent
+    And Nelim's Pickle Tools: the animal "bear" has food at 0 percent
     And Nelim's Pickle Tools: "bear" faces South
     And Nelim's Pickle Tools: I let 270 ticks pass
     And game speed is paused
