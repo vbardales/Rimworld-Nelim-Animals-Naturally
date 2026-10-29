@@ -42,6 +42,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: the painted zones are hidden
     And Nelim's Pickle Tools: the pollution is cleared from the area from (138, 204) to (167, 224)
+    And Nelim's Pickle Tools: all filth is cleaned
     And Nelim's Pickle Tools: I place the decor "EggBox" at (148, 212)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Hay" at (158, 213)
