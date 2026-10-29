@@ -125,6 +125,13 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the interface is shown again
     Then no errors were logged
 
+  # CELLS (probe, delete once shot 4 has its cell). plant-garden: list the free standable cells around the bear (193, 86), read the
+  # [free-cells] lines of the log, then pick Nelim's cell for scene 4.
+  Scenario: cells - free standable cells of plant-garden near the bear
+    Given Nelim's Sanctuary: I am at the sanctuary "plant-garden"
+    When Nelim's Pickle Tools: the free standable cells of the area from (186, 83) to (196, 89) are listed
+    Then no errors were logged
+
   # 4 GRIZZLY AT DUSK (closer). plant-garden, 18:00 Clear, torch lit. Instant: just after the dig, the berries under the bear, Nelim walks
   # home. Instant: the dig has just finished (tick 300 in the probe), the grizzly stands over the pile facing South, Nelim slows by it (3 cells, forced to
   # walk 30 ticks). Frame 10 x 6 cells, about 25 px a cell at 268 px: bear 50 px, pile 25 px, lamp pool behind. Foreground bear and pile off-centre right,
