@@ -24,7 +24,7 @@ translation_fr: not_applicable
 tested_on: RimWorld 1.6 (WSL headless Pickle), Mod/ patches unchanged since e656137; green on 313d491..88b3028: 01-baseline sans-facultatifs-r2, 03 dogsmate, 05 zoology-slow2, 04 rotten-slow2, 06 valeurs-r2 (2/2), 02 avec-vef-r7 (7/7)
 workshop: 3811381865 (private prepublication 0.1.0, 2026-10-01; item not public)
 remaining:
-  - open 2026-10-29 (replay-audit, 8.m): code review stale, Mod/ATTRIBUTION.md (commit 5fbe0a1) changed after code_review_sha f2117d21 and is not an exempt file; read git diff f2117d21 HEAD -- Mod, then set code_review_sha to HEAD. Gallery work (9.a, shots 1 and 4 to redo, shot 3 candidate) resumes at shootGallery after that
+  - resolved 2026-10-29 (8.m, resume): git diff f2117d21 HEAD -- Mod read: ATTRIBUTION.md prose only (sections, third-party targets listed, Claude and Codex named as tooling, no dependency claim), Preview.png derived render (625878 to 619880 bytes). No finding, code_review_sha moved to 7f7d3ef. Gallery work (9.a, shots 1 and 4 to redo, shot 3 candidate) resumes at shootGallery
   - resolved 2026-09-28: RimWorld loads with the required Nocturnal Animals dependency, run f607/sans-facultatifs-r2, 10/10 passed, 0 failed
   - resolved 2026-09-29: optional-mod combination avec-vef, run avec-vef-r5, 6/7 passed; the 1 failure was a test-authoring bug (see line below), rerun pending on the corrected scenario
   - resolved 2026-09-29: Zoology's "stall" was slow startup under the headless/Xvfb launcher, not a hang: run zoology-slow2 with -StallMinutes 20 -RunTimeoutMinutes 25 passed 3/3. Some Like It Rotten shared the identical signature (run 1899, exit 3, no report; only Dogs Mate loaded cleanly at default timeouts, run 574d 1/1); resubmitted with the same extended timeout as run rotten-slow, result pending. Download integrity was ruled out 2026-09-29: `diff -rq` between the Windows Workshop folder and a fresh steamcmd download is empty for both, byte-identical.
@@ -48,7 +48,7 @@ remaining:
   - unverified: 0.1.0 prepublication content: whether the uploaded Preview.png was the committed or the uncommitted one is not recorded
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
-code_review_sha: f2117d21df72d64a9614d7e3c89ba0dadfedca22
+code_review_sha: 7f7d3efb35e4a3e0c54bc2bfddca3b0c644ad01a
 updated: 2026-10-29
 protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 ---
