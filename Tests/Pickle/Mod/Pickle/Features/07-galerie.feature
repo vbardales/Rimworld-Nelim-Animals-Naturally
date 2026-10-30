@@ -12,7 +12,7 @@
 # sleeps in broad day, the night rhythm (3); 18:00 at dusk a hungry grizzly has just dug for berries (4). The taming and hybrid scene
 # was dropped 2026-10-23 (no steps). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb(96,128,84), Apparel_Pants khaki rgb(176,150,100),
-# hair Ponytails (the canon Roo_HD_Hair_Highpony is not in wsl-deps.galerie.map), hair rgb(70,48,34),
+# hair Roo_HD_Hair_Highpony (canon, Roo's HD Hairstyles continued + Vanilla Hair Expanded added to wsl-deps.galerie.map 2026-10-30), hair rgb(70,48,34),
 # a smile (MouthSmile, LidCheerful) in 1 and 3, a closed mouth (MouthLipsTinySmile) beside the grizzly in 4, no hat. The cat of 3 is Tama (akaNEKO_N_Forest_Cat). Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 4 (dusk).
 # Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width. Each frame step
 # asks for 60 percent of the rectangle that holds the subject; whether it did is read on the picture.
@@ -56,7 +56,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "hen" faces South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Ponytails"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
     And Nelim's Pickle Tools: "Nelim" stands at (156, 213) facing West
     And Nelim's Sanctuary: Nelim has her own face
@@ -109,7 +109,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Ponytails"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
     And Nelim's Pickle Tools: "Nelim" stands at (190, 126) facing West
     And Nelim's Sanctuary: Nelim has her own face
@@ -151,7 +151,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Ponytails"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
     And Nelim's Pickle Tools: "Nelim" stands at (190, 87) facing West
     And Nelim's Sanctuary: Nelim has her own face
