@@ -378,3 +378,5 @@ Open 2026-10-29 (NPT answer, via TM): faces: the flat blob at 268 px is a resolu
 State 2026-10-29 (sleep): probe ticket filed, `20261029-223634-388-d340` (`07-galerie::cells`, `-DepMap wsl-deps.galerie.map`, evidence `Tests/Pickle/Inbox/cells-probe`), waiting behind galerie-14 (72fd). NPT 8e5962e: the free-cells step now also calls `ctx.Attach("free-cells", listing)` (compiled, not played). On RUN_DONE: read summary.json, then list the Inbox files and look for "free-cells" (summary.md or junit.xml guessed, not verified); if absent, send NPT the file list. Then fix the shot 4 cell, delete the `cells` probe, refile shots 1 and 4. Protocols read at 0de16458.
 
 Tests/Test-Xml.ps1 applies patches with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); green on powershell 5.1 and pwsh 7, 2026-10-31.
+
+State 2026-10-31 (sleep): Test-Xml uses shared PatchEngine, LOCAL_SCRIPTS row justified, left for Audit validation (reported via TM). Tickets still waiting, RUN_DONE via TM: galerie-14 (72fd), cells (d340), catalogue-1 (4048). Nothing owed by the owner. Next unchanged: on RUN_DONE read summary.json, fix shot 4 cell, refile shots 1 and 4.
