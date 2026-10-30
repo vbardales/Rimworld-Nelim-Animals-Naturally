@@ -8,13 +8,13 @@ param()
 # between a ThingDef and a PawnKindDef (see TESTING.md), and because a fixture here can exercise the
 # "target mod present vs absent" boundary directly, which Pickle can only do by staging real mods.
 #
-# It is a minimal interpreter for the seven PatchOperation classes this mod's ten files actually use
-# (checked 2026-09-29: PatchOperationAdd, AddModExtension, Conditional, FindMod, Remove, Replace,
-# Sequence). It is not a general RimWorld patch engine: MayRequire, PatchOperationInsert and anything
-# else this mod does not use are deliberately unimplemented, and will throw if a future patch adds one.
+# Patches are applied by the shared scripts/lib/PatchEngine.ps1 (Add, AddModExtension, Conditional,
+# FindMod, Remove, Replace, Sequence). It is not a general RimWorld patch engine: MayRequire,
+# PatchOperationInsert and anything else it lacks throw, so extend the engine rather than skipping.
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
+. (Join-Path $root '../scripts/lib/PatchEngine.ps1')
 $failures = @()
 
 function Assert([bool]$condition, [string]$message) {
@@ -66,69 +66,9 @@ function New-Fixture {
 '@
 }
 
-function Select-Node($doc, [string]$xpath) {
-    return @($doc.SelectNodes($xpath))
-}
-
-function Invoke-Operation($op, $doc, [string[]]$activeMods) {
-    switch ($op.GetAttribute('Class')) {
-        'PatchOperationSequence' {
-            foreach ($child in @($op.operations.li)) { Invoke-Operation $child $doc $activeMods }
-        }
-        'PatchOperationFindMod' {
-            # PowerShell's XML adapter auto-collapses a text-only <li> to a plain string when there
-            # are several siblings, but leaves it an XmlElement when there is only one: handle both.
-            $names = @($op.mods.li | ForEach-Object { if ($_ -is [string]) { $_ } else { $_.InnerText } })
-            $hit = $false
-            foreach ($n in $names) { if ($activeMods -contains $n) { $hit = $true } }
-            if ($hit) { if ($op.match) { Invoke-Operation $op.match $doc $activeMods } }
-            elseif ($op.nomatch) { Invoke-Operation $op.nomatch $doc $activeMods }
-        }
-        'PatchOperationConditional' {
-            $nodes = Select-Node $doc $op.xpath
-            if ($nodes.Count -gt 0) { if ($op.match) { Invoke-Operation $op.match $doc $activeMods } }
-            elseif ($op.nomatch) { Invoke-Operation $op.nomatch $doc $activeMods }
-        }
-        'PatchOperationAdd' {
-            $prepend = ($op.order -eq 'Prepend')
-            foreach ($node in Select-Node $doc $op.xpath) {
-                foreach ($childValue in @($op.value.ChildNodes)) {
-                    $imported = $doc.ImportNode($childValue, $true)
-                    if ($prepend -and $node.FirstChild) { [void]$node.InsertBefore($imported, $node.FirstChild) }
-                    else { [void]$node.AppendChild($imported) }
-                }
-            }
-        }
-        'PatchOperationReplace' {
-            foreach ($node in Select-Node $doc $op.xpath) {
-                $imported = $doc.ImportNode($op.value.FirstChild, $true)
-                [void]$node.ParentNode.ReplaceChild($imported, $node)
-            }
-        }
-        'PatchOperationRemove' {
-            foreach ($node in Select-Node $doc $op.xpath) { [void]$node.ParentNode.RemoveChild($node) }
-        }
-        'PatchOperationAddModExtension' {
-            foreach ($node in Select-Node $doc $op.xpath) {
-                $extensions = $node.SelectSingleNode('modExtensions')
-                if (-not $extensions) {
-                    $extensions = $doc.CreateElement('modExtensions')
-                    [void]$node.AppendChild($extensions)
-                }
-                foreach ($childValue in @($op.value.ChildNodes)) {
-                    [void]$extensions.AppendChild($doc.ImportNode($childValue, $true))
-                }
-            }
-        }
-        default { throw "Test-Xml.ps1 has no interpreter for PatchOperation$($op.GetAttribute('Class')): update the script before trusting its result." }
-    }
-}
-
 function Apply-Patch([string]$fileName, $doc, [string[]]$activeMods) {
-    $patch = [xml](Get-Content -Raw (Join-Path $root "Mod/Patches/$fileName"))
-    foreach ($op in @($patch.Patch.Operation)) { Invoke-Operation $op $doc $activeMods }
+    Invoke-PatchFile (Join-Path $root "Mod/Patches/$fileName") $doc -ActiveMods $activeMods
 }
-
 $patchFiles = @(Get-ChildItem (Join-Path $root 'Mod/Patches') -Filter '*.xml' | Sort-Object Name)
 Assert ($patchFiles.Count -eq 10) "Expected 10 patch files, found $($patchFiles.Count): patch inventory changed, update this script's file list."
 foreach ($file in $patchFiles) { [xml](Get-Content -Raw $file.FullName) | Out-Null }
