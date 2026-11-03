@@ -51,7 +51,7 @@ remaining:
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
 code_review_sha: 7f7d3efb35e4a3e0c54bc2bfddca3b0c644ad01a
 updated: 2026-10-31
-protocols_read_sha: 96fd9a43a0beb0d12889a50e05135b8d86ded0e3
+protocols_read_sha: 6dcadf897d29aca88ad460c2a3c1703f5c827c96
 ---
 # Nelim's Animals, Naturally — status
 
@@ -380,3 +380,5 @@ State 2026-10-29 (sleep): probe ticket filed, `20261029-223634-388-d340` (`07-ga
 Tests/Test-Xml.ps1 applies patches with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); green on powershell 5.1 and pwsh 7, 2026-10-31.
 
 State 2026-10-31 (sleep): Test-Xml uses shared PatchEngine, LOCAL_SCRIPTS row justified, left for Audit validation (reported via TM). Tickets still waiting, RUN_DONE via TM: galerie-14 (72fd), cells (d340), catalogue-1 (4048). Nothing owed by the owner. Next unchanged: on RUN_DONE read summary.json, fix shot 4 cell, refile shots 1 and 4.
+
+State 2026-11-03 (resume): protocols read at 6dcadf89 (diffs: GALLERY smile/sweat malus d and image+plan-adequacy rating in rate-gallery, settings crop script, AUDIT 6.g at localize, echo defaults). Tickets still waiting, RUN_DONE via TM: galerie-14 (72fd), cells (d340), catalogue-1 (4048). Preview 7b (echo.width/height removed 2026-11-03) not rendered now: last Preview.png commit 2026-10-23, render deferred to mountPreview where the echo is reviewed against the validated gallery (TM agreed 2026-10-30). Next unchanged: on RUN_DONE read summary.json, fix shot 4 cell, refile shots 1 and 4.
