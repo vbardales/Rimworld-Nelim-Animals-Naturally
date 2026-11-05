@@ -12,8 +12,8 @@
 # sleeps in broad day, the night rhythm (3); 18:00 at dusk a hungry grizzly has just dug for berries (4). The taming and hybrid scene
 # was dropped 2026-10-23 (no steps). Each scene reloads the save, sets its own hour and waits its own game time (2,500 ticks = 1 game hour).
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb(96,128,84), Apparel_Pants khaki rgb(176,150,100),
-# hair Roo_HD_Hair_Highpony (canon, Roo's HD Hairstyles continued + Vanilla Hair Expanded added to wsl-deps.galerie.map 2026-10-30), hair rgb(70,48,34),
-# a smile (MouthSmile, LidCheerful) in 1 and 3, a closed mouth (MouthLipsTinySmile) beside the grizzly in 4, no hat. The cat of 3 is Tama (akaNEKO_N_Forest_Cat). Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 4 (dusk).
+# hair Roo_HD_Hair_Highpony (canon, Roo's HD Hairstyles continued + Vanilla Hair Expanded added to wsl-deps.galerie.map 2026-10-30), hair rgb(56,36,18) (roster #382412; owner refused the lighter colour 2026-11-05),
+# canon mouth MouthLipsSmirk and LidCheerful in 1, 3 and 4 (owner refused the smiling mouths 2026-11-05), no hat. The cat of 3 is a Norwegian Forest Cat (akaNEKO_N_Forest_Cat, the species of Tama, not Tama herself). Decor is removed after each shot. Opener = 1 (wide), middle = 3 (close), closer = 4 (dusk).
 # Zoom rule (owner, 2026-10-02): the subject fills at least 50 percent of the screen height or width. Each frame step
 # asks for 60 percent of the rectangle that holds the subject; whether it did is read on the picture.
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
@@ -58,11 +58,11 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" stands at (156, 213) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "cow" is forced to walk to (158, 213)
     And Nelim's Pickle Tools: "hen" is forced to walk to (152, 212)
@@ -111,11 +111,11 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" stands at (190, 126) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (184, 126)
     And Nelim's Pickle Tools: I let 30 ticks pass
@@ -146,11 +146,11 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (70, 48, 34)
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" stands at (188, 87) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsTinySmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "bear" faces South
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (186, 87)
     And Nelim's Pickle Tools: I let 30 ticks pass

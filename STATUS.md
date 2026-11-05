@@ -419,10 +419,12 @@ Tribe read: 2026-11-05
 
 | Colon | Plans | Tenue par plan | Dernière lecture de la fiche | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1, 3, 4 | une seule tenue de la journée : `Apparel_Pants` kaki (176,150,100), `Apparel_CollarShirt` sauge (96,128,84), sans chapeau (tenues libres, choix du plan : terrain, travail de naturaliste) | NELIM-PROFIL.md 2026-11-05 | PENDING (règle 3) : cheveux couleur rgb(70,48,34) au lieu de #382412 (56,36,18) du classeur ; bouche `MouthSmile` (plans 1 et 3) et `MouthLipsTinySmile` (plan 4) au lieu de `MouthLipsSmirk`. Coiffure `Roo_HD_Hair_Highpony`, paupières `LidCheerful`, sourcils du canon : conformes. Pas de validation citée. |
+| Nelim | 1, 3, 4 | une seule tenue de la journée : `Apparel_Pants` kaki (176,150,100), `Apparel_CollarShirt` sauge (96,128,84), sans chapeau (tenues libres, choix du plan : terrain, travail de naturaliste) | NELIM-PROFIL.md 2026-11-05 | aucune : propriétaire a refusé le 2026-11-05 la bouche souriante et les cheveux rgb(70,48,34) (« donc refusé »). Joué comme le classeur : cheveux #382412 (56,36,18), bouche `MouthLipsSmirk`. |
 
 | Animal | Plans | Tenue | Dernière lecture de la fiche | Exceptions |
 |---|---|---|---|---|
 | chat forêt norvégienne (Tama, espèce seulement) | 3 | aucune (rien de compatible, catalogue) | catalogue et ligne APPARENCES-CANON 2026-11-05, TAMA-PROFIL.md non ouvert | aucune : Tama est dans NSB mais absente de la sauvegarde, steps à demander à NSB si le nom doit compter |
 | éléphant, cheval, vache, poule | 1 (éléphant aussi 2) | aucune | non applicable (faune anonyme, décor) | aucune |
 | Bear_Grizzly | 4 | aucune | non applicable (faune sauvage, 1 sur la carte) | aucune |
+
+Owner answer 2026-11-05 (rule 3, NSB sync): Virginie refused the smiling mouth (MouthSmile, MouthLipsTinySmile) and the hair colour rgb(70,48,34) for Nelim ("donc refusé"). 07-galerie.feature now plays the roster: hair rgb(56,36,18) (#382412), mouth MouthLipsSmirk in shots 1, 3 and 4. Tickets a38c (galerie-15) and 75c4 (galerie-16) are pending and stage from the working tree at run time: kept, not refiled. Shot 3 comment reworded: Norwegian Forest Cat (species of Tama), not Tama herself. Keep tree on this commit until RUN_DONE.
