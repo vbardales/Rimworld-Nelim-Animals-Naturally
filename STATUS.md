@@ -402,3 +402,27 @@ NSB answer 2026-11-03 (via TM, from capture only, not verified in game) on the g
 State 2026-11-05 (resume): protocols read at cb98046b (diffs: GALLERY NSB/outfit rule, PICKLE mod.json manifest, STYLE Preview config keys, AGENTS Test-Mod/Rule-OwnValues; none changes shootGallery work). Registered with TM. Test-Mod conversion (Rule-OwnValues, CI/CD regenerate) deferred: a38c and 75c4 queued, tree stays on 592378d until RUN_DONE; Tests/Test-Xml.ps1 row is CUT in the 2026-11-04 review (keep packageId and hard dependency). Art/Preview.config.json modified in tree by another session (new format), not mine, left uncommitted; Preview 7b stays at mountPreview. STATUS.md 55 KB over 40: journal to docs/runs/ still to do. Next unchanged: on RUN_DONE read summary.json, refile shots 1 and 4.
 
 State 2026-11-05 (owner validation): Virginie validated the Preview (commit a928adb: title "Nelim's Animals, Naturally" with prefix inline, size 43, echo not clipped). Preview 7b done; echo still reviewed against the validated gallery at mountPreview (10.d contrast recheck stays open). Test-Mod conversion done: Rule-OwnValues validated by Audit, Tests/DefRefs.allow (283 exact rules, canCrossBreedWith), Test-Mod 6/6 (eea7c50, d3fa0a8). Waiting: a38c (galerie-15), 75c4 (galerie-16), RUN_DONE via TM.
+
+## NSB
+
+Sync 2026-11-05 (/sync-nsb). Aucun changement de lieu ni de scénario : seuls les lieux, colons et animaux déjà utilisés ont été relus. Deux propriétés de Nelim changées par la galerie n'ont aucune validation citée (voir Colons). Tama n'est pas dans la sauvegarde : le chat du plan 3 est un `akaNEKO_N_Forest_Cat` de l'espèce, pas Tama nommée.
+
+Places read: 2026-11-05
+Tribe read: 2026-11-05
+
+| Lieu | Plans | Changements pour la galerie | Dernière lecture |
+|---|---|---|---|
+| enclosure-south (149, 214) | 1 | EggBox, Plant_YellowTallGrass, Hay posés puis retirés, sol nu simulé (a38c) | 2026-11-05 |
+| window-backdrop-for-height | 2 | aucun | 2026-11-05 (nom confirmé dans GALERIE.md et GALERIE-ORDRE.md) |
+| sofa-corner (187, 123) | 3 | aucun (le chat dort sur le sol, pas sur les sofas) | 2026-11-05 |
+| plant-garden (190, 85) | 4 | torche posée puis retirée | 2026-11-05 |
+
+| Colon | Plans | Tenue par plan | Dernière lecture de la fiche | Exceptions |
+|---|---|---|---|---|
+| Nelim | 1, 3, 4 | une seule tenue de la journée : `Apparel_Pants` kaki (176,150,100), `Apparel_CollarShirt` sauge (96,128,84), sans chapeau (tenues libres, choix du plan : terrain, travail de naturaliste) | NELIM-PROFIL.md 2026-11-05 | PENDING (règle 3) : cheveux couleur rgb(70,48,34) au lieu de #382412 (56,36,18) du classeur ; bouche `MouthSmile` (plans 1 et 3) et `MouthLipsTinySmile` (plan 4) au lieu de `MouthLipsSmirk`. Coiffure `Roo_HD_Hair_Highpony`, paupières `LidCheerful`, sourcils du canon : conformes. Pas de validation citée. |
+
+| Animal | Plans | Tenue | Dernière lecture de la fiche | Exceptions |
+|---|---|---|---|---|
+| chat forêt norvégienne (Tama, espèce seulement) | 3 | aucune (rien de compatible, catalogue) | catalogue et ligne APPARENCES-CANON 2026-11-05, TAMA-PROFIL.md non ouvert | aucune : Tama est dans NSB mais absente de la sauvegarde, steps à demander à NSB si le nom doit compter |
+| éléphant, cheval, vache, poule | 1 (éléphant aussi 2) | aucune | non applicable (faune anonyme, décor) | aucune |
+| Bear_Grizzly | 4 | aucune | non applicable (faune sauvage, 1 sur la carte) | aucune |
