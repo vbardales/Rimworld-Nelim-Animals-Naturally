@@ -8,7 +8,7 @@ Figures read from shipped patch files 2026-10-10 (see "Figures checked"). `TESTI
 
 Mod is XML only: no assembly, no `Defs`, no text, no settings. Scenario asks one of three things: does patch reach target, does it write stated value, is it silent where target absent.
 
-Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game). `Pickle NN` is feature under
+Legend for **Run by**: `Rule-OwnValues` is `pwsh Tests/Rule-OwnValues.ps1 -ModRoot . -SharedDir ../scripts` (offline, no game). `Pickle NN` is feature under
 `Tests/Pickle/Mod/Pickle/Features/`. Pickle runs filed as tickets with Ticket Manager, never launched by session.
 
 ## Scenarios
@@ -19,7 +19,7 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: Core and Nocturnal Animals only (bare pass).
 - **Actions**: read `race.baseBodySize` of Horse after patching.
 - **Expected**: Horse `baseBodySize` is `1.926`. Def of absent animal pack (Macaw, `0.243`) untouched when pack absent.
-- **Run by**: `Test-Xml` (bare fixture); `Pickle 06-valeurs` (`def "Horse" of type "ThingDef" field "race.baseBodySize" is "1.926"`).
+- **Run by**: `Rule-OwnValues` (bare fixture); `Pickle 06-valeurs` (`def "Horse" of type "ThingDef" field "race.baseBodySize" is "1.926"`).
 
 ### S2. Lifespan follows allometric laws by clade
 
@@ -27,7 +27,7 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: bare pass.
 - **Actions**: read `race.lifeExpectancy` of Chicken and Cow; read last `lifeStageAges` `minAge` of Chicken.
 - **Expected**: Chicken `7.2`, Cow `30.6`. Chicken adult `minAge` `0.501`. Chicken lives far shorter than animal-pack parrot (BB_Cockatoo `52.1`).
-- **Run by**: `Test-Xml` (Chicken 7.2, Cow 30.6, Cow gestation 25.35); `Pickle 06-valeurs` second scenario (same values, played green 2026-10-10, ticket 8ee7); `Pickle 01-baseline` "the numeric families reach vanilla animals" (attribution only).
+- **Run by**: `Rule-OwnValues` (Chicken 7.2, Cow 30.6, Cow gestation 25.35); `Pickle 06-valeurs` second scenario (same values, played green 2026-10-10, ticket 8ee7); `Pickle 01-baseline` "the numeric families reach vanilla animals" (attribution only).
 
 ### S3. Retaliation: manhunter chance on damage
 
@@ -35,14 +35,14 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: bare pass, then animal pack defining target (for example Alpha Animals, `AA_BoulderMit`, `0.2`).
 - **Actions**: read `race.manhunterOnDamageChance`.
 - **Expected**: value written by patch; 14 such writes in `Regles.xml`. In bare pass, no vanilla def with that field touched by this family except where patch finds it.
-- **Run by**: `Test-Xml` with synthetic `AA_BoulderMit` (no vanilla def carries this patch): `0.2`. `Pickle 01-baseline` "the hard rules reach a vanilla animal" (Warg, attribution only).
+- **Run by**: `Rule-OwnValues` with synthetic `AA_BoulderMit` (no vanilla def carries this patch): `0.2`. `Pickle 01-baseline` "the hard rules reach a vanilla animal" (Warg, attribution only).
 
 ### S4. Trainable animals do not escape their pens
 
 - **Source**: `Regles.xml` (promise: "trainable animals do not escape their pens").
 - **Mechanism**: patch **removes** `race/roamMtbDays` (60 `PatchOperationRemove` in `Regles.xml`, for example `AA_IronhuskBeetle`); sets no value.
 - **Expected**: after patching, def has no `roamMtbDays` element; game default (no roaming) applies.
-- **Run by**: `Test-Xml` with synthetic `AA_IronhuskBeetle` starting with `roamMtbDays` (no vanilla def carries this patch): element gone after patching. Not testable in Pickle without "field is absent" step.
+- **Run by**: `Rule-OwnValues` with synthetic `AA_IronhuskBeetle` starting with `roamMtbDays` (no vanilla def carries this patch): element gone after patching. Not testable in Pickle without "field is absent" step.
 
 ### S5. Maximum prey size accounts for hunting method; apex predators keep the sentinel
 
@@ -50,7 +50,7 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: bare pass.
 - **Actions**: read Warg `race.maxPreyBodySize`. Count writes of `99999` in `Mod/Patches`.
 - **Expected**: Warg `1.4` (186 `maxPreyBodySize` writes in all). **No patch writes `99999`** (0 occurrences 2026-10-10): sentinel retained by *not* patching those defs, so def carrying it in Core or pack keeps it.
-- **Run by**: `Test-Xml` (Warg `1.4`; no patch file contains `99999`); `Pickle 06-valeurs` second scenario (Warg `1.4`, played green 2026-10-10, ticket 8ee7).
+- **Run by**: `Rule-OwnValues` (Warg `1.4`; no patch file contains `99999`); `Pickle 06-valeurs` second scenario (Warg `1.4`, played green 2026-10-10, ticket 8ee7).
 
 ### S6. Hybridisation groups from real taxonomy
 
@@ -58,38 +58,38 @@ Legend for **Run by**: `Test-Xml` is `pwsh Tests/Test-Xml.ps1` (offline, no game
 - **Preconditions**: bare pass.
 - **Actions**: read `race.canCrossBreedWith` of Duck and Thrumbo after patching.
 - **Expected**: lists written on vanilla field, symmetric by construction. Duck lists `ZDuck_Bufflehead`, `ZDuck_Cayuga`, `ZDuck_EiderPintail`, `ZDuck_GreaterMallard`, `ZDuck_RudderDuck`; Thrumbo lists `AlphaThrumbo`. Bare pass loads without error although entries name defs of absent mods.
-- **Run by**: `Test-Xml` (Duck written unconditionally); `Pickle 01-baseline` "the hybridisation groups reach a vanilla animal" (Thrumbo) and "the load logs no error".
+- **Run by**: `Rule-OwnValues` (Duck written unconditionally); `Pickle 01-baseline` "the hybridisation groups reach a vanilla animal" (Thrumbo) and "the load logs no error".
 
 ### S7. Circadian rhythm (not in the description, in the code)
 
 - **Source**: `Rythme.xml`, guarded by `PatchOperationFindMod` on display names `[XND] Nocturnal Animals` and `[XND] Nocturnal Animals (Continued)`.
 - **Expected**: `Alphabeaver`, `Boomrat`, `Megascarab` get `bodyClock` Nocturnal; Muffalo gets Crepuscular. File totals: 151 Nocturnal, 97 Crepuscular, 1 Cathemeral. Dependency absent → file inert (game would otherwise drop whole defs).
-- **Run by**: `Test-Xml` (bare fixture and no-dependency fixture); `Pickle 01-baseline` "the circadian rhythm reaches vanilla animals through the Nocturnal Animals extension".
+- **Run by**: `Rule-OwnValues` (bare fixture and no-dependency fixture); `Pickle 01-baseline` "the circadian rhythm reaches vanilla animals through the Nocturnal Animals extension".
 
 ### S8. Forage complement (not in the description, in the code)
 
 - **Source**: `Forage.xml`, guarded by `PatchOperationFindMod` on Vanilla Expanded Framework; 91 animals; entries guarded on meat or item def existing.
 - **Expected**: with VEF, Bear_Grizzly digs RawBerries x10; AA_CrystallineCaracal digs Meat_Rat x5; Meat_Megaspider-guarded animal of staged pack digs Meat_Megaspider x10. Without VEF nothing written.
-- **Run by**: `Test-Xml` (VEF fixture); `Pickle 01-baseline` "the forage complement is off without Vanilla Expanded Framework"; `Pickle 02-forage-vef` (needs VEF, Alpha Animals, Vanilla Animals Expanded, Animals Forage, Royal Animals).
+- **Run by**: `Rule-OwnValues` (VEF fixture); `Pickle 01-baseline` "the forage complement is off without Vanilla Expanded Framework"; `Pickle 02-forage-vef` (needs VEF, Alpha Animals, Vanilla Animals Expanded, Animals Forage, Royal Animals).
 
 ### S9. Every patch is conditional: removing an animal mod is silent
 
 - **Source**: `About.xml` ("All patches are conditional: removing an animal mod simply makes its corresponding patches inert, without load errors").
 - **Actions**: load with none of animal packs; load with Nocturnal Animals absent.
 - **Expected**: no error in log; unrelated defs untouched.
-- **Run by**: `Test-Xml` (absent-everything and no-dependency fixtures); `Pickle 01-baseline` "a patch whose target mod is absent does nothing, quietly" and "the load logs no error".
+- **Run by**: `Rule-OwnValues` (absent-everything and no-dependency fixtures); `Pickle 01-baseline` "a patch whose target mod is absent does nothing, quietly" and "the load logs no error".
 
 ### S10. Duplicate wild species are removed
 
 - **Source**: `Doublons.xml` (one wild copy per species; kept animals stay tameable and breedable).
 - **Expected**: for duplicate pair (SCWelshCorgi yields to AEXP_Corgi), `race/wildBiomes` of duplicate and its `BiomeDef/wildAnimals` entry removed.
-- **Run by**: `Test-Xml` (synthetic SCWelshCorgi / TemperateForest fixture). No real pack staged in Pickle.
+- **Run by**: `Rule-OwnValues` (synthetic SCWelshCorgi / TemperateForest fixture). No real pack staged in Pickle.
 
 ### S11. Load order: after all animal mods
 
 - **Source**: `About.xml` (`<loadAfter>`: Dogs Mate, Nocturnal Animals, Some Like It Rotten, Zoology; "Load AFTER all animal mods").
 - **Expected**: mod loads below each and is silent. No XPath targets Dogs Mate, Some Like It Rotten or Zoology; `loadAfter` is ordering only.
-- **Run by**: `Test-Xml` (About.xml contract); `Pickle 03-dogsmate`, `04-rotten`, `05-zoology`.
+- **Run by**: `Rule-OwnValues` (About.xml contract); `Pickle 03-dogsmate`, `04-rotten`, `05-zoology`.
 
 ### S12. The precautionary 15 percent rule
 
@@ -114,6 +114,6 @@ cannot be checked from this repository.
 
 ## Results on the delivered revision
 
-- 2026-10-10, `7b3f83a` + working tree: `pwsh -NoProfile -File Tests/Test-Xml.ps1` PASS (10 patch files, About.xml contract, bare / no-dependency / VEF fixtures, absent-mod safety, plus S2 to S5 assertions). Negative check: with expected values altered (Chicken 7.3, AA_BoulderMit 0.3, `99999` swapped for string present in files) script reported 4 failures.
+- 2026-10-10, `7b3f83a` + working tree: `pwsh -NoProfile -File Tests/Rule-OwnValues.ps1 -ModRoot . -SharedDir ../scripts` PASS (10 patch files, About.xml contract, bare / no-dependency / VEF fixtures, absent-mod safety, plus S2 to S5 assertions). Negative check: with expected values altered (Chicken 7.3, AA_BoulderMit 0.3, `99999` swapped for string present in files) script reported 4 failures.
 - Pickle: see `docs/runs/history.md`. Played green on `Mod/` identical to current except 2026-10-02 `About.xml` THANKS edit: `01-baseline` (sans-facultatifs-r2), `03-dogsmate`, `05-zoology` (zoology-slow2), `06-valeurs` (valeurs), `04-rotten` (rotten-slow2). Also green: `02-forage-vef` (avec-vef-r7, 7/7), `06-valeurs` second scenario (valeurs-r2, 2/2). `07-galerie` is gallery work (`@review`), see `STATUS.md`.
 - No manual test remains: new-game and existing-save behaviour accepted as not applicable (Virginie, 2026-10-01, `TESTING.md`).

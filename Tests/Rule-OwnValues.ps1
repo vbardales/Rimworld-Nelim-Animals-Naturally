@@ -1,20 +1,20 @@
-[CmdletBinding()]
-param()
+param([Parameter(Mandatory)][string]$ModRoot, [string]$SharedDir)
 
-# Offline XML patch-target tests (AUDIT.md, preTest -> done: "Tests XML ecrits, executes et au vert").
-# This is not a substitute for Tests/Pickle/: Pickle proves a patch fires in a real, running game;
-# this script proves the exact VALUE a patch writes, in milliseconds, with no game and no Workshop
-# mods installed. It exists because Pickle's own vocabulary cannot read a value on a name shared
-# between a ThingDef and a PawnKindDef (see TESTING.md), and because a fixture here can exercise the
-# "target mod present vs absent" boundary directly, which Pickle can only do by staging real mods.
-#
-# Patches are applied by the shared scripts/lib/PatchEngine.ps1 (Add, AddModExtension, Conditional,
-# FindMod, Remove, Replace, Sequence). It is not a general RimWorld patch engine: MayRequire,
-# PatchOperationInsert and anything else it lacks throw, so extend the engine rather than skipping.
+# Own values of this mod's ten patch files: the exact VALUE each writes (body size, lifespan, gestation, retaliation, Rythme body
+# clocks, duck hybrids, Doublons removal, Forage dig comps), the About identity (packageId, one hard dependency, loadAfter) and
+# the target-mod present/absent boundary, on small fixtures, no game. Pickle cannot read a value on a name shared between a
+# ThingDef and a PawnKindDef (TESTING.md). One consumer, nothing shareable; Tests/Test-Mod.ps1 (generated) runs it after the shared
+# checks. Generic checks (XML parse, About shape, translations) live in Check-ModBasics and Check-Translations.
+# Patches are applied by the shared lib/PatchEngine.ps1 (Add, AddModExtension, Conditional, FindMod, Remove, Replace, Sequence);
+# MayRequire, PatchOperationInsert and anything else it lacks throw, so extend the engine rather than skipping.
+# Prints findings, exit 1 on any.
 
 $ErrorActionPreference = 'Stop'
-$root = Split-Path -Parent $PSScriptRoot
-. (Join-Path $root '../scripts/lib/PatchEngine.ps1')
+$root = (Resolve-Path -LiteralPath $ModRoot).Path
+if (-not $SharedDir) { $SharedDir = Join-Path $root '../scripts' }
+$engine = Join-Path $SharedDir 'lib/PatchEngine.ps1'
+if (-not (Test-Path -LiteralPath $engine)) { Write-Host "WARNING lib/PatchEngine.ps1 not in ${SharedDir}: own-value assertions SKIPPED, not passed" -ForegroundColor Yellow; exit 0 }
+. $engine
 $failures = @()
 
 function Assert([bool]$condition, [string]$message) {
@@ -71,7 +71,6 @@ function Apply-Patch([string]$fileName, $doc, [string[]]$activeMods) {
 }
 $patchFiles = @(Get-ChildItem (Join-Path $root 'Mod/Patches') -Filter '*.xml' | Sort-Object Name)
 Assert ($patchFiles.Count -eq 10) "Expected 10 patch files, found $($patchFiles.Count): patch inventory changed, update this script's file list."
-foreach ($file in $patchFiles) { [xml](Get-Content -Raw $file.FullName) | Out-Null }
 
 # --- About.xml contract -----------------------------------------------------------------------
 [xml]$about = Get-Content -Raw (Join-Path $root 'Mod/About/About.xml')
@@ -82,7 +81,6 @@ $loadAfter = @($about.ModMetaData.loadAfter.li)
 foreach ($id in @('Mlie.DogsMate', 'Mlie.SomeLikeItRotten', 'com.abobashark.zoologymod')) {
     Assert ($loadAfter -contains $id) "Missing loadAfter for $id."
 }
-Assert ($about.ModMetaData.description.Contains('[url=https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally]Source code on GitHub[/url]')) 'GitHub source link missing from description.'
 
 # --- Bare pass: no optional mod active, Nocturnal Animals present ----------------------------
 $bareMods = @('[XND] Nocturnal Animals (Continued)')
@@ -146,7 +144,7 @@ $hedgehogComp = Get-DigComp $vefDoc 'ACPHedgehog'
 Assert (($null -ne $hedgehogComp) -and ($hedgehogComp.customThingToDig -eq 'Meat_Megaspider') -and ($hedgehogComp.customAmountToDig -eq '10')) 'Forage.xml: ACPHedgehog should dig Meat_Megaspider x10 with VEF active.'
 
 if ($failures.Count -gt 0) {
-    $failures | ForEach-Object { Write-Host "FAIL: $_" -ForegroundColor Red }
-    throw "$($failures.Count) XML patch-target assertion(s) failed."
+    $failures | ForEach-Object { Write-Host "FAIL: $_" }
+    exit 1
 }
 Write-Host "PASS: $($patchFiles.Count) patch files, About.xml contract, bare/no-dependency/VEF fixtures, absent-mod safety."

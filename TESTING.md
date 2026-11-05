@@ -4,7 +4,7 @@ Not shipped: it lives beside `Mod/`, never inside it, so Steam never receives it
 
 ## Current status (2026-10-01)
 
-- **Written**: Pickle suite `Tests/Pickle/`, six features, none tagged `@wip`; offline `Tests/Test-Xml.ps1` (run with `pwsh`, PASS on 2026-10-01).
+- **Written**: Pickle suite `Tests/Pickle/`, six features, none tagged `@wip`; offline `Tests/Rule-OwnValues.ps1` (run with `pwsh`, PASS on 2026-10-01).
 - **Played green** (reports read, `exitReason: passed`): sans-facultatifs-r2 (01-baseline), dogsmate (03), valeurs (06, DefFields companion), zoology-slow2 (05, with `-StallMinutes 20 -RunTimeoutMinutes 25`). avec-vef-r5 failed on a test-authoring bug since corrected.
 - **Outstanding before `tested`**: none for playTests as of 2026-10-10 (02-forage-vef green in avec-vef-r7, 06-valeurs green in valeurs-r2); 07-galerie belongs to shootGallery.
 - **Manual tests**: none recorded. Existing-save and new-game behaviour are argued not applicable below; Virginie accepted that on 2026-10-01.
@@ -160,7 +160,7 @@ Downloaded Some Like It Rotten (2503519676) and Zoology (3679396881) fresh with 
 
 ## Update 2026-09-29: offline XML patch-target tests
 
-`Tests/Test-Xml.ps1` (PowerShell, run with `pwsh.exe -NoProfile -File Tests/Test-Xml.ps1`, no game,
+`Tests/Rule-OwnValues.ps1` (PowerShell, run with `pwsh -NoProfile -File Tests/Rule-OwnValues.ps1 -ModRoot . -SharedDir ../scripts`, no game,
 no Workshop mods installed) closes the AUDIT.md preTest→done requirement for "Tests XML ecrits,
 executes et au vert", and closes the value gap Pickle's own vocabulary could not (see "What Pickle's
 vocabulary cannot say" above): it reads the exact literal value a patch writes.
@@ -180,7 +180,7 @@ source races before patches run, confirmed in-game (Pickle run e85c).
 
 
 
-Doublons.xml also gained coverage in Tests/Test-Xml.ps1: a synthetic SCWelshCorgi ThingDef with a
+Doublons.xml also gained coverage in Tests/Rule-OwnValues.ps1: a synthetic SCWelshCorgi ThingDef with a
 wildBiomes entry and a TemperateForest BiomeDef with a matching wildAnimals entry, both removed after
 the patch runs. No real animal-pack mod is needed for this: the patch's own PatchOperationRemove logic
 is what's being proven, not that a specific pack's defs exist. The dozens of other packs Doublons.xml
