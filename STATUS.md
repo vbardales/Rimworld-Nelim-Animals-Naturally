@@ -178,3 +178,18 @@ State 2026-11-06 (resume, after sleep): protocols read at b706c05a (diffs: GALLE
 French review 2026-11-06 (ChatGPT, page 1): 3 English wording fixes applied with owner's go ("applique ce qui est pertinent"): PUBLICATION.md intro (item exists, private, ID filled once public), "a cockatoo ... lives for 52", "in the Dogs Mate format" (also in Mod/About/About.xml description, kept in sync; description-only change, reopens 8.m for that diff at the next code review). No localization finding, CHANGELOG untouched.
 
 French review validated 2026-11-06 (owner, "je valide la relecture"): FRENCH_REVIEW.md has 1 page (page 2 does not exist). Pass 1 fixes applied (b2cd27c), pass 2 found nothing.
+
+## Shotlist 2026-11-06c, shot 3 (write-shotlist "shot 3"; paper only, feature file NOT touched, nothing filed: owner "attendre" on NSB validation)
+
+Why: rate-gallery 2026-11-06 found the planned 7 x 5 frame unreachable with `I frame the rectangle` (floor about 8 x 14.2 cells; the galerie-13 capture shows about 14 x 8). Fix: NPT step `I frame the area centred on (x, z) at root size R` (PickleTools ScreenshotStudio/Source/AreaSteps.cs:330, exists, not played). No new Opus director pass: today's pass of 2026-11-06 (kept in the section above) already covers scene 3, only the frame step changed.
+
+Scene 3 as it will be written (replaces the 7 x 5 rectangle): `When Nelim's Pickle Tools: I frame the area centred on (187, 124) at root size 3` (6 x 10.7 cells, about 25 px a cell at 268 px). Cells inside: cat (186, 124), Nelim start (190, 126), walk target (184, 126) (30 ticks = about 2 cells, she ends near (188, 126)), couches (185, 123) and (187, 122), TorchLamp (187, 121) on the top edge, BookcaseSmall (182, 124) half cut on the left edge. Cat left of centre on the magenta rug, Nelim right of centre behind it on row 126. When the feature is rewritten: `git rm Art/Gallery/3-candidate-cat-asleep.png` in the same commit (GALLERY.md, rule of 2026-11-06).
+
+| # | a | b | c | d | e | f | g | j | Est | Risk |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | enclosure-south, 07:00 Clear, 60+30 ticks | EggBox, YellowTallGrass, Hay, removed | elephant, horse, hen S, cow W | sage shirt, khaki, Highpony, Smirk | walk after hay drop, 30 ticks | 19 x 10, hen+Nelim foreground | Nelim = yardstick | elephant 42 px | 4 | grey patch, face blob |
+| 3 | sofa-corner, 13:00 Clear, 60+40+30 ticks | 2 couches, TorchLamp, BookcaseSmall, PlantPot, rug | Forest Cat lying S, Zzz | same outfit, Smirk, LidCheerful | cat lies down, Nelim tiptoes West, paused mid-stride | centred (187, 124) root size 3, cat left, Nelim right | cats keep the night | cat about 25 px on magenta rug | 4 | hour unreadable indoors, face blob (accepted), cat lying not proven in the new frame |
+| 4 | plant-garden, 18:00 Clear, 60+270+30 ticks | TorchLamp lit, removed | Bear_Grizzly S | same outfit | dig just done, Nelim slows by it | 10 x 6 rectangle: UNREACHABLE (floor 8 x 14.2), use `I frame the area centred on (191, 86) at root size 3` | hungry grizzly digs | bear 50 px, pile 25 px | 4 | pile cell (193, 85) a guess |
+| 2 | interface card (elephant Stats), window-backdrop-for-height, set aside, no subtitle | | | | | | | | n/s | |
+
+k (series): unchanged, one story, wide 1, close 3, medium 4, 07:00 to 18:00. Scene 4 frame fix noted here, not yet in the feature. Not filed: sofa-corner, plant-garden, enclosure-south and every animal are not in NSB VALIDE.md.
