@@ -405,10 +405,10 @@ State 2026-11-05 (owner validation): Virginie validated the Preview (commit a928
 
 ## NSB
 
-Sync 2026-11-05 (/sync-nsb). Aucun changement de lieu ni de scénario : seuls les lieux, colons et animaux déjà utilisés ont été relus. Deux propriétés de Nelim changées par la galerie n'ont aucune validation citée (voir Colons). Tama n'est pas dans la sauvegarde : le chat du plan 3 est un `akaNEKO_N_Forest_Cat` de l'espèce, pas Tama nommée.
+Sync 2026-11-06 (/sync-nsb). Depuis le sync du 2026-11-05 : NSB a ajouté `Docs/VALIDE.md` (2026-11-06), « seul ce qui figure ici peut être utilisé » ; lieux validés : cloister, terrace, infirmary-pawns, hut, ritual-hall ; aucun des quatre lieux de la galerie (enclosure-south, window-backdrop-for-height, sofa-corner, plant-garden) n’y figure, ni aucun animal. Règle 1 de la propriétaire (2026-11-05, tout NSB est libre) lue contre ce fichier : rien n’est changé, question posée à Virginie (voir réponse). Nelim : apparence validée, `Roo_HD_Hair_Highpony`, #382412, `MouthLipsSmirk`, tenue du plan libre (règle 4), aucune propriété changée. EMBELLISSEMENT-LIEUX relu : aucun de nos lieux touché. Le mod n’ajoute aucun animal (patches seuls, pas de Defs) : règle 5 sans objet, tableau ci-dessous.
 
-Places read: 2026-11-05
-Tribe read: 2026-11-05
+Places read: 2026-11-06 (VALIDE.md, EMBELLISSEMENT-LIEUX.md ; SANCTUAIRE-LIEUX.md et SANCTUAIRE-CASES.md non rouverts, inchangés depuis 2026-11-05)
+Tribe read: 2026-11-06 (NELIM-PROFIL.md lignes canon, CATALOGUE-ANIMAUX.md, NSB-ROSTER.md ligne Nelim)
 
 | Lieu | Plans | Changements pour la galerie | Dernière lecture |
 |---|---|---|---|
@@ -419,14 +419,20 @@ Tribe read: 2026-11-05
 
 | Colon | Plans | Tenue par plan | Dernière lecture de la fiche | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1, 3, 4 | une seule tenue de la journée : `Apparel_Pants` kaki (176,150,100), `Apparel_CollarShirt` sauge (96,128,84), sans chapeau (tenues libres, choix du plan : terrain, travail de naturaliste) | NELIM-PROFIL.md 2026-11-05 | aucune : propriétaire a refusé le 2026-11-05 la bouche souriante et les cheveux rgb(70,48,34) (« donc refusé »). Joué comme le classeur : cheveux #382412 (56,36,18), bouche `MouthLipsSmirk`. |
+| Nelim | 1, 3, 4 | une seule tenue de la journée : `Apparel_Pants` kaki (176,150,100), `Apparel_CollarShirt` sauge (96,128,84), sans chapeau (tenues libres, choix du plan : terrain, travail de naturaliste) | NELIM-PROFIL.md 2026-11-06 | aucune : propriétaire a refusé le 2026-11-05 la bouche souriante et les cheveux rgb(70,48,34) (« donc refusé »). Joué comme le classeur : cheveux #382412 (56,36,18), bouche `MouthLipsSmirk`. |
 
 | Animal | Plans | Tenue | Dernière lecture de la fiche | Exceptions |
 |---|---|---|---|---|
-| chat forêt norvégienne (Tama, espèce seulement) | 3 | aucune (rien de compatible, catalogue) | catalogue et ligne APPARENCES-CANON 2026-11-05, TAMA-PROFIL.md non ouvert | aucune : Tama est dans NSB mais absente de la sauvegarde, steps à demander à NSB si le nom doit compter |
+| chat forêt norvégienne (Tama, espèce seulement) | 3 | aucune (rien de compatible, catalogue) | CATALOGUE-ANIMAUX.md 2026-11-06, TAMA-PROFIL.md non ouvert | aucune : Tama est dans NSB mais absente de la sauvegarde, steps à demander à NSB si le nom doit compter |
 | éléphant, cheval, vache, poule | 1 (éléphant aussi 2) | aucune | non applicable (faune anonyme, décor) | aucune |
 | Bear_Grizzly | 4 | aucune | non applicable (faune sauvage, 1 sur la carte) | aucune |
 
 Owner answer 2026-11-05 (rule 3, NSB sync): Virginie refused the smiling mouth (MouthSmile, MouthLipsTinySmile) and the hair colour rgb(70,48,34) for Nelim ("donc refusé"). 07-galerie.feature now plays the roster: hair rgb(56,36,18) (#382412), mouth MouthLipsSmirk in shots 1, 3 and 4. Tickets a38c (galerie-15) and 75c4 (galerie-16) are pending and stage from the working tree at run time: kept, not refiled. Shot 3 comment reworded: Norwegian Forest Cat (species of Tama), not Tama herself. Keep tree on this commit until RUN_DONE.
 
 State 2026-11-06 (resume, Inbox sorted): galerie-14 (d340 cells/kinds/horse + 72fd workshop 1, 4/4 passed) and galerie-14-1 (workshop 1, 1/1 passed) read earlier, captures refused or probe-read; heavy files and both folders deleted, Inbox empty, Prune-Evidence dry run: 0 go, 6 stay (STALE? flags only, left). Kinds listing (324 rows, mod, packageId, defName, label, size) extracted to Docs/catalogues/animal-kinds.tsv for the registry. NSB answer on the grey patch (via direct message): terrain, pollution overlay, snow, in that order; probe step requested of NPT (terrain, pollution, snow, Things per cell). Waiting: a38c (galerie-15), 75c4 (galerie-16) at 500 per TM, RUN_DONE via TM.
+
+Included animals (rule 5, 2026-11-06): the mod ships no animal (Mod/ holds only About/ and Patches/, no Defs); it patches existing animals of other mods. No row to show or miss. Gallery uses elephant, horse, cow, hen, Norwegian Forest Cat, Bear_Grizzly as examples of patched animals.
+
+| Animal inclus | Plan(s) |
+|---|---|
+| aucun (patches seuls) | sans objet |
