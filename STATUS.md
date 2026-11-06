@@ -463,3 +463,5 @@ Validation state vs NSB VALIDE.md (2026-11-06 04:29, read in this run):
 | Nelim (appearance, Roo_HD_Hair_Highpony) | 1, 3, 4 | yes | usable |
 | elephant, horse, cow, hen, Norwegian Forest Cat, Bear_Grizzly | 1 to 4 | no animal validated (Shogun included, photos in progress) | wait |
 | validated places (cloister, terrace, infirmary-pawns, hut, ritual-hall) | none | yes | no animal-bearing scene possible until animals are validated |
+
+Owner answer 2026-11-06 ("attendre"): no fallback scene, nothing filed, nothing rewritten until NSB VALIDE.md lists animals and the gallery places. Reread VALIDE.md at each resume (last seen 2026-11-06 03:40, no animal). Then: rewrite scenes with validated place, Nelim and validated animals only (scene 3 frame R = 3 centred (187, 124)), file one ticket.
