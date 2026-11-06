@@ -405,7 +405,7 @@ State 2026-11-05 (owner validation): Virginie validated the Preview (commit a928
 
 ## NSB
 
-Sync 2026-11-06 (/sync-nsb). Depuis le sync du 2026-11-05 : NSB a ajouté `Docs/VALIDE.md` (2026-11-06), « seul ce qui figure ici peut être utilisé » ; lieux validés : cloister, terrace, infirmary-pawns, hut, ritual-hall ; aucun des quatre lieux de la galerie (enclosure-south, window-backdrop-for-height, sofa-corner, plant-garden) n’y figure, ni aucun animal. Règle 1 de la propriétaire (2026-11-05, tout NSB est libre) lue contre ce fichier : rien n’est changé, question posée à Virginie (voir réponse). Nelim : apparence validée, `Roo_HD_Hair_Highpony`, #382412, `MouthLipsSmirk`, tenue du plan libre (règle 4), aucune propriété changée. EMBELLISSEMENT-LIEUX relu : aucun de nos lieux touché. Le mod n’ajoute aucun animal (patches seuls, pas de Defs) : règle 5 sans objet, tableau ci-dessous.
+Sync 2026-11-06 (/sync-nsb). Depuis le sync du 2026-11-05 : NSB a ajouté `Docs/VALIDE.md` (2026-11-06), « seul ce qui figure ici peut être utilisé » ; lieux validés : cloister, terrace, infirmary-pawns, hut, ritual-hall ; aucun des quatre lieux de la galerie (enclosure-south, window-backdrop-for-height, sofa-corner, plant-garden) n’y figure, ni aucun animal. Règle 1 de la propriétaire (2026-11-05, tout NSB est libre) lue contre ce fichier : rien n’est changé, question posée à Virginie (voir réponse). Nelim : apparence validée, `Roo_HD_Hair_Highpony`, #382412, `MouthLipsSmirk`, tenue du plan libre (règle 4), aucune propriété changée. EMBELLISSEMENT-LIEUX relu : aucun de nos lieux touché. Le mod n’ajoute aucun animal (patches seuls, pas de Defs) : règle 5 sans objet, tableau ci-dessous. Resync 2026-11-06 04:29: VALIDE.md unchanged (03:40), other NSB docs unchanged; a38c and 75c4 cancelled (owner "oui"), nothing filed, no scenario played with unvalidated places or animals.
 
 Places read: 2026-11-06 (VALIDE.md, EMBELLISSEMENT-LIEUX.md ; SANCTUAIRE-LIEUX.md et SANCTUAIRE-CASES.md non rouverts, inchangés depuis 2026-11-05)
 Tribe read: 2026-11-06 (NELIM-PROFIL.md lignes canon, CATALOGUE-ANIMAUX.md, NSB-ROSTER.md ligne Nelim)
@@ -454,3 +454,12 @@ NPT answer 2026-11-06 (zoom floor): Pickle core frame steps (`I frame the rectan
 Owner order 2026-11-06 ("oui"): a38c (galerie-15) and 75c4 (galerie-16) cancelled via TM (places and animals not validated in NSB VALIDE.md). Nothing refiled until NSB validates animals (and the gallery places). Tree free to edit again once TM confirms. Next: when animals are validated, rewrite scenes with validated place, Nelim and animals only (scene 3 frame: R = 3 centred (187, 124)), then file.
 
 TM 2026-11-06: a38c (galerie-15) and 75c4 (galerie-16) cancelled, neither was running; no AnimalsNaturally ticket in the queue. Tree free. Waiting on NSB validation of animals (and gallery places) before any scenario is rewritten or filed.
+
+Validation state vs NSB VALIDE.md (2026-11-06 04:29, read in this run):
+
+| Element | Used by | In VALIDE.md | Action |
+|---|---|---|---|
+| enclosure-south, sofa-corner, plant-garden, window-backdrop-for-height | 1, 3, 4, 2 | no | wait, no scenario filed |
+| Nelim (appearance, Roo_HD_Hair_Highpony) | 1, 3, 4 | yes | usable |
+| elephant, horse, cow, hen, Norwegian Forest Cat, Bear_Grizzly | 1 to 4 | no animal validated (Shogun included, photos in progress) | wait |
+| validated places (cloister, terrace, infirmary-pawns, hut, ritual-hall) | none | yes | no animal-bearing scene possible until animals are validated |
