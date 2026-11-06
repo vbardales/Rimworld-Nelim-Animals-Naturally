@@ -436,3 +436,5 @@ Included animals (rule 5, 2026-11-06): the mod ships no animal (Mod/ holds only 
 | Animal inclus | Plan(s) |
 |---|---|
 | aucun (patches seuls) | sans objet |
+
+NPT 2026-11-06 (c171d9e, compiled, NOT played): probe steps `And Nelim's Pickle Tools: the cell (x, z) is probed` and `...: the cells from (x0, z0) to (x1, z1) are probed` (max 400 cells; log `[cell-probe]` lines with terrain, under, paint, polluted, snow, roof, fogged, zone, things; attachment `cell-probe`). Clear pollution: `the pollution is cleared from the area from ... to ...`. Probe scenario NOT written yet: tree stays on 592378d until a38c and 75c4 report. After RUN_DONE: if the grey patch survives, add a `probe` scenario in enclosure-south (one cell inside, one outside, or a 3x3 across the edge), file it alone, delete it after reading.
