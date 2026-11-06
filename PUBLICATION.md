@@ -1,7 +1,7 @@
 # Publication notes — Nelim's Animals, Naturally
 
 The Workshop item exists since the 0.1.0 prepublication (2026-10-01): id `3811381865`, private, `About/PublishedFileId.txt` committed in e656137. Replace `<THIS_MOD_ID>` below with it only once the item is public. Publishing goes through GitHub Actions per `AGENTS.md`/`Rimworld-Release-Admin/docs/OPERATIONS.md`;
-this file only prepares what needs the item's own ID, filled in once it exists.
+this file only prepares what needs the item's own ID. The item already exists but is private, so the ID is filled in once it is public.
 
 ## Steam description
 
@@ -16,11 +16,11 @@ Rebalances animals against one another using biological reference values.
 Every value is derived from a single physical anchor: the species' real mass in kilograms.
 
 - **Body size**: the cube root of mass relative to a 70 kg human.
-- **Lifespan**: allometric laws calibrated by clade. A chicken lives for 7 years, a cockatoo from an animal pack for 52: birds do not follow one curve.
+- **Lifespan**: allometric laws calibrated by clade. A chicken lives for 7 years, a cockatoo from an animal pack lives for 52: birds do not follow one curve.
 - **Growth, reproduction, productivity**: maturity age, gestation, litter size, milk, wool and eggs follow the same mass.
 - **Circadian rhythm**: nocturnal, crepuscular and cathemeral animals get their real body clock, through the Nocturnal Animals extension.
 - **Hard rules**: retaliation is at least as likely as taming failure; trainable animals do not escape their pens; maximum prey size accounts for the hunting method.
-- **Hybridisation**: groups derived from real taxonomy, in Dogs Mate format.
+- **Hybridisation**: groups derived from real taxonomy, in the Dogs Mate format.
 - **Forage** (only with Vanilla Expanded Framework): animals that Animals Forage (Continued) does not cover dig for food when hungry.
 
 Precautionary rule: a value changes only when it differs from its target by more than 15 percent. Ludeon's existing hand-tuning is not overwritten when it is already close, deliberately oversized creatures keep their intended size, and apex predators keep the maxPreyBodySize = 99999 sentinel.
