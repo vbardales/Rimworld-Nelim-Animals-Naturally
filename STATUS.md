@@ -115,6 +115,7 @@ Sync 2026-11-06 (/sync-nsb). Depuis le sync du 2026-11-05 : NSB a ajouté `Docs/
 
 Places read: 2026-11-06 (VALIDE.md, EMBELLISSEMENT-LIEUX.md ; SANCTUAIRE-LIEUX.md et SANCTUAIRE-CASES.md non rouverts, inchangés depuis 2026-11-05)
 Tribe read: 2026-11-06 (NELIM-PROFIL.md lignes canon, CATALOGUE-ANIMAUX.md, NSB-ROSTER.md ligne Nelim)
+Resync 2026-11-06 (later, /sync-nsb): `git log --since 2026-11-06 04:00 -- Docs` in NSB is empty, VALIDE.md re-read in full (places: cloister, terrace, infirmary-pawns, hut, ritual-hall; characters: Nelim, Soren; no animal). Nothing changed since the 04:29 resync; the tables below stand, no mod line updated, no scenario touched. Rule 5: the mod ships no animal, no gap.
 
 | Lieu | Plans | Changements pour la galerie | Dernière lecture |
 |---|---|---|---|
