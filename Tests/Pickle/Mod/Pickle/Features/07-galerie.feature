@@ -17,6 +17,7 @@
 # the smiling mouths on 2026-11-05 (a written trait, no malus), LidCheerful, no hat. Decor is removed after each shot.
 # Barn and hut cells checked against the free-cells probe of 2026-11-07 (run 9958): every standing, spawn and decor cell is free. Flower-garden cells of scene 4 checked against probe 15a1 (the garden is dense, the open ground is the east block x 163..170, z 108..113).
 # Frames use the NPT step "I frame the area centred on (x, z) at root size R" (R 2 to 130; visible 2R rows by 3.56R columns).
+# 2026-11-07 (NPT): map at 20 degrees in the Background (no sweat, no blush); light lifted in 3 (0.8, eclipse ended) and 5 (0.7), steps not yet played.
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
 #
 # SHOTLIST (one line per picture; the checker reads hours, defNames, coordinates and colours of each line in the scenario of the same rank):
@@ -55,6 +56,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And I set the hour to 10
     And I set the weather to "Clear"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Sanctuary: the vanometric cell of the sanctuary is hidden
     And Nelim's Pickle Tools: all animals are removed
 
@@ -122,6 +124,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
   Scenario: workshop 3 - a cat sleeps at 13:00, Nelim tiptoes past
     Given Nelim's Sanctuary: I am at the sanctuary "hut"
     And I set the hour to 13
+    And Nelim's Pickle Tools: the eclipse of the map is ended
+    And Nelim's Pickle Tools: the light of the map is lifted to at least 0.8
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (140, 73)
@@ -188,6 +192,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
   Scenario: workshop 5 - at 20:00 the cat wakes and goes out, Nelim lets it go
     Given Nelim's Sanctuary: I am at the sanctuary "hut"
     And I set the hour to 20
+    And Nelim's Pickle Tools: the light of the map is lifted to at least 0.7
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (136, 72)
