@@ -22,12 +22,12 @@
 #
 # SHOTLIST (one line per picture; the checker reads hours, defNames, coordinates and colours of each line in the scenario of the same rank):
 #   1. workshop 1, barn, 8h Clear, 60 + 30 ticks. Nelim carries Hay toward a hen, a cow, a horse and an elephant standing on one row
-#        (z equal): Chicken (192, 235), Cow (197, 235), Horse (200, 235), Elephant (203, 235), all facing South. Decor on the yard earth:
-#        two Hay stacks (194, 233) and (200, 233), EggBox (194, 231), Plant_YellowTallGrass (199, 231), Plant_Daylily (202, 232),
+#        (z equal): Chicken (192, 233), Cow (197, 233), Horse (200, 233), Elephant (203, 233), all facing South. Decor on the yard earth:
+#        two Hay stacks (195, 231) and (201, 231), EggBox (192, 231), Plant_YellowTallGrass (199, 231), Plant_Daylily (203, 231),
 #        TorchLamp lit at (198, 232), all removed after. Nelim Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
-#        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk, stands at (196, 234) facing West and is forced to walk to (193, 234),
+#        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk, stands at (196, 232) facing West and is forced to walk to (193, 232),
 #        paused 30 ticks in (mid-path). Instant: she has just taken the hay from the stack and is bringing it to the hen. Wide frame
-#        centred (198, 233) at root size 3.5. Says: she brings hay to a hen, a cow, a horse and an elephant.
+#        centred (197, 232) at root size 4. Says: she brings hay to a hen, a cow, a horse and an elephant.
 #   2. interface, workshop 2, window-backdrop-for-height, 11h, the Stats card of the elephant, cropped sideways, no subtitle.
 #   3. workshop 3, hut, 13h Clear, 60 + 40 + 30 ticks. akaNEKO_N_Forest_Cat spawned at (140, 73) on the cushion cell, lies down, faces
 #        South, Z mote if the game shows one. Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
@@ -40,7 +40,7 @@
 #        unforbidden, Filth_Dirt at (165, 111) and (167, 111), TorchLamp lit at (168, 113). Nelim in the same outfit
 #        (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands
 #        at (170, 109) facing West, forced to walk to (168, 109), paused 30 ticks in, looking at the bear 4 cells away.
-#        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (167, 111) at root size 3.
+#        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (165, 111) at root size 3.5.
 #        Says: a grizzly has dug up a berry pile.
 #   5. workshop 5, hut door, 20h Clear, 60 + 30 ticks. The same akaNEKO_N_Forest_Cat awake at (140, 73), forced to walk to (137, 73) toward
 #        the door, TorchLamp lit outside the door at (136, 72). Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100),
@@ -67,17 +67,17 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Nelim's Pickle Tools: I place the decor "Hay" at (194, 233)
-    And Nelim's Pickle Tools: I place the decor "Hay" at (200, 233)
-    And Nelim's Pickle Tools: I place the decor "EggBox" at (194, 231)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (195, 231)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (201, 231)
+    And Nelim's Pickle Tools: I place the decor "EggBox" at (192, 231)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (199, 231) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (202, 232) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (203, 231) fully grown
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 232)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 232) is lit
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (192, 235)
-    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (197, 235)
-    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (200, 235)
-    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (203, 235)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (192, 233)
+    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (197, 233)
+    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (200, 233)
+    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (203, 233)
     And Nelim's Pickle Tools: "hen" faces South
     And Nelim's Pickle Tools: "cow" faces South
     And Nelim's Pickle Tools: "horse" faces South
@@ -86,16 +86,16 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
-    And Nelim's Pickle Tools: "Nelim" stands at (196, 234) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (196, 232) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (193, 234)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (193, 232)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the area centred on (198, 233) at root size 3.5
+    When Nelim's Pickle Tools: I frame the area centred on (197, 232) at root size 4
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-1-feed-round"
     And Nelim's Pickle Tools: the interface is shown again
@@ -145,6 +145,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (137, 74)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
+    And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
+    And Nelim's Pickle Tools: the light of the map is logged
     When Nelim's Pickle Tools: I frame the area centred on (140, 74) at root size 2
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-3-cat-asleep"
@@ -181,7 +183,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (168, 109)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the area centred on (167, 111) at root size 3
+    And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
+    And Nelim's Pickle Tools: the light of the map is logged
+    When Nelim's Pickle Tools: I frame the area centred on (165, 111) at root size 3.5
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-4-grizzly-dig"
     And Nelim's Pickle Tools: the interface is shown again
@@ -212,6 +216,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (140, 74)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
+    And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
+    And Nelim's Pickle Tools: the light of the map is logged
     When Nelim's Pickle Tools: I frame the area centred on (139, 73) at root size 3
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-5-cat-wakes"
