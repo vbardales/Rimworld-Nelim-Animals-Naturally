@@ -22,12 +22,12 @@
 #
 # SHOTLIST (one line per picture; the checker reads hours, defNames, coordinates and colours of each line in the scenario of the same rank):
 #   1. workshop 1, barn, 8h Clear, 60 + 30 ticks. Nelim carries Hay toward a hen, a cow, a horse and an elephant standing on one row
-#        (z equal): Chicken (192, 233), Cow (197, 233), Horse (200, 233), Elephant (203, 233), all facing South. Decor on the yard earth:
+#        (z equal): Chicken (192, 233), Cow (199, 233), Horse (201, 233), Elephant (204, 233), all facing South. Decor on the yard earth:
 #        two Hay stacks (195, 231) and (201, 231), EggBox (192, 231), Plant_YellowTallGrass (199, 231), Plant_Daylily (203, 231),
 #        TorchLamp lit at (198, 232), all removed after. Nelim Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk, stands at (196, 232) facing West and is forced to walk to (193, 232),
 #        paused 30 ticks in (mid-path). Instant: she has just taken the hay from the stack and is bringing it to the hen. Wide frame
-#        centred (197, 232) at root size 4. Says: she brings hay to a hen, a cow, a horse and an elephant.
+#        centred (198, 232) at root size 4. Says: she brings hay to a hen, a cow, a horse and an elephant.
 #   2. interface, workshop 2, window-backdrop-for-height, 11h, the Stats card of the elephant, cropped sideways, no subtitle.
 #   3. workshop 3, hut, 13h Clear, 60 + 40 + 30 ticks. akaNEKO_N_Forest_Cat spawned at (140, 73) on the cushion cell, lies down, faces
 #        South, Z mote if the game shows one. Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
@@ -75,9 +75,9 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 232)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 232) is lit
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (192, 233)
-    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (197, 233)
-    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (200, 233)
-    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (203, 233)
+    And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (199, 233)
+    And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (201, 233)
+    And Nelim's Pickle Tools: an adult animal of kind "Elephant" named "elephant" is spawned at (204, 233)
     And Nelim's Pickle Tools: "hen" faces South
     And Nelim's Pickle Tools: "cow" faces South
     And Nelim's Pickle Tools: "horse" faces South
@@ -95,7 +95,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (193, 232)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the area centred on (197, 232) at root size 4
+    When Nelim's Pickle Tools: I frame the area centred on (198, 232) at root size 4
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-1-feed-round"
     And Nelim's Pickle Tools: the interface is shown again
