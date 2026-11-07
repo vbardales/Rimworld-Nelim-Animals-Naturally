@@ -111,6 +111,28 @@ State 2026-11-05 (owner validation): Virginie validated the Preview (commit a928
 
 ## NSB
 
+**Resync 2026-11-07 (/sync-nsb, supersedes the 2026-11-06 resyncs below; those used `git log -- Docs`, which returns 0 commits, the pitfall named in the skill: always `-- ":(icase)docs"`).** NSB changed a lot since 2026-11-06 04:29 (10+ commits, VALIDE.md and AVANCEMENT.md): ALL 14 NSB animals validated (Shogun, Yuki, Atticus, Rain, Kuru, Tama, Onigiri, Ottawa, Pécan, Ulysse, Ursule, Wren, Wrille, Xylo; face, profile, back); `window-backdrop-for-height` validated (free zone, 2026-11-07); `sofa-corner`, `plant-garden`, `enclosure-south` still "à embellir, rien de validé" (decor lots 3 and 4 launched 2026-11-07); elephant, horse, cow, hen are NOT NSB animals; Bear_Grizzly wild (decor). Nelim unchanged (appearance, hair, Highpony validated).
+
+Places read: 2026-11-07 (VALIDE.md in full; SANCTUAIRE-LIEUX.md and EMBELLISSEMENT-LIEUX.md only the lines of our four places, by grep)
+Tribe read: 2026-11-07 (VALIDE.md animals and Nelim sections, AVANCEMENT.md; NELIM-PROFIL.md and CATALOGUE-ANIMAUX.md not reopened, dates unchanged)
+
+| Lieu | Plans | NSB 2026-11-07 | Action |
+|---|---|---|---|
+| window-backdrop-for-height | 2 | validated (free zone) | usable, but the card shows an elephant (not NSB) |
+| sofa-corner | 3 | à embellir (lot 3 launched) | wait |
+| plant-garden | 4 | à embellir (lot 4 launched) | wait |
+| enclosure-south | 1 | à embellir (lot 4 launched) | wait |
+
+| Animal | Plans | NSB 2026-11-07 | Action |
+|---|---|---|---|
+| Tama (`akaNEKO_N_Forest_Cat`, female, no trait) | 3 | validated face, profile, back | scene 3 cat becomes Tama herself (was "species of Tama, not Tama") once sofa-corner is validated; paper only, feature not touched (owner "pas de réécrire") |
+| elephant, horse, cow, hen | 1, 2 | not in NSB (domestic animals outside NSB) | rule 2: PENDING owner validation or an NSB alternative |
+| Bear_Grizzly | 4 | wild, decor (rule 2 does not apply) | free, blocked only by plant-garden |
+
+NSB alternatives that the mod patches (grep of Mod/Patches, partial names, not a full audit): Thrumbo (Atticus, Rain), Flamingo (Wren, Wrille), FoxSquirrel (Pécan), Husky (Yuki), LabradorRetriever (Shogun), Forest Cat (Tama), kuroneko (Kuru), Bear_Grizzly. Boomalope, ERN_lizarddoggo and AA_Aerofleet not found in the patches.
+
+Included animals (rule 5): the mod ships no animal (patches only): no MISSING.
+
 Sync 2026-11-06 (/sync-nsb). Depuis le sync du 2026-11-05 : NSB a ajouté `Docs/VALIDE.md` (2026-11-06), « seul ce qui figure ici peut être utilisé » ; lieux validés : cloister, terrace, infirmary-pawns, hut, ritual-hall ; aucun des quatre lieux de la galerie (enclosure-south, window-backdrop-for-height, sofa-corner, plant-garden) n’y figure, ni aucun animal. Règle 1 de la propriétaire (2026-11-05, tout NSB est libre) lue contre ce fichier : rien n’est changé, question posée à Virginie (voir réponse). Nelim : apparence validée, `Roo_HD_Hair_Highpony`, #382412, `MouthLipsSmirk`, tenue du plan libre (règle 4), aucune propriété changée. EMBELLISSEMENT-LIEUX relu : aucun de nos lieux touché. Le mod n’ajoute aucun animal (patches seuls, pas de Defs) : règle 5 sans objet, tableau ci-dessous. Resync 2026-11-06 04:29: VALIDE.md unchanged (03:40), other NSB docs unchanged; a38c and 75c4 cancelled (owner "oui"), nothing filed, no scenario played with unvalidated places or animals.
 
 Places read: 2026-11-06 (VALIDE.md, EMBELLISSEMENT-LIEUX.md ; SANCTUAIRE-LIEUX.md et SANCTUAIRE-CASES.md non rouverts, inchangés depuis 2026-11-05)
