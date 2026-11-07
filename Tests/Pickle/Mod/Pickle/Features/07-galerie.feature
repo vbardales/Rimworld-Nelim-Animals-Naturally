@@ -91,6 +91,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (193, 232)
     And Nelim's Pickle Tools: I let 30 ticks pass
@@ -142,6 +144,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (137, 74)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
@@ -180,6 +184,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (168, 109)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
@@ -212,6 +218,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
+    And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And Nelim's Pickle Tools: "cat" is forced to walk to (137, 73)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (140, 74)
     And Nelim's Pickle Tools: I let 30 ticks pass
