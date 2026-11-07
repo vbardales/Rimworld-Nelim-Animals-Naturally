@@ -15,7 +15,7 @@
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb (96, 128, 84), Apparel_Pants khaki rgb (176, 150, 100),
 # hair Roo_HD_Hair_Highpony (canon), hair rgb (56, 36, 18) (roster #382412), canon mouth MouthLipsSmirk, no smile because the owner refused
 # the smiling mouths on 2026-11-05 (a written trait, no malus), LidCheerful, no hat. Decor is removed after each shot.
-# Barn and hut cells checked against the free-cells probe of 2026-11-07 (run 9958): every standing, spawn and decor cell is free. Flower-garden cells of scene 4 are still guesses (the garden area is nearly all non-standable): see 09-cells-probe.
+# Barn and hut cells checked against the free-cells probe of 2026-11-07 (run 9958): every standing, spawn and decor cell is free. Flower-garden cells of scene 4 checked against probe 15a1 (the garden is dense, the open ground is the east block x 163..170, z 108..113).
 # Frames use the NPT step "I frame the area centred on (x, z) at root size R" (R 2 to 130; visible 2R rows by 3.56R columns).
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
 #
@@ -34,12 +34,12 @@
 #        paused 30 ticks in. Instant: the cat settled minutes ago, she tiptoes past so as not to wake it. The low table, the cushions and
 #        the oil lamp are the validated furniture of the hut (already there). Close frame centred (140, 73) at root size 2.
 #        Says: a cat sleeps and Nelim tiptoes past so as not to wake it.
-#   4. workshop 4, flower-garden, 17h Clear, 60 + 270 + 30 ticks. Bear_Grizzly named bear at (155, 111), food 0 percent, 270 ticks pass
-#        (the dig, tick 300 in the probe of galerie-11), then the bear stands at (155, 112) facing South over RawBerries at (155, 111)
-#        unforbidden, Filth_Dirt at (154, 111) and (156, 111), TorchLamp lit at (152, 113). Nelim in the same outfit
+#   4. workshop 4, flower-garden, 17h Clear, 60 + 270 + 30 ticks. Bear_Grizzly named bear at (166, 111), food 0 percent, 270 ticks pass
+#        (the dig, tick 300 in the probe of galerie-11), then the bear stands at (166, 112) facing South over RawBerries at (166, 111)
+#        unforbidden, Filth_Dirt at (165, 111) and (167, 111), TorchLamp lit at (168, 113). Nelim in the same outfit
 #        (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands
-#        at (149, 108) facing East, forced to walk to (152, 108), paused 30 ticks in, looking at the bear 4 cells away.
-#        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (154, 111) at root size 3.
+#        at (170, 109) facing West, forced to walk to (168, 109), paused 30 ticks in, looking at the bear 4 cells away.
+#        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (167, 111) at root size 3.
 #        Says: a grizzly has dug up a berry pile.
 #   5. workshop 5, hut door, 20h Clear, 60 + 30 ticks. The same akaNEKO_N_Forest_Cat awake at (140, 73), forced to walk to (137, 73) toward
 #        the door, TorchLamp lit outside the door at (136, 72). Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100),
@@ -154,30 +154,30 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And I set the hour to 17
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (152, 113)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (152, 113) is lit
-    And Nelim's Pickle Tools: an adult animal of kind "Bear_Grizzly" named "bear" is spawned at (155, 111)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (168, 113)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (168, 113) is lit
+    And Nelim's Pickle Tools: an adult animal of kind "Bear_Grizzly" named "bear" is spawned at (166, 111)
     And Nelim's Pickle Tools: the animal "bear" has food at 0 percent
     And Nelim's Pickle Tools: "bear" faces South
     And Nelim's Pickle Tools: I let 270 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: the animal "bear" stands at (155, 112) facing South
-    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (154, 111)
-    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (156, 111)
-    And Nelim's Pickle Tools: the thing "RawBerries" at (155, 111) is not forbidden
+    And Nelim's Pickle Tools: the animal "bear" stands at (166, 112) facing South
+    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (165, 111)
+    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (167, 111)
+    And Nelim's Pickle Tools: the thing "RawBerries" at (166, 111) is not forbidden
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
-    And Nelim's Pickle Tools: "Nelim" stands at (149, 108) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (170, 109) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (152, 108)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (168, 109)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
-    When Nelim's Pickle Tools: I frame the area centred on (154, 111) at root size 3
+    When Nelim's Pickle Tools: I frame the area centred on (167, 111) at root size 3
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-4-grizzly-dig"
     And Nelim's Pickle Tools: the interface is shown again
