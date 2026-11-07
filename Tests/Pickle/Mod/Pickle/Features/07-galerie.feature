@@ -15,15 +15,15 @@
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb (96, 128, 84), Apparel_Pants khaki rgb (176, 150, 100),
 # hair Roo_HD_Hair_Highpony (canon), hair rgb (56, 36, 18) (roster #382412), canon mouth MouthLipsSmirk, no smile because the owner refused
 # the smiling mouths on 2026-11-05 (a written trait, no malus), LidCheerful, no hat. Decor is removed after each shot.
-# Every cell below is a guess until the free-cells probe (09-cells-probe.feature) is read: a spawn takes the nearest free cell up to 15 away.
+# Barn and hut cells checked against the free-cells probe of 2026-11-07 (run 9958): every standing, spawn and decor cell is free. Flower-garden cells of scene 4 are still guesses (the garden area is nearly all non-standable): see 09-cells-probe.
 # Frames use the NPT step "I frame the area centred on (x, z) at root size R" (R 2 to 130; visible 2R rows by 3.56R columns).
 # Size limit of the Steam page (owner, 2026-10-06): any number of images, each under 2 MB, all together under 8 MB.
 #
 # SHOTLIST (one line per picture; the checker reads hours, defNames, coordinates and colours of each line in the scenario of the same rank):
 #   1. workshop 1, barn, 8h Clear, 60 + 30 ticks. Nelim carries Hay toward a hen, a cow, a horse and an elephant standing on one row
 #        (z equal): Chicken (189, 235), Cow (196, 235), Horse (200, 235), Elephant (204, 235), all facing South. Decor on the yard earth:
-#        two Hay stacks (192, 236) and (198, 236), EggBox (190, 237), Plant_YellowTallGrass (199, 238), Plant_Daylily (206, 236),
-#        TorchLamp lit at the door (197, 238), all removed after. Nelim Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
+#        two Hay stacks (192, 236) and (198, 236), EggBox (191, 237), Plant_YellowTallGrass (199, 238), Plant_Daylily (202, 238),
+#        TorchLamp lit at (194, 238), all removed after. Nelim Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk, stands at (194, 234) facing West and is forced to walk to (190, 234),
 #        paused 30 ticks in (mid-path). Instant: she has just taken the hay from the stack and is bringing it to the hen. Wide frame
 #        centred (197, 235) at root size 5. Says: she brings hay to a hen, a cow, a horse and an elephant.
@@ -67,11 +67,11 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the painted zones are hidden
     And Nelim's Pickle Tools: I place the decor "Hay" at (192, 236)
     And Nelim's Pickle Tools: I place the decor "Hay" at (198, 236)
-    And Nelim's Pickle Tools: I place the decor "EggBox" at (190, 237)
+    And Nelim's Pickle Tools: I place the decor "EggBox" at (191, 237)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (199, 238) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (206, 236) fully grown
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (197, 238)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (197, 238) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (202, 238) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (194, 238)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 238) is lit
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "hen" is spawned at (189, 235)
     And Nelim's Pickle Tools: an adult animal of kind "Cow" named "cow" is spawned at (196, 235)
     And Nelim's Pickle Tools: an adult animal of kind "Horse" named "horse" is spawned at (200, 235)
