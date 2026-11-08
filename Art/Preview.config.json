@@ -2,19 +2,14 @@
   "panel": {
     "title": "Nelim's Animals, Naturally",
     "titleParts": [
-      {
-        "text": "Nelim's ", "prefix": true
-      },
+      { "text": "Nelim's", "prefix": true },
       { "text": "Animals, Naturally" }
     ],
     "description": "Body size, lifespan, taming, and hybridisation derived from each species' real mass and taxonomy."
   },
   "background": { "file": "Preview-source.png" },
   "echo": { "file": "echo-source.png" },
-  "icon": {
-    "file": "ModIcon-source.png",
-    "corner": "bottom-right"
-  },
+  "icon": { "file": "ModIcon-source.png" },
   "palette": {
     "veil": "#241C13",
     "inkPrimary": "#FBF6EC",
