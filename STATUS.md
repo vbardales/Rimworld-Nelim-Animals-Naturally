@@ -236,3 +236,5 @@ Shotlist 2026-11-08 17:10 (write-shotlist, recomposition of the four REDO shots 
 | 5 | hut, 20:00 Clear, 60+30 ticks | TorchLamp lit at the door, hut furniture | cat walking out | same outfit, standing | cat walks (140,73)-(137,73), Nelim watches | medium (137,73) R4 | cat leaves into the night | cat about 19 px | 4.5 | b weak (one lamp, furniture unnamed), light 0.4 may still read green |
 
 k (series): ok, one day 08:00 to 20:00, wide 1, medium 4 and 5, close 3, opening 1, closing 5, hut rhyme 3 and 5. Plan mean 4.75, image columns "-" (no capture). Shot 2 (elephant card) interface, set aside. Next: when the queue resumes file galerie-22 (07-galerie), then open captures and score-gallery.
+
+Filed 2026-11-08 (c119021): galerie-22, ticket 20261108-165536-237-1f55 (07-galerie, 5 scenes, -DepMap wsl-deps.galerie.map, -StallMinutes 20 -RunTimeoutMinutes 25), evidence Tests/Pickle/Inbox/galerie-22, waiting, RUN_DONE via TM. Keep the tree on c119021 until RUN_DONE. On RUN_DONE: summary.json, open every capture, score-gallery, tell NPT the result of light 0.4 at 20:00 and the frame sizes.
