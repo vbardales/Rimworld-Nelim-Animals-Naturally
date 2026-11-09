@@ -52,13 +52,19 @@ remaining:
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
 code_review_sha: 7f7d3efb35e4a3e0c54bc2bfddca3b0c644ad01a
 updated: 2026-11-06
-protocols_read_sha: a95086f2b1c3b3d1df3d0bb4b62e789ea0561c85
+protocols_read_sha: b1463127f5a02e208ce0dc75d3b7bbc5957ef0e9
 ---
 # Nelim's Animals, Naturally — status
 
 Journal of 2026-09-22 to 2026-10-23 (audits, preview, Pickle suite, early shotlists) moved to `docs/runs/STATUS-journal-2026-09-to-10-23.md` on 2026-11-06. Journal of 2026-10-23 to 2026-11-05 moved to `docs/runs/STATUS-journal-2026-10-23-to-11-05.md` on 2026-11-08.
 
 ## NSB
+
+**Resync 2026-11-09 (sync-nsb-npt, supersedes the ones below where they differ).** Rules said back (1 NSB free; 2 outside-NSB domestic animals need owner validation, elephant, horse, cow, hen validated "garde les 4" 2026-11-07; 3 colonist properties need validation, none changed; 4 outfits free; 5 the mod ships no animal, no gap). NSB since 2026-11-08: all places validated (`left-bank`, `workshops`, `barn`, `right-bank`, `gravel-yard`, `enclosure`), decorated fixture `Nelims-tribe-decor-mods-z3.rws` (sha256 6bfb4a48...) copied to NSB `Mod/Pickle/Fixtures`; old `Nelims-tribe` kept (NSB decision, owner "comme tu veux"), z3 is for place and photo features on the decor map (needs the decor mods in the DepMap). No roster, profile or animal catalogue change. NPT steps: camera ortho, light dimmed to at most N, holds in hand, animals kept out of an area (with exceptions), free-cells listing: none replaces a hand-made setup of 07-galerie. Not changed here: 07-galerie still loads `Nelims-tribe` (hut and barn cells as validated), ticket galerie-23 is in flight; repointing to z3 would change cells and DepMap, left to the owner or to a later redo.
+
+Places read: 2026-11-09 (SANCTUAIRE-LIEUX.md and VALIDE.md diffs since 2026-11-08)
+Tribe read: 2026-11-09 (VALIDE.md diff; no roster, profile or catalogue commit)
+Steps read: 2026-11-09 (PickleTools steps.md diffs since 2026-11-08 evening, five commits)
 
 **Resync 2026-11-08 16:50 (sync-nsb-npt, later than the one below; supersedes it where they differ).** Same rules said back (1 NSB free; 2 outside-NSB domestic animals need owner validation, elephant, horse, cow, hen validated "garde les 4" 2026-11-07; 3 colonist properties need validation, none changed; 4 outfits free; 5 the mod ships no animal, no gap). NSB since the last resync (VALIDE.md only, commits b664c23, efc2141, 75763b4, 5d2663e): newly validated `enclosure-south` (flower logo of Nelim, nothing on it, "c'est validable"), `hearth-hall`, `fire-pit`, `enclosure-north`, `prestige-hall`; `sleeping-nook` wording changed (outfit stand moved out of the curtains, lot 5g). None of these is in the plan (barn, window-backdrop-for-height, hut, flower-garden, all validated): no line changed, no scenario touched. The old grey-patch question (galerie-14, 72fd) is moot for the plan: enclosure-south left the shotlist 2026-11-07, and the validated enclosure-south now carries the flower logo instead of bare ground. NPT: no step or catalogue commit since the put-out, StageDecor and lies-asleep steps already read in the resync below; nothing the scenarios call was renamed or removed. Tree stays on 9ad8619 plus the paper recomposition of galerie-21's four REDO shots.
 
