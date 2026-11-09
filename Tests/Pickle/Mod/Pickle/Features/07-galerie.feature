@@ -32,7 +32,7 @@
 #        Instant: she has just taken the hay from the stack and is bringing it to the hen. Wide frame centred (198, 232) at root size 5
 #        (rows 227 to 237, the north wall of the barn shows behind the decor). Says: she brings hay to a hen, a cow, a horse and an elephant.
 #   2. interface, workshop 2, window-backdrop-for-height, 11h, the Stats card of the elephant, cropped sideways, no subtitle.
-#   3. workshop 3, hut, 13h Clear, 60 + 40 + 30 ticks. akaNEKO_N_Forest_Cat spawned at (140, 73) on the cushion cell, lies down, faces
+#   3. workshop 3, hut, 13h Clear, 60 + 40 + 30 ticks. akaNEKO_N_Forest_Cat spawned at (142, 73), a free cell east of the low table (galerie-26: (140, 73) is the table, the cat stood on it), lies down, faces
 #        South, Z mote if the game shows one. Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk), stands at (142, 75) facing West, forced to walk to (138, 75),
 #        paused 30 ticks in (two rows north of the cat, galerie-22 had her on the cat). Instant: the cat settled minutes ago, she tiptoes
@@ -139,7 +139,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the light of the map is lifted to at least 0.8
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
-    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (140, 73)
+    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (142, 73)
     And Nelim's Pickle Tools: "cat" faces South
     And Nelim's Pickle Tools: "cat" lies down
     And Nelim's Pickle Tools: I let 40 ticks pass
