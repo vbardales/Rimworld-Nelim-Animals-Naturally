@@ -12,6 +12,8 @@ nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod
 nelim.pickletools.clearscreen path:PickleTools/ClearScreen/Mod
 nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
 nelim.pickletools.clickdiagnostics path:PickleTools/ClickDiagnostics/Mod
+nelim.pickletools.savesteps path:PickleTools/SaveSteps/Mod
+nelim.pickletools   path:PickleTools/Tests/Pickle/StandaloneBase/Mod
 # Minimum list, 2026-10-07/08 (owner). The staging activates in file order, then sorts by loadAfter/dependencies.
 # Bodies and trousers, as proven by Venus Touch Waistlines' gallery pass WITHOUT TailorMade (VenusTouchWaistlines/docs/runs/2026-10-08_gallery-no-tailormade-1):
 # Female Body Variants and Female Apparel Variants load BEFORE WDI (else their Naked_*_Female textures shadow WDI's); AB's Visible Pants is indispensable (without it Venus does nothing).
@@ -42,6 +44,7 @@ ccj.nlfaloadfix 3721489042
 RaccoonCuddler.ShowHair 3255379190
 # The Sanctuary's own steps (Nelim's Sanctuary:), presentation mode and inspect tabs.
 nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
+nelim.pickletools.decorbase path:PickleTools/Tests/Pickle/DecorBase/Mod
 nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
 nelim.pickletools.inspecttabs path:PickleTools/InspectTabs/Mod
 # Let's Have a Cat! Continued (akairo.LetsHaveaCat): Tama (akaNEKO_N_Forest_Cat) and Kuru (akaNEKO_kuroneko), the Sanctuary cats; both carry the night rhythm of Rythme.xml (owner, 2026-10-25).
@@ -55,3 +58,30 @@ VanillaExpanded.VAERoy                        2858079457
 # Roo's HD Hairstyles (continued) and Vanilla Hair Expanded (owner, 2026-10-30): canonical hair of Nelim, Roo_HD_Hair_Highpony. Same ids as SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map.
 rooboid.hdhair.continued 3559870636
 VanillaExpanded.VHE 1888705256
+# Decorated Sanctuary (2026-11-09, PiT answer): the save Nelims-tribe-decor-mods-z3 sits in DecorBase (staged above), NSB validated every place on it.
+# Same lines and ids as PickleTools/Tests/Pickle/wsl-deps.sanctuary-decor-mods.map. Never also stage the full PickleTools/Mod (Ambiguous step).
+# dependencies of the decorative mods (VFE Core is listed above)
+brrainz.harmony 2009463077
+adaptive.storage.framework 3033901359
+erdelf.HumanoidAlienRaces 839005762
+# the decorative mods
+Caoyuanfei.YuranShrineJapaneseArchitecture 3671664434
+RooAndGloomy.YuranRaceMod 2844129100
+Erin.JapaneseFurniture 2354938860
+milple.KoreanStyleFurniture 3733695302
+erin.decorations 2463358089
+daylight.RimLifeExSTFMod 2289110791
+daylight.RimLifeExFurMod 2309537905
+kcb.pottingdeco 3575201181
+Mlie.SpidercampsDecorativePlants 2453107898
+Mlie.DecorativeTrees 2670019924
+hd.pashka.Mlie.DecorativeTrees 2729580051
+zal.wallvitalsmonitor 3283745385
+WallMounted.FunctionFurniture 3807382130
+mgatwood.housedecor 3535047810
+KindSeal.DecorativePainting 3587440566
+AKN.Decorations 2755025925
+mingtuwuxiang.FishingDecorative 2981211719
+draegon.FishingDecoRetex 3256420234
+# Little Playgrounds (play area; needs only Biotech)
+choco.littleplaygrounds 3828953545

@@ -62,7 +62,7 @@
 Feature: Gallery pictures of Nelim's Animals, Naturally
 
   Background:
-    Given the save "Nelims-tribe" is loaded
+    Given the save "Nelims-tribe-decor-mods-z3" is loaded
     And game speed is paused
     And I set the hour to 10
     And I set the weather to "Clear"
@@ -161,6 +161,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
     And Nelim's Pickle Tools: the light of the map is logged
+    And Nelim's Pickle Tools: the free standable cells of the area from (132, 67) to (150, 79) are listed
     When Nelim's Pickle Tools: I frame the area centred on (139, 74) at root size 3
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-3-cat-asleep"
