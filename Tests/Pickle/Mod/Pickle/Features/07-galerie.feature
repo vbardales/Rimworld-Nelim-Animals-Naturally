@@ -67,7 +67,6 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And I set the hour to 10
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Sanctuary: the vanometric cell of the sanctuary is hidden
     And Nelim's Pickle Tools: all animals are removed
 
   # 1 FEED ROUND (opener, wide). Barn yard, 08:00 Clear, 60 ticks of setup then 30 ticks of walk.
