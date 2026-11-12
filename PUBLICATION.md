@@ -33,7 +33,7 @@ Requires [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/shared
 
 **AI-GENERATED**: Claude (Anthropic) and Codex (OpenAI) assisted with the XML patches, tests, documentation and audit maintenance. The values and rules are mine.
 
-**THANKS**: Ludeon Studios and the authors of the animal mods whose definitions are targeted. [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409) by Mlie, from the original [[XND] Nocturnal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2004368312) by XeoNovaDan, whose bodyClock extension this mod uses. [Animals Forage (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3667046888) by Mlie, [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856) by Sarg Bjornson and [Vanilla Animals Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948) by Oskar Potocki, whose animals the forage patches extend. [Vanilla Animals Expanded - Royal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2858079457) by Oskar Potocki, Erin and Sarg Bjornson, whose pheasants are also covered by the forage patches. Load-order integrations, tested but never patched: [Dogs Mate (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2441132298) by Mlie, from the original by Revoluss, whose list format Hybridation.xml writes; [Some Like It Rotten](https://steamcommunity.com/sharedfiles/filedetails/?id=2503519676) by Mlie; [Zoology: Realistic Animal Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3679396881) by AbobaShark. [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) provides the forage components. Development only, never a dependency: [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools.
+**THANKS**: Ludeon Studios and the authors of the animal mods whose definitions are targeted. [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409) by Mlie, from the original [[XND] Nocturnal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2004368312) by XeoNovaDan, whose bodyClock extension this mod uses. [Animals Forage (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3667046888) by Mlie, [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856) by Sarg Bjornson and [Vanilla Animals Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948) by Oskar Potocki, whose animals the forage patches extend. [Vanilla Animals Expanded - Royal Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2858079457) by Oskar Potocki, Erin and Sarg Bjornson, whose pheasants are also covered by the forage patches. Load-order integrations, tested but never patched: [Dogs Mate (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2441132298) by Mlie, from the original by Revoluss, whose list format is written by Hybridation.xml; [Some Like It Rotten](https://steamcommunity.com/sharedfiles/filedetails/?id=2503519676) by Mlie; [Zoology: Realistic Animal Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3679396881) by AbobaShark. [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) provides the forage components. Development only, never a dependency: [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696) and PickleTools.
 
 See ATTRIBUTION.md and the MIT License in the GitHub repository.
 
@@ -100,7 +100,7 @@ Do not post with the placeholder still in place. Read the page's last comments a
 
 **Oskar Potocki, on Vanilla Animals Expanded** (241 characters):
 
-> Extended the same forage-when-hungry behaviour Animals Forage gives vanilla critters to the VAE
+> Extended the same forage-when-hungry behavior Animals Forage gives vanilla critters to the VAE
 > animals it hadn't reached — no overlap, just filling the gaps your own spreadsheet already mapped
 > out. Appreciate the sheer scale of it :)
 > [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
@@ -113,7 +113,7 @@ Do not post with the placeholder still in place. Read the page's last comments a
 
 **AbobaShark, on Zoology** (238 characters):
 
-> Zoology and my rebalance scratched the same itch from two sides: stats worked out from real body mass. I load mine below Zoology in my test list and it starts clean. Pack hunting that stops packs from always picking the weakest prey is a clever fix :)
+> Zoology and my rebalance scratched the same itch from two sides: stats worked out from real body mass. I load mine below Zoology in my test list and it starts up cleanly. Pack hunting that stops packs from always picking the weakest prey is a clever fix :)
 
 > [url=https://steamcommunity.com/sharedfiles/filedetails/?id=<THIS_MOD_ID>]Nelim's Animals, Naturally[/url]
 
@@ -134,7 +134,7 @@ Folder `Art/Gallery/` holds only the images to upload, numbered `0-` to `4-`; `0
 | 0 | `0-preview.png` | the Preview | done |
 | 1 | feed round, 07:00 | Nelim walks past elephant, horse, cow and hen at real scale | galerie-11 played, tint over the left ground; scenario rewritten, filed in galerie-12 |
 | 2 | elephant info card, 11:00 | Stats tab, window only, no subtitle | galerie-11 failed at the animal spawn; scenario rewritten, filed in galerie-12 |
-| 3 | cat asleep, 13:00 | a vanilla cat asleep in broad day (night rhythm), Nelim tiptoes past | scenario written, filed in galerie-12 |
+| 3 | cat asleep, 13:00 | a vanilla cat asleep in broad daylight (night rhythm), Nelim tiptoes past | scenario written, filed in galerie-12 |
 | 4 | grizzly at dusk, 18:00 | a hungry grizzly has just dug for berries (forage) | scenario written, filed in galerie-12; the royal pheasant is dropped |
 
 ## Gallery subtitles
@@ -150,4 +150,4 @@ Scenes without an interface window carry one English line at the bottom (`GALLER
 
 ### Staging of the gallery (owner's rule, 2026-10-02)
 
-Every gallery image is a staged photograph, except menus (the Health tab, image 2, is a straightforward interface screenshot). Story for the series (rewritten 2026-10-23, replaces "the naturalist's plate"): **one day at Nelim's Sanctuary**, Nelim the field naturalist measuring the animals against herself, one outfit all day. 07:00 the feed round among elephant, horse, cow and hen (image 1, wide); 11:00 her field notes, the Stats card of the elephant (image 2, interface); 13:00 a cat asleep in broad day, the night rhythm (image 3, close); 18:00 at dusk a hungry grizzly has just dug for berries (image 4, medium). Places, props, outfit and instants: the header of `07-galerie.feature` and "Shotlist 2026-10-23" in `STATUS.md`. Decor is placed, photographed, removed, then the next image. The steps asked of Pickle Tools on 2026-10-02 now exist; only the scenes' jobs (walk, lie down, unforbid) are new in the 2026-10-23 run.
+Every gallery image is a staged photograph, except menus (the Health tab, image 2, is a straightforward interface screenshot). Story for the series (rewritten 2026-10-23, replaces "the naturalist's plate"): **one day at Nelim's Sanctuary**, Nelim the field naturalist measuring the animals against herself, one outfit all day. 07:00 the feed round among elephant, horse, cow and hen (image 1, wide); 11:00 her field notes, the Stats card of the elephant (image 2, interface); 13:00 a cat asleep in broad daylight, the night rhythm (image 3, close); 18:00 at dusk a hungry grizzly has just dug for berries (image 4, medium). Places, props, outfit and instants: the header of `07-galerie.feature` and "Shotlist 2026-10-23" in `STATUS.md`. Decor is placed, photographed, removed, then the next image. The steps asked of Pickle Tools on 2026-10-02 now exist; only the scenes' jobs (walk, lie down, unforbid) are new in the 2026-10-23 run.
