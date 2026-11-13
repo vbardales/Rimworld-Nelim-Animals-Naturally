@@ -15,7 +15,9 @@ upstream_mod_remotes:
   - https://github.com/emipa606/AnimalsForage
   - https://github.com/Vanilla-Expanded/VanillaExpandedFramework
   # Zoology has no GitHub link in its About.xml (checked 2026-09-28): N/A
+upstream_synced: 2026-11-13 XNDNocturnalAnimals@9049d53; DogsMate@52c1478; SomeLikeItRotten@a7191e9; AnimalsForage@b0bc71d; VanillaExpandedFramework@4d68a92 (Zoology: Workshop only, no git repository, version not compared)
 dependencies: partial
+workshop_required_items: n/a, not released yet
 showcase: partial
 settings_audit: not_applicable
 localization: not_applicable
@@ -56,9 +58,9 @@ remaining:
   - unverified: 0.1.0 prepublication content: whether the uploaded Preview.png was the committed or the uncommitted one is not recorded
   - resolved 2026-09-29: Doublons.xml removal logic proven offline (Tests/Test-Xml.ps1, SCWelshCorgi/TemperateForest synthetic fixture: wildBiomes and wildAnimals entry both removed); dozens of other packs still unstaged in Tests/Pickle/ (see TESTING.md "What is not covered")
   - resolved 2026-09-29: Preview.png carries the cut-out ModIcon, bottom-right corner, -15deg (owner's rule, PUBLISHING.md). Migrated same day to the shared `../scripts/Render-Preview.cjs` + `../scripts/Make-PreviewBadge.ps1` pipeline (own `Art/render-preview.cjs`/`cutout-icon.cjs` deleted; `Art/preview-copy.json` now holds the mod-specific text, `Art/verify-preview.py` the contrast/size QA the shared script no longer does itself). Palette retuned for the new layout's lighter veil: inkSecondary `#D8A85E`->`#E0B97E`, inkPrimary `#F7EFDD`->`#FBF6EC`. Verified: title 10.23, suffix 5.99, tag 4.88, p 4.59, version 5.04, 535632 bytes. Art/gallery/0-preview.png recopied by hand (the shared script does not do this itself; naming settled 2026-09-29, single digit lowercase, was Art/steam/00-Preview.png hours earlier). No further Gallery images exist yet, no @review/@film Pickle scenario to source them from.
-code_review_sha: 7f7d3efb35e4a3e0c54bc2bfddca3b0c644ad01a
-updated: 2026-11-06
-protocols_read_sha: d0db418f2c01d1aaf2226c5a4cf766752bf1416b
+code_review_sha: f438e5704676eae1c4f8b0f88e4698d97282f092
+updated: 2026-11-13
+protocols_read_sha: 395caec70169b9ebd62c38192bbf9312e38d66f1
 ---
 # Nelim's Animals, Naturally — status
 
