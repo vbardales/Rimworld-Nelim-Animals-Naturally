@@ -240,3 +240,10 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the interface is shown again
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
+
+  # PROBE (temporary, delete after reading): free standable cells of the hut (shots 3 and 5) and of the flower-garden east block (shot 4), z3 save.
+  Scenario: probe - free cells of the hut and the flower garden
+    Given Nelim's Sanctuary: I am at the sanctuary "hut"
+    And Nelim's Pickle Tools: the free standable cells of the area from (132, 67) to (150, 79) are listed
+    And Nelim's Pickle Tools: the free standable cells of the area from (158, 104) to (174, 118) are listed
+    Then no errors were logged
