@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptionalCompat>
+  <li><packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId><workshopId>2023507013</workshopId><kind>patch</kind></li>
+  <li><packageId>XeoNovaDan.NocturnalAnimals</packageId><workshopId>2004368312</workshopId><kind>patch</kind></li>
+</OptionalCompat>
