@@ -252,6 +252,6 @@ k (series): ok, one day 08:00 to 20:00, wide 1, medium 4 and 5, close 3, opening
 
 Filed 2026-11-08 (c119021): galerie-22, ticket 20261108-165536-237-1f55 (07-galerie, 5 scenes, -DepMap wsl-deps.galerie.map, -StallMinutes 20 -RunTimeoutMinutes 25), evidence Tests/Pickle/Inbox/galerie-22, waiting, RUN_DONE via TM. Keep the tree on c119021 until RUN_DONE. On RUN_DONE: summary.json, open every capture, score-gallery, tell NPT the result of light 0.4 at 20:00 and the frame sizes.
 
-Ecosystem: none found, scan 2026-11-12 (docs/inventory/ecosystem.tsv, 0 rows for AnimalsNaturally).
+Ecosystem: pending. Local scan (2026-11-12, 0 rows) no longer enough (owner 2026-11-13); ECOSYSTEM? sent to PiI 2026-11-13, summary to copy here when PiI answers (docs/inventory/ecosystem-steam/AnimalsNaturally.md).
 
 Review of the English texts validated 2026-11-12 (owner, "je valide la relecture"): ChatGPT passes 1 to 4 on TRANSLATION_REVIEW.md revision b2cd27c, 18 wording fixes applied to PUBLICATION.md, 1 refusal in Docs/review-refusals.md, pass 4 found nothing. translation_fr stays not_applicable.
