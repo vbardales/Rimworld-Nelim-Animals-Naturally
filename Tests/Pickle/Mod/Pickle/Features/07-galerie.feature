@@ -32,12 +32,12 @@
 #        Instant: she has just taken the hay from the stack and is bringing it to the hen. Wide frame centred (198, 232) at root size 5
 #        (rows 227 to 237, the north wall of the barn shows behind the decor). Says: she brings hay to a hen, a cow, a horse and an elephant.
 #   2. interface, workshop 2, window-backdrop-for-height, 11h, the Stats card of the elephant, cropped sideways, no subtitle.
-#   3. workshop 3, hut, 13h Clear, 60 + 40 + 30 ticks. akaNEKO_N_Forest_Cat spawned at (142, 73), a free cell east of the low table (galerie-26: (140, 73) is the table, the cat stood on it), lies down, faces
+#   3. workshop 3, hut, 13h Clear, 60 + 40 + 30 ticks. akaNEKO_N_Forest_Cat spawned at (142, 73), a free cell east of the low table (galerie-26: the first cell was the low table, the cat stood on it), lies down, faces
 #        South, Z mote if the game shows one. Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk), stands at (142, 75) facing West, forced to walk to (138, 75),
 #        paused 30 ticks in (two rows north of the cat, galerie-22 had her on the cat). Instant: the cat settled minutes ago, she tiptoes
 #        past so as not to wake it. The low table, the cushions and the oil lamp are the validated furniture of the hut (already there).
-#        Close frame centred (139, 74) at root size 3 (cols about 134 to 144, rows 71 to 77: the table at its centre, the cat east of it,
+#        Close frame centred (141, 74) at root size 2.5 (galerie-27 at size 3: cat about 20 px at 268 px, REDO; cols about 136 to 146, rows 71.5 to 76.5: the table on the left, the cat at the centre,
 #        Nelim above, the hut wall on the left; root size 4 was refused for the cat, about 15 px). Says: a cat sleeps and Nelim tiptoes past
 #        so as not to wake it.
 #   4. workshop 4, flower-garden, 17h Clear, 60 + 30 ticks. Recomposed 2026-11-08: the open ground is x 163..170, z 108..113 and a wooden
@@ -161,7 +161,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
     And Nelim's Pickle Tools: the light of the map is logged
     And Nelim's Pickle Tools: the free standable cells of the area from (132, 67) to (150, 79) are listed
-    When Nelim's Pickle Tools: I frame the area centred on (139, 74) at root size 3
+    When Nelim's Pickle Tools: I frame the area centred on (141, 74) at root size 2.5
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-3-cat-asleep"
     And Nelim's Pickle Tools: the interface is shown again
