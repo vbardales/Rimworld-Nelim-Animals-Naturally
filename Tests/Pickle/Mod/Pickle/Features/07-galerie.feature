@@ -42,13 +42,13 @@
 #        so as not to wake it.
 #   4. workshop 4, flower-garden, 17h Clear, 60 + 30 ticks. Recomposed 2026-11-08: the open ground is x 163..170, z 108..113 and a wooden
 #        building floor lies south-east of it (z below 109), so everything sits west and north and the frame leaves the floor out.
-#        Bear_Grizzly named bear spawned at (164, 112), food 0 percent, stands at (163, 112) facing East (profile), RawBerries placed as
-#        decor on (165, 112) (galerie-17: the dig dropped nothing on the cell) unforbidden, Filth_Dirt at (165, 111) and (165, 113),
+#        Bear_Grizzly named bear spawned at (164, 111), food 0 percent, stands at (163, 111) facing East (profile), RawBerries placed as
+#        decor on (165, 111) (galerie-17: the dig dropped nothing on the cell) unforbidden, Filth_Dirt at (165, 110) and (164, 110) (galerie-29 probe: row 111 is free from 163 to 169, row 112 and 113 are blocked at 165),
 #        TorchLamp unlit at (170, 113). Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
-#        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (168, 112) facing West, forced to walk to (167, 112)
+#        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (168, 111) facing West, forced to walk to (167, 111)
 #        (galerie-22: the east cell she stood on was not standable), paused 30 ticks in, on the bear's row, 4 cells from it, 2 cells from the pile.
-#        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (166, 112) at root size 3
-#        (rows 109 to 115, cols about 161 to 171). Says: a grizzly has dug up a berry pile.
+#        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (166, 111) at root size 3
+#        (rows 108 to 114, cols about 161 to 171). Says: a grizzly has dug up a berry pile.
 #   5. workshop 5, hut, 20h Clear, 60 + 30 ticks. The same akaNEKO_N_Forest_Cat awake at (140, 73), forced to walk to (137, 73) toward
 #        the lit TorchLamp at (136, 72), the only added light (the light of the map lifted to 0.4 only, so the night stays dark and the glow
 #        pools at the lamp; galerie-22 showed no door in the frame, the lamp stands on the floor of the hut at the west wall, so the cat now
@@ -160,7 +160,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
     And Nelim's Pickle Tools: the light of the map is logged
-    And Nelim's Pickle Tools: the free standable cells of the area from (132, 67) to (150, 79) are listed
+    And Nelim's Pickle Tools: the cells from (134, 70) to (146, 76) are probed
     When Nelim's Pickle Tools: I frame the area centred on (141, 74) at root size 2.5
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-3-cat-asleep"
@@ -175,32 +175,32 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (170, 113)
-    And Nelim's Pickle Tools: an adult animal of kind "Bear_Grizzly" named "bear" is spawned at (164, 112)
+    And Nelim's Pickle Tools: an adult animal of kind "Bear_Grizzly" named "bear" is spawned at (164, 111)
     And Nelim's Pickle Tools: the animal "bear" has food at 0 percent
     And Nelim's Pickle Tools: "bear" faces East
     And game speed is paused
-    And Nelim's Pickle Tools: the animal "bear" stands at (163, 112) facing East
-    And Nelim's Pickle Tools: I place the decor "RawBerries" at (165, 112)
-    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (165, 111)
-    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (165, 113)
-    And Nelim's Pickle Tools: the thing "RawBerries" at (165, 112) is not forbidden
+    And Nelim's Pickle Tools: the animal "bear" stands at (163, 111) facing East
+    And Nelim's Pickle Tools: I place the decor "RawBerries" at (165, 111)
+    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (165, 110)
+    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (164, 110)
+    And Nelim's Pickle Tools: the thing "RawBerries" at (165, 111) is not forbidden
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
-    And Nelim's Pickle Tools: "Nelim" stands at (168, 112) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (168, 111) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (167, 112)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (167, 111)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
     And Nelim's Pickle Tools: the light of the map is logged
-    When Nelim's Pickle Tools: I frame the area centred on (166, 112) at root size 3
+    When Nelim's Pickle Tools: I frame the area centred on (166, 111) at root size 3
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-4-grizzly-dig"
     And Nelim's Pickle Tools: the interface is shown again
@@ -241,9 +241,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
 
-  # PROBE (temporary, delete after reading): free standable cells of the hut (shots 3 and 5) and of the flower-garden east block (shot 4), z3 save.
-  Scenario: probe - free cells of the hut and the flower garden
+  # PROBE (temporary, delete after reading): things on each cell of the hut rows 70 to 76 (galerie-29 listed 140,73 as free yet the cat stood on the low table: find the table cells for shot 5), z3 save.
+  Scenario: probe - things on the hut cells
     Given Nelim's Sanctuary: I am at the sanctuary "hut"
-    And Nelim's Pickle Tools: the free standable cells of the area from (132, 67) to (150, 79) are listed
-    And Nelim's Pickle Tools: the free standable cells of the area from (158, 104) to (174, 118) are listed
+    And Nelim's Pickle Tools: the cells from (134, 70) to (146, 76) are probed
     Then no errors were logged
