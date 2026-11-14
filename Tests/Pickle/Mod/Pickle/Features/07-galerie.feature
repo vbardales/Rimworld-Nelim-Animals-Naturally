@@ -44,7 +44,7 @@
 #        every row z 106..116 (roofed, fence and columns on its edge), so the frame right edge stays at x 166.4 and the floor is out. West of it the
 #        ground is moss and flowers (daylily, rose, grass, orchid), a limestone flagstone path runs at x 162..164 (z 109..114), cells (165,109), (166,109), (164,110) to (166,110) are bare.
 #        Bear_Grizzly named bear spawned at (162, 109), food 0 percent, stands at (162, 109) facing East (profile), RawBerries placed as
-#        decor on (163, 109) (galerie-17: the dig dropped nothing on the cell) unforbidden, Filth_Dirt at (163, 110) and (164, 110).
+#        decor on (163, 109) (galerie-17: the dig dropped nothing on the cell) unforbidden, on a dug patch: the area (163, 108) to (164, 110) emptied then set to Soil (galerie-33: the pile read as a crate on moss, no dig visible), Filth_Dirt at (163, 110), (164, 110) and (164, 109).
 #        Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (166, 109) facing West, forced to walk to (165, 109),
 #        paused 30 ticks in, on the bear's row, 3 cells from it, 2 cells from the pile.
@@ -179,9 +179,12 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "bear" faces East
     And game speed is paused
     And Nelim's Pickle Tools: the animal "bear" stands at (162, 109) facing East
+    And Nelim's Pickle Tools: the area from (163, 108) to (164, 110) is emptied
+    And Nelim's Pickle Tools: the floor of the area from (163, 108) to (164, 110) is set to the terrain "Soil"
     And Nelim's Pickle Tools: I place the decor "RawBerries" at (163, 109)
     And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (163, 110)
     And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (164, 110)
+    And Nelim's Pickle Tools: I place the decor "Filth_Dirt" at (164, 109)
     And Nelim's Pickle Tools: the thing "RawBerries" at (163, 109) is not forbidden
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
