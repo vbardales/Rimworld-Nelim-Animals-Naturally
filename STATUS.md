@@ -26,6 +26,7 @@ translation_fr: not_applicable
 tested_on: RimWorld 1.6 (WSL headless Pickle), Mod/ patches unchanged since e656137; green on 313d491..88b3028: 01-baseline sans-facultatifs-r2, 03 dogsmate, 05 zoology-slow2, 04 rotten-slow2, 06 valeurs-r2 (2/2), 02 avec-vef-r7 (7/7)
 workshop: 3811381865 (private prepublication 0.1.0, 2026-10-01; item not public)
 remaining:
+  - open 2026-11-15 galerie-38 FAILED (RUN_DONE 9d37): all 9 cells still refused after NPT 304a8f3; asked NPT to check staged DLL and other conditions; keep Inbox/galerie-38 until NPT answers. Refile only on NPT word.
   - open 2026-11-15 NPT fixed filth step in 304a8f3 (Natural|Unnatural flags); FILED galerie-38 ticket 20261115-130350-296-9d37, evidence Tests/Pickle/Inbox/galerie-38, keep tree until RUN_DONE; on refusal send the [filth-spread] line to NPT.
   - open 2026-11-15 galerie-37 FAILED (RUN_DONE 52e2): PackedDirt refuses Filth_Dirt too; cause read in Core defs: Filth_Dirt placementMask Terrain, natural and road terrains filthAcceptanceMask Unnatural only, only floors accept; NPT FilthSpread passes FilthSourceFlags.None. Asked NPT (via TM) to pass Unnatural flags. Evidence deleted. Refile when NPT answers; shot 4 patch stays PackedDirt meanwhile (Soil looked like moss, galerie-33).
   - open 2026-11-15 galerie-36 SKIPPED (set sans-facultatifs, no -DepMap; evidence deleted), REFILED galerie-37 ticket 20261115-123200-106-52e2 with -DepMap wsl-deps.galerie.map, evidence Tests/Pickle/Inbox/galerie-37, keep tree until RUN_DONE.
