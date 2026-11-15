@@ -26,6 +26,7 @@ translation_fr: not_applicable
 tested_on: RimWorld 1.6 (WSL headless Pickle), Mod/ patches unchanged since e656137; green on 313d491..88b3028: 01-baseline sans-facultatifs-r2, 03 dogsmate, 05 zoology-slow2, 04 rotten-slow2, 06 valeurs-r2 (2/2), 02 avec-vef-r7 (7/7)
 workshop: 3811381865 (private prepublication 0.1.0, 2026-10-01; item not public)
 remaining:
+  - open 2026-11-15 galerie-39 GREEN (RUN_DONE fa16, 1 passed, [filth-spread] 9 cells, terrain (163,109) PackedDirt). Capture Tests/Pickle/Inbox/galerie-39/screenshots/manual--workshop-4-grizzly-dig--step0.png opened: bear, Nelim, brown dug ground read; RawBerries still read as an orange crate. NEXT: rate-gallery shot 4 (score-gallery) before moving the capture.
   - open 2026-11-15 NPT 607d3a0 (13:30) spawns filth directly when TryMakeFilth refuses; FILED galerie-39 ticket 20261115-133017-846-fa16, evidence Tests/Pickle/Inbox/galerie-39 (galerie-38 deleted), keep tree until RUN_DONE; tell NPT if Filth_Dirt reads too faint.
   - open 2026-11-15 galerie-38 FAILED (RUN_DONE 9d37): all 9 cells still refused after NPT 304a8f3; asked NPT to check staged DLL and other conditions; keep Inbox/galerie-38 until NPT answers. Refile only on NPT word.
   - open 2026-11-15 NPT fixed filth step in 304a8f3 (Natural|Unnatural flags); FILED galerie-38 ticket 20261115-130350-296-9d37, evidence Tests/Pickle/Inbox/galerie-38, keep tree until RUN_DONE; on refusal send the [filth-spread] line to NPT.
