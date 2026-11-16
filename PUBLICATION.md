@@ -48,12 +48,13 @@ Open points for this block, none decided here:
 
 ### 1.0.0
 
-[h3]1.0.0[/h3]
+[b]1.0.0[/b]
 [list]
 [*] First public release of Nelim's Animals, Naturally: lifespans, body sizes, growth, gestation, productivity, foraging and roaming patched for modded animals, using only XML patches.
 [*] Optional integrations with Dogs Mate, Some Like It Rotten and Zoology: the mod loads after them when they are present.
 [*] New Workshop description, icon and preview.
 [/list]
+[url=https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally/blob/main/CHANGELOG.md]Full changelog[/url]
 
 ## Thanks to post, after the item is public
 
