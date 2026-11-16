@@ -44,7 +44,7 @@
 #        every row z 106..116 (roofed, fence and columns on its edge), so the frame right edge stays at x 166.4 and the floor is out. West of it the
 #        ground is moss and flowers (daylily, rose, grass, orchid), a limestone flagstone path runs at x 162..164 (z 109..114), cells (165,109), (166,109), (164,110) to (166,110) are bare.
 #        Bear_Grizzly named bear spawned at (162, 109), food 0 percent, stands at (162, 109) facing East (profile), RawBerries placed as
-#        decor on (163, 109), (164, 109), (163, 110) and (164, 108) (four stacks so the pile reads as spilled berries, not one crate: galerie-39 at 268 px read an orange block; galerie-17: the dig dropped nothing on the cell) unforbidden, on a dug patch: the area (163, 108) to (164, 110) emptied then set to SoilRich (galerie-39: PackedDirt merged with the ground at 268 px, darker soil for contrast; galerie-33: the pile read as a crate on moss, no dig visible; galerie-35: Soil and MossyTerrain refuse Filth_Dirt, no cell took it, so the patch is PackedDirt, a floor-class terrain that should accept it), Filth_Dirt spread dense (NPT step e647e9f) from (163, 108) to (165, 110) over the patch, galerie-34 (Soil alone not visible), terrain of (163, 109) logged.
+#        decor on (164, 109) only (one small stack between two berry bushes Plant_Berry fully grown at (163, 108) and (164, 110) so the berries read as food, not crates: galerie-40 at 268 px read four separate crates; galerie-17: the dig dropped nothing on the cell) unforbidden, with a lit TorchLamp at (166, 110) and a Plant_Daylily fully grown at (165, 110) on the right half (galerie-40: bare grey stone, no light), on a dug patch: the area (163, 108) to (164, 110) emptied then set to SoilRich (galerie-39: PackedDirt merged with the ground at 268 px, darker soil for contrast; galerie-33: the pile read as a crate on moss, no dig visible; galerie-35: Soil and MossyTerrain refuse Filth_Dirt, no cell took it, so the patch is PackedDirt, a floor-class terrain that should accept it), Filth_Dirt spread dense (NPT step e647e9f) from (163, 108) to (165, 110) over the patch, galerie-34 (Soil alone not visible), terrain of (163, 109) logged.
 #        Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (166, 109) facing West, forced to walk to (165, 109),
 #        paused 30 ticks in, on the bear's row, 3 cells from it, 2 cells from the pile.
@@ -183,14 +183,13 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: the floor of the area from (163, 108) to (164, 110) is set to the terrain "SoilRich"
     And Nelim's Pickle Tools: the terrain of the cell (163, 109) is logged
     And Nelim's Pickle Tools: the filth "Filth_Dirt" is spread from (163, 108) to (165, 110)
-    And Nelim's Pickle Tools: I place the decor "RawBerries" at (163, 109)
-    And Nelim's Pickle Tools: the thing "RawBerries" at (163, 109) is not forbidden
+    And Nelim's Pickle Tools: I place the decor "Plant_Berry" at (163, 108) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Berry" at (164, 110) fully grown
     And Nelim's Pickle Tools: I place the decor "RawBerries" at (164, 109)
     And Nelim's Pickle Tools: the thing "RawBerries" at (164, 109) is not forbidden
-    And Nelim's Pickle Tools: I place the decor "RawBerries" at (163, 110)
-    And Nelim's Pickle Tools: the thing "RawBerries" at (163, 110) is not forbidden
-    And Nelim's Pickle Tools: I place the decor "RawBerries" at (164, 108)
-    And Nelim's Pickle Tools: the thing "RawBerries" at (164, 108) is not forbidden
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (166, 110)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (166, 110) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (165, 110) fully grown
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
