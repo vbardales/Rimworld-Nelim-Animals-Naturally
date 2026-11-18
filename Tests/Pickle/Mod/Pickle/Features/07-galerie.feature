@@ -9,7 +9,7 @@
 # times its pregnancy, and hands foraging and a day/night rhythm to animals that lacked them. 08:00 the feed round at the barn, a hen, a cow,
 # a horse and an elephant on one row, read against her (1); the Stats card of the elephant, the numbers behind 1 (2, interface, set aside);
 # 13:00 in the tea room a cat sleeps in broad day, the night rhythm (3); 17:00 in the flower garden a hungry grizzly has dug up berries (4);
-# 20:00 the same cat wakes and pads to the lamplight, the day closes (5). Places validated by NSB (VALIDE.md 2026-11-07): barn, hut,
+# 22:00 the same cat wakes beside the lamp and Nelim brings it milk, the day closes (5). Places validated by NSB (VALIDE.md 2026-11-07): barn, hut,
 # flower-garden, window-backdrop-for-height. Elephant, horse, cow and hen are not NSB animals: the owner kept them on 2026-11-07
 # ("garde les 4", rule 2); the cat is an NSB species (Tama's, not Tama herself), the grizzly is wild decor.
 # ONE OUTFIT ALL DAY (GALLERY.md d, 2026-10-23): Apparel_CollarShirt sage rgb (96, 128, 84), Apparel_Pants khaki rgb (176, 150, 100),
@@ -36,7 +36,9 @@
 #        South, Z mote if the game shows one. Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt
 #        rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk), stands at (142, 75) facing West, forced to walk to (138, 75),
 #        paused 30 ticks in (two rows north of the cat, galerie-22 had her on the cat). Instant: the cat settled minutes ago, she tiptoes
-#        past so as not to wake it. The low table, the cushions and the oil lamp are the validated furniture of the hut (already there).
+#        past so as not to wake it. Hut furniture already there (validated, probe of 2026-11-13, all in frame): the low table milple_Table1x2c on two cells
+#        (two cells) with milple_VaseB on it, a stool south of it, a lit TorchLamp at the west wall and one at the east wall,
+#        the andon, the PlantPot with a Daylily (east side), the tatami floor, the cushions: the cat lies in the glow of the room, never on bare floor.
 #        Close frame centred (141, 74) at root size 2.5 (galerie-27 at size 3: cat about 20 px at 268 px, REDO; cols about 136 to 146, rows 71.5 to 76.5: the table on the left, the cat at the centre,
 #        Nelim above, the hut wall on the left; root size 4 was refused for the cat, about 15 px). Says: a cat sleeps and Nelim tiptoes past
 #        so as not to wake it.
@@ -50,14 +52,20 @@
 #        paused 30 ticks in, on the bear's row, 3 cells from it, 2 cells from the pile.
 #        Instant: the dig has just finished, the pile is in front of the bear. Medium frame centred (162, 110) at root size 2.5
 #        (rows about 107.5 to 112.5, cols about 157.6 to 166.4). Says: a grizzly has dug up a berry pile.
-#   5. workshop 5, hut, 20h Clear, 60 + 30 ticks. The same akaNEKO_N_Forest_Cat awake at (140, 73), forced to walk to (137, 73) toward
-#        the lit TorchLamp at (136, 72), the only added light (the light of the map lifted to 0.4 only, so the night stays dark and the glow
-#        pools at the lamp; galerie-22 showed no door in the frame, the lamp stands on the floor of the hut at the west wall, so the cat now
-#        pads toward the lamp light). Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100),
-#        Apparel_CollarShirt rgb (96, 128, 84), Roo_HD_Hair_Highpony, MouthLipsSmirk) stands still at (140, 75) facing West (she
-#        watches the cat go, she does not follow it; galerie-22 had her cut by the frame edge). Instant: the cat has woken and pads off, she
-#        lets it go. Medium frame centred (138, 74) at root size 4 (cols about 131 to 145, both in frame). Same hut as 3, day then night: the
-#        rhyme carries the story. Says: the cat wakes at night and pads to the lamplight while Nelim watches it go.
+#   5. workshop 5, hut, 22h Clear, 60 + 40 + 30 ticks. Recomposed 2026-11-18 after galerie-42 (REDO: read as daylight, Nelim stood, cat about 25 px at 268 px,
+#        night and wakes not carried). NIGHT: the sun glow of the map held at 0.12 (steps.md: dusk or night capture, whatever the hour; the old
+#        lifted-to-0.4 floor made the roofed hut read as noon), the lit TorchLamp at (136, 72) pools its glow on the west wall, a Plant_Daylily
+#        fully grown at (142, 75) fills the bottom right (galerie-42: right and bottom ground sparse). The same akaNEKO_N_Forest_Cat spawned at (137, 73)
+#        beside the lamp, lies down (asleep, 40 ticks), then is forced to walk to (138, 73): it gets up and comes toward Nelim, facing East (profile
+#        toward Nelim; the front view of an animal is the elephant of 1, facing South). Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt rgb (96, 128, 84),
+#        Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (141, 75) facing West, carries the item Milk and is forced to walk to (140, 75), paused 30
+#        ticks in (mid-step, turned toward the cat, a bowl of milk in her hands: she is not standing). Instant: the cat has woken at the lamp, she is
+#        bringing it milk. Tight frame centred (139, 74) at root size 2.5 as in 3 (cat about 40 px at 268 px; cols about 134.6 to 143.4, rows 71.5 to 76.5:
+#        lamp at the left, the low table above, cat at the centre, Nelim at the right). Hut furniture already there and in frame: the tatami floor,
+#        the low table milple_Table1x2c with milple_VaseB, a stool, the lit TorchLamp at the west wall, the cushions.
+#        Same hut as 3, noon then night: the rhyme carries the story (the cat that slept at noon is up and active at night).
+#        Says: at night Nelim brings a bowl of milk to the cat by the lamp. Risk: sun glow step compiled, not played with a roofed hut at night; if the
+#        hut stays bright, add the dimmed-at-most step (0.3) and tell NPT.
 #
 @requires:OskarPotocki.VanillaFactionsExpanded.Core @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.inspecttabs @review @en-only
 Feature: Gallery pictures of Nelim's Animals, Naturally
@@ -213,34 +221,40 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     Then Nelim's Pickle Tools: the decor is removed
     And no errors were logged
 
-  # 5 THE CAT WAKES (closer). Tea room lamp, 20:00 Clear, 60 + 30 ticks.
-  Scenario: workshop 5 - at 20:00 the cat wakes and pads to the lamplight, Nelim lets it go
+  # 5 THE CAT WAKES (closer, tight). Hut lamp, 22:00 Clear, 60 + 40 + 30 ticks. Night by sun glow held low, the torches carry the light.
+  Scenario: workshop 5 - at night the cat wakes beside the lamp and Nelim brings it milk
     Given Nelim's Sanctuary: I am at the sanctuary "hut"
-    And I set the hour to 20
-    And Nelim's Pickle Tools: the light of the map is lifted to at least 0.4
+    And I set the hour to 22
+    And Nelim's Pickle Tools: the sun glow of the map is held at 0.12
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (136, 72)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (136, 72) is lit
-    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (140, 73)
-    And Nelim's Pickle Tools: "cat" faces West
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 75) fully grown
+    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (137, 73)
+    And Nelim's Pickle Tools: "cat" faces East
+    And Nelim's Pickle Tools: "cat" lies down
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    And game speed is paused
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (176, 150, 100)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
-    And Nelim's Pickle Tools: "Nelim" stands at (140, 75) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (141, 75) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
-    And Nelim's Pickle Tools: "cat" is forced to walk to (137, 73)
+    And Nelim's Pickle Tools: "Nelim" carries the item "Milk"
+    And Nelim's Pickle Tools: "cat" is forced to walk to (138, 73)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (140, 75)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
     And Nelim's Pickle Tools: the light of the map is logged
-    When Nelim's Pickle Tools: I frame the area centred on (138, 74) at root size 4
+    When Nelim's Pickle Tools: I frame the area centred on (139, 74) at root size 2.5
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-5-cat-wakes"
     And Nelim's Pickle Tools: the interface is shown again
