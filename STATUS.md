@@ -41,7 +41,7 @@ protocols_read_sha: 4778b712108a584d43f2593c33f20830fb1dd2d2
 
 Places read: 2026-11-18 (NSB commit list since 2026-11-16, new RECONSTRUCTION-SAUVEGARDE.md read; place docs unchanged for our four places)
 Tribe read: 2026-11-18 (VALIDE.md and NEUTRES-TETE.md diffs filtered on Nelim: none; roster, profile of Nelim unchanged)
-Steps read: 2026-11-18 (PickleTools Docs/steps.md and catalogues commit list since 2026-11-16, used steps grepped: no rename or removal)
+Steps read: 2026-11-19 (PickleTools commits since 2026-11-18 on docs/steps.md and catalogues: no light, glow or dim step changed; none used by 07-galerie renamed or removed; NPT asked for a sun-only dim, see remaining)
 
 **Resync 2026-11-16 (sync-nsb-npt, NPT part; supersedes the ones below where they differ).** Rules said back: 1 NSB free; 2 outside-NSB domestic animals need owner validation (elephant, horse, cow, hen validated "garde les 4" 2026-11-07); 3 colonist properties need validation, none changed; 4 outfits free; 5 the mod ships no animal, no gap. NSB: no commit since 2026-11-13, nothing changed. NPT since 2026-11-13 (`Docs/steps.md`, ten commits): new steps for render node hide, fast-forward loop, growing-zone guard, animals kept out of an area (more exceptions), aiming pose, filth spread on a rectangle (already used by shot 4), colonist builds a blueprint, hover over a gizmo, Beauty2 mouth offset. No step called by 07-galerie renamed or removed; none replaces a hand-made setup. Scenarios untouched.
 
