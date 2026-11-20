@@ -227,7 +227,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And I set the hour to 22
     And Nelim's Pickle Tools: the sun glow of the map is held at 0.12
     And Nelim's Pickle Tools: the sun light of the map is dimmed to at most 0.15, lamps kept
-    And Nelim's Pickle Tools: the glow of the lamps is scaled to 30 percent
+    And Nelim's Pickle Tools: the glow of the lamps is scaled to 60 percent
     And Nelim's Pickle Tools: the light of the map is refreshed
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
