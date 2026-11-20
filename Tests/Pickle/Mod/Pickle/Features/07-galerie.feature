@@ -55,10 +55,10 @@
 #   5. workshop 5, hut, 22h Clear, 60 + 40 + 30 ticks. Recomposed 2026-11-18 after galerie-42 (REDO: read as daylight, Nelim stood, cat about 25 px at 268 px,
 #        night and wakes not carried). NIGHT: the sun glow of the map held at 0.12 (steps.md: dusk or night capture, whatever the hour; the old
 #        lifted-to-0.4 floor made the roofed hut read as noon), the lit TorchLamp at (136, 72) pools its glow on the west wall, a Plant_Daylily
-#        fully grown at (142, 75) fills the bottom right (galerie-42: right and bottom ground sparse). The same akaNEKO_N_Forest_Cat spawned at (137, 73)
+#        fully grown at (143, 75) fills the bottom right (galerie-42: right and bottom ground sparse). The same akaNEKO_N_Forest_Cat spawned at (137, 73)
 #        beside the lamp, lies down (asleep, 40 ticks), then is forced to walk to (138, 73): it gets up and comes toward Nelim, facing East (profile
 #        toward Nelim; the front view of an animal is the elephant of 1, facing South). Nelim in the same outfit (Apparel_Pants rgb (176, 150, 100), Apparel_CollarShirt rgb (96, 128, 84),
-#        Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (141, 75) facing West, carries the item Milk and is forced to walk to (140, 75), paused 30
+#        Roo_HD_Hair_Highpony, MouthLipsSmirk) stands at (140, 75) facing West, carries the item Milk and is forced to walk to (139, 75), paused 30
 #        ticks in (mid-step, turned toward the cat, a bowl of milk in her hands: she is not standing). Instant: the cat has woken at the lamp, she is
 #        bringing it milk. Tight frame centred (139, 74) at root size 2.5 as in 3 (cat about 40 px at 268 px; cols about 134.6 to 143.4, rows 71.5 to 76.5:
 #        lamp at the left, the low table above, cat at the centre, Nelim at the right). Hut furniture already there and in frame: the tatami floor,
@@ -231,7 +231,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (136, 72)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (136, 72) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 75) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 75) fully grown
     And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "cat" is spawned at (137, 73)
     And Nelim's Pickle Tools: "cat" faces East
     And Nelim's Pickle Tools: "cat" lies down
@@ -241,7 +241,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (96, 128, 84)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
-    And Nelim's Pickle Tools: "Nelim" stands at (141, 75) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (140, 75) facing West
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
@@ -250,7 +250,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And Nelim's Pickle Tools: "Nelim" carries the item "Milk"
     And Nelim's Pickle Tools: "cat" is forced to walk to (138, 73)
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (140, 75)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (139, 75)
     And Nelim's Pickle Tools: I let 30 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
