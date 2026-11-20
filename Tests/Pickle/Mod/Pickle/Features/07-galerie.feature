@@ -227,6 +227,7 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And I set the hour to 22
     And Nelim's Pickle Tools: the sun glow of the map is held at 0.12
     And Nelim's Pickle Tools: the sun light of the map is dimmed to at most 0.15, lamps kept
+    And Nelim's Pickle Tools: the glow of the lamps is scaled to 30 percent
     And Nelim's Pickle Tools: the light of the map is refreshed
     And Nelim's Pickle Tools: I let 60 ticks pass
     And game speed is paused
@@ -256,6 +257,8 @@ Feature: Gallery pictures of Nelim's Animals, Naturally
     And game speed is paused
     And Nelim's Pickle Tools: the thermal state and thoughts of "Nelim" are logged
     And Nelim's Pickle Tools: the light of the map is logged
+    And Nelim's Pickle Tools: the light at (137, 72) is logged
+    And Nelim's Pickle Tools: the light at (143, 77) is logged
     When Nelim's Pickle Tools: I frame the area centred on (139, 74) at root size 2.5
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "workshop-5-cat-wakes"
