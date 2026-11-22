@@ -5,5 +5,5 @@ Feature: Nelim's Animals, Naturally has no Mod options page
 
   Scenario: the Mod options list holds no entry for the mod
     Then mod "nelim.animalsnaturally" is loaded
-    And the mod options page of the mod "nelim.animalsnaturally" does not exist
+    And Nelim's Pickle Tools: the mod options page of the mod "nelim.animalsnaturally" does not exist
     And no warnings from mod "Nelim's Animals, Naturally"
