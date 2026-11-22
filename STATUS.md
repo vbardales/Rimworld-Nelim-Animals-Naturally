@@ -40,7 +40,7 @@ remaining:
   - open 2026-11-18 visual mods (Yayo Continued, SMYH, Tools) play green with no conflict and change nothing visible: keep wsl-deps.galerie-visual.map for shots 1, 3, 4, 5. Shots 1, 3, 4 stay candidates (Art/Gallery-clean). After all four notes at 4 on shot 5: rate-gallery (subtitles), then mountPreview.
 code_review_sha: f438e5704676eae1c4f8b0f88e4698d97282f092
 updated: 2026-11-19
-protocols_read_sha: dc9a7edd358a0aa0e427c6811e498574cef12c1b
+protocols_read_sha: 01d4eb44962935db937fc88acc42914c1a7c7b43
 ---
 # Nelim's Animals, Naturally — status
 
@@ -51,7 +51,7 @@ protocols_read_sha: dc9a7edd358a0aa0e427c6811e498574cef12c1b
 
 Places read: 2026-11-18 (NSB commit list since 2026-11-16, new RECONSTRUCTION-SAUVEGARDE.md read; place docs unchanged for our four places)
 Tribe read: 2026-11-18 (VALIDE.md and NEUTRES-TETE.md diffs filtered on Nelim: none; roster, profile of Nelim unchanged)
-Steps read: 2026-11-19 (PickleTools commits since 2026-11-18 on docs/steps.md and catalogues: no light, glow or dim step changed; none used by 07-galerie renamed or removed; NPT asked for a sun-only dim, see remaining)
+Steps read: 2026-11-22 (PickleTools commit f0f87205 of 2026-11-21 on Docs/steps.md: two new ClickDiagnostics steps, windows and buttons logged; no light, glow or dim step changed; none used by 07-galerie renamed or removed; nothing for the gallery)
 
 **Resync 2026-11-16 (sync-nsb-npt, NPT part; supersedes the ones below where they differ).** Rules said back: 1 NSB free; 2 outside-NSB domestic animals need owner validation (elephant, horse, cow, hen validated "garde les 4" 2026-11-07); 3 colonist properties need validation, none changed; 4 outfits free; 5 the mod ships no animal, no gap. NSB: no commit since 2026-11-13, nothing changed. NPT since 2026-11-13 (`Docs/steps.md`, ten commits): new steps for render node hide, fast-forward loop, growing-zone guard, animals kept out of an area (more exceptions), aiming pose, filth spread on a rectangle (already used by shot 4), colonist builds a blueprint, hover over a gizmo, Beauty2 mouth offset. No step called by 07-galerie renamed or removed; none replaces a hand-made setup. Scenarios untouched.
 
