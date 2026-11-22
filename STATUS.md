@@ -68,6 +68,7 @@ Date 2026-11-22, Mod revision f438e57 (last commit touching Mod/). Result: `loca
 - Command: `powershell -NoProfile -ExecutionPolicy Bypass -File ../scripts/Check-Translations.ps1 -ModRoot .` (2026-11-22): PASS, 0 source texts, 0 Keyed calls. TRANSLATION_REVIEW.md generated from revision f438e57 says "This mod adds no player-facing strings requiring translation".
 - Reused dependency keys: none. Translations of the original: Zoology 3679396881 has two Chinese translations (PiI delta 2026-11-22), they translate Zoology, not this mod, and this mod ships no text to add a language to.
 - Review (6.g): `/review-translation` and Virginie's French review are not applicable, the AUDIT 6.g exemption for a justified not_applicable with no displayed text. The review line of TRANSLATION_REVIEW.md stays empty on purpose.
+- Review line 2026-11-22: ChatGPT review of page 1 (TRANSLATION_REVIEW.md, PUBLICATION.md, CHANGELOG.md, README.md): no correction recommended, 0 applied, 0 rejected, round recorded (1/1 pages clean). Virginie validated the review in this chat the same day ("review validée"), revision f438e57, corrections requested: none.
 - In-game checks (raw keys, fallback text, clipping): nothing to check, no key exists. Exclusions: none. Failures: none.
 
 ## Dependencies
