@@ -4,7 +4,7 @@ packageId: nelim.animalsnaturally
 repo: https://github.com/vbardales/Rimworld-Nelim-Animals-Naturally
 visibility: public
 detached: yes
-workflow_stage: localize[1.0.0]
+workflow_stage: playTests[1.0.0]
 stage_meaning: "stage holds the 6-code field; workflow_stage carries the exact 12-state chain position, same value from preTest on. l10n→preTest crossed 2026-09-29 (see git history for detail). preTest→done is a static gate (AUDIT.md): automated + XML tests rerun (not read from an old report), Pickle suites written or their absence justified in writing. No in-game run is required for this gate (AUDIT.md's explicit 2026-09-21 clarification); that belongs to done→tested. Crossed 2026-09-30: Tests/Test-Xml.ps1 rejoué, vert (10 patch files, About.xml contract, fixtures, absent-mod safety); 5 Pickle feature files exist under Tests/Pickle/, coverage documented in TESTING.md."
 licence: open
 licence_at: "MIT for original rebalancing work; third-party definitions are not redistributed"
@@ -23,11 +23,11 @@ settings_audit: not_applicable
 localization: not_applicable
 translation_en: not_applicable
 translation_fr: not_applicable
-tested_on: RimWorld 1.6 (WSL headless Pickle), Mod/ patches unchanged since e656137; green on 313d491..88b3028: 01-baseline sans-facultatifs-r2, 03 dogsmate, 05 zoology-slow2, 04 rotten-slow2, 06 valeurs-r2 (2/2), 02 avec-vef-r7 (7/7)
+tested_on: 2026-10-10 pickle ed39936, RimWorld 1.6 (WSL headless Pickle), Mod/ patches unchanged since e656137 (a360839 for Patches/); green on 313d491..88b3028: 01-baseline sans-facultatifs-r2, 03 dogsmate, 05 zoology-slow2, 04 rotten-slow2, 06 valeurs-r2 (2/2), 02 avec-vef-r7 (7/7)
 workshop: 3811381865 (private prepublication 0.1.0, 2026-10-01; item not public)
 remaining:
   - open 2026-11-20 protocols read: (1) any workflow_stage change needs Virginie's explicit "oui" in this chat (written as "À toi, maintenant : valider le passage à <stade>"), replay included; (2) at the next stage passage ATTRIBUTION.md needs a "Gallery set" section (name, author, Workshop id) for every external mod the gallery scenes use (visual mods of wsl-deps.galerie-visual.map, Stick Lantern style props); (3) a failed run whose cause is only a hypothesis goes to Parked/ with RELEASE.md, not deleted.
-  - open 2026-11-22 replay settings.. (ledger .replays/AnimalsNaturally-20261122-settings-end.tsv, Virginie typed it): stage localize[1.0.0], section 5 done (Settings audit written), 6.f and 6.h done 2026-11-22 (Translation audit section written, grep of patches 0 text tag, Check-Translations PASS); next replay decides writeTests (section 7). Ecosystem done (ecosystem_line 1.0). Open unverified: in-game Mod options list has no entry (playTests). Hygiene migration at wake: delete Docs/PROTOCOLS-READ.md, merge Docs/TEST_SCENARIOS.md into Tests/Pickle/README.md. Then rate-gallery for shots 1, 3, 4, 5 (all candidates).
+  - open 2026-11-22 replay localize.. (ledger .replays/AnimalsNaturally-20261122-localize-end.tsv, Virginie typed it): sections 6 and 7 done; stage playTests[1.0.0]; first open 8.h: in-game check that Options de mod holds no entry for this mod and no MainButtons shortcut (settings_audit not_applicable, unverified until a Pickle ticket); then 8.i (Player.log read on a run of the current tree). Hygiene migration done 2026-11-22 except merging Docs/TEST_SCENARIOS.md into Tests/Pickle/README.md (Tests/ not touched by a replay). Then rate-gallery for shots 1, 3, 4, 5 (all candidates).
   - open 2026-11-19 galerie-45 (ticket 20261119-094926-703-ed3f, tree 47afc91) GREEN, 1 passed 0 failed, exit passed, 45 s, read from the Inbox (no RUN_DONE seen). Capture opened full and at 268 px: floor still bright light green (DAY), no lamp pool, brazier and two torches flames only; cat walks East readable, Nelim faces East beside the milk bucket (milk reads). Shot 5 REDO (night absent). Told PiT with the Inbox path, asked the order of refresh and dim steps; evidence Tests/Pickle/Inbox/galerie-45 deleted 2026-11-20 with the capture (REDO read, rule: never keep a read run "just in case"). Next: on PiT answer recompose shot 5 (ceiling 0.1 or the step order) and refile alone.
   - open 2026-11-20 galerie-51 (f179, tree 8d062a4, lamps 45 percent) GREEN 1/1: shot 5 CANDIDATE, saved Art/Gallery-clean/5-cat-wakes.jpg (282 KB). Read at 268 px: night (dark grey-green floor), cat walks East beside the torches, Nelim faces West next to the milk pail (carried partly), blue brazier lit, lamp pool faint but a lighter patch around the torches. [light-at] (137, 72) lamp r22 g23 b18 ground 0.32; (143, 77) r8 g9 b7 ground 0.15. score-gallery shot 5: understanding 4, adequacy 4, image 4.5, decoration 4 = candidate. Evidence deleted. All four shots 1, 3, 4, 5 are candidates (shot 2 elephant card is the window capture). Next: rate-gallery (subtitles, session runs it), then the stage question (workflow_stage is ecosystem since the 2026-11-19 replay, 2.h open: ecosystem_line) and mountPreview.
   - open 2026-11-20 (superseded) FILED galerie-51, ticket 20261120-151315-056-f179, shot 5 only (same options), tree 8d062a4, evidence Tests/Pickle/Inbox/galerie-51, keep tree until RUN_DONE. galerie-50 (a596, lamps 60 percent) GREEN: floor medium green, dim but flat (dusk, no pool): [light-at] (137, 72) lamp glow r53 g55 b42, ground glow 0.50; (143, 77) r19 g21 b16, ground glow 0.30. score-gallery shot 5: REDO (night partly, pool absent; adequacy 3). Capture and evidence deleted. Series so far: 30 percent night with ground glow 0.15 / 0.13 (flat dark), 60 percent 0.50 / 0.30 (flat dim). Now 45 percent: expect near a torch about 0.3-0.4, far corner about 0.15. On RUN_DONE: summary, [light-at], open capture at 268 px, score-gallery, delete if REDO; if still no pool also try the dim ceiling 0.10 or tell PiT the values.
@@ -41,7 +41,7 @@ remaining:
 code_review_sha: f438e5704676eae1c4f8b0f88e4698d97282f092
 updated: 2026-11-22
 ecosystem_line: 1.0
-protocols_read_sha: 6eb4ec54dc40c1ef5e560f0070416572eee5f3b6
+protocols_read_sha: 594cd3b3900dd4d873f4145c4228f5932399c0cf
 ---
 # Nelim's Animals, Naturally — status
 
@@ -134,4 +134,4 @@ NSB alternatives that the mod patches (grep of Mod/Patches, partial names, not a
 
 Included animals (rule 5): the mod ships no animal (patches only): no MISSING.
 
-Older NSB resyncs (2026-11-13 and before) and the dated shotlist drafts and states of 2026-11-05 to 2026-11-07 moved to `Docs/runs/STATUS-journal-2026-11-05-to-11-13.md` on 2026-11-18.
+Older NSB resyncs and shotlist drafts: see git history of STATUS.md (journals deleted 2026-11-22, hygiene migration).

@@ -123,7 +123,7 @@ only the `@review` screenshots needed to show the claimed visual result (this su
 proof of a check not repeated by the newer run. Do not retain superseded `report.html`, `messages.ndjson`, complete shared Pickle archives, or
 `Player.log` unless one is the sole evidence of a failure diagnosis. The launcher's archives in `pickle-reports-archive/` are full copies of the
 shared report folder and are not trimmed by it: after a run, select what this mod needs from the archive of its own run, then delete that archive
-and leave the others alone (`keep.txt` marks one held for review). Summarise every run as one text line in `docs/runs/history.md`, never as a
+and leave the others alone (`keep.txt` marks one held for review). Summarise every run as one text line in `Docs/runs/pickle.md`, never as a
 folder.
 
 ## 2026-10-01 retention decision
