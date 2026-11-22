@@ -27,7 +27,7 @@ tested_on: RimWorld 1.6 (WSL headless Pickle), Mod/ patches unchanged since e656
 workshop: 3811381865 (private prepublication 0.1.0, 2026-10-01; item not public)
 remaining:
   - open 2026-11-20 protocols read: (1) any workflow_stage change needs Virginie's explicit "oui" in this chat (written as "À toi, maintenant : valider le passage à <stade>"), replay included; (2) at the next stage passage ATTRIBUTION.md needs a "Gallery set" section (name, author, Workshop id) for every external mod the gallery scenes use (visual mods of wsl-deps.galerie-visual.map, Stick Lantern style props); (3) a failed run whose cause is only a hypothesis goes to Parked/ with RELEASE.md, not deleted.
-  - open 2026-11-22 replay ecosystem.. (ledger .replays/AnimalsNaturally-20261122-ecosystem-end.tsv, Virginie typed it): stage declareDependencies[1.0.0], first open 4.f (four animal-mod integrations with reasons) and 4.g (dependency record with date and revision) missing from STATUS; then 4.h. Ecosystem done (ecosystem_line 1.0). Then rate-gallery for shots 1, 3, 4, 5 (all candidates).
+  - open 2026-11-22 replay ecosystem.. (ledger .replays/AnimalsNaturally-20261122-ecosystem-end.tsv, Virginie typed it): stage declareDependencies[1.0.0], 4.f and 4.g done 2026-11-22 (Dependencies section written); next replay decides settings (section 5: Settings audit record). Ecosystem done (ecosystem_line 1.0). Then rate-gallery for shots 1, 3, 4, 5 (all candidates).
   - open 2026-11-19 galerie-45 (ticket 20261119-094926-703-ed3f, tree 47afc91) GREEN, 1 passed 0 failed, exit passed, 45 s, read from the Inbox (no RUN_DONE seen). Capture opened full and at 268 px: floor still bright light green (DAY), no lamp pool, brazier and two torches flames only; cat walks East readable, Nelim faces East beside the milk bucket (milk reads). Shot 5 REDO (night absent). Told PiT with the Inbox path, asked the order of refresh and dim steps; evidence Tests/Pickle/Inbox/galerie-45 deleted 2026-11-20 with the capture (REDO read, rule: never keep a read run "just in case"). Next: on PiT answer recompose shot 5 (ceiling 0.1 or the step order) and refile alone.
   - open 2026-11-20 galerie-51 (f179, tree 8d062a4, lamps 45 percent) GREEN 1/1: shot 5 CANDIDATE, saved Art/Gallery-clean/5-cat-wakes.jpg (282 KB). Read at 268 px: night (dark grey-green floor), cat walks East beside the torches, Nelim faces West next to the milk pail (carried partly), blue brazier lit, lamp pool faint but a lighter patch around the torches. [light-at] (137, 72) lamp r22 g23 b18 ground 0.32; (143, 77) r8 g9 b7 ground 0.15. score-gallery shot 5: understanding 4, adequacy 4, image 4.5, decoration 4 = candidate. Evidence deleted. All four shots 1, 3, 4, 5 are candidates (shot 2 elephant card is the window capture). Next: rate-gallery (subtitles, session runs it), then the stage question (workflow_stage is ecosystem since the 2026-11-19 replay, 2.h open: ecosystem_line) and mountPreview.
   - open 2026-11-20 (superseded) FILED galerie-51, ticket 20261120-151315-056-f179, shot 5 only (same options), tree 8d062a4, evidence Tests/Pickle/Inbox/galerie-51, keep tree until RUN_DONE. galerie-50 (a596, lamps 60 percent) GREEN: floor medium green, dim but flat (dusk, no pool): [light-at] (137, 72) lamp glow r53 g55 b42, ground glow 0.50; (143, 77) r19 g21 b16, ground glow 0.30. score-gallery shot 5: REDO (night partly, pool absent; adequacy 3). Capture and evidence deleted. Series so far: 30 percent night with ground glow 0.15 / 0.13 (flat dark), 60 percent 0.50 / 0.30 (flat dim). Now 45 percent: expect near a torch about 0.3-0.4, far corner about 0.15. On RUN_DONE: summary, [light-at], open capture at 268 px, score-gallery, delete if REDO; if still no pool also try the dim ceiling 0.10 or tell PiT the values.
@@ -45,6 +45,34 @@ protocols_read_sha: 9076dc7ed32ed99800d4f0026157da2053469dd4
 ---
 # Nelim's Animals, Naturally — status
 
+
+## Dependencies
+
+Record of 2026-11-22, Mod revision f438e57 (last commit touching Mod/), read from About.xml, OptionalCompat.xml and Mod/Patches/*.xml this day.
+
+| Mod | Kind | Where it acts | Reason |
+|---|---|---|---|
+| [XND] Nocturnal Animals (Continued), Mlie.XNDNocturnalAnimals, 2269731409 | hard (modDependencies + loadAfter) | Rythme.xml adds NocturnalAnimals.ExtendedRaceProperties (bodyClock), under PatchOperationFindMod | The extension class belongs to that mod: a missing class drops the whole def (vanilla animals, muffalo included, vanish at load). |
+| Dogs mate (Continued), Mlie.DogsMate, 2441132298 | loadAfter only | no XPath targets it | Ordering safety. Hybridation.xml writes the vanilla canCrossBreedWith field in Dogs Mate list format, it patches no Dogs Mate def (confirmed 2026-09-28, TESTING.md). |
+| Some Like It Rotten, Mlie.SomeLikeItRotten, 2503519676 | loadAfter only | no XPath targets it | Ordering safety, same reason. |
+| Zoology: Realistic Animal Overhaul, com.abobashark.zoologymod, 3679396881 | loadAfter only | no XPath targets it | Load after it so its C# behaviour stays active and these values apply to every affected animal. |
+| Vanilla Expanded Framework, OskarPotocki.VanillaFactionsExpanded.Core, 2023507013 | optional (OptionalCompat.xml, kind patch) | Forage.xml, PatchOperationFindMod on Vanilla Expanded Framework | Forage components; patch inert without it. |
+| [XND] Nocturnal Animals (original), XeoNovaDan.NocturnalAnimals, 2004368312 | optional (OptionalCompat.xml, kind patch) | Rythme.xml, PatchOperationFindMod on the original display name | Same extension, original mod; patch inert without it. |
+
+- DLC: none required. supportedVersions 1.6 only, no LoadFolders.xml.
+- Check-OptionalCompat.ps1 2026-11-22: OK, 1 patched target ordered by loadAfter or modDependencies, 2 declared.
+- workshop_required_items: n/a, not released yet (field in the front matter).
+
+### Animal-mod integrations (4.f, ANIMALS.md)
+
+The mod ships no animal (patches only), so no race or PawnKindDef of ours needs adding to another mod list. Grep of Mod/Patches 2026-11-22: no ADS_Cat, DZY or Revolus.DogsMate hit.
+
+| Integration | Status | Reason |
+|---|---|---|
+| A Dog Said Animal Prosthetics 2 | not applicable | No animal added, no ADS_Cat1 to ADS_Cat3 list to extend. |
+| Nocturnal Animals | done | Rythme.xml, guarded by PatchOperationFindMod, plus the hard dependency above. |
+| Dogs mate | partial by design | Hybridation.xml uses the vanilla canCrossBreedWith field in its list format; no pawnKinds group to extend since no animal is added. loadAfter keeps the order. |
+| Better Crossbreeding | not applicable | No animal added, no DZY.CrossBreeding extension to write. |
 
 ## Ecosystem
 
