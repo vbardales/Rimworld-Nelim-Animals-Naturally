@@ -1,0 +1,5 @@
+# Pass "options": the mod ships no setting (STATUS.md, Settings audit), so the Mod options list must hold no entry for it (AUDIT 8.h).
+# Run it with:
+#   Submit-PickleRun.ps1 -Mod AnimalsNaturally -DepMap wsl-deps.options.map -Filter '09-no-options' -EvidenceDir Tests/Pickle/Inbox/options-N
+# Development tooling only, never a dependency of the mod: the companion that holds the Mod options steps.
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
